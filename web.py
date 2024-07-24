@@ -3,9 +3,65 @@ import plotly.graph_objects as go
 import os
 import numpy as np
 import json
-from plyfile import PlyData
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaIoBaseDownload, MediaInMemoryUpload
+import io
 
-# Streamlit app
+# Initialize Google Drive authentication
+def authenticate_google_drive():
+    try:
+        scope = ['https://www.googleapis.com/auth/drive']
+        # Load the service account credentials from environment variable
+        service_account_info = os.environ.get('GOOGLE_SERVICE_ACCOUNT')
+        if not service_account_info:
+            raise ValueError("Google service account credentials not found in environment variables.")
+        
+        credentials = service_account.Credentials.from_service_account_info(
+            json.loads(service_account_info), scopes=scope
+        )
+        service = build('drive', 'v3', credentials=credentials)
+        st.success("Google Drive authentication successful!")
+        return service
+    except Exception as e:
+        st.error(f"Failed to authenticate Google Drive: {e}")
+        return None
+
+# Search for the file in Google Drive
+def search_file(service, file_name, folder_id=None):
+    try:
+        query = f"name='{file_name}' and trashed=false"
+        if folder_id:
+            query += f" and '{folder_id}' in parents"
+        results = service.files().list(q=query, fields="files(id, name)").execute()
+        items = results.get('files', [])
+        if items:
+            return items[0]  # Return the first matching file
+        else:
+            return None
+    except Exception as e:
+        st.error(f"An error occurred during file search: {e}")
+        return None
+
+# Upload or update file in Google Drive
+def upload_or_update_file(service, file_name, content, folder_id=None):
+    try:
+        file = search_file(service, file_name, folder_id)
+        media = MediaInMemoryUpload(content.encode(), mimetype='application/json')
+        if file:
+            # Update the existing file
+            file_id = file['id']
+            updated_file = service.files().update(fileId=file_id, media_body=media).execute()
+        else:
+            # Create a new file
+            file_metadata = {'name': file_name}
+            if folder_id:
+                file_metadata['parents'] = [folder_id]
+            new_file = service.files().create(body=file_metadata, media_body=media, fields='id, name, parents, webViewLink').execute()
+    except Exception as e:
+        st.error(f"An error occurred during file upload/update: {e}")
+
+# Streamlit app configuration
 st.set_page_config(
     page_title="ContextQA Data Collection App",
     page_icon="🧊",
@@ -55,45 +111,55 @@ def initialize_plot(vertices, triangles, vertex_colors, instance_labels, id2labe
 
     return fig
 
-def get_semantic_category_counts(instance_labels, id2labels):
-    category_counts = {}
-    for instance_id in np.unique(instance_labels):
-        if instance_id == -100:
-            continue
-        label = id2labels.get(instance_id, 'Unknown')
-        category = label.split('_')[0]
-        if category in category_counts:
-            category_counts[category] += 1
-        else:
-            category_counts[category] = 1
-    return category_counts
 
-# Load context data from JSON
-def load_context_data():
-    if not os.path.exists('context_data.json'):
+def load_context_data(service, file_id):
+    try:
+        request = service.files().get_media(fileId=file_id)
+        file_data = io.BytesIO()
+        downloader = MediaIoBaseDownload(file_data, request)
+
+        done = False
+        while not done:
+            status, done = downloader.next_chunk()
+
+        file_data.seek(0)
+        return json.load(file_data)
+    except Exception as e:
+        st.error(f"An error occurred while loading context data: {e}")
+        return None
+
+
+def save_context_data(data, service=None, folder_id=None):
+    json_data = json.dumps(data, indent=4)
+    if service:
+        upload_or_update_file(service, 'context_data.json', json_data, folder_id)
+    else:
         with open('context_data.json', 'w') as json_file:
-            json_file.write(json.dumps([]))
-    with open('context_data.json', 'r') as json_file:
-        return json.load(json_file)
+            json_file.write(json_data)
+        st.success("Data saved locally.")
 
-def save_context_data(data):
-    with open('context_data.json', 'w') as json_file:
-        json.dump(data, json_file, indent=4)
+# Initialize state only once
+def initialize_state(service):
+    #先初始化
+    if 'clicked' not in st.session_state:
+        st.session_state.clicked = False
 
-data = load_context_data()
+    if 'selected_label' not in st.session_state:
+        st.session_state.selected_label = None
 
-# State initialization
-if 'selected_label' not in st.session_state:
-    st.session_state.selected_label = None
+    if 'data' not in st.session_state:
+        file = search_file(service, 'context_data.json')
+        data = load_context_data(service, file['id']) if file else []
+        st.session_state.data = data
 
-if 'data' not in st.session_state:
-    st.session_state.data = []
+    if 'responses_submitted' not in st.session_state:
+        st.session_state.responses_submitted = 0
 
-if 'responses_submitted' not in st.session_state:
-    st.session_state.responses_submitted = 0
+    if 'question_id' not in st.session_state:
+        st.session_state.question_id = int(st.session_state.data[-1]['question_id']) + 1 if st.session_state.data else 0
 
-if 'question_id' not in st.session_state:
-    st.session_state.question_id = int(data[-1]['question_id']) + 1 if data else 0
+drive_service = authenticate_google_drive()
+initialize_state(drive_service)
 
 # Selectbox for scene selection
 scene_id = st.selectbox("Select a Scene ID", list(SCENE_ID_TO_FILE.keys()))
@@ -107,7 +173,7 @@ if scene_id:
     instance_labels, id2labels = read_instance_labels(scene_id, 'scannet' if scene_id.startswith('scene') else '3rscan')
     labels2id = {v: int(k) for k, v in id2labels.items()}
     id2labels = {int(k): v for k, v in id2labels.items()}
-
+        
     if 'fig' not in st.session_state or st.session_state.get('scene_id') != scene_id:
         st.session_state.fig = initialize_plot(vertices, triangles, vertex_colors, instance_labels, id2labels)
         st.session_state.scene_id = scene_id
@@ -169,7 +235,7 @@ if scene_id:
     question = st.text_area("It is expected to be a sentence.", key="question", help="Enter your question here.", placeholder="Type here...", height=10)
 
     st.markdown(smaller_bold_answer, unsafe_allow_html=True)
-    answer = st.text_area("It is expected to be a simple word or phrase.", key="answer", help="Enter your answer here.", placeholder="Type here...", height=10)
+    answer = st.text_area("It is expected to be a simple word or phrase.", key="answer", help="Enter your answer here.", height=10)
 
     total_responses_needed = 5
 
@@ -181,23 +247,22 @@ if scene_id:
                 'scene_id': scene_id,
                 'question_id': f'{st.session_state.question_id:07d}',
                 'context_change': context_change,
-                'context_change_tags_1': selected_tags_1,
-                'context_change_tags_2': selected_tags_2,
+                'context_change_tags': [selected_tags_1, selected_tags_2],
                 'question': question,
                 'answer': answer,
             }
             st.session_state.question_id += 1
-            st.session_state.responses_submitted += 1
             st.session_state.data.append(entry)
-            st.success("Submitted successfully!")
 
-            data.append(entry)
-            save_context_data(data)
+            st.success("Submitted successfully!")
+            st.balloons()
+            drive_service = authenticate_google_drive()
+            save_context_data(st.session_state.data, service=drive_service, folder_id='1IBtc__spB7umj7DLlUJFecEXGy8lQ6Uy')
 
     final_section_html = f"""
     <div style='margin-top: 20px;'>
         <p>Please repeat <b>Step 1-3</b> for {total_responses_needed} times.</p>
-        <p>You've submitted <span style='color: red; font-weight: bold;'>{st.session_state.responses_submitted}</span> responses. Total responses needed: <span style='font-weight: bold;'>{total_responses_needed}</span>.</p>
+        <p>You've submitted <span style='color: red; font-weight: bold;'>{st.session_state.responses_submitted}</span> responses. </span></p>
     </div>
     """
     st.markdown(final_section_html, unsafe_allow_html=True)
