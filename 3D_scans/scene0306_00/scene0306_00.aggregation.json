@@ -1,0 +1,228 @@
+{
+"sceneId": "scannet.scene0306_00",
+"appId": "Aggregator.v2",
+"segGroups": [
+	{
+	"id": 0,
+	"objectId": 0,
+	"segments": [32918,32614,32348,33126,32719,36808,36769,33009],
+	"label": "desk"
+	},
+	{
+	"id": 1,
+	"objectId": 1,
+	"segments": [15532,16615,16859,16092,16205,17264,16962,16284,18933,16462,16887,15427,16457,17140],
+	"label": "bookshelf"
+	},
+	{
+	"id": 2,
+	"objectId": 2,
+	"segments": [29612,29826,29473,29942,23015,29556,29995,23231],
+	"label": "laundry basket"
+	},
+	{
+	"id": 3,
+	"objectId": 3,
+	"segments": [17692,15120,10143,24115,13764,10088,22642,21362,10103],
+	"label": "wall"
+	},
+	{
+	"id": 4,
+	"objectId": 4,
+	"segments": [36351,17823],
+	"label": "ceiling"
+	},
+	{
+	"id": 5,
+	"objectId": 5,
+	"segments": [30602,35581,20705,30787,26224,22857,31520,36871,12212,23495,24799],
+	"label": "floor"
+	},
+	{
+	"id": 6,
+	"objectId": 6,
+	"segments": [25254,24600],
+	"label": "box"
+	},
+	{
+	"id": 7,
+	"objectId": 7,
+	"segments": [30792,30686,30585,30753,30379,32161],
+	"label": "chair"
+	},
+	{
+	"id": 8,
+	"objectId": 8,
+	"segments": [26509,27510,26901,33960,26455,27498,26969,34014,26957,27058,26834,19232,25839,26511,25478,25556,24791,19190,24994,18698],
+	"label": "bed"
+	},
+	{
+	"id": 9,
+	"objectId": 9,
+	"segments": [13786,14359,14088,13613,16972,14667,14742,13545,12563,13945,13842,13202,15051,15277,13691,12799,14511],
+	"label": "shelf"
+	},
+	{
+	"id": 10,
+	"objectId": 10,
+	"segments": [12048,22964,23197],
+	"label": "suitcase"
+	},
+	{
+	"id": 11,
+	"objectId": 11,
+	"segments": [28782,28976,29146,29003],
+	"label": "door"
+	},
+	{
+	"id": 12,
+	"objectId": 12,
+	"segments": [17810,27546,17599,16545],
+	"label": "wall"
+	},
+	{
+	"id": 13,
+	"objectId": 13,
+	"segments": [19546,18826],
+	"label": "window"
+	},
+	{
+	"id": 14,
+	"objectId": 14,
+	"segments": [34080,34357,33598,39576,33838],
+	"label": "wall"
+	},
+	{
+	"id": 15,
+	"objectId": 15,
+	"segments": [31539,38079,37528,38337,38474,38019,37521,38330,36765,32233],
+	"label": "curtain"
+	},
+	{
+	"id": 16,
+	"objectId": 16,
+	"segments": [39588,39153,38764,38702,39116,39556,39477],
+	"label": "door"
+	},
+	{
+	"id": 17,
+	"objectId": 17,
+	"segments": [32398],
+	"label": "keyboard"
+	},
+	{
+	"id": 18,
+	"objectId": 18,
+	"segments": [37174],
+	"label": "laptop"
+	},
+	{
+	"id": 19,
+	"objectId": 19,
+	"segments": [31879,31833],
+	"label": "computer tower"
+	},
+	{
+	"id": 20,
+	"objectId": 20,
+	"segments": [35958,36028,35955],
+	"label": "trash can"
+	},
+	{
+	"id": 21,
+	"objectId": 21,
+	"segments": [35540,37044,36998],
+	"label": "paper bag"
+	},
+	{
+	"id": 22,
+	"objectId": 22,
+	"segments": [31236,31032,31095,31056],
+	"label": "clothing"
+	},
+	{
+	"id": 23,
+	"objectId": 23,
+	"segments": [25469,26409],
+	"label": "box"
+	},
+	{
+	"id": 24,
+	"objectId": 24,
+	"segments": [24313,24778,24271,24779],
+	"label": "object"
+	},
+	{
+	"id": 25,
+	"objectId": 25,
+	"segments": [24308,29678,23542],
+	"label": "backpack"
+	},
+	{
+	"id": 26,
+	"objectId": 26,
+	"segments": [24752],
+	"label": "backpack"
+	},
+	{
+	"id": 27,
+	"objectId": 27,
+	"segments": [22865,23517,23583],
+	"label": "box"
+	},
+	{
+	"id": 28,
+	"objectId": 28,
+	"segments": [36412,34712],
+	"label": "wall"
+	},
+	{
+	"id": 29,
+	"objectId": 29,
+	"segments": [29570,29663],
+	"label": "clothes"
+	},
+	{
+	"id": 30,
+	"objectId": 30,
+	"segments": [23932,23959,21183,23837,24251,20730,22570,21518],
+	"label": "closet doors"
+	},
+	{
+	"id": 31,
+	"objectId": 31,
+	"segments": [25311,23718,25818],
+	"label": "object"
+	},
+	{
+	"id": 32,
+	"objectId": 32,
+	"segments": [16718,16579,15904,23802,12755,12513,23357],
+	"label": "object"
+	},
+	{
+	"id": 33,
+	"objectId": 33,
+	"segments": [25366,23352],
+	"label": "box"
+	},
+	{
+	"id": 34,
+	"objectId": 34,
+	"segments": [21261],
+	"label": "box"
+	},
+	{
+	"id": 35,
+	"objectId": 35,
+	"segments": [21874,21980],
+	"label": "box"
+	},
+	{
+	"id": 36,
+	"objectId": 36,
+	"segments": [21650,21290,22520,21883,21568,22139,21956,21486],
+	"label": "clothes"
+	}
+],
+"segmentsFile": "scannet.scene0306_00_vh_clean_2.0.010000.segs.json"}
