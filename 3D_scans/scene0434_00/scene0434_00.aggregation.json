@@ -1,0 +1,198 @@
+{
+"sceneId": "scannet.scene0434_00",
+"appId": "Aggregator.v2",
+"segGroups": [
+	{
+	"id": 0,
+	"objectId": 0,
+	"segments": [16490],
+	"label": "towel"
+	},
+	{
+	"id": 1,
+	"objectId": 1,
+	"segments": [8958,9919,26953,8967,27840,12330,11119,11368,28691,27460,23010],
+	"label": "floor"
+	},
+	{
+	"id": 2,
+	"objectId": 2,
+	"segments": [310,1074,439,709,638,536,646,5592,115,5960,3052,9737,5851,3759,652,13239,1254,9509,3527,3974,1017],
+	"label": "bathtub"
+	},
+	{
+	"id": 3,
+	"objectId": 3,
+	"segments": [13519,8831,11672,15452,12670,10279,10153,13265,15897,12124,15009,10880,14712,12890,10542],
+	"label": "toilet"
+	},
+	{
+	"id": 4,
+	"objectId": 4,
+	"segments": [31161,33243,32279,33865],
+	"label": "toilet paper"
+	},
+	{
+	"id": 5,
+	"objectId": 5,
+	"segments": [15603,14153,10523,17646,17674,14735,11972,9775,8944,17380,12985,17148,15400,9458,13821,14026,14358,17823,14776,15681,16726,13338,17228,18498,16291,13252,15566,15882,15708,14417,10107,9619,17176,14928,10734,17257],
+	"label": "shower curtain"
+	},
+	{
+	"id": 6,
+	"objectId": 6,
+	"segments": [19660,1229,22154,21953,1658,8516,1400,1410,19882],
+	"label": "shower walls"
+	},
+	{
+	"id": 7,
+	"objectId": 7,
+	"segments": [19275,19314,34743,31743,32090,35351,28500,11319,20729,20205,34646,27860,35809,21619,20612,21776,21264,21094,18977,12176,19352,35161,21428,21695],
+	"label": "wall"
+	},
+	{
+	"id": 8,
+	"objectId": 8,
+	"segments": [7468,6402,25913],
+	"label": "door"
+	},
+	{
+	"id": 9,
+	"objectId": 9,
+	"segments": [18630,18432,15659,16646,14963,17010,16385],
+	"label": "towel"
+	},
+	{
+	"id": 10,
+	"objectId": 10,
+	"segments": [27473,28070,10807,26474,26501,34625,28828,28295],
+	"label": "trash can"
+	},
+	{
+	"id": 11,
+	"objectId": 11,
+	"segments": [24571,24631,33984,24673],
+	"label": "sink"
+	},
+	{
+	"id": 12,
+	"objectId": 12,
+	"segments": [16421,18685],
+	"label": "rod"
+	},
+	{
+	"id": 13,
+	"objectId": 13,
+	"segments": [31819,32640,30492,33771,33666,31117,25769,33632,30239,23832,33687,33515,31883,33907,30223,25766,23816],
+	"label": "bathroom vanity"
+	},
+	{
+	"id": 14,
+	"objectId": 14,
+	"segments": [34375,32266,31268,33404,24070,26389,30354,32955,30875,26421,33952,24134,25271,24852,25163,32582,25417,29520,31369,34085,29933,31212],
+	"label": "mirror"
+	},
+	{
+	"id": 15,
+	"objectId": 15,
+	"segments": [26337,23705],
+	"label": "toothbrush"
+	},
+	{
+	"id": 16,
+	"objectId": 16,
+	"segments": [24992,25194,24888],
+	"label": "wall"
+	},
+	{
+	"id": 17,
+	"objectId": 17,
+	"segments": [23762],
+	"label": "light switch"
+	},
+	{
+	"id": 18,
+	"objectId": 18,
+	"segments": [24599,23955,24286,23505],
+	"label": "object"
+	},
+	{
+	"id": 19,
+	"objectId": 19,
+	"segments": [25643,22714,8702],
+	"label": "doorframe"
+	},
+	{
+	"id": 20,
+	"objectId": 20,
+	"segments": [28575,27276],
+	"label": "wall"
+	},
+	{
+	"id": 21,
+	"objectId": 21,
+	"segments": [32921,33191,31753],
+	"label": "towel"
+	},
+	{
+	"id": 22,
+	"objectId": 22,
+	"segments": [30822,31169,34148,34119,34071],
+	"label": "towel"
+	},
+	{
+	"id": 23,
+	"objectId": 23,
+	"segments": [34478,16827],
+	"label": "toilet paper"
+	},
+	{
+	"id": 24,
+	"objectId": 24,
+	"segments": [16452,17140],
+	"label": "ledge"
+	},
+	{
+	"id": 25,
+	"objectId": 25,
+	"segments": [16628,16999],
+	"label": "towel"
+	},
+	{
+	"id": 26,
+	"objectId": 26,
+	"segments": [17523],
+	"label": "towel"
+	},
+	{
+	"id": 27,
+	"objectId": 27,
+	"segments": [16934],
+	"label": "towel"
+	},
+	{
+	"id": 28,
+	"objectId": 28,
+	"segments": [18381,17018],
+	"label": "towel"
+	},
+	{
+	"id": 29,
+	"objectId": 29,
+	"segments": [18120,18362],
+	"label": "towel"
+	},
+	{
+	"id": 30,
+	"objectId": 30,
+	"segments": [2169,2509],
+	"label": "soap dish"
+	},
+	{
+	"id": 31,
+	"objectId": 31,
+	"segments": [6809,6622,6455,7186],
+	"label": "towel"
+	}
+],
+"segmentsFile": "scannet.scene0434_00_vh_clean_2.0.010000.segs.json"}
