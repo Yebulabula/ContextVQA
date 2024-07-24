@@ -1,0 +1,13 @@
+[
+    {
+        "scene_id": "scene0001_00",
+        "question_id": "0020005",
+        "context_change": "A new armchair has just been placed in the center of the room.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many armchairs now in the room?",
+        "answer": "Five.",
+        "answer confidence": "Very Confident"
+    }
+]

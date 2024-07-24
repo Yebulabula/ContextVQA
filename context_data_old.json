@@ -1,0 +1,686 @@
+[
+    {
+        "scene_id": "scene0001_00",
+        "question_id": "0020005",
+        "context_change": "A new armchair has just been placed in the center of the room.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many armchairs now in the room?",
+        "answer": "Five.",
+        "answer confidence": "Very Confident"
+    },
+    {
+        "scene_id": "scene0001_00",
+        "question_id": "0020006",
+        "context_change": "A new armchair has just been placed in the center of the room.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "Is there enough space to move this armchair next to the existing armchairs?",
+        "answer": "Yes.",
+        "answer confidence": "Very Confident"
+    },
+    {
+        "scene_id": "scene0001_00",
+        "question_id": "0020007",
+        "context_change": "Two coffee pots have been added to the room.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many coffee tables are available for placing these coffee pots?",
+        "answer": "Two.",
+        "answer confidence": "Very Confident"
+    },
+    {
+        "scene_id": "scene0001_00",
+        "question_id": "0020008",
+        "context_change": "The table near the columns has been moved in front of the door.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "Where are the two closest seating options to this table now?",
+        "answer": "Couch and armchair.",
+        "answer confidence": "Very Confident"
+    },
+    {
+        "scene_id": "scene0000_00",
+        "question_id": "0020009",
+        "context_change": "A new dining table has been placed in the room next to the curtain.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "Which item should be relocated to provide enough space for people to sit around the dining table?",
+        "answer": "Bicycle."
+    },
+    {
+        "scene_id": "scene0000_00",
+        "question_id": "0020010",
+        "context_change": "Two additional trash cans have been placed near the refrigerator, beside the existing trash cans.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "Are the trash cans blocking the door?",
+        "answer": "Yes."
+    },
+    {
+        "scene_id": "scene0000_00",
+        "question_id": "0020011",
+        "context_change": "Two additional trash cans have been placed near the refrigerator, beside the existing trash cans.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many trash cans are visible in the room now?",
+        "answer": "Four."
+    },
+    {
+        "scene_id": "scene0026_00",
+        "question_id": "0020012",
+        "context_change": "One of the toilet doors is locked.",
+        "context_change_tags": [
+            "Object Attribute"
+        ],
+        "question": "How many toilets can I still use?",
+        "answer": "One."
+    },
+    {
+        "scene_id": "scene0026_00",
+        "question_id": "0020013",
+        "context_change": "Two toilet doors are locked.",
+        "context_change_tags": [
+            "Object Attribute"
+        ],
+        "question": "Is there any available toilet?",
+        "answer": "Yes."
+    },
+    {
+        "scene_id": "scene0055_00",
+        "question_id": "0020014",
+        "context_change": "A new desk and chair have been added to the room, positioned in the top left corner near the window.",
+        "context_change_tags": [
+            "Large-Scale Structual"
+        ],
+        "question": "How many study areas are there in this room now?",
+        "answer": "Two areas."
+    },
+    {
+        "scene_id": "scene0055_00",
+        "question_id": "0020015",
+        "context_change": "A new desk and chair have been added to the room, positioned in the top left corner near the window.",
+        "context_change_tags": [
+            "Large-Scale Structual"
+        ],
+        "question": "Can the closet door be opened now?",
+        "answer": "No, it is blocked by the desk."
+    },
+    {
+        "scene_id": "scene0055_00",
+        "question_id": "0020016",
+        "context_change": "The desk have been moved to the top left corner near the window.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "Can the closet door be opened now?",
+        "answer": "No, it is blocked by the desk."
+    },
+    {
+        "scene_id": "scene0084_00",
+        "question_id": "0020017",
+        "context_change": "The jacket is situated on the seat in the shower room.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What items are left on the bathroom counter?",
+        "answer": "Toilet paper rolls."
+    },
+    {
+        "scene_id": "scene0084_00",
+        "question_id": "0020018",
+        "context_change": "I just took a shower, and the floor is wet.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What item in the room can be used to prevent people from falling?",
+        "answer": "The sign."
+    },
+    {
+        "scene_id": "scene0028_00",
+        "question_id": "0020019",
+        "context_change": "Three footstools have been removed in this room",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "Is there enough space to move the round table in front of the couch?",
+        "answer": "Yes."
+    },
+    {
+        "scene_id": "scene0028_00",
+        "question_id": "0020020",
+        "context_change": "A TV is placed on the table.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "How do I rotate the couch to make it face the TV?",
+        "answer": "Turn the couch around."
+    },
+    {
+        "scene_id": "scene0006_00",
+        "question_id": "0020021",
+        "context_change": "A new chair has been placed around the round table.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many chairs are now to the left of the desk?",
+        "answer": "Three chairs."
+    },
+    {
+        "scene_id": "scene0006_00",
+        "question_id": "0020022",
+        "context_change": "The chairs around the round table have been removed from this room.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "Where is the remaining chair located in this room?",
+        "answer": "In front of the desk."
+    },
+    {
+        "scene_id": "scene0006_00",
+        "question_id": "0020025",
+        "context_change": "The chairs and the round table have been moved to the left of the bed.",
+        "context_change_tags": [
+            "Object Arrangement"
+        ],
+        "question": "What is to the left of the TV now?",
+        "answer": "The curtain."
+    },
+    {
+        "scene_id": "scene0006_00",
+        "question_id": "0020028",
+        "context_change": "The lamp near the bed is turned off.",
+        "context_change_tags": [
+            "Object Attribute"
+        ],
+        "question": "How many lamps are still lit in this room?",
+        "answer": "One."
+    },
+    {
+        "scene_id": "scene0006_00",
+        "question_id": "0020029",
+        "context_change": "The lamp near the bed is turned off.",
+        "context_change_tags": [
+            "Object Attribute"
+        ],
+        "question": "Is there still enough light to study at the desk?",
+        "answer": "Yes."
+    },
+    {
+        "scene_id": "scene0009_00",
+        "question_id": "0020030",
+        "context_change": "Two trash cans are replaced with the cans with the same color of the sink.",
+        "context_change_tags": [
+            "Object Attribute"
+        ],
+        "question": "What is the color of the trash cans now?",
+        "answer": "White."
+    },
+    {
+        "scene_id": "scene0009_00",
+        "question_id": "0020032",
+        "context_change": "While facing the sinks, the left trash can has been moved next to the right trash can.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What is on top of the trash cans?",
+        "answer": "Paper towel dispenser."
+    },
+    {
+        "scene_id": "scene0010_00",
+        "question_id": "0020033",
+        "context_change": "The chair next to the whiteboard is turned 90 degrees to the left.",
+        "context_change_tags": [
+            "Object Orientation"
+        ],
+        "question": "What are the chairs currently facing?",
+        "answer": "Several monitors."
+    },
+    {
+        "scene_id": "scene0010_00",
+        "question_id": "0020034",
+        "context_change": "The black chair in the room is turned 90 degrees to the left.",
+        "context_change_tags": [
+            "Object Orientation"
+        ],
+        "question": "What are the chairs currently facing?",
+        "answer": "Several monitors."
+    },
+    {
+        "scene_id": "scene0010_00",
+        "question_id": "0020035",
+        "context_change": "I just bought a new screen to place on the desk that has a backpack on it.",
+        "context_change_tags": [
+            "Object Orientation"
+        ],
+        "question": "How many monitors can the user use on this desk?",
+        "answer": "Two monitors."
+    },
+    {
+        "scene_id": "scene0010_00",
+        "question_id": "0020036",
+        "context_change": "I just bought a new screen to place on the desk that has a backpack on it.",
+        "context_change_tags": [
+            "Object Orientation"
+        ],
+        "question": "Where is the desk with the least number of monitors positioned relative to the desk that just had a new screen added?",
+        "answer": "This desk is located behind it."
+    },
+    {
+        "scene_id": "scene0010_00",
+        "question_id": "0020037",
+        "context_change": "The backpack has been moved from the desk to the black chair.",
+        "context_change_tags": [
+            "Object Orientation"
+        ],
+        "question": "What is the color of the remaining available chairs?",
+        "answer": "Grey."
+    },
+    {
+        "scene_id": "scene0010_00",
+        "question_id": "0020038",
+        "context_change": "The backpack has been moved from the desk to the black chair.",
+        "context_change_tags": [
+            "Object Orientation"
+        ],
+        "question": "How many free chairs now?",
+        "answer": "Four."
+    },
+    {
+        "scene_id": "scene0022_00",
+        "question_id": "0020039",
+        "context_change": "Two chairs from around the long table have been moved to the round table near the couch.",
+        "context_change_tags": [
+            "Object Orientation"
+        ],
+        "question": "How many chairs around this round table now?",
+        "answer": "Six chairs."
+    },
+    {
+        "scene_id": "scene0029_00",
+        "question_id": "0020040",
+        "context_change": "The toilet paper hanging on the wall has been completely used.",
+        "context_change_tags": [
+            "Object State"
+        ],
+        "question": "Where is the other toilet paper roll?",
+        "answer": "On top of the toilet's water tank."
+    },
+    {
+        "scene_id": "scene0029_00",
+        "question_id": "0020042",
+        "context_change": "A person is taking a shower in the bathtub.",
+        "context_change_tags": [
+            "Object State"
+        ],
+        "question": "What should be closed for privacy?",
+        "answer": "Shower curtain."
+    },
+    {
+        "scene_id": "scene0031_00",
+        "question_id": "0020043",
+        "context_change": "Two of my friends are sitting in the armchairs.",
+        "context_change_tags": [
+            "Object State"
+        ],
+        "question": "Where should I sit if I want to be closer to them?",
+        "answer": "The couch between the two armchairs."
+    },
+    {
+        "scene_id": "scene0036_00",
+        "question_id": "0020044",
+        "context_change": "The yellow coffee table has been moved to the middle of the room.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "How do I rotate the coffee table to make it face the two couches?",
+        "answer": "Rotate the coffee table 90\u00b0 clockwise."
+    },
+    {
+        "scene_id": "scene0036_00",
+        "question_id": "0020045",
+        "context_change": "The cushion near the trash can has been removed from this room.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How do I move the two couches near the window to align them with the couch opposite?",
+        "answer": "Move them towards the trash can."
+    },
+    {
+        "scene_id": "scene0037_00",
+        "question_id": "0020046",
+        "context_change": "Eleven people are in this office looking for free chairs to sit on.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many people have to stand because there are not enough seats?",
+        "answer": "Three people."
+    },
+    {
+        "scene_id": "scene0037_00",
+        "question_id": "0020047",
+        "context_change": "Given that two seats are occupied and eleven people are looking for free chairs to sit on.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many people have to stand because there are not enough seats?",
+        "answer": "Five people."
+    },
+    {
+        "scene_id": "scene0038_00",
+        "question_id": "0020048",
+        "context_change": "The coffee table and the chairs attached to the wall have been moved to merge with another coffee table area.",
+        "context_change_tags": [
+            "Object Arrangement"
+        ],
+        "question": "How many chairs are around the merged coffee tables?",
+        "answer": "Six chairs."
+    },
+    {
+        "scene_id": "scene0040_00",
+        "question_id": "0020050",
+        "context_change": "The orange coach in the room is removed.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "Is there any obstacle in the way from the door to the white cabinet?",
+        "answer": "No."
+    },
+    {
+        "scene_id": "scene0046_00",
+        "question_id": "0020051",
+        "context_change": "The bed has a lot of stuff on it, so it is cannot be used now.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "Where is another good place to sit and rest?",
+        "answer": "The chair near to the desk."
+    },
+    {
+        "scene_id": "scene0046_00",
+        "question_id": "0020053",
+        "context_change": "The light switch near to the door is off.",
+        "context_change_tags": [
+            "Object State"
+        ],
+        "question": "Which room is unusable under this situation?",
+        "answer": "Toilet."
+    },
+    {
+        "scene_id": "scene0046_00",
+        "question_id": "0020054",
+        "context_change": "All the clothes, backpacks, and shoes are placed on top of the table.",
+        "context_change_tags": [
+            "Object Arrangement"
+        ],
+        "question": "What item is still randomly placed on the floor?",
+        "answer": "Suitcases."
+    },
+    {
+        "scene_id": "scene0048_00",
+        "question_id": "0020055",
+        "context_change": "The backpack has been moved on top of the dishwasher.",
+        "context_change_tags": [
+            "Object Arrangement"
+        ],
+        "question": "Where is the backpack located now in relation to the sink?",
+        "answer": "Left of the sink."
+    },
+    {
+        "scene_id": "scene0048_00",
+        "question_id": "0020056",
+        "context_change": "The microwave has been changed to match the color of the dishwasher.",
+        "context_change_tags": [
+            "Object Attribute"
+        ],
+        "question": "What is the color of the microwave now?",
+        "answer": "White."
+    },
+    {
+        "scene_id": "scene0051_00",
+        "question_id": "0020057",
+        "context_change": "The nightstand next to the bed has been moved to the left of the desk.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What object is now to the left of the bed?",
+        "answer": "Fan."
+    },
+    {
+        "scene_id": "scene0079_00",
+        "question_id": "0020058",
+        "context_change": "The yellow desk closest to the copier is currently being used for having lunch.",
+        "context_change_tags": [
+            "Object State"
+        ],
+        "question": "What item should be removed from the desk to create more space for lunch?",
+        "answer": "Monitor."
+    },
+    {
+        "scene_id": "scene0079_00",
+        "question_id": "0020059",
+        "context_change": "The table with the jacket on it has been changed to a red color.",
+        "context_change_tags": [
+            "Object State"
+        ],
+        "question": "Where is the only yellow table in the room?",
+        "answer": "The only table is located to the left of the machine with the monitor on it."
+    },
+    {
+        "scene_id": "scene0070_00",
+        "question_id": "0020060",
+        "context_change": "One more pillow is added on the bed.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "How many pillows are placed on the bed now?",
+        "answer": "Two pillows."
+    },
+    {
+        "scene_id": "scene0091_00",
+        "question_id": "0020061",
+        "context_change": "The TV stand is removed from the scene.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "What would happen to the TV?",
+        "answer": "TV falls off"
+    },
+    {
+        "scene_id": "scene0091_00",
+        "question_id": "0020062",
+        "context_change": "The TV stand is moved to the coffee table?",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "What is the only item on the TV stand?",
+        "answer": "The light."
+    },
+    {
+        "scene_id": "scene0091_00",
+        "question_id": "0020063",
+        "context_change": "The books are placed on top of the stools.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "What device is left to these books?",
+        "answer": "TV."
+    },
+    {
+        "scene_id": "scene0091_00",
+        "question_id": "0020064",
+        "context_change": "The books are placed on top of the stools.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What device is right to these books?",
+        "answer": "TV."
+    },
+    {
+        "scene_id": "scene0092_00",
+        "question_id": "0020065",
+        "context_change": "The guitar has been moved onto the bed.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What object is between the two laundry hampers and the bed?",
+        "answer": "Nightstand."
+    },
+    {
+        "scene_id": "scene0092_00",
+        "question_id": "0020066",
+        "context_change": "The monitors on the floor are put on the desk.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "How many monitors are on the desk now?",
+        "answer": "Three."
+    },
+    {
+        "scene_id": "scene0092_00",
+        "question_id": "0020067",
+        "context_change": "The guitar is stored in its case.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "Where is the guitar now?",
+        "answer": "Right to the bed."
+    },
+    {
+        "scene_id": "scene0092_00",
+        "question_id": "0020068",
+        "context_change": "The positions of the bed and the dresser have been swapped.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "Is the printer and shelf next to the bed now?",
+        "answer": "Yes."
+    },
+    {
+        "scene_id": "scene0085_00",
+        "question_id": "0020070",
+        "context_change": "The clothes have been moved from the bed at the right hand side to another bed.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "Is the bed that currently has clothes on it farther than the television than another bed?",
+        "answer": "No."
+    },
+    {
+        "scene_id": "scene0085_00",
+        "question_id": "0020071",
+        "context_change": "The alarm clock has been moved onto the TV stand.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What item is located near the alarm clock now?",
+        "answer": "TV."
+    },
+    {
+        "scene_id": "scene0085_00",
+        "question_id": "0020072",
+        "context_change": "The positions of the nightstand and the trash can were swapped first, and then the positions of the trash can and the yellow chair were swapped again.",
+        "context_change_tags": [
+            "Object Arrangement"
+        ],
+        "question": "What is located between the two beds?",
+        "answer": "Yellow chair."
+    },
+    {
+        "scene_id": "scene0085_00",
+        "question_id": "0020073",
+        "context_change": "The positions of the nightstand and the trash can were swapped first, and then the positions of the trash can and the yellow chair were swapped again.",
+        "context_change_tags": [
+            "Object Arrangement"
+        ],
+        "question": "Where is the trash can located in this room?",
+        "answer": "Right to TV."
+    },
+    {
+        "scene_id": "scene0085_00",
+        "question_id": "0020074",
+        "context_change": "The positions of the nightstand and the trash can were swapped first, and then the positions of the trash can and the yellow chair were swapped again.",
+        "context_change_tags": [
+            "Object Arrangement"
+        ],
+        "question": "Where is the nightstand in this room?",
+        "answer": "Left to TV."
+    },
+    {
+        "scene_id": "scene0100_00",
+        "question_id": "0020075",
+        "context_change": "Two towels hanging on the shower door have been moved to hang on the room door.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "How many towels are hanging on the shower door now?",
+        "answer": "One towel."
+    },
+    {
+        "scene_id": "scene0101_00",
+        "question_id": "0020076",
+        "context_change": "The refrigerator door is open.",
+        "context_change_tags": [
+            "Object State"
+        ],
+        "question": "Can the room door be easily opened by pushing it outward?",
+        "answer": "No."
+    },
+    {
+        "scene_id": "scene0101_00",
+        "question_id": "0020077",
+        "context_change": "The object on the stool under the microwave has been moved onto the couch.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "How many stools next to the breakfast bar can be used now? ",
+        "answer": "Two."
+    },
+    {
+        "scene_id": "scene0101_00",
+        "question_id": "0020078",
+        "context_change": "The backpack that was to the left of the breakfast bar is now on the couch.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "How many backpacks are on the couch now?",
+        "answer": "Two."
+    },
+    {
+        "scene_id": "scene0106_00",
+        "question_id": "0020079",
+        "context_change": "The table that was to the right of the TV and black chair has been merged with the tables next to the blue door.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "What item is now on the right-hand side of the TV?",
+        "answer": "Couch."
+    },
+    {
+        "scene_id": "scene0106_00",
+        "question_id": "0020081",
+        "context_change": "The table that was to the right of the TV and black chair has been merged with the tables next to the blue door.",
+        "context_change_tags": [
+            "Object Displacement"
+        ],
+        "question": "How many monitors on the merged table?",
+        "answer": "Four."
+    },
+    {
+        "scene_id": "scene0107_00",
+        "question_id": "0020082",
+        "context_change": "All nightstands in this room are removed.",
+        "context_change_tags": [
+            "Object Addition or Removal"
+        ],
+        "question": "What is the closest object to the bed now?",
+        "answer": "Armchair."
+    }
+]
