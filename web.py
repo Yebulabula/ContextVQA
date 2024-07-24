@@ -23,18 +23,18 @@ ROOT_1 = "3D_scans"
 SCENE_IDs = sorted(os.listdir(ROOT_1))
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
-@st.cache_data
+@st.cache_resource
 def read_instance_labels(scene_id, dataset='scannet'):
     instance_labels = np.load(f'{ROOT_1}/{scene_id}/{scene_id}_instance_labels.npy')
     with open(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json', 'r') as json_file:
         id2labels = json.load(json_file)
     return instance_labels, id2labels
 
-@st.cache_data
+@st.cache_resource
 def load_mesh(ply_file):
     return np.load(ply_file, allow_pickle=True, mmap_mode='r')
 
-@st.cache_data
+@st.cache_resource
 def initialize_plot(vertices, triangles, vertex_colors, instance_labels, id2labels):
     x, y, z = vertices[:, 0], vertices[:, 1], vertices[:, 2]
     i, j, k = triangles[:, 0], triangles[:, 1], triangles[:, 2]
