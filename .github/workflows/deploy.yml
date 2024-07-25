@@ -1,36 +1,13 @@
-name: Deploy to Streamlit Sharing
-
-on:
-  push:
-    branches:
-      - main
-
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
+    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
-      with:
-        python-version: '3.11'  # specify your desired Python version
-
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-    - name: Decode and set GOOGLE_SERVICE_ACCOUNT environment variable
-      env:
-        ENCODED_GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
-      run: |
-        echo $ENCODED_GOOGLE_SERVICE_ACCOUNT | base64 --decode > $HOME/gcloud-service-key.json
-        echo "GOOGLE_SERVICE_ACCOUNT=$(cat $HOME/gcloud-service-key.json)" >> $GITHUB_ENV
-
-    - name: Deploy to Streamlit
+      run: pip install -r requirements.txt
+    - name: Authenticate Google Drive
       env:
         GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: streamlit run web.py  # Replace with the actual script name that calls authenticate_google_drive

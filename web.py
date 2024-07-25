@@ -7,18 +7,22 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload, MediaInMemoryUpload
 import io
+import base64
 
 # Initialize Google Drive authentication
 def authenticate_google_drive():
     try:
         scope = ['https://www.googleapis.com/auth/drive']
-        # Load the service account credentials from environment variable
+        # Load and decode the service account credentials from environment variable
         service_account_info = os.getenv('GOOGLE_SERVICE_ACCOUNT')
         if not service_account_info:
-            raise ValueError(f"{service_account_info} Google service account credentials not found in environment variables.")
+            raise ValueError("Google service account credentials not found in environment variables.")
         
+        # Decode the base64 encoded JSON service account key
+        decoded_credentials = base64.b64decode(service_account_info)
+        print(decoded_credentials)
         credentials = service_account.Credentials.from_service_account_info(
-            json.loads(service_account_info), scopes=scope
+            json.loads(decoded_credentials), scopes=scope
         )
         service = build('drive', 'v3', credentials=credentials)
         st.success("Google Drive authentication successful!")
