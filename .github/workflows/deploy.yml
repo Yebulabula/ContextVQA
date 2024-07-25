@@ -23,6 +23,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Decode and set GOOGLE_SERVICE_ACCOUNT environment variable
+      env:
+        ENCODED_GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
+      run: |
+        echo $ENCODED_GOOGLE_SERVICE_ACCOUNT | base64 --decode > $HOME/gcloud-service-key.json
+        echo "GOOGLE_SERVICE_ACCOUNT=$(cat $HOME/gcloud-service-key.json)" >> $GITHUB_ENV
+
     - name: Deploy to Streamlit
       env:
         GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}

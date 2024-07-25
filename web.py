@@ -13,7 +13,7 @@ def authenticate_google_drive():
     try:
         scope = ['https://www.googleapis.com/auth/drive']
         # Load the service account credentials from environment variable
-        service_account_info = os.environ.get('GOOGLE_SERVICE_ACCOUNT')
+        service_account_info = os.getenv('GOOGLE_SERVICE_ACCOUNT')
         if not service_account_info:
             raise ValueError("Google service account credentials not found in environment variables.")
         
