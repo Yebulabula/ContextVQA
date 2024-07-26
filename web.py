@@ -26,12 +26,6 @@ db = firestore.client()
 # Function to save context data to Firestore
 def save_context_data(data):
     db.collection('ContextReason').add(data)
-    
-# Function to get context data from Firestore
-def get_context_data():
-    docs = db.collection('context_data').stream()
-    data = [doc.to_dict() for doc in docs]
-    return data
 
 # Streamlit app configuration
 st.set_page_config(
@@ -91,15 +85,8 @@ def initialize_state():
     if 'selected_label' not in st.session_state:
         st.session_state.selected_label = None
 
-    if 'data' not in st.session_state:
-        data = get_context_data()
-        st.session_state.data = data if data else []
-
     if 'responses_submitted' not in st.session_state:
         st.session_state.responses_submitted = 0
-
-    if 'question_id' not in st.session_state:
-        st.session_state.question_id = int(st.session_state.data[-1]['question_id']) + 1 if st.session_state.data else 0
 
 initialize_state()
 
@@ -187,13 +174,11 @@ if scene_id:
         else:
             entry = {
                 'scene_id': scene_id,
-                'question_id': f'{st.session_state.question_id:07d}',
                 'context_change': context_change,
                 'context_change_tags': [selected_tags_1, selected_tags_2],
                 'question': question,
                 'answer': answer,
             }
-            st.session_state.question_id += 1
             st.session_state.responses_submitted += 1
             st.success("Submitted successfully!")
             st.balloons()
