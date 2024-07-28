@@ -7,7 +7,6 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import base64
 
-# Initialize Firebase
 firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
 if firebase_credentials:
@@ -26,12 +25,6 @@ db = firestore.client()
 # Function to save context data to Firestore
 def save_context_data(data):
     db.collection('ContextReason').add(data)
-    
-# Function to get context data from Firestore
-def get_context_data():
-    docs = db.collection('context_data').stream()
-    data = [doc.to_dict() for doc in docs]
-    return data
 
 # Streamlit app configuration
 st.set_page_config(
@@ -52,7 +45,7 @@ SCENE_IDs = sorted(os.listdir(ROOT_1))
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
 @st.cache_resource
-def read_instance_labels(scene_id, dataset='scannet'):
+def read_instance_labels(scene_id):
     instance_labels = np.load(f'{ROOT_1}/{scene_id}/{scene_id}_instance_labels.npy')
     with open(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json', 'r') as json_file:
         id2labels = json.load(json_file)
@@ -69,11 +62,16 @@ def initialize_plot(vertices, triangles, vertex_colors, instance_labels, id2labe
 
     vertex_colors_rgb = ['rgb({}, {}, {})'.format(r, g, b) for r, g, b in vertex_colors]
 
+    # Create hover text
+    hovertext = [id2labels.get(label, 'Unknown') for label in instance_labels]
+
     trace1 = go.Mesh3d(
         x=x, y=y, z=z,
         i=i, j=j, k=k,
         vertexcolor=vertex_colors_rgb,
-        opacity=1.0
+        opacity=1.0,
+        hovertext=hovertext,
+        hoverinfo='text'
     )
 
     fig = go.Figure(data=[trace1])
@@ -85,21 +83,11 @@ def initialize_plot(vertices, triangles, vertex_colors, instance_labels, id2labe
 
 # Initialize state only once
 def initialize_state():
-    if 'clicked' not in st.session_state:
-        st.session_state.clicked = False
-
     if 'selected_label' not in st.session_state:
         st.session_state.selected_label = None
 
-    if 'data' not in st.session_state:
-        data = get_context_data()
-        st.session_state.data = data if data else []
-
     if 'responses_submitted' not in st.session_state:
         st.session_state.responses_submitted = 0
-
-    if 'question_id' not in st.session_state:
-        st.session_state.question_id = int(st.session_state.data[-1]['question_id']) + 1 if st.session_state.data else 0
 
 initialize_state()
 
@@ -112,7 +100,7 @@ if scene_id:
     vertices, triangles, vertex_colors = mesh_data.values()
     vertex_colors = vertex_colors[:, :3]
 
-    instance_labels, id2labels = read_instance_labels(scene_id, 'scannet' if scene_id.startswith('scene') else '3rscan')
+    instance_labels, id2labels = read_instance_labels(scene_id)
     labels2id = {v: int(k) for k, v in id2labels.items()}
     id2labels = {int(k): v for k, v in id2labels.items()}
         
@@ -187,13 +175,11 @@ if scene_id:
         else:
             entry = {
                 'scene_id': scene_id,
-                'question_id': f'{st.session_state.question_id:07d}',
                 'context_change': context_change,
                 'context_change_tags': [selected_tags_1, selected_tags_2],
                 'question': question,
                 'answer': answer,
             }
-            st.session_state.question_id += 1
             st.session_state.responses_submitted += 1
             st.success("Submitted successfully!")
             st.balloons()
@@ -208,3 +194,4 @@ if scene_id:
     st.markdown(final_section_html, unsafe_allow_html=True)
 else:
     st.write("Please select a scene ID to visualize the point cloud.")
+

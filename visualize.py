@@ -1,79 +1,50 @@
-import open3d as o3d
 import numpy as np
+import open3d as o3d
 import matplotlib.pyplot as plt
+import os
 
-# # Load the point cloud file
-# ply_file = '/mnt/sda/scannet/raw/scans/scene0000_00/scene0000_00_vh_clean_2.ply'
-# point_cloud = o3d.io.read_point_cloud(ply_file)
+def load_mesh_from_npz(npz_path):
+    # Load data from npz file
+    mesh_data = np.load(npz_path, allow_pickle=True, mmap_mode='r')
+    vertices, triangles, vertex_colors = mesh_data.values()
+    print(vertex_colors.shape)
+    rgb_colors = vertex_colors[:, :3]
+    if rgb_colors.max() > 1.0:
+        rgb_colors = rgb_colors / 255.0
 
-# # Load the segmentation labels file using Open3D
-# seg_file = '/mnt/sda/scannet/raw/scans/scene0000_00/scene0000_00_vh_clean_2.labels.ply'
-# seg_mesh = o3d.io.read_point_cloud(seg_file)
+    # Create an Open3D TriangleMesh object
+    mesh = o3d.geometry.TriangleMesh()
+    mesh.vertices = o3d.utility.Vector3dVector(vertices)
+    mesh.triangles = o3d.utility.Vector3iVector(triangles)
+    mesh.vertex_colors = o3d.utility.Vector3dVector(rgb_colors.astype(np.float64))
+    return mesh
 
-# # Extract segmentation labels from the color attribute
-# seg_labels = np.asarray(seg_mesh.colors)[:, 0]  # Assuming the label is stored in the red channel
+def load_mesh_from_ply(ply_path):
+    # Load the mesh from the file
+    mesh = o3d.io.read_triangle_mesh(ply_path)
+    if not mesh.has_vertex_normals():
+        mesh.compute_vertex_normals()
+    return mesh
 
-# # Map segmentation labels to colors
-# unique_labels = np.unique(seg_labels)
-# colors = plt.get_cmap("tab20")(np.linspace(0, 1, len(unique_labels)))[:, :3]  # Generate a color map
+def visualize_meshes(mesh1, mesh2):
+    # Translate mesh2 to the right of mesh1
+    bounding_box1 = mesh1.get_axis_aligned_bounding_box()
+    bounding_box2 = mesh2.get_axis_aligned_bounding_box()
 
-# # Create a mapping from label to color
-# label_to_color = {label: colors[i] for i, label in enumerate(unique_labels)}
+    # Calculate offset to position mesh2 beside mesh1
+    offset = bounding_box1.get_extent() + bounding_box2.get_extent()
+    mesh2.translate([offset[0], 0, 0], relative=False)  # Translate mesh2 on the x-axis
 
-# # Assign colors to the point cloud based on segmentation labels
-# point_colors = np.array([label_to_color[label] for label in seg_labels])
+    # Visualize both meshes together
+    # o3d.visualization.draw_geometries([mesh1])
+    o3d.visualization.draw_geometries([mesh2])
 
-# point_cloud.colors = o3d.utility.Vector3dVector(point_colors)
-
-# # Visualize the point cloud with segmentation labels
-# o3d.visualization.draw_geometries([point_cloud])
-
-import open3d as o3d
-import numpy as np
-import json
-from plyfile import PlyData
-
-data = np.load('/mnt/sda/3rscan/6a360523-fa53-2915-9506-4b95fa02cc56/labels.instances.annotated.v2.npy')
-
-# load .ply file
-ply_file = '/mnt/sda/3rscan/6a360523-fa53-2915-9506-4b95fa02cc56/labels.instances.annotated.v2.ply'
-point_cloud = o3d.io.read_point_cloud(ply_file)
-breakpoint()
-def process_instance_labels(sem_file, segs_file, agg_file):
-    try:
-        with open(sem_file, "rb") as f:
-            plydata = PlyData.read(f)
-    except:
-        return None, None
-        
-    if 'label' in plydata.elements[0].data.dtype.names:
-        sem_labels = np.array(plydata.elements[0]["label"]).astype(np.int64)
-    else:
-        sem_labels = np.array(plydata.elements[0]["objectId"]).astype(np.int64)
-        
-    with open(segs_file, "r") as f:
-        d = json.load(f)
-        seg = d["segIndices"]
-        segid_to_pointid = {}
-        for i, segid in enumerate(seg):
-            segid_to_pointid.setdefault(segid, []).append(i)
-
-    instance_class_labels = []
-    instance_segids = []
-    with open(agg_file, "r") as f:
-        d = json.load(f)
-    for i, x in enumerate(d["segGroups"]):
-        instance_class_labels.append(f"{x['label']}_{x['objectId']}")
-        instance_segids.append(x["segments"])
-
-    instance_labels = np.ones(sem_labels.shape[0], dtype=np.int64) * -100
-    for i, segids in enumerate(instance_segids):
-        pointids = []
-        for segid in segids:
-            pointids += segid_to_pointid[segid]
-        instance_labels[pointids] = i
-
-    id2labels = {i: label for i, label in enumerate(instance_class_labels)}
-    return instance_labels, id2labels
-
-# instance_labels, id2labels = process_instance_labels('/mnt/sda/3rscan/6a360523-fa53-2915-9506-4b95fa02cc56/labels.instances.annotated.v2.ply', '/mnt/sda/3rscan/6a360523-fa53-2915-9506-4b95fa02cc56/labels.instances.annotated.v2.segs.json', '/mnt/sda/3rscan/6a360523-fa53-2915-9506-4b95fa02cc56/labels.instances.annotated.v2.aggregation.json')
+files = sorted(os.listdir('3D_scans'))
+for scene_id in files:
+    if scene_id.startswith('scene'):
+        ply_path = f'/mnt/new_drive/Documents/scans/{scene_id}/{scene_id}_vh_clean.ply'
+        npz_path = f'/mnt/new_drive/Documents/scans/{scene_id}/{scene_id}_vh_clean_2.labels.ply'  # Assuming NPZ path follows this pattern
+        if os.path.exists(ply_path) and os.path.exists(npz_path):
+            mesh1 = load_mesh_from_ply(ply_path)
+            mesh2 = load_mesh_from_ply(npz_path)
+            visualize_meshes(mesh1, mesh2)
