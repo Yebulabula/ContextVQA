@@ -257,7 +257,6 @@ if scene_id:
             }
             st.session_state.responses_submitted += 1
             st.success("Submitted successfully!")
-            st.balloons()
             save_context_data(entry)
 
     final_section_html = f"""
