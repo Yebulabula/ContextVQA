@@ -174,9 +174,9 @@ if scene_id:
                 if st.button(label, key=label):
                     st.session_state.selected_label = label if st.session_state.selected_label != label else None
 
-    smaller_bold_context = "<div style='font-weight: bold; font-size: 20px;'>Step 1: Context Change</div>"
-    smaller_bold_question = "<div style='font-weight: bold; font-size: 20px;'>Step 2: Question</div>"
-    smaller_bold_answer = "<div style='font-weight: bold; font-size: 20px;'>Step 3: Answer</div>"
+    smaller_bold_context = "<div style='font-weight: bold; font-size: 20px;'>Context Change</div>"
+    smaller_bold_question = "<div style='font-weight: bold; font-size: 20px;'>Question</div>"
+    smaller_bold_answer = "<div style='font-weight: bold; font-size: 20px;'>Answer</div>"
 
     guideline_text = """
     **Step 1:** Rotating the 3D scene and browsing the objects list on the webpage left hand side to get a basic understanding of the scene.
@@ -261,7 +261,6 @@ if scene_id:
 
     final_section_html = f"""
     <div style='margin-top: 20px;'>
-        <p>Please repeat <b>Step 1-3</b> for {total_responses_needed} times.</p>
         <p>You've submitted <span style='color: red; font-weight: bold;'>{st.session_state.responses_submitted}</span> responses. </span></p>
     </div>
     """
