@@ -41,7 +41,9 @@ st.set_page_config(
 st.title("ContextQA")
 
 ROOT_1 = "3D_scans"
-SCENE_IDs = sorted(os.listdir(ROOT_1))
+
+SCENE_IDs = sorted(os.listdir(ROOT_1), key=lambda x: (not x.startswith('scene'), x))
+
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
 @st.cache_resource
@@ -54,30 +56,54 @@ def read_instance_labels(scene_id):
 @st.cache_resource
 def load_mesh(ply_file):
     return np.load(ply_file, allow_pickle=True, mmap_mode='r')
-
+    
 @st.cache_resource
 def initialize_plot(vertices, triangles, vertex_colors, instance_labels, id2labels):
     x, y, z = vertices[:, 0], vertices[:, 1], vertices[:, 2]
     i, j, k = triangles[:, 0], triangles[:, 1], triangles[:, 2]
 
     vertex_colors_rgb = ['rgb({}, {}, {})'.format(r, g, b) for r, g, b in vertex_colors]
+    
+    ceiling_indices = [int(id) for id, label in id2labels.items() if 'ceiling' in label or 'wall' in label]
+    mask = np.isin(instance_labels, ceiling_indices, invert=True)
 
-    # Create hover text
-    hovertext = [id2labels.get(label, 'Unknown') for label in instance_labels]
-
-    trace1 = go.Mesh3d(
-        x=x, y=y, z=z,
-        i=i, j=j, k=k,
-        vertexcolor=vertex_colors_rgb,
-        opacity=1.0,
-        hovertext=hovertext,
-        hoverinfo='text'
-    )
-
+    filtered_vertices = vertices[mask]
+    filtered_instance_labels = instance_labels[mask]
+    
+    # Find good positions for category labels (using centroids of the instances)
+    annotations = []
+    for instance_id, label in id2labels.items():
+        category = label.split('_')[0]
+        if category == 'wall' or category == 'object' or category == 'floor' or category == 'ceiling':
+            continue
+        instance_indices = np.where(filtered_instance_labels == int(instance_id))[0]
+        
+        if len(instance_indices) > 0:
+            instance_points = filtered_vertices[instance_indices]
+            centroid = np.mean(instance_points, axis=0)
+            annotations.append(dict(
+                x=centroid[0],
+                y=centroid[1],
+                z=centroid[2],
+                text=f'{category}',
+                showarrow=False,
+                font=dict(size=12, color='cyan'),
+                xanchor='center',
+            ))  
+    
+    trace1 = go.Mesh3d(x=x, y=y, z=z, i=i, j=j, k=k, vertexcolor=vertex_colors_rgb, opacity=1.0)
     fig = go.Figure(data=[trace1])
-    fig.update_layout(scene=dict(aspectmode='data'),
-                      width=2000,
-                      height=1500)
+    fig.update_layout(
+        scene=dict(
+            aspectmode='data',
+            annotations=annotations,
+            xaxis=dict(visible=False),
+            yaxis=dict(visible=False),
+            zaxis=dict(visible=False)
+        ),
+        width=2000,
+        height=1500
+    )
 
     return fig
 
@@ -152,8 +178,57 @@ if scene_id:
     smaller_bold_question = "<div style='font-weight: bold; font-size: 20px;'>Step 2: Question</div>"
     smaller_bold_answer = "<div style='font-weight: bold; font-size: 20px;'>Step 3: Answer</div>"
 
-    st.markdown(smaller_bold_context, unsafe_allow_html=True, help="Write a short sentence describing the change of the 3D scene.")
-    context_change = st.text_area("Write a short sentence describing the change of the 3D scene.", key="context_change", help="Enter context change details here.", placeholder="Type here...", height=10)
+    guideline_text = """
+    **Step 1:** Rotating the 3D scene and browsing the objects list on the webpage left hand side to get a basic understanding of the scene.
+    
+    **Step 2:** Write descriptions of context changes, create related questions, and provide concise answers.
+    
+    **Step 3:** Submit your responses.
+
+    #### Context Change:
+    - **Describe a possible change** that could occur in the 3D scene in one sentence.
+    - Changes can be:
+    - **Object Geometric Change** (e.g., object movement, rotation, shape transformation): *The backpack has been moved from the desk to the black chair.*
+    - **Object Attribute Change** (e.g., color, texture, functionality, state): *The toilet paper hanging on the wall has been completely used.*
+    - **Object Addition/Removal** (e.g., adding or removing objects): *The orange coach in the room is removed.*
+    - Ensure the changes are feasible within the 3D scene layout, realistic, precise, and detailed.
+    - **Avoid unrealistic or impossible changes**, such as "The chair is flying," or "The table becomes a spaceship," or adding objects where there is no space.
+    - Classify the context change as either **local** (one object changes) or **global** (multiple objects change).
+
+    #### Question:
+    - **Write a question** that requires imagining how the scene would look after the context change.
+    - The question should yield different answers before and after the change.
+    - Avoid questions where the answer is obvious from the context change alone.
+
+    #### Answer:
+    - **Provide a simple word or phrase** as an answer (e.g., "Yes", "Four", "In front of the desk").
+    - The answer should be directly related to the question and make sense in the context of the modified scene.
+
+    **Good Example:**
+    - Context Change: *The light switch next to the white cabinet is off.*
+    - Question: *Which room becomes unusable in this situation?*
+    - Answer: *Toilet.*
+
+    **Bad Example:**
+    - Context Change: *The light switch next to the white cabinet is off.*
+    - Question: *What is off?*
+    - Answer: *Light switch.*
+
+    
+    **Note:** Each context change can be used for multiple questions. Ensure all context changes, questions, and answers are diverse and unique. If you're stuck, try selecting a new scene—we have a total of 800 scenes available for you to choose from.
+
+
+    *<span style="color:red;">Please use your imagination to its fullest. Good luck! </span>* 😁
+    """
+
+
+    # Display the guideline at the beginning of the page
+    with st.expander("Data Collection Guidelines ", expanded=True, icon="📝"):
+        st.markdown(guideline_text, unsafe_allow_html=True)
+
+
+    st.markdown(smaller_bold_context, unsafe_allow_html=True, help="Write a short sentence describing the possible change may happen in the scene 3D scene. Example: ")
+    context_change = st.text_area("Write a sentence to describe the possible change of the 3D scene in details.", key="context_change", placeholder="Type here...", height=10)
 
     tags_1 = ["Object Geometric Change", "Object Attribute Change", "Object Addition or Removal"]
     tags_2 = ["Local Change", "Global Change"]

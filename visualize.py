@@ -1,13 +1,11 @@
 import numpy as np
 import open3d as o3d
-import matplotlib.pyplot as plt
 import os
 
 def load_mesh_from_npz(npz_path):
     # Load data from npz file
     mesh_data = np.load(npz_path, allow_pickle=True, mmap_mode='r')
     vertices, triangles, vertex_colors = mesh_data.values()
-    print(vertex_colors.shape)
     rgb_colors = vertex_colors[:, :3]
     if rgb_colors.max() > 1.0:
         rgb_colors = rgb_colors / 255.0
@@ -32,18 +30,19 @@ def visualize_meshes(mesh1, mesh2):
     bounding_box2 = mesh2.get_axis_aligned_bounding_box()
 
     # Calculate offset to position mesh2 beside mesh1
-    offset = bounding_box1.get_extent() + bounding_box2.get_extent()
-    mesh2.translate([offset[0], 0, 0], relative=False)  # Translate mesh2 on the x-axis
+    offset = bounding_box1.get_max_bound() - bounding_box1.get_min_bound()
+    offset_x = offset[0] + (bounding_box2.get_max_bound() - bounding_box2.get_min_bound())[0]
+    mesh2.translate([offset_x, 0, 0], relative=False)  # Translate mesh2 on the x-axis
 
     # Visualize both meshes together
-    # o3d.visualization.draw_geometries([mesh1])
-    o3d.visualization.draw_geometries([mesh2])
+    o3d.visualization.draw_geometries([mesh1])
 
 files = sorted(os.listdir('3D_scans'))
 for scene_id in files:
-    if scene_id.startswith('scene'):
+    if scene_id.startswith('scene') and scene_id == 'scene0033_00':
         ply_path = f'/mnt/new_drive/Documents/scans/{scene_id}/{scene_id}_vh_clean.ply'
         npz_path = f'/mnt/new_drive/Documents/scans/{scene_id}/{scene_id}_vh_clean_2.labels.ply'  # Assuming NPZ path follows this pattern
+        print(scene_id)
         if os.path.exists(ply_path) and os.path.exists(npz_path):
             mesh1 = load_mesh_from_ply(ply_path)
             mesh2 = load_mesh_from_ply(npz_path)
