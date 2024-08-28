@@ -126,12 +126,8 @@ def plot_scene_with_labels(scene_id, vertices, faces, vertex_colors, instance_la
                 showlegend=False
             ))
 
-    # Add traces to subplots
-    # fig.add_trace(trace_mesh_original, row=1, col=1)
     fig.add_trace(trace_mesh_gray)
     
-    # for marker in markers:
-    #     fig.add_trace(marker, row=1, col=2)
         
     fig.update_layout(scene=dict(annotations=annotations))
     # Update layout
