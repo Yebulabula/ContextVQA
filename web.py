@@ -217,13 +217,13 @@ with right_col:
     st.markdown(smaller_bold_context, unsafe_allow_html=True)
     context_change = st.text_area("Describe any changes that could reasonably occur in the scene.", key="context_change", placeholder="Type here...", height=10)
     
-    if st.button("Need Inspiration for Context Change?"):
+    if st.button("Click me to view some example context change descriptions."):
         st.info(random.choice(context_inspirations))
     
     st.markdown(smaller_bold_question, unsafe_allow_html=True)
     question = st.text_area("Write a question related to the context change.", key="question", placeholder="Type here...", height=10)
 
-    if st.button("Need Inspiration for Question?"):
+    if st.button("Click me to view some example questions."):
         st.info(random.choice(question_inspirations))
     
     st.markdown(smaller_bold_answer, unsafe_allow_html=True)
