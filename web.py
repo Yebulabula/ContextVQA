@@ -11,7 +11,6 @@ import random
 firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
 
-
 if firebase_credentials:
     # Decode the base64 encoded credentials
     cred_json = base64.b64decode(firebase_credentials).decode('utf-8')
@@ -117,8 +116,8 @@ def initialize_plot(vertices, triangles, vertex_colors, instance_labels, id2labe
             yaxis=dict(visible=False),
             zaxis=dict(visible=False)
         ),
-        width=1100,
-        height=900,
+        width=1000,
+        height=800,
         margin=dict(l=0, r=10, b=0, t=10),
         updatemenus=[
             dict(
@@ -145,6 +144,7 @@ def initialize_state():
 
     if 'responses_submitted' not in st.session_state:
         st.session_state.responses_submitted = 0
+
 
 initialize_state()
 
