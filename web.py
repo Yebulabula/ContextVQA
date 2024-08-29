@@ -220,7 +220,7 @@ with right_col:
         st.info(random.choice(question_inspirations))
     
     st.markdown(smaller_bold_answer, unsafe_allow_html=True)
-    answer = st.text_area("Provide a concise answer.", key="answer", placeholder="Type here...", height=10)
+    answer = st.text_area("Answer has to be a simple word or a phrase.", key="answer", placeholder="Type here...", height=10)
 
     total_responses_needed = 5
 
