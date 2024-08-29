@@ -13,6 +13,7 @@ import random
 firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
 
+
 if firebase_credentials:
     # Decode the base64 encoded credentials
     cred_json = base64.b64decode(firebase_credentials).decode('utf-8')
@@ -167,7 +168,7 @@ guideline_text = """
 - <span style="color:green;"> **Bad example:** </span> The yellow desk is now being used as a television.
 
 ###### Question - Ask a question about the 'modified' scene.
-- The questions that yield the same answer in both 'original' scene and 'changed' scene will be <span style="color:red;">rejected</span>.
+- The questions that are not related to the context change, meaning they would yield the same answer in both the 'original' and 'changed' scenes, will be <span style="color:red;">rejected</span>.
 - The questions that have **multiple**, **ambiguous**, or **subjective** answers will be <span style="color:red;">rejected</span>.
 - The questions that can be answered by merely reading context change will be <span style="color:red;">rejected</span>.
 
@@ -177,7 +178,7 @@ guideline_text = """
 - <span style="color:red;"> **Good example:** </span> **Context Change**: Three more trash cans are added near the kitchen counter. **Q**: How many trash cans are there in total in this room now?
 - <span style="color:green;"> **Bad example:** </span> **Context Change**: Three more trash cans are added near the kitchen counter. **Q**: Is there a kicthen counter in the room?
 
-- <span style="color:red;"> **Good example:** </span> **Q**: Is the white cabinet, relative to the fridge, closer to the piano now?
+- <span style="color:red;"> **Good example:** </span> **Q**: Is the white cabinet now closer to the piano than to the fridge?
 - <span style="color:green;"> **Bad example:** </span> **Q**: Is the white cabinet close to the piano?
 
 ###### Answer - Provide a simple word or phrase as an answer to the question.
@@ -217,13 +218,13 @@ with right_col:
     st.markdown(smaller_bold_context, unsafe_allow_html=True)
     context_change = st.text_area("Describe any changes that could reasonably occur in the scene.", key="context_change", placeholder="Type here...", height=10)
     
-    if st.button("Click me to view some example context change descriptions."):
+    if st.button("Click here to view some example context changes."):
         st.info(random.choice(context_inspirations))
     
     st.markdown(smaller_bold_question, unsafe_allow_html=True)
     question = st.text_area("Write a question related to the context change.", key="question", placeholder="Type here...", height=10)
 
-    if st.button("Click me to view some example questions."):
+    if st.button("Click here to view some example questions."):
         st.info(random.choice(question_inspirations))
     
     st.markdown(smaller_bold_answer, unsafe_allow_html=True)
@@ -245,10 +246,10 @@ with right_col:
 
             # Check if the entry already exists in the Firestore
             duplicates_query = db.collection('ContextReason').where('scene_id', '==', scene_id) \
-                                                 .where('context_change', '==', context_change) \
-                                                 .where('question', '==', question) \
-                                                 .where('answer', '==', answer) \
-                                                 .stream()
+                                                .where('context_change', '==', context_change) \
+                                                .where('question', '==', question) \
+                                                .where('answer', '==', answer) \
+                                                .stream()
 
             # Convert the query results to a list
             duplicates = list(duplicates_query)
@@ -256,16 +257,19 @@ with right_col:
             if duplicates:
                 st.warning("This submission has already been made. Please do not submit duplicate entries.")
             else:
+                # Increment the responses submitted count
                 st.session_state.responses_submitted += 1
                 save_context_data(entry)
                 
-                # Generate the MTurk Survey Code
-                survey_code = generate_survey_code()
-                st.success(f"Submitted successfully! Your MTurk Survey Code is: {survey_code}")
-                
-                # Save the entry with the survey code
-                entry['survey_code'] = survey_code
-                save_context_data(entry)
+                # Check if the user has submitted the required number of responses
+                if st.session_state.responses_submitted >= total_responses_needed:
+                    # Generate the MTurk Survey Code
+                    survey_code = generate_survey_code()
+                    st.success(f"Congratulations! You have successfully completed the task. Here is your MTurk Survey Code: {survey_code}")
+                    
+                    # Save the entry with the survey code
+                    entry['survey_code'] = survey_code
+                    save_context_data(entry)
 
 
     final_section_html = f"""
