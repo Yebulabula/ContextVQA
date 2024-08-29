@@ -1,4 +1,15 @@
 {
+  "0Yy1Scn12QF6SkAljNSj": {
+    "survey_code": "A23RFBF2GPON50ZM",
+    "answer": "1",
+    "context_change": "1231",
+    "scene_id": "scene0000_00",
+    "question": "12321",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
   "22mFCjFq9Pz9NKezM1ew": {
     "answer": "\u4e0d\u662f\uff0c\u73b0\u5728\u662f\u5728\u5927\u5e73\u5c42\u4e0a\u4e86\uff0c\u7a7a\u95f4\u5f88\u5bbd\u655e",
     "context_change": "\u8fd9\u4e2a\u623f\u95f4\u6211\u4e0d\u559c\u6b22\u7ed9\u6211\u53d8\u6210\u957f\u65b9\u5f62\u7684\u5927\u5e73\u5c42",
@@ -29,6 +40,37 @@
       "Local Change"
     ]
   },
+  "3p7P5IHbgRQbfrWrTfvf": {
+    "answer": "I don't understand this survey.",
+    "context_change": "Something is on the table",
+    "scene_id": "scene0048_00",
+    "question": "What is in front of the window",
+    "context_change_tags": [
+      "Object Addition or Removal",
+      "Local Change"
+    ]
+  },
+  "4NPAQqG44n3junnW9lMV": {
+    "answer": "12313",
+    "context_change": "1231",
+    "scene_id": "scene0000_00",
+    "question": "2313",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "5ieJ4WVNIwAvBTk5PifN": {
+    "survey_code": "Q2P9ABDQ9GND718G",
+    "answer": "2414",
+    "context_change": "231",
+    "scene_id": "scene0000_00",
+    "question": "1",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
   "5x5Zrg6Lb50s7jJCu7dX": {
     "answer": "Sitting on the chair",
     "context_change": "A man walk in the room",
@@ -49,6 +91,17 @@
       "Local Change"
     ]
   },
+  "7YVMa4S9W4hTLC3A305Q": {
+    "survey_code": "CQA_HGP1GBE9TAIU",
+    "answer": "\n",
+    "context_change": "sda",
+    "scene_id": "scene0000_00",
+    "question": "sadasd",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
   "8m9n892hDPqn5XveoWmy": {
     "answer": "\u7f3a\u5c11\u4e86shower curtain\u6765\u963b\u6b62\u6c34\u82b1\u98de\u6e85",
     "context_change": "\u5c06\u6d17\u6fa1\u65f6\u963b\u6b62\u6c34\u5230\u5904\u98de\u6e85\u7684\u4e00\u4e2aobject\u5220\u9664",
@@ -56,6 +109,38 @@
     "question": "\u4ec0\u4e48\u4e1c\u897f\u88ab\u5220\u9664\u4e86\uff0c\u6216\u8005\u8bf4\u8fd9\u4e2a\u6d74\u5ba4\u7f3a\u5c11\u4e86\u4ec0\u4e48",
     "context_change_tags": [
       "Object Addition or Removal",
+      "Local Change"
+    ]
+  },
+  "9ju6UW68haydYYrqF5PQ": {
+    "survey_code": "CQA_HGP1GBE9TAIU",
+    "answer": "12313",
+    "context_change": "1231",
+    "scene_id": "scene0000_00",
+    "question": "2313",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "B8JtVaevGcZK9MBnDeZk": {
+    "survey_code": "CQA_T9EYPXBHUDDI",
+    "answer": "Shape of the table changes",
+    "context_change": "Shape of the table changes",
+    "scene_id": "scene0000_00",
+    "question": "What is the shape of the table?",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "BW6g6Cb3ox8PEfTIcwav": {
+    "answer": "12",
+    "context_change": "1231",
+    "scene_id": "scene0000_00",
+    "question": "12321",
+    "context_change_tags": [
+      "Object Geometric Change",
       "Local Change"
     ]
   },
@@ -69,11 +154,63 @@
       "Local Change"
     ]
   },
+  "CglLVn3L0P8RNVZeGv7x": {
+    "answer": "adafasfaasdsasdasda",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "21",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "CoObe4IToXt0IoqrM6CX": {
+    "answer": "12",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "23",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "DeZiS9DXXpYy6D1vqWXB": {
+    "answer": "213124124124",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "231412421",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "DmejnbRo4zOoBv7V5dYr": {
+    "survey_code": "CQA_T9EYPXBHUDDI",
+    "answer": "No. The chair backs are facing the cart still so that the viewer would not see it.",
+    "context_change": "The cart could be moved to the far left side of the room.",
+    "scene_id": "scene0005_00",
+    "question": "Can the cart be viewed now by sitting in one of the chairs.",
+    "context_change_tags": [
+      "Object Addition or Removal",
+      "Local Change"
+    ]
+  },
   "FaZMjiJE5tfYviivtKBM": {
     "answer": "the door is open",
     "context_change": "The window opens",
     "scene_id": "scene0026_00",
     "question": "What has changed state",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "GfPzczYuBzYFdgLyjynB": {
+    "survey_code": "CQA_KNZEL8JYRD8E",
+    "answer": "adafasfaasdsasdasda",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "21",
     "context_change_tags": [
       "Object Geometric Change",
       "Local Change"
@@ -90,11 +227,41 @@
       "Local Change"
     ]
   },
+  "HGgp5stVRGXW9MMDn16m": {
+    "answer": "ada",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "21",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "I7ZChrk2HEyoo9JPEn8N": {
+    "answer": "asdasd",
+    "context_change": "1232sdadas",
+    "scene_id": "scene0037_00",
+    "question": "2112asdas",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
   "IzHbLpj4hcr9kFpeW2hj": {
     "answer": "Toilet.",
     "context_change": "The light switch next to the white cabinet is off.",
     "scene_id": "scene0000_00",
     "question": "Which room becomes unusable in this situation?",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "KtC0eRriGlmvclkJdQwO": {
+    "answer": "sadasdsadass",
+    "context_change": "tsadasadad",
+    "scene_id": "scene0000_00",
+    "question": "sadasdasdsadasdas",
     "context_change_tags": [
       "Object Geometric Change",
       "Local Change"
@@ -107,6 +274,57 @@
     "question": "how many apples are added",
     "context_change_tags": [
       "Object Addition or Removal",
+      "Local Change"
+    ]
+  },
+  "NiAmthh6TKNrRL6iMR18": {
+    "answer": "sadasdsadasssadasd",
+    "context_change": "tsadasadad",
+    "scene_id": "scene0000_00",
+    "question": "sadasdasdsadasdas",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "O7gNpbS9Q32knePl5GX3": {
+    "survey_code": "CQA_HGP1GBE9TAIU",
+    "answer": "sadas",
+    "context_change": "sda",
+    "scene_id": "scene0000_00",
+    "question": "sadasd",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "PHM6wAjmk1XmEkIJ6SxG": {
+    "answer": "sdafsfsdasd",
+    "context_change": "sda",
+    "scene_id": "scene0000_00",
+    "question": "sadasd",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "RGS9Ux5XLgApEXNiKC9E": {
+    "answer": "\n",
+    "context_change": "sda",
+    "scene_id": "scene0000_00",
+    "question": "sadasd",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "SBo74dKQYmTEZ7vc9LUp": {
+    "answer": "1",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "21",
+    "context_change_tags": [
+      "Object Geometric Change",
       "Local Change"
     ]
   },
@@ -181,6 +399,26 @@
       "Global Change"
     ]
   },
+  "aL4izErRObd9tHyFxkuy": {
+    "answer": "sdafsf",
+    "context_change": "sda",
+    "scene_id": "scene0000_00",
+    "question": "sadasd",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "benlvQm3utRAhASf3NSn": {
+    "answer": "sadas",
+    "context_change": "sda",
+    "scene_id": "scene0000_00",
+    "question": "sadasd",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
   "dqUb11IYQhG2lONuSQ1T": {
     "answer": "the recycle bin",
     "context_change": "move the trash can from next the wall to under the table",
@@ -191,6 +429,36 @@
       "Global Change"
     ]
   },
+  "e92bRP2qwwnMRsDm1PKZ": {
+    "answer": "adafasfaasdsasd",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "21",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "eOaJOi0yImrz0DKfQVwI": {
+    "answer": "1231",
+    "context_change": "2321",
+    "scene_id": "scene0000_00",
+    "question": "213",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "eabisfkPfT6KGsb2BjJg": {
+    "answer": "1231",
+    "context_change": "2321",
+    "scene_id": "scene0000_00",
+    "question": "213",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
   "feNXScgZBov7PNhrUvNF": {
     "answer": "bed",
     "context_change": " The lamp was turned on.",
@@ -198,6 +466,16 @@
     "question": "What became brighter?",
     "context_change_tags": [
       "Object Attribute Change",
+      "Local Change"
+    ]
+  },
+  "fyT4nzMFQVwEeHdozNZ9": {
+    "answer": "asdasd",
+    "context_change": "1232",
+    "scene_id": "scene0023_00",
+    "question": "2112",
+    "context_change_tags": [
+      "Object Geometric Change",
       "Local Change"
     ]
   },
@@ -221,11 +499,41 @@
       "Local Change"
     ]
   },
+  "goADaVDnj6htImzfZAON": {
+    "answer": "No. The chair backs are facing the cart still so that the viewer would not see it.",
+    "context_change": "The cart could be moved to the far left side of the room.",
+    "scene_id": "scene0005_00",
+    "question": "Can the cart be viewed now by sitting in one of the chairs.",
+    "context_change_tags": [
+      "Object Addition or Removal",
+      "Local Change"
+    ]
+  },
   "gzdNrQ03YTUiSsgU2UIq": {
     "answer": "book",
     "context_change": "A cat jumped from the bulletin board to the shelf.",
     "scene_id": "scene0534_00",
     "question": "What fell?",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "hDJ3mnRTmRnnK0xLRp7K": {
+    "answer": "We can place extra items in the water cooler ",
+    "context_change": "The refrigerator is overfilled and needs items to be placed somewhere else",
+    "scene_id": "scene0097_00",
+    "question": "Where can we place items from the refrigerator?",
+    "context_change_tags": [
+      "Object Addition or Removal",
+      "Local Change"
+    ]
+  },
+  "haEXCx2W25qtug8AilWl": {
+    "answer": "sadasd",
+    "context_change": "thisad asdsa",
+    "scene_id": "scene0000_00",
+    "question": "sadasd",
     "context_change_tags": [
       "Object Geometric Change",
       "Local Change"
@@ -251,6 +559,16 @@
       "Local Change"
     ]
   },
+  "n7NmorIal5rvU1Ih9HS2": {
+    "answer": "Shape of the table changes",
+    "context_change": "Shape of the table changes",
+    "scene_id": "scene0000_00",
+    "question": "What is the shape of the table?",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
   "ngpRE29dnjwxoBAiPH22": {
     "survey_code": "PAKZZ2X1",
     "answer": "1231",
@@ -267,6 +585,16 @@
     "context_change": "Couch is rotated left 90 degree",
     "scene_id": "scene0000_00",
     "question": "\u73b0\u5728\u901a\u5f80shelf\u7684\u8def\u662f\u5426\u6709\u906e\u6321",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "o1KY8Uukp0qQ0HyaAYU8": {
+    "answer": "sd",
+    "context_change": "sada",
+    "scene_id": "scene0000_00",
+    "question": "sad",
     "context_change_tags": [
       "Object Geometric Change",
       "Local Change"
@@ -300,6 +628,38 @@
     "question": "12321",
     "context_change_tags": [
       "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "vHZIRMIwu0d5dhsx8Yz0": {
+    "answer": "adafasfa",
+    "context_change": "2131",
+    "scene_id": "scene0000_00",
+    "question": "21",
+    "context_change_tags": [
+      "Object Geometric Change",
+      "Local Change"
+    ]
+  },
+  "vxIy6BpW4yplGrHFj1Ph": {
+    "survey_code": "CQA_T9EYPXBHUDDI",
+    "answer": "I don't understand this survey.",
+    "context_change": "Something is on the table",
+    "scene_id": "scene0048_00",
+    "question": "What is in front of the window",
+    "context_change_tags": [
+      "Object Addition or Removal",
+      "Local Change"
+    ]
+  },
+  "xILv5xuBaXbpTidNQNI8": {
+    "survey_code": "CQA_T9EYPXBHUDDI",
+    "answer": "We can place extra items in the water cooler ",
+    "context_change": "The refrigerator is overfilled and needs items to be placed somewhere else",
+    "scene_id": "scene0097_00",
+    "question": "Where can we place items from the refrigerator?",
+    "context_change_tags": [
+      "Object Addition or Removal",
       "Local Change"
     ]
   },
