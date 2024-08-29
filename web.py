@@ -10,7 +10,9 @@ import random
 
 
 
-firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
+# firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
+
+firebase_credentials="ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29udGV4dHZxYSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjNiMWVhOGQ5ZjBjMDJiYjEwZDQwNTI4YWFlNWFmODI0MDAzMzZlZDEiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1kvdkV3QkpkN2RUcW1cblZkeHFVcExFMFFldTRFbS96dVA3YlV5YmxzUUZrVzhoNjBUUGdORlp0UXo2Z012L1VpZFBIcGxaSjRHWDVLZFhcbldVd2wrZkpHM2phZFhPcEJsaFlXaTBiNGhkWEhOY3NWSjR1dlFab0xrM05IcUJCbGhzSTU5eS96VU9QTTExc2xcbkRIVXVTL3ZhaGg4VHBwWEVubnRGV2lxNkYrTitmQmxhL3BtQlA1RDNuNG5qMnhObzgwbWsva3V3UjY0akpSZC9cbkVXeTZUaGExOXhPc3hWUFhCRUxFRXlLTGY2RzYwbU9jbnZpQWRwcU5MU2J0MUlwZUMwaWw0RlFuQUcwUUR3c3FcbmE5ay90b2t0OWs2NUFzc085dFcvVjcrTzVodmlySXUwL1pneXV3bGowbmNGRHNYb211UTRndXQ0Q3g3UUp2bndcbnA5Q3BMNTJaQWdNQkFBRUNnZ0VBRUNIdHo3amtPajNwd2NsUzlSa2c1Y1QrME9kUWozdWkyWXUwWk1HWWlOZkZcbmhxZVd1V1NsYnBhak9EVGxqZFlkVS8vdmZwR21YaHhic3QrMUlsb0JQSXpJNkgzNEs1TkdYL2t1c2h6MnBrdGJcblR5ODgwTzJUYno0TWpWVkE2VnUwMWtUazF2ekVFSUR5Mk95LzNISmhxN0N4elRJbkg3VHdYYWM4MHlPYXR1YjRcblRWMGNFYXRnVUdHQlJudjRzbVVmVG1LeU9MeFkvdWxEbllPTWtmRXlEL2lzaVlhaTBCbEY4RC9CbGlCVmJEVERcbk0veEthM21yYkh0YU0zTVVLVVdWZ1JFTFlOU0IwbWcxRGVDdldSM2RwQ1JxSUg4dWJzMGlGc0JvVG4vb0NNbUpcbkdpaHA1OGtTSlV2d2c3YWJSKzRpd2liaktrdFhEYjRrejFiNlN2MElTd0tCZ1FESlBObE8vMk12ZmtwZ1h6SDhcbmlnNW1CbGI2VWRkR29QT1pBTDdmeHpDVTd1TmtTTHJXUEVkY2gzcDNKV05tNDR6SWp0czJqd0VaZHBWdXdxTS9cbnY1Q2lwZExHMCtEMUhIL1BJK2lhUUJLWWExbHZWMHI0S2kxVWJiVFYzOVBPbkJ1S2RIZ3BRNkRhUS9tQ2RTK2hcbnkwQllXd0NJdUIzRUg1Wk5pTDY4azJHMnV3S0JnUURDb1ZnVkUvTTgrWnVpZUlUanZDSk5hNUYrakVMaXlQVlVcbitXRlBXQkpmN2tmRktuZHRleXdiZUR0U2NJRWV5OXJyVWo0anRyMCs2NDM0UTVoS2pPM2Q3c1VGRTlxcms2K09cbngrOUhtYlB6OGg3N3d2TXc3dXFncFEvZzlwUkJOZGFHS2FCMGszUWh6OFY2QXQra01sZkN6NXl0RGk5SUZ3c0RcblM3VmdqQ2E1dXdLQmdBemMyOU1GMWZRcU1WelptTnRZZzdVWHdLVjlaN0kzQlhzSkppb3RsRGhnMEo0UFhBbm5cbmpuUW1vTGhPNW55a0hOS1E5d2dVdWZCRHVTZDhQMjBLdEpjQTNHa2pEK1Q2N2x4eUlpTUI1MjVncGpYTXNaa05cbk1ScU5iSnFqRk9uRzVxZkI3QkJQSjAvc09sMlJXZnNRZjh0bC9iRy9lditYT1VjNWIxK2tXQUdUQW9HQURyTk5cbkNkcUY1cmNic0R2V0hiVmFDZXIwQkZEbnhHVlZVbU83bTlpVkdyWE9xZSs1TVlXNklTRUZxZ1poV2tnZmN1SzFcbld0RTBuZ29Bb1IzSjVPZWNGOFV2RUdFZGhSUVVrSDQ5Ym5VSGlJZGpHN1R2MVdSV1NHZnZPUmltdmY0cEE5MGxcbkIya1R2bklKQWx3eE5CK3hUVCtOSCswUVdTdVVZMTFXaDhKT01uMENnWUVBaHlYUGkxaC9MMWZybW1lWFlKTWRcblpROEhrT3dTVGdrelF6eER4WWttQ1dJN1lIeThzbU9SUGRSRlBOVEpUMVVRU0Y1d2Mwd1pENlUvTnFKMGlqTEtcblFqYzBOVUlkNmhlVFQ3cXpwdnp4VFZCcFNtbFJCVm1MTGJ3Q0plditQajczaU0rZEtSemIxYmpBQ1lEamM5OWhcbjhVazFDZW1GWXhzS2s5Z1Y0bktaQ2M4PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImZpcmViYXNlLWFkbWluc2RrLXRxc2I3QGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA1OTg2MTIxMjI3NjY5MjQ1MDM1IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9maXJlYmFzZS1hZG1pbnNkay10cXNiNyU0MGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"
 
 if firebase_credentials:
     # Decode the base64 encoded credentials
@@ -144,19 +146,13 @@ guideline_text = """
 
 **Step 1:** Rotate the given 3D visualization and read scene descriptions to understand the 3D scene.
 
-**Step 2:** In the form, write descriptions of context changes, craft related questions, and provide concise answers.
+**Step 2:** Write descriptions of context changes, craft related questions, and provide concise answers.
 
 **Step 3:** Submit your responses.
 
-*<span style="color:red;"> Repeat the process for 5 times to win the reward! </span>*
-
 ###### Context Change - Imagine a potential change that could take place in the 3D scene.
-- Changes can be:
-- **Object Geometric Change** (e.g., object movement, rotation, shape transformation): *The backpack has been moved from the desk to the black chair.*
-- **Object Attribute Change** (e.g., color, texture, functionality, state): *The toilet paper hanging on the wall has been completely used.*
-- **Object Addition/Removal** (e.g., adding or removing objects): *The orange couch in the room is removed.*
-- **Local context change** (try to modify one object only); **Global context change** (try to modify multiple objects).
-- Ensure the changes are feasible within the 3D scene layout, **realistic**, **precise**, and **detailed**. Otherwise they will be <span style="color:red;">rejected</span>.
+- Any realistic change in the scene is acceptable, such as moving, rotating, resizing objects, changing their color, or adding/removing items. You can also modify multiple objects simultaneously.
+- Ensure your descriptions are **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">rejection</span>. Here are some examples to help you write effective descriptions:
 - <span style="color:red;"> **Good example:** </span> The laundry basket that was on the bed has been moved the left of the round wooden table.
 - <span style="color:green;"> **Bad example:** </span> The laundry basket has been moved to table.
 
@@ -168,7 +164,6 @@ guideline_text = """
 
 ###### Question - Ask a question about the 'modified' scene.
 - The questions that are not related to the context change, meaning they would yield the same answer in both the 'original' and 'changed' scenes, will be <span style="color:red;">rejected</span>.
-- The question should require knowledge of the modified scene to answer, but not necessarily the original scene.
 - The questions that have **multiple**, **ambiguous**, or **subjective** answers will be <span style="color:red;">rejected</span>.
 - The questions that can be answered by merely reading context change will be <span style="color:red;">rejected</span>.
 
@@ -182,13 +177,12 @@ guideline_text = """
 - <span style="color:green;"> **Bad example:** </span> **Q**: Is the white cabinet close to the piano?
 
 ###### Answer - Provide a simple word or phrase as an answer to the question.
-- The answer should be directly related to the question and make sense in the context of the modified scene.
-- <span style="color:red;"> **Good example:** </span> **Context Change**: The bed has a lot of stuff on it, so it is cannot be used now. **Q**: Where is another good place to sit and rest? **A**: Couch.
-- <span style="color:green;"> **Bad example:** </span> **Context Change**: The bed has a lot of stuff on it, so it is cannot be used now. **Q**: Where is another good place to sit and rest? **A**: If you want to rest, I suggest you sit on the couch for a while.
+- The answer should be directly related to the question and make sense in the context of the modified scene. Keep it concise.
+- <span style="color:red;"> **Good example:** </span> Couch.
+- <span style="color:green;"> **Bad example:** </span>  If you want to rest, I suggest you sit on the couch for a while.
 
 
-**Note:** Each context change can be used for multiple questions. Ensure all context changes, questions, and answers are diverse and unique. If you're stuck, try selecting a new scene—we have a total of 800 scenes available for you to choose from. 
-
+**Trick:** It's best to consider a meaningful context change that allows you to ask multiple questions, so you won't need to rewrite the context changes each time. Ensure all context changes, questions, and answers are diverse and unique. If you're stuck, try selecting a new scene—we have a total of 800 scenes available for you to choose from. 
 
 *<span style="color:red;">Please use your imagination to its fullest. Good luck!</span>* 😁
 """
@@ -209,11 +203,11 @@ with right_col:
     smaller_bold_question = "<div style='font-weight: bold; font-size: 20px;'>Question</div>"
     smaller_bold_answer = "<div style='font-weight: bold; font-size: 20px;'>Answer</div>"
 
-    tags_1 = ["Object Geometric Change", "Object Attribute Change", "Object Addition or Removal"]
-    tags_2 = ["Local Change", "Global Change"]
+    # tags_1 = ["Object Geometric Change", "Object Attribute Change", "Object Addition or Removal"]
+    # tags_2 = ["Local Change", "Global Change"]
     
-    selected_tags_1 = st.selectbox("Select Type of Change", options=tags_1, key="selected_tags_1")
-    selected_tags_2 = st.selectbox("Select Scale of Change", options=tags_2, key="selected_tags_2")
+    # selected_tags_1 = st.selectbox("Select Type of Change", options=tags_1, key="selected_tags_1")
+    # selected_tags_2 = st.selectbox("Select Scale of Change", options=tags_2, key="selected_tags_2")
 
     st.markdown(smaller_bold_context, unsafe_allow_html=True)
     context_change = st.text_area("Describe any changes that could reasonably occur in the scene.", key="context_change", placeholder="Type here...", height=10)
@@ -233,13 +227,13 @@ with right_col:
     total_responses_needed = 5
 
     if st.button("Submit"):
-        if not context_change or not selected_tags_1 or not selected_tags_2 or not question or not answer:
+        if not context_change or not question or not answer:
             st.warning("Please fill in all fields before submitting.")
         else:
             entry = {
                 'scene_id': scene_id,
                 'context_change': context_change,
-                'context_change_tags': [selected_tags_1, selected_tags_2],
+                # 'context_change_tags': [selected_tags_1, selected_tags_2],
                 'question': question,
                 'answer': answer,
             }
