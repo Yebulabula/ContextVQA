@@ -267,7 +267,7 @@ with right_col:
                 if st.session_state.responses_submitted >= total_responses_needed:
                     # Generate the MTurk Survey Code
                     survey_code = generate_survey_code()
-                    st.success(f"Congratulations! You have successfully completed the task. Here is your MTurk Survey Code: {survey_code}")
+                    st.success(f"Congratulations! You have successfully completed the task. Here is your CloudResearch Completion Code: {survey_code}")
                     
                     # Save the entry with the survey code
                     entry['survey_code'] = survey_code
