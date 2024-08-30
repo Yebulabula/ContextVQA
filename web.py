@@ -7,7 +7,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import base64
 import random
-
+import cv2
 firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
 if firebase_credentials:
@@ -133,38 +133,31 @@ def initialize_state():
 initialize_state()
 
 guideline_text = """
-**Step 1:** Rotate the given 3D visualization and read scene descriptions to understand the 3D scene.
+<span style="color:brown;">**Welcome!**</span> 
 
-**Step 2:** Write descriptions of context changes, questions, concise answers.
+To complete this task, you need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene  you can make to the scene and write it down.  After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question.
 
-**Step 3:** Submit your responses.
+###### Hypothetical Scene Change
+- Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, function, adding, or removing **one or more objects**—any realistic change is acceptable.
+- The change decription should be **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">**rejection**</span>.
 
-###### Context Change - Imagine a potential change that could take place in the 3D scene.
-- Any realistic change in the scene is acceptable, such as moving, rotating, resizing objects, changing their color, state, or adding/removing items. You can also modify multiple objects simultaneously.
-- Ensure your descriptions are **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">rejection</span>.
-
-- <span style="color:red;"> **Good example:** </span> The laundry basket that was on the bed has been moved the left of the round wooden table.
-- <span style="color:green;"> **Bad example:** </span> The laundry basket has been moved to table.
-
-- <span style="color:red;"> **Good example:** </span> Two red coffee tables has been added between the only two armchairs in the room.
-- <span style="color:green;"> **Bad example:** </span> Several tables have been added to the room.
-
-- <span style="color:red;"> **Good example:** </span> The yellow desk in the corner is now being used as the dining table for the guests.
-- <span style="color:green;"> **Bad example:** </span> The yellow desk is now being used as a television.
-
-###### Question - Ask a routine question about the 'modified' scene only, rather than compare it with the 'original' scene.
+###### Question - Ask a question about the scene following the hypothetical change.
 - Your questions shouldn't be answered solely by reading the context change without viewing the scene.
-- Your questions shouldn't have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers.
+- Your questions should be answered differently when based on the original scene and the changed scene.
+- Your questions shouldn't have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers to avoid <span style="color:red;">**rejection**</span>.
 
-Given **Context Change**: The black armchair next to the couch is moved to left to the bed.
-- <span style="color:red;"> **Good example:** </span> **Q**: What item is in front of the black armchair now?
-- <span style="color:green;"> **Bad example:** </span> **Q**: What item is at the right side of the bed? (Can be derived from the context change)
+###### Answer - Provide a simple word or phrase as an answer to your question.
+- Your answer should be **unique** and **determinstic** to the question you asked.
 
-Given **Context Change**: Three more trash cans are added near the kitchen counter.
-- <span style="color:red;"> **Good example:** </span> **Q**: How many trash cans are there in total in this room now?
-- <span style="color:green;"> **Bad example:** </span> **Q**: What is on top of the kicthen counter in the room? (Not affected by the context change)
+**Example:**
 
-###### Answer - Give a simple, concise answer that is unique to the question and fits the modified scene.
+<img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
+
+- <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
+- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown.
+(**The pillow color is not affected by the scene change**)
+ 
+- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What is on the gray couch now? **A:** Pillow. (**The question can be answered by only reading the scene change**) 
 
 **Trick:** It's best to consider a meaningful context change that allows you to ask multiple questions, so you won't need to rewrite the context changes each time. If you're stuck, refresh the page to get a new scene. 
 
@@ -173,9 +166,24 @@ Given **Context Change**: Three more trash cans are added near the kitchen count
 *<span style="color:red;">Please use your imagination to its fullest. Good luck!</span>* 😁
 """
 
+@st.cache_resource
+def render_img_html(image_b64):
+    st.markdown(f"<img style='max-width: 40%;max-height: 40%;' src='data:image/png;base64, {image_b64}'/>", unsafe_allow_html=True)
+
+@st.cache_resource
+def image_to_base64(image_path):
+    image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
+    target_size = (600, 600)  # Adjust the size to your needs
+    resized_image = cv2.resize(image, target_size, interpolation=cv2.INTER_AREA)
+    
+    _, encoded_image = cv2.imencode(".png", resized_image)
+    base64_image = base64.b64encode(encoded_image.tobytes()).decode("utf-8")
+    return base64_image
+
 # Display the guideline at the beginning of the form
 with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, icon="📝"):
-    st.markdown(guideline_text, unsafe_allow_html=True)
+    image_path = "scene0000_00.png"
+    st.markdown(guideline_text.format(image_to_base64(image_path)), unsafe_allow_html=True)
 
 # Randomly select a scene ID when the page loads
 
