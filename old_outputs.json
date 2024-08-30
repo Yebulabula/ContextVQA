@@ -130,8 +130,8 @@
   },
   "DmejnbRo4zOoBv7V5dYr": {
     "survey_code": "CQA_T9EYPXBHUDDI",
-    "answer": "No. The chair backs are facing the cart still so that the viewer would not see it.",
-    "context_change": "The cart could be moved to the far left side of the room.",
+    "answer": "Yes.",
+    "context_change": "The cart has been moved onto the brown bench.",
     "scene_id": "scene0005_00",
     "question": "Can the cart be viewed now by sitting in one of the chairs.",
     "context_change_tags": [
@@ -141,7 +141,7 @@
   },
   "ElVB2MQMNGStKSc7XlHH": {
     "answer": "Nothing",
-    "context_change": "The suitcase could be oved to the other side of the bed.",
+    "context_change": "Two suitcases in the room could be oved to the other side of the bed.",
     "scene_id": "scene0006_00",
     "question": "What is between the bed and the curtain?",
     "survey_code": "CQA_LKM9804DIL86"
@@ -191,13 +191,6 @@
     "question": "How many black stools were added to this room?",
     "survey_code": "CQA_N29KLDIL7WUZ"
   },
-  "M16RtaHCCex5owkXG5o7": {
-    "answer": "Weather shift\nTime lapse",
-    "context_change": "The backpack has been moved from the desk to the black chair.",
-    "scene_id": "scene0446_00",
-    "question": "What is the position of the grey sofa chair?",
-    "survey_code": "CQA_FWN098KKBSM6"
-  },
   "OfpY1IoNzNJjWNJ0cjA3": {
     "answer": "Yes",
     "context_change": "The guitar case has been placed over the guitar",
@@ -216,12 +209,6 @@
     "context_change": "The microwave has been moved from under the cabinet to on the kitchen counter into the corner.",
     "scene_id": "scene0003_00",
     "question": "Is the microwave now closer to the refrigerator in its new spot?"
-  },
-  "RHfOUNOFNUhPaAIZexIX": {
-    "answer": "ss",
-    "context_change": "sda",
-    "scene_id": "scene0262_00",
-    "question": "s"
   },
   "TnCn2SYepiCVQUC25iqS": {
     "answer": "sitting on the bed",
@@ -308,12 +295,6 @@
       "Global Change"
     ]
   },
-  "eNWP5Hl9wgGscE7xdcWX": {
-    "answer": "Emotional shift\nNew conflict",
-    "context_change": "The bed has a lot of stuff on it, so it is cannot be used now.",
-    "scene_id": "scene0122_00",
-    "question": "How close is the other table to the center of the room?"
-  },
   "fcbF7BxDYJD1fUKVv3db": {
     "answer": "yes",
     "context_change": "The white cabinet that is in the left corner has been moved to the center of the green curtain.",
@@ -397,13 +378,6 @@
       "Local Change"
     ]
   },
-  "i8DTSr9gjpt4vfNONu4d": {
-    "answer": "ss",
-    "context_change": "sda",
-    "scene_id": "scene0262_00",
-    "question": "s",
-    "survey_code": "CQA_PW2LJXDDARCC"
-  },
   "ikpwt2MiPHK4yeVjDKyW": {
     "answer": "The pan was steaming on the stove",
     "context_change": "The stove was turned on",
@@ -421,10 +395,10 @@
     "question": "Is there now more floor space?"
   },
   "kzDfAPqMOHakFSYD9ICC": {
-    "answer": "No",
-    "context_change": "The display case sitting beside the beige brick wall and behind the beige couch with two pillows is moved to the brown brick wall, sitting closer to the brown table and couch with two pillows. ",
+    "answer": "Black table",
+    "context_change": "The display case is now located next to the clothing rack. ",
     "scene_id": "scene0008_00",
-    "question": "Would moving the display case make the room look more open and spacious? ",
+    "question": "What is the closest item behind the couch with two pillows now? ",
     "survey_code": "CQA_2K33458LR8XU"
   },
   "m0XSnyFz0ja65ZrhS8E8": {
@@ -435,18 +409,11 @@
     "survey_code": "CQA_ACRZSW6NADM1"
   },
   "mCGVVIy3iahdC9tQN2LR": {
-    "answer": "Yes",
-    "context_change": "The shoes have been placed on the shelf under the table",
+    "answer": "Shelf",
+    "context_change": "The shoes have been placed on the coffee table that is in front of the couch.",
     "scene_id": "scene0000_00",
-    "question": "Is there now more floor space?",
+    "question": "What furniture is in front of the shoes now?",
     "survey_code": "CQA_VXU901T0FPTO"
-  },
-  "mUGdolVIadi9J0UP7wo8": {
-    "answer": "Emotional shift\nNew conflict",
-    "context_change": "The bed has a lot of stuff on it, so it is cannot be used now.",
-    "scene_id": "scene0122_00",
-    "question": "How close is the other table to the center of the room?",
-    "survey_code": "CQA_XP4ODPC6C2VK"
   },
   "mZADw6L8Gm6MrT1zeMzr": {
     "answer": "no, it's not.",
@@ -496,25 +463,6 @@
       "Object Geometric Change",
       "Local Change"
     ]
-  },
-  "rhsuKv3jYOJapIB2FiuI": {
-    "answer": "s",
-    "context_change": "sda",
-    "scene_id": "scene0262_00",
-    "question": "s",
-    "survey_code": "CQA_82A4057ZZ5I8"
-  },
-  "sdXwKv5DscQ92ICZRiSe": {
-    "answer": "Weather shift\nTime lapse",
-    "context_change": "The backpack has been moved from the desk to the black chair.",
-    "scene_id": "scene0446_00",
-    "question": "What is the position of the grey sofa chair?"
-  },
-  "uSg4gMeWKGzUFjqnF6pn": {
-    "answer": "s",
-    "context_change": "sda",
-    "scene_id": "scene0262_00",
-    "question": "s"
   },
   "wa7k8MaS9JKyD0zs2RHO": {
     "answer": "yes",

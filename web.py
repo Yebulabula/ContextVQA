@@ -140,26 +140,31 @@ guideline_text = """
 **Step 3:** Submit your responses.
 
 ###### Context Change - Imagine a potential change that could take place in the 3D scene.
-- Any realistic change in the scene is acceptable, such as moving, rotating, resizing objects, changing their color, or adding/removing items. You can also modify multiple objects simultaneously.
+- Any realistic change in the scene is acceptable, such as moving, rotating, resizing objects, changing their color, state, or adding/removing items. You can also modify multiple objects simultaneously.
 - Ensure your descriptions are **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">rejection</span>.
 
-###### Question - Ask a question about the 'modified' scene only, rather than compare it with the 'original' scene.
+- <span style="color:red;"> **Good example:** </span> The laundry basket that was on the bed has been moved the left of the round wooden table.
+- <span style="color:green;"> **Bad example:** </span> The laundry basket has been moved to table.
+
+- <span style="color:red;"> **Good example:** </span> Two red coffee tables has been added between the only two armchairs in the room.
+- <span style="color:green;"> **Bad example:** </span> Several tables have been added to the room.
+
+- <span style="color:red;"> **Good example:** </span> The yellow desk in the corner is now being used as the dining table for the guests.
+- <span style="color:green;"> **Bad example:** </span> The yellow desk is now being used as a television.
+
+###### Question - Ask a routine question about the 'modified' scene only, rather than compare it with the 'original' scene.
 - Your questions shouldn't be answered solely by reading the context change without viewing the scene.
-- Your questions should yield a different answer when your context change is applied to the scene.
 - Your questions shouldn't have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers.
 
+Given **Context Change**: The black armchair next to the couch is moved to left to the bed.
+- <span style="color:red;"> **Good example:** </span> **Q**: What item is in front of the black armchair now?
+- <span style="color:green;"> **Bad example:** </span> **Q**: What item is at the right side of the bed? (Can be derived from the context change)
+
+Given **Context Change**: Three more trash cans are added near the kitchen counter.
+- <span style="color:red;"> **Good example:** </span> **Q**: How many trash cans are there in total in this room now?
+- <span style="color:green;"> **Bad example:** </span> **Q**: What is on top of the kicthen counter in the room? (Not affected by the context change)
+
 ###### Answer - Give a simple, concise answer that is unique to the question and fits the modified scene.
-
-<span style="color:red;"> **Good example:** </span> 
-- **Context Change:** The white nightstand next to the coffee table and the room’s only trash can have swapped positions. **Q:** What is located between the two beds in the room?
-**A:** Yellow Chair.
-- **Context Change:** A new chair has been placed around the round table. **Q:** How many chairs are now to the left of the desk? **A:** Three.
-- **Context Change:** The toilet paper hanging on the wall has been completely used. **Q:** Where is the other toilet paper roll? **A:** On top of the toilet's water tank.
-
-<span style="color:green;"> **Bad example:** </span> 
-
-- **Context Change:** Several trash cans are added. (*Ambiguous*) **Q:** What is the color of the trash can? (*Unrelated to the context change*) **A:** After carefully examining the scene, the color of the trash can is blue. (*Too long*)
-- **Context Change:** The microwave has been moved from under the cabinet to on the kitchen counter into the corner. **Q:** Is the microwave now closer to the refrigerator in its new spot? (*Yes/No question, comparing the original scene*) **A:** No.
 
 **Trick:** It's best to consider a meaningful context change that allows you to ask multiple questions, so you won't need to rewrite the context changes each time. If you're stuck, refresh the page to get a new scene. 
 
@@ -189,15 +194,15 @@ with right_col:
     smaller_bold_answer = "<div style='font-weight: bold; font-size: 20px;'>Answer</div>"
 
     st.markdown(smaller_bold_context, unsafe_allow_html=True)
-    context_change = st.text_area("Describe any changes that could reasonably occur in the scene.", key="context_change", placeholder="Type here...", height=10)
+    context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="context_change", placeholder="Type here...", height=10)
     
-    if st.button("Click here to view some example context changes."):
+    if st.button("Click here to view some context change templates (Do not copy it)."):
         st.info(random.choice(context_inspirations))
     
     st.markdown(smaller_bold_question, unsafe_allow_html=True)
-    question = st.text_area("Ask a question to the 'imagined' scene, rather than the 'original scene'.", key="question", placeholder="Type here...", height=10)
+    question = st.text_area("Imagine the scene after change, then ask a question.", key="question", placeholder="Type here...", height=10)
 
-    if st.button("Click here to view some example questions."):
+    if st.button("Click here to view some question templates (Do not copy it)."):
         st.info(random.choice(question_inspirations))
     
     st.markdown(smaller_bold_answer, unsafe_allow_html=True)
