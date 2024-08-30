@@ -8,8 +8,9 @@ from firebase_admin import credentials, firestore
 import base64
 import random
 
-firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
+
+firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
 if firebase_credentials:
     # Decode the base64 encoded credentials
@@ -44,7 +45,7 @@ st.title("ContextQA")
 
 ROOT_1 = "3D_scans"
 
-SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('scene')])
+SCENE_IDs = sorted(os.listdir(ROOT_1), key=lambda x: (not x.startswith('scene'), x))
 
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
@@ -106,8 +107,8 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations, id2labels):
             yaxis=dict(visible=False),
             zaxis=dict(visible=False)
         ),
-        width=900,
-        height=700,
+        width=1000,
+        height=800,
         margin=dict(l=0, r=10, b=0, t=10),
         updatemenus=[
             dict(
@@ -134,44 +135,52 @@ def initialize_state():
 
     if 'responses_submitted' not in st.session_state:
         st.session_state.responses_submitted = 0
-        
-    if 'scene_id' not in st.session_state:
-        st.session_state.scene_id = None
 
 initialize_state()
 
 guideline_text = """
+
+**<span style="color:blue;">Randomly select a scene ID, preferably avoiding the default option.</span>**
+
 **Step 1:** Rotate the given 3D visualization and read scene descriptions to understand the 3D scene.
 
-**Step 2:** Write descriptions of context changes, questions, concise answers.
+**Step 2:** Write descriptions of context changes, craft related questions, and provide concise answers.
 
 **Step 3:** Submit your responses.
 
 ###### Context Change - Imagine a potential change that could take place in the 3D scene.
 - Any realistic change in the scene is acceptable, such as moving, rotating, resizing objects, changing their color, or adding/removing items. You can also modify multiple objects simultaneously.
-- Ensure your descriptions are **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">rejection</span>.
+- Ensure your descriptions are **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">rejection</span>. Here are some examples to help you write effective descriptions:
+- <span style="color:red;"> **Good example:** </span> The laundry basket that was on the bed has been moved the left of the round wooden table.
+- <span style="color:green;"> **Bad example:** </span> The laundry basket has been moved to table.
 
-###### Question - Ask a question about the 'modified' scene, rather than the 'original' scene.
-- Your questions should yiled different answers in 'modified' and 'original' scenes.
-- Your questions shouldn't be answered solely by reading the context change without viewing the scene.
-- Your questions should focus only on the 'modified' scene, not compare it with the 'original' scene.
-- Your questions shouldn't be answered with a simple 'yes' or 'no'.
-- Your questions shouldn't have **multiple**, **ambiguous**, or **subjective** answers
+- <span style="color:red;"> **Good example:** </span> Two red coffee tables has been added between the only two armchairs in the room.
+- <span style="color:green;"> **Bad example:** </span> Several tables have been added to the room.
 
-###### Answer - Give a simple, concise answer that is unique to the question and fits the modified scene.
+- <span style="color:red;"> **Good example:** </span> The yellow desk in the corner is now being used as the dining table for the guests..
+- <span style="color:green;"> **Bad example:** </span> The yellow desk is now being used as a television.
 
-<span style="color:red;"> **Good example:** </span> 
-- **Context Change:** The white nightstand next to the coffee table and the room’s only trash can have swapped positions. **Q:** What is located between the two beds in the room?
-**A:** Yellow Chair.
-- **Context Change:** A new chair has been placed around the round table. **Q:** How many chairs are now to the left of the desk? **A:** Three.
-- **Context Change:** The toilet paper hanging on the wall has been completely used. **Q:** Where is the other toilet paper roll? **A:** On top of the toilet's water tank.
+###### Question - Ask a question about the 'modified' scene.
+- The questions that are not related to the context change, meaning they would yield the same answer in both the 'original' and 'changed' scenes, will be <span style="color:red;">rejected</span>.
+- The questions that have **multiple**, **ambiguous**, or **subjective** answers will be <span style="color:red;">rejected</span>.
+- The questions that can be answered by merely reading context change will be <span style="color:red;">rejected</span>.
 
-<span style="color:green;"> **Bad example:** </span> 
+- <span style="color:red;"> **Good example:** </span> **Context Change**: The black armchair next to the couch becomes red. **Q**: Does the black armchair now match the color scheme of other furnitures around the couch?
+- <span style="color:green;"> **Bad example:** </span> **Context Change**: The black armchair next to the couch becomes red. **Q**: What color is the armchair next to the couch?
 
-- **Context Change:** Several trash cans are added. (*Ambiguous*) **Q:** What is the color of the trash can? (*Unrelated to the context change*) **A:** After carefully examining the scene, the color of the trash can is blue. (*Too long*)
-- **Context Change:** The microwave has been moved from under the cabinet to on the kitchen counter into the corner. **Q:** Is the microwave now closer to the refrigerator in its new spot? (*Yes/No question, comparing the original scene*) **A:** No.
+- <span style="color:red;"> **Good example:** </span> **Context Change**: Three more trash cans are added near the kitchen counter. **Q**: How many trash cans are there in total in this room now?
+- <span style="color:green;"> **Bad example:** </span> **Context Change**: Three more trash cans are added near the kitchen counter. **Q**: Is there a kicthen counter in the room?
 
-**Trick:** It's best to consider a meaningful context change that allows you to ask multiple questions, so you won't need to rewrite the context changes each time. If you're stuck, refresh the page to get a new scene. 
+- <span style="color:red;"> **Good example:** </span> **Q**: Is the white cabinet now closer to the piano than to the fridge?
+- <span style="color:green;"> **Bad example:** </span> **Q**: Is the white cabinet close to the piano?
+
+###### Answer - Provide a simple word or phrase as an answer to the question.
+- The answer should be directly related to the question and make sense in the context of the modified scene. Keep it concise.
+- <span style="color:red;"> **Good example:** </span> Couch.
+- <span style="color:green;"> **Bad example:** </span>  If you want to rest, I suggest you sit on the couch for a while.
+
+
+**Trick:** It's best to consider a meaningful context change that allows you to ask multiple questions, so you won't need to rewrite the context changes each time. Ensure all context changes, questions, and answers are diverse and unique. If you're stuck, try selecting a new scene—we have a total of 800 scenes available for you to choose from. 
 
 *<span style="color:red;">Please use your imagination to its fullest. Good luck!</span>* 😁
 """
@@ -179,26 +188,24 @@ guideline_text = """
 # Display the guideline at the beginning of the form
 with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, icon="📝"):
     st.markdown(guideline_text, unsafe_allow_html=True)
-
-# Randomly select a scene ID when the page loads
-
+    
+                
 left_col, right_col = st.columns([2, 1])
-
 
 
 # Right column: Form
 with right_col:
-    if not st.session_state.scene_id:
-        random_scene_id = random.choice(list(SCENE_ID_TO_FILE.keys()))
-        st.session_state.scene_id = random_scene_id
-    else:
-        random_scene_id = st.session_state.scene_id
-        
-    scene_id = random_scene_id  # Use the randomly selected scene ID
+    scene_id = st.selectbox("Select a Scene ID", list(SCENE_ID_TO_FILE.keys()))
 
     smaller_bold_context = "<div style='font-weight: bold; font-size: 20px;'>Context Change</div>"
     smaller_bold_question = "<div style='font-weight: bold; font-size: 20px;'>Question</div>"
     smaller_bold_answer = "<div style='font-weight: bold; font-size: 20px;'>Answer</div>"
+
+    # tags_1 = ["Object Geometric Change", "Object Attribute Change", "Object Addition or Removal"]
+    # tags_2 = ["Local Change", "Global Change"]
+    
+    # selected_tags_1 = st.selectbox("Select Type of Change", options=tags_1, key="selected_tags_1")
+    # selected_tags_2 = st.selectbox("Select Scale of Change", options=tags_2, key="selected_tags_2")
 
     st.markdown(smaller_bold_context, unsafe_allow_html=True)
     context_change = st.text_area("Describe any changes that could reasonably occur in the scene.", key="context_change", placeholder="Type here...", height=10)
@@ -207,7 +214,7 @@ with right_col:
         st.info(random.choice(context_inspirations))
     
     st.markdown(smaller_bold_question, unsafe_allow_html=True)
-    question = st.text_area("Ask a question to the 'imagined' scene, rather than the 'original scene'.", key="question", placeholder="Type here...", height=10)
+    question = st.text_area("Write a question related to the context change.", key="question", placeholder="Type here...", height=10)
 
     if st.button("Click here to view some example questions."):
         st.info(random.choice(question_inspirations))
@@ -224,6 +231,7 @@ with right_col:
             entry = {
                 'scene_id': scene_id,
                 'context_change': context_change,
+                # 'context_change_tags': [selected_tags_1, selected_tags_2],
                 'question': question,
                 'answer': answer,
             }
@@ -253,6 +261,13 @@ with right_col:
                 save_context_data(entry)
 
 
+    final_section_html = f"""
+    <div style='margin-top: 10px;'>
+        <p>You've submitted <span style='color: red; font-weight: bold;'>{st.session_state.responses_submitted}</span> responses. </span></p>
+    </div>
+    """
+    st.markdown(final_section_html, unsafe_allow_html=True)
+    
 with left_col:
     ply_file = SCENE_ID_TO_FILE[scene_id]
     mesh_data = load_mesh(ply_file)
@@ -266,4 +281,5 @@ with left_col:
     
     initialize_plot(vertices, triangles, vertex_colors, annotations, id2labels)
     
-
+    
+    

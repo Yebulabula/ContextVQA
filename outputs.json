@@ -1,14 +1,15 @@
 {
-  "0Yy1Scn12QF6SkAljNSj": {
-    "survey_code": "A23RFBF2GPON50ZM",
-    "answer": "1",
-    "context_change": "1231",
-    "scene_id": "scene0000_00",
-    "question": "12321",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "08YxMqnazynGAddAFCMe": {
+    "answer": "no",
+    "context_change": "One more table have been added to the scene in front of the couch.",
+    "scene_id": "scene0081_00",
+    "question": "Are there more ottomans than tables to sit at?"
+  },
+  "0pBUW3k9aeAUA14Tymos": {
+    "answer": "Yes",
+    "context_change": "The carpet has been taken out and changed to hardwood flooring.",
+    "scene_id": "scene0028_00",
+    "question": "Is the floor harder now?"
   },
   "22mFCjFq9Pz9NKezM1ew": {
     "answer": "\u4e0d\u662f\uff0c\u73b0\u5728\u662f\u5728\u5927\u5e73\u5c42\u4e0a\u4e86\uff0c\u7a7a\u95f4\u5f88\u5bbd\u655e",
@@ -40,34 +41,19 @@
       "Local Change"
     ]
   },
-  "3p7P5IHbgRQbfrWrTfvf": {
-    "answer": "I don't understand this survey.",
-    "context_change": "Something is on the table",
-    "scene_id": "scene0048_00",
-    "question": "What is in front of the window",
-    "context_change_tags": [
-      "Object Addition or Removal",
-      "Local Change"
-    ]
+  "3PaKUOwnWylUsoSMipem": {
+    "answer": "two",
+    "context_change": "There are two new black stools sat in the corner in front of the refrigerator and door.",
+    "scene_id": "scene0002_00",
+    "question": "How many black stools were added to this room?"
   },
-  "4NPAQqG44n3junnW9lMV": {
-    "answer": "12313",
-    "context_change": "1231",
-    "scene_id": "scene0000_00",
-    "question": "2313",
+  "4NdOitHEECTGfPSOh3mY": {
+    "answer": "The wooden table to the right is red",
+    "context_change": "The right brown, wooden table is now red and has been cleaned and removed of the papers on it.",
+    "scene_id": "scene0004_00",
+    "question": "What color is the wooden table to the right?",
     "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "5ieJ4WVNIwAvBTk5PifN": {
-    "survey_code": "Q2P9ABDQ9GND718G",
-    "answer": "2414",
-    "context_change": "231",
-    "scene_id": "scene0000_00",
-    "question": "1",
-    "context_change_tags": [
-      "Object Geometric Change",
+      "Object Attribute Change",
       "Local Change"
     ]
   },
@@ -91,16 +77,12 @@
       "Local Change"
     ]
   },
-  "7YVMa4S9W4hTLC3A305Q": {
-    "survey_code": "CQA_HGP1GBE9TAIU",
-    "answer": "\n",
-    "context_change": "sda",
-    "scene_id": "scene0000_00",
-    "question": "sadasd",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "7xNZLj0rsI9LIrLDuZS1": {
+    "answer": "Amount of garbage in the receptacle is first thing someone would notice upon entering room.",
+    "context_change": "The cleanliness of the room could/would change during a clean up, specifically in regards to the garbage receptacle and the counter space.",
+    "scene_id": "scene0003_00",
+    "question": "What is the most noticeable object that affects the cleanliness, (real or perceived) of the room?",
+    "survey_code": "CQA_9SWQ168DZYWU"
   },
   "8m9n892hDPqn5XveoWmy": {
     "answer": "\u7f3a\u5c11\u4e86shower curtain\u6765\u963b\u6b62\u6c34\u82b1\u98de\u6e85",
@@ -112,16 +94,18 @@
       "Local Change"
     ]
   },
-  "9ju6UW68haydYYrqF5PQ": {
-    "survey_code": "CQA_HGP1GBE9TAIU",
-    "answer": "12313",
-    "context_change": "1231",
-    "scene_id": "scene0000_00",
-    "question": "2313",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "936IZhBNNpX7WofD6HxT": {
+    "answer": "No",
+    "context_change": "The windows have been walled above the sinks  and a large mirror is now in its place.",
+    "scene_id": "scene0014_00",
+    "question": "Are there currently any windows in this bathroom?"
+  },
+  "96W7VUiXgTW4zglA9Pzc": {
+    "answer": "no",
+    "context_change": "One more table have been added to the scene in front of the couch.",
+    "scene_id": "scene0081_00",
+    "question": "Are there more ottomans than tables to sit at?",
+    "survey_code": "CQA_RASMY1XTDV6I"
   },
   "B8JtVaevGcZK9MBnDeZk": {
     "survey_code": "CQA_T9EYPXBHUDDI",
@@ -129,16 +113,6 @@
     "context_change": "Shape of the table changes",
     "scene_id": "scene0000_00",
     "question": "What is the shape of the table?",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "BW6g6Cb3ox8PEfTIcwav": {
-    "answer": "12",
-    "context_change": "1231",
-    "scene_id": "scene0000_00",
-    "question": "12321",
     "context_change_tags": [
       "Object Geometric Change",
       "Local Change"
@@ -154,46 +128,23 @@
       "Local Change"
     ]
   },
-  "CglLVn3L0P8RNVZeGv7x": {
-    "answer": "adafasfaasdsasdasda",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "21",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "CoObe4IToXt0IoqrM6CX": {
-    "answer": "12",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "23",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "DeZiS9DXXpYy6D1vqWXB": {
-    "answer": "213124124124",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "231412421",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
   "DmejnbRo4zOoBv7V5dYr": {
     "survey_code": "CQA_T9EYPXBHUDDI",
-    "answer": "No. The chair backs are facing the cart still so that the viewer would not see it.",
-    "context_change": "The cart could be moved to the far left side of the room.",
+    "answer": "Yes.",
+    "context_change": "The cart has been moved onto the brown bench.",
     "scene_id": "scene0005_00",
     "question": "Can the cart be viewed now by sitting in one of the chairs.",
     "context_change_tags": [
       "Object Addition or Removal",
       "Local Change"
     ]
+  },
+  "ElVB2MQMNGStKSc7XlHH": {
+    "answer": "Nothing",
+    "context_change": "Two suitcases in the room could be oved to the other side of the bed.",
+    "scene_id": "scene0006_00",
+    "question": "What is between the bed and the curtain?",
+    "survey_code": "CQA_LKM9804DIL86"
   },
   "FaZMjiJE5tfYviivtKBM": {
     "answer": "the door is open",
@@ -205,45 +156,21 @@
       "Local Change"
     ]
   },
-  "GfPzczYuBzYFdgLyjynB": {
-    "survey_code": "CQA_KNZEL8JYRD8E",
-    "answer": "adafasfaasdsasdasda",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "21",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "Gifx8BBr8lKzQLINGPGY": {
+    "answer": "Most likely",
+    "context_change": "The black couch next to the small side table is now gone.",
+    "scene_id": "scene0001_00",
+    "question": "If a new green couch is in it's place, will it clash with the other furniture in this drab room?",
+    "survey_code": "CQA_F4IQCFIMLVYF"
   },
-  "GrRwA2OEC6w9DdlS84sK": {
-    "survey_code": "A23RFBF2GPON50ZM",
-    "answer": "1231",
-    "context_change": "2321",
-    "scene_id": "scene0000_00",
-    "question": "213",
+  "IATsdWlKu0SxrbbXapiT": {
+    "survey_code": "CQA_T9EYPXBHUDDI",
+    "answer": "The wooden table to the right is red",
+    "context_change": "The right brown, wooden table is now red and has been cleaned and removed of the papers on it.",
+    "scene_id": "scene0004_00",
+    "question": "What color is the wooden table to the right?",
     "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "HGgp5stVRGXW9MMDn16m": {
-    "answer": "ada",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "21",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "I7ZChrk2HEyoo9JPEn8N": {
-    "answer": "asdasd",
-    "context_change": "1232sdadas",
-    "scene_id": "scene0037_00",
-    "question": "2112asdas",
-    "context_change_tags": [
-      "Object Geometric Change",
+      "Object Attribute Change",
       "Local Change"
     ]
   },
@@ -257,86 +184,31 @@
       "Local Change"
     ]
   },
-  "KtC0eRriGlmvclkJdQwO": {
-    "answer": "sadasdsadass",
-    "context_change": "tsadasadad",
-    "scene_id": "scene0000_00",
-    "question": "sadasdasdsadasdas",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "KwxUErHr13TvdrtxGRjl": {
+    "answer": "two",
+    "context_change": "There are two new black stools sat in the corner in front of the refrigerator and door.",
+    "scene_id": "scene0002_00",
+    "question": "How many black stools were added to this room?",
+    "survey_code": "CQA_N29KLDIL7WUZ"
   },
-  "LFu4PhUgIR9CXHNk9Ud4": {
-    "answer": "3",
-    "context_change": "There are some apples on the table",
-    "scene_id": "scene0011_00",
-    "question": "how many apples are added",
-    "context_change_tags": [
-      "Object Addition or Removal",
-      "Local Change"
-    ]
-  },
-  "NiAmthh6TKNrRL6iMR18": {
-    "answer": "sadasdsadasssadasd",
-    "context_change": "tsadasadad",
+  "OfpY1IoNzNJjWNJ0cjA3": {
+    "answer": "Yes",
+    "context_change": "The guitar case has been placed over the guitar",
     "scene_id": "scene0000_00",
-    "question": "sadasdasdsadasdas",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+    "question": "Is the guitar now better protected?"
   },
-  "O7gNpbS9Q32knePl5GX3": {
-    "survey_code": "CQA_HGP1GBE9TAIU",
-    "answer": "sadas",
-    "context_change": "sda",
-    "scene_id": "scene0000_00",
-    "question": "sadasd",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "PD5DUx5WDR0p891eBiqV": {
+    "answer": "Yes",
+    "context_change": "The carpet has been taken out and changed to hardwood flooring.",
+    "scene_id": "scene0028_00",
+    "question": "Is the floor harder now?",
+    "survey_code": "CQA_E19801IDCLYW"
   },
-  "PHM6wAjmk1XmEkIJ6SxG": {
-    "answer": "sdafsfsdasd",
-    "context_change": "sda",
-    "scene_id": "scene0000_00",
-    "question": "sadasd",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "RGS9Ux5XLgApEXNiKC9E": {
-    "answer": "\n",
-    "context_change": "sda",
-    "scene_id": "scene0000_00",
-    "question": "sadasd",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "SBo74dKQYmTEZ7vc9LUp": {
-    "answer": "1",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "21",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "TEYcmBsThzBhvedO1kbP": {
-    "answer": "1",
-    "context_change": "1",
-    "scene_id": "scene0000_00",
-    "question": "1",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "RGtSbzhJxhgEStbvcbBk": {
+    "answer": "no, it's not.",
+    "context_change": "The microwave has been moved from under the cabinet to on the kitchen counter into the corner.",
+    "scene_id": "scene0003_00",
+    "question": "Is the microwave now closer to the refrigerator in its new spot?"
   },
   "TnCn2SYepiCVQUC25iqS": {
     "answer": "sitting on the bed",
@@ -348,6 +220,13 @@
       "Local Change"
     ]
   },
+  "VTDBzLthxmPKq2SYghVN": {
+    "answer": "Sell the chair or donate it.",
+    "context_change": "The closet door is being blocked by a chair.",
+    "scene_id": "scene0002_00",
+    "question": "Is there anywhere else the chair in the corner can go so that it's not against the radiator and blocking the closet?",
+    "survey_code": "CQA_HKKS4IQA25Q1"
+  },
   "WJP8vavtIXD0iWJEYHTX": {
     "answer": "The long kitchen cabinet with counter and sink",
     "context_change": "The table is removed",
@@ -358,16 +237,11 @@
       "Local Change"
     ]
   },
-  "X56uyBEO2pBgOZrBHNVD": {
-    "survey_code": "A23RFBF2GPON50ZM",
-    "answer": "12",
-    "context_change": "1231",
-    "scene_id": "scene0000_00",
-    "question": "12321",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "WbZq87RD8jq6Lyp7vX1U": {
+    "answer": "Amount of garbage in the receptacle is first thing someone would notice upon entering room.",
+    "context_change": "The cleanliness of the room could/would change during a clean up, specifically in regards to the garbage receptacle and the counter space.",
+    "scene_id": "scene0003_00",
+    "question": "What is the most noticeable object that affects the cleanliness, (real or perceived) of the room?"
   },
   "Z8NzkwOSW1VlYzdMQN9y": {
     "answer": "\u592a\u6050\u6016\u4e86\uff0c\u6709\u4e2a\u7a7f\u7740\u53ef\u7591\u7684\u4eba\u5728\u623f\u95f4\u91cc\u5f00\u5077\u4e86",
@@ -399,25 +273,17 @@
       "Global Change"
     ]
   },
-  "aL4izErRObd9tHyFxkuy": {
-    "answer": "sdafsf",
-    "context_change": "sda",
-    "scene_id": "scene0000_00",
-    "question": "sadasd",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "aQsJGE8AhazztAJ9BkTf": {
+    "answer": "No",
+    "context_change": "The display case sitting beside the beige brick wall and behind the beige couch with two pillows is moved to the brown brick wall, sitting closer to the brown table and couch with two pillows. ",
+    "scene_id": "scene0008_00",
+    "question": "Would moving the display case make the room look more open and spacious? "
   },
-  "benlvQm3utRAhASf3NSn": {
-    "answer": "sadas",
-    "context_change": "sda",
-    "scene_id": "scene0000_00",
-    "question": "sadasd",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "aZthm3U0vA1FwRCkuJVC": {
+    "answer": "Nothing",
+    "context_change": "The suitcase could be oved to the other side of the bed.",
+    "scene_id": "scene0006_00",
+    "question": "What is between the bed and the curtain?"
   },
   "dqUb11IYQhG2lONuSQ1T": {
     "answer": "the recycle bin",
@@ -429,35 +295,11 @@
       "Global Change"
     ]
   },
-  "e92bRP2qwwnMRsDm1PKZ": {
-    "answer": "adafasfaasdsasd",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "21",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "eOaJOi0yImrz0DKfQVwI": {
-    "answer": "1231",
-    "context_change": "2321",
-    "scene_id": "scene0000_00",
-    "question": "213",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "eabisfkPfT6KGsb2BjJg": {
-    "answer": "1231",
-    "context_change": "2321",
-    "scene_id": "scene0000_00",
-    "question": "213",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "fcbF7BxDYJD1fUKVv3db": {
+    "answer": "yes",
+    "context_change": "The white cabinet that is in the left corner has been moved to the center of the green curtain.",
+    "scene_id": "scene0001_00",
+    "question": "Is the white cabinet taking up more space where it is now?"
   },
   "feNXScgZBov7PNhrUvNF": {
     "answer": "bed",
@@ -469,15 +311,12 @@
       "Local Change"
     ]
   },
-  "fyT4nzMFQVwEeHdozNZ9": {
-    "answer": "asdasd",
-    "context_change": "1232",
-    "scene_id": "scene0023_00",
-    "question": "2112",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "foRebbdYmr0rjauLZXUk": {
+    "answer": "Yes",
+    "context_change": "The guitar case has been placed over the guitar",
+    "scene_id": "scene0000_00",
+    "question": "Is the guitar now better protected?",
+    "survey_code": "CQA_X5TT2WSWTS7M"
   },
   "g5RUiDY0H5KacNRtncs8": {
     "answer": "On the bed",
@@ -529,16 +368,6 @@
       "Local Change"
     ]
   },
-  "haEXCx2W25qtug8AilWl": {
-    "answer": "sadasd",
-    "context_change": "thisad asdsa",
-    "scene_id": "scene0000_00",
-    "question": "sadasd",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
   "hu7xtBAGWckJr2oWwuEx": {
     "answer": "\u592a\u6050\u6016\u4e86\uff0c\u6709\u4e2a\u7a7f\u7740\u53ef\u4ee5\u7684\u4eba\u5728\u623f\u95f4\u91cc\u5f00\u5077\u4e86",
     "context_change": "\u52a0\u5165\u4e00\u4e2a\u7a7f\u7740\u53ef\u7591\u7684\u4eba\u5728\u623f\u95f4\u91cc",
@@ -559,6 +388,40 @@
       "Local Change"
     ]
   },
+  "jZl8q2U9M0rpNU8L8mKX": {
+    "answer": "Yes",
+    "context_change": "The shoes have been placed on the shelf under the table",
+    "scene_id": "scene0000_00",
+    "question": "Is there now more floor space?"
+  },
+  "kzDfAPqMOHakFSYD9ICC": {
+    "answer": "Black table",
+    "context_change": "The display case is now located next to the clothing rack. ",
+    "scene_id": "scene0008_00",
+    "question": "What is the closest item behind the couch with two pillows now? ",
+    "survey_code": "CQA_2K33458LR8XU"
+  },
+  "m0XSnyFz0ja65ZrhS8E8": {
+    "answer": "No",
+    "context_change": "The windows have been walled above the sinks  and a large mirror is now in its place.",
+    "scene_id": "scene0014_00",
+    "question": "Are there currently any windows in this bathroom?",
+    "survey_code": "CQA_ACRZSW6NADM1"
+  },
+  "mCGVVIy3iahdC9tQN2LR": {
+    "answer": "Shelf",
+    "context_change": "The shoes have been placed on the coffee table that is in front of the couch.",
+    "scene_id": "scene0000_00",
+    "question": "What furniture is in front of the shoes now?",
+    "survey_code": "CQA_VXU901T0FPTO"
+  },
+  "mZADw6L8Gm6MrT1zeMzr": {
+    "answer": "no, it's not.",
+    "context_change": "The microwave has been moved from under the cabinet to on the kitchen counter into the corner.",
+    "scene_id": "scene0003_00",
+    "question": "Is the microwave now closer to the refrigerator in its new spot?",
+    "survey_code": "CQA_O3KVDPLTRPYF"
+  },
   "n7NmorIal5rvU1Ih9HS2": {
     "answer": "Shape of the table changes",
     "context_change": "Shape of the table changes",
@@ -569,16 +432,11 @@
       "Local Change"
     ]
   },
-  "ngpRE29dnjwxoBAiPH22": {
-    "survey_code": "PAKZZ2X1",
-    "answer": "1231",
-    "context_change": "2321",
-    "scene_id": "scene0000_00",
-    "question": "213",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "njXA4fwCWgOmSFkkaNQJ": {
+    "answer": "Most likely",
+    "context_change": "The black couch next to the small side table is now gone.",
+    "scene_id": "scene0001_00",
+    "question": "If a new green couch is in it's place, will it clash with the other furniture in this drab room?"
   },
   "o0EqgRyqx1TuS080KMTu": {
     "answer": "yes",
@@ -590,15 +448,11 @@
       "Local Change"
     ]
   },
-  "o1KY8Uukp0qQ0HyaAYU8": {
-    "answer": "sd",
-    "context_change": "sada",
-    "scene_id": "scene0000_00",
-    "question": "sad",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
+  "pyuV8BxcWJ1YGS3kTgv7": {
+    "answer": "Sell the chair or donate it.",
+    "context_change": "The closet door is being blocked by a chair.",
+    "scene_id": "scene0002_00",
+    "question": "Is there anywhere else the chair in the corner can go so that it's not against the radiator and blocking the closet?"
   },
   "q7Y0RO3cPKJ5hXGmiH20": {
     "answer": "No. ",
@@ -610,47 +464,12 @@
       "Local Change"
     ]
   },
-  "qQJXcpX12VVZFiAfildP": {
-    "survey_code": "CQA_HORZ0YXNOLGC",
-    "answer": "213124124124",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "231412421",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "tAP1op8tlpXWdllLKHHY": {
-    "answer": "1",
-    "context_change": "1231",
-    "scene_id": "scene0000_00",
-    "question": "12321",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "vHZIRMIwu0d5dhsx8Yz0": {
-    "answer": "adafasfa",
-    "context_change": "2131",
-    "scene_id": "scene0000_00",
-    "question": "21",
-    "context_change_tags": [
-      "Object Geometric Change",
-      "Local Change"
-    ]
-  },
-  "vxIy6BpW4yplGrHFj1Ph": {
-    "survey_code": "CQA_T9EYPXBHUDDI",
-    "answer": "I don't understand this survey.",
-    "context_change": "Something is on the table",
-    "scene_id": "scene0048_00",
-    "question": "What is in front of the window",
-    "context_change_tags": [
-      "Object Addition or Removal",
-      "Local Change"
-    ]
+  "wa7k8MaS9JKyD0zs2RHO": {
+    "answer": "yes",
+    "context_change": "The white cabinet that is in the left corner has been moved to the center of the green curtain.",
+    "scene_id": "scene0001_00",
+    "question": "Is the white cabinet taking up more space where it is now?",
+    "survey_code": "CQA_MM9V7SQJPPYC"
   },
   "xILv5xuBaXbpTidNQNI8": {
     "survey_code": "CQA_T9EYPXBHUDDI",
@@ -670,16 +489,6 @@
     "question": "what kind of items should be removed as well?",
     "context_change_tags": [
       "Object Addition or Removal",
-      "Local Change"
-    ]
-  },
-  "xcBWyXggVjoandsFlcin": {
-    "answer": "2414",
-    "context_change": "231",
-    "scene_id": "scene0000_00",
-    "question": "1",
-    "context_change_tags": [
-      "Object Geometric Change",
       "Local Change"
     ]
   },
