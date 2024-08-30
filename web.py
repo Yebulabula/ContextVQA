@@ -10,7 +10,6 @@ import random
 
 firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
-
 if firebase_credentials:
     # Decode the base64 encoded credentials
     cred_json = base64.b64decode(firebase_credentials).decode('utf-8')
@@ -151,12 +150,10 @@ guideline_text = """
 - Any realistic change in the scene is acceptable, such as moving, rotating, resizing objects, changing their color, or adding/removing items. You can also modify multiple objects simultaneously.
 - Ensure your descriptions are **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">rejection</span>.
 
-###### Question - Ask a question about the 'modified' scene, rather than the 'original' scene.
-- Your questions should yiled different answers in 'modified' and 'original' scenes.
+###### Question - Ask a question about the 'modified' scene only, rather than compare it with the 'original' scene.
 - Your questions shouldn't be answered solely by reading the context change without viewing the scene.
-- Your questions should focus only on the 'modified' scene, not compare it with the 'original' scene.
-- Your questions shouldn't be answered with a simple 'yes' or 'no'.
-- Your questions shouldn't have **multiple**, **ambiguous**, or **subjective** answers
+- Your questions should yield a different answer when your context change is applied to the scene.
+- Your questions shouldn't have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers.
 
 ###### Answer - Give a simple, concise answer that is unique to the question and fits the modified scene.
 
@@ -183,8 +180,6 @@ with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, 
 # Randomly select a scene ID when the page loads
 
 left_col, right_col = st.columns([2, 1])
-
-
 
 # Right column: Form
 with right_col:
