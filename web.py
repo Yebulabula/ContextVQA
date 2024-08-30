@@ -168,6 +168,8 @@ Given **Context Change**: Three more trash cans are added near the kitchen count
 
 **Trick:** It's best to consider a meaningful context change that allows you to ask multiple questions, so you won't need to rewrite the context changes each time. If you're stuck, refresh the page to get a new scene. 
 
+*We do have some templates to inspire you. But these templates are not related to the scene you are looking at. You should not copy them.*
+
 *<span style="color:red;">Please use your imagination to its fullest. Good luck!</span>* 😁
 """
 
