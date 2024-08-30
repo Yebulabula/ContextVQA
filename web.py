@@ -47,13 +47,6 @@ SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('s
 
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
-@st.cache_data
-def get_scene_ids_and_files(root_dir):
-    scene_ids = sorted(os.listdir(root_dir), key=lambda x: (not x.startswith('scene'), x))
-    return {scene_id: os.path.join(root_dir, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in scene_ids}
-
-SCENE_ID_TO_FILE = get_scene_ids_and_files(ROOT_1)
-
 question_inspirations = json.load(open('question_inspirations.json'))
 
 context_inspirations = json.load(open('context_inspirations.json'))
