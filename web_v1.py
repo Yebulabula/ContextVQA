@@ -11,7 +11,7 @@ import cv2
 import msgpack
 
 # Initialize Firebase credentials (dummy credentials for example)
-firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
+firebase_credentials="ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29udGV4dHZxYSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjNiMWVhOGQ5ZjBjMDJiYjEwZDQwNTI4YWFlNWFmODI0MDAzMzZlZDEiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1kvdkV3QkpkN2RUcW1cblZkeHFVcExFMFFldTRFbS96dVA3YlV5YmxzUUZrVzhoNjBUUGdORlp0UXo2Z012L1VpZFBIcGxaSjRHWDVLZFhcbldVd2wrZkpHM2phZFhPcEJsaFlXaTBiNGhkWEhOY3NWSjR1dlFab0xrM05IcUJCbGhzSTU5eS96VU9QTTExc2xcbkRIVXVTL3ZhaGg4VHBwWEVubnRGV2lxNkYrTitmQmxhL3BtQlA1RDNuNG5qMnhObzgwbWsva3V3UjY0akpSZC9cbkVXeTZUaGExOXhPc3hWUFhCRUxFRXlLTGY2RzYwbU9jbnZpQWRwcU5MU2J0MUlwZUMwaWw0RlFuQUcwUUR3c3FcbmE5ay90b2t0OWs2NUFzc085dFcvVjcrTzVodmlySXUwL1pneXV3bGowbmNGRHNYb211UTRndXQ0Q3g3UUp2bndcbnA5Q3BMNTJaQWdNQkFBRUNnZ0VBRUNIdHo3amtPajNwd2NsUzlSa2c1Y1QrME9kUWozdWkyWXUwWk1HWWlOZkZcbmhxZVd1V1NsYnBhak9EVGxqZFlkVS8vdmZwR21YaHhic3QrMUlsb0JQSXpJNkgzNEs1TkdYL2t1c2h6MnBrdGJcblR5ODgwTzJUYno0TWpWVkE2VnUwMWtUazF2ekVFSUR5Mk95LzNISmhxN0N4elRJbkg3VHdYYWM4MHlPYXR1YjRcblRWMGNFYXRnVUdHQlJudjRzbVVmVG1LeU9MeFkvdWxEbllPTWtmRXlEL2lzaVlhaTBCbEY4RC9CbGlCVmJEVERcbk0veEthM21yYkh0YU0zTVVLVVdWZ1JFTFlOU0IwbWcxRGVDdldSM2RwQ1JxSUg4dWJzMGlGc0JvVG4vb0NNbUpcbkdpaHA1OGtTSlV2d2c3YWJSKzRpd2liaktrdFhEYjRrejFiNlN2MElTd0tCZ1FESlBObE8vMk12ZmtwZ1h6SDhcbmlnNW1CbGI2VWRkR29QT1pBTDdmeHpDVTd1TmtTTHJXUEVkY2gzcDNKV05tNDR6SWp0czJqd0VaZHBWdXdxTS9cbnY1Q2lwZExHMCtEMUhIL1BJK2lhUUJLWWExbHZWMHI0S2kxVWJiVFYzOVBPbkJ1S2RIZ3BRNkRhUS9tQ2RTK2hcbnkwQllXd0NJdUIzRUg1Wk5pTDY4azJHMnV3S0JnUURDb1ZnVkUvTTgrWnVpZUlUanZDSk5hNUYrakVMaXlQVlVcbitXRlBXQkpmN2tmRktuZHRleXdiZUR0U2NJRWV5OXJyVWo0anRyMCs2NDM0UTVoS2pPM2Q3c1VGRTlxcms2K09cbngrOUhtYlB6OGg3N3d2TXc3dXFncFEvZzlwUkJOZGFHS2FCMGszUWh6OFY2QXQra01sZkN6NXl0RGk5SUZ3c0RcblM3VmdqQ2E1dXdLQmdBemMyOU1GMWZRcU1WelptTnRZZzdVWHdLVjlaN0kzQlhzSkppb3RsRGhnMEo0UFhBbm5cbmpuUW1vTGhPNW55a0hOS1E5d2dVdWZCRHVTZDhQMjBLdEpjQTNHa2pEK1Q2N2x4eUlpTUI1MjVncGpYTXNaa05cbk1ScU5iSnFqRk9uRzVxZkI3QkJQSjAvc09sMlJXZnNRZjh0bC9iRy9lditYT1VjNWIxK2tXQUdUQW9HQURyTk5cbkNkcUY1cmNic0R2V0hiVmFDZXIwQkZEbnhHVlZVbU83bTlpVkdyWE9xZSs1TVlXNklTRUZxZ1poV2tnZmN1SzFcbld0RTBuZ29Bb1IzSjVPZWNGOFV2RUdFZGhSUVVrSDQ5Ym5VSGlJZGpHN1R2MVdSV1NHZnZPUmltdmY0cEE5MGxcbkIya1R2bklKQWx3eE5CK3hUVCtOSCswUVdTdVVZMTFXaDhKT01uMENnWUVBaHlYUGkxaC9MMWZybW1lWFlKTWRcblpROEhrT3dTVGdrelF6eER4WWttQ1dJN1lIeThzbU9SUGRSRlBOVEpUMVVRU0Y1d2Mwd1pENlUvTnFKMGlqTEtcblFqYzBOVUlkNmhlVFQ3cXpwdnp4VFZCcFNtbFJCVm1MTGJ3Q0plditQajczaU0rZEtSemIxYmpBQ1lEamM5OWhcbjhVazFDZW1GWXhzS2s5Z1Y0bktaQ2M4PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImZpcmViYXNlLWFkbWluc2RrLXRxc2I3QGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA1OTg2MTIxMjI3NjY5MjQ1MDM1IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9maXJlYmFzZS1hZG1pbnNkay10cXNiNyU0MGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"
 
 if firebase_credentials:
     if not firebase_admin._apps:
@@ -127,7 +127,7 @@ initialize_state()
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span> 
 
-You need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene  you can make to the scene and write it down.  After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question. <span style="color:red;">**Repeat this process for three times to complete the task.**</span>
+To complete this task, you need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene  you can make to the scene and write it down.  After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question.
 
 ###### Hypothetical Scene Change
 - Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, function, adding, or removing **one or more objects**—any realistic change is acceptable.
@@ -142,17 +142,21 @@ You need to firstly understand the given 3D scene. Then, think of a hypothetical
 
 **Example:**
 
+This scene contains 2 windows, 2 tables, 1 kitchen counter, 1 shower, 2 curtains, 1 desk, 5 cabinets, 1 sink, 1 scale, 3 trash cans, 1 tv, 1 pillow, 1 clock, 1 backpack, 4 stools, 1 couch, 1 refrigerator, 1 coffee table, 1 toilet, 1 bed, 2 kitchen cabinetss, 1 toaster oven, 1 laundry basket, <span style="color:red;">**1 guitar**</span>, 1 tissue box, 2 nightstands, 1 dish rack, 1 microwave, 1 toaster, 1 door, 1 shelf, 1 bicycle, 1 shoes, 2 doorframes, 1 mirror, 1 guitar case.
+
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
+- <span style="color:red;"> **Good:** </span> **Scene Change:** There are two new guitars has been leaned against the refrigerator. **Q:**  How many guitars in this room now? **Answer:** Three.
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
-- <span style="color:red;"> **Good:** </span> **Scene Change:** The bicycle and the cabinet near the door have switched places. **Q:** How many trash cans are now near the new location of the bicycle? **Answer:** Two.
-- <span style="color:red;"> **Good:** </span> **Scene Change:** The gray coffee table has been removed from the room. **Q:** Which piece of furniture is directly behind the shelf now? **Answer:** Couch.
-- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown. (**The pillow color is not affected by the change**)
+- <span style="color:red;"> **Good:** </span> **Scene Change:** The coffee table has been changed to match the color of the bed. **Q:** What is the color of the coffee table? **Answer:** Blue.
+- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown.
+(**The pillow color is not affected by the scene change**)
+ 
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What is on the gray couch now? **A:** Pillow. (**The question can be answered by only reading the scene change**) 
 
-<span style="color:blue;">**Note:** Please ensure your three submissions are as diverse as possible to maintain the quality of our dataset. *Don't just copy the style of the example.* </span>
+*We do have some templates to inspire you. But these templates are not related to the scene you are looking at. You should not copy them. If you're stuck, refresh the page for a new scene.* 
 
-*<span style="color:red;"> If you're stuck, try to get a new scene. Be creative! Good luck!</span>* 😁
+*<span style="color:red;">Please use your imagination to its fullest. Good luck!</span>* 😁
 """
 
 @st.cache_resource
@@ -162,7 +166,7 @@ def render_img_html(image_b64):
 @st.cache_resource
 def image_to_base64(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
-    target_size = (700, 700)
+    target_size = (600, 600)
     resized_image = cv2.resize(image, target_size, interpolation=cv2.INTER_AREA)
     
     _, encoded_image = cv2.imencode(".png", resized_image)
@@ -177,9 +181,6 @@ left_col, right_col = st.columns([2, 1])
 
 with right_col:
     if 'scene_id' not in st.session_state or st.session_state.scene_id is None:
-        refresh_scene()
-        
-    if st.button("**Click here for a new scene**"):
         refresh_scene()
         
     scene_id = st.session_state.scene_id
