@@ -212,7 +212,7 @@ with right_col:
                 entry['survey_code'] = survey_code
                 save_context_data(entry)
                 
-                st.success(f"Thanks for subitting your responses. Here is your Completion Code: {survey_code}. You need obtain 3 codes to complete the task.")
+                st.success(f"Thank you for submitting your responses. Your Completion Code is: {survey_code}. Please submit 3 codes to CloudResearch to complete the task.")
 
 with left_col:
     if 'fig' not in st.session_state:
