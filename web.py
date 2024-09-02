@@ -49,14 +49,12 @@ ROOT_1 = "3D_scans"
 SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('scene')])
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
-# question_inspirations = load_json('question_inspirations.json')
 context_inspirations = load_json('context_inspirations.json')
 question_inspirations = load_json('question_inspirations.json')
 scene_annotations = load_scene_annotations()
 
 def read_instance_labels(scene_id):
-    id2labels = load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
-    return id2labels
+    return load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
 
 def generate_survey_code():
     return 'CQA_' + ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=8))
@@ -121,8 +119,8 @@ guideline_text = """
 You need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene you can make to the scene and write it down. After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question. <span style="color:red;">**Repeat this process for three times to complete the task.**</span>
 
 ###### Scene Change
-- Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, function, adding, or removing **one or more objects**—any **realistic change** is acceptable.
-- To avoid <span style="color:red;">**rejection**</span>, your description of the change must be clear enough so we know exactly which object(s) you changed. You can use nearby objects or unique attributes (e.g., color) to describe the objects.
+- Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, adding, or removing objects—any **realistic change** is fine.
+- To avoid <span style="color:red;">**rejection**</span>, your description of the change must be clear enough so we know exactly which object(s) you changed. 
 
 ###### Question - Ask a question about the scene following the scene change.
 - Your questions **shouldn't** be answered solely by reading the Scene Change without viewing the scene.
@@ -135,7 +133,6 @@ You need to firstly understand the given 3D scene. Then, think of a hypothetical
 
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
-- <span style="color:red;"> **Good:** </span> **Scene Change:** The bicycle and the cabinet near the door have switched places. **Q:** How many trash cans are now near the new location of the bicycle? **Answer:** Two.
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The gray coffee table has been removed from the room. **Q:** Which piece of furniture is directly behind the shelf now? **Answer:** Couch.
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown. (**The pillow color is not affected by the change**)
