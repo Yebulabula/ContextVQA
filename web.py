@@ -117,30 +117,30 @@ def refresh_scene():
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span> 
 
-You need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene  you can make to the scene and write it down.  After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question. <span style="color:red;">**Repeat this process for three times to complete the task.**</span>
+You need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene you can make to the scene and write it down. After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question. <span style="color:red;">**Repeat this process for three times to complete the task.**</span>
 
 ###### Hypothetical Scene Change
-- Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, function, adding, or removing **one or more objects**—any realistic change is acceptable.
+- Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, function, adding, or removing **one or more objects**—any **realistic change** is acceptable.
+- To avoid <span style="color:red;">**rejection**</span>, your description of the change must be clear enough so we know exactly which object(s) you changed. You can use nearby objects or unique attributes (e.g., color) to describe the objects.
 
 ###### Question - Ask a question about the scene following the hypothetical change.
-- Your questions shouldn't be answered solely by reading the Scene Change without viewing the scene.
-- Your questions shouldn't give the same answer, no matter whether the scene change happened.
+- Your questions **shouldn't** be answered solely by reading the Scene Change without viewing the scene.
+- Your questions **shouldn't** give the same answer, no matter whether the scene change happened.
+- Your questions **shouldn't** have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers to avoid <span style="color:red;">**rejection**</span>.
 
-###### Answer - Provide a simple word or phrase as an <span style="color:red;"> **unique** </span>  answer to your question.
+###### Answer - Your answer has to be a simple word or a phrase, and <span style="color:red;"> **unique** </span> to the question.
 
 **Example:**
 
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
-- <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The bicycle and the cabinet near the door have switched places. **Q:** How many trash cans are now near the new location of the bicycle? **Answer:** Two.
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The gray coffee table has been removed from the room. **Q:** Which piece of furniture is directly behind the shelf now? **Answer:** Couch.
+- <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown. (**The pillow color is not affected by the change**)
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What is on the gray couch now? **A:** Pillow. (**The question can be answered by only reading the scene change**) 
 
-<span style="color:blue;">**Note:** 
-- Please make sure all your descriptions are **clear**, **detailed**, and **realistic** enough. <span style="color:red;"> (very short or vague descriptions will be rejected) </span> 
-- Please ensure your three submissions are as diverse as possible to maintain the quality of our dataset. *Don't just copy the style of the example.* </span>
+<span style="color:blue;">**Note:** Please ensure your three submissions are as diverse as possible to maintain the quality of our dataset. *Don't just copy the style of the example.* </span>
 
 *<span style="color:red;"> If you're stuck, try to get a new scene. Be creative! Good luck!</span>* 😁
 """
