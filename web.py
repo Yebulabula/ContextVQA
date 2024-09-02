@@ -164,10 +164,8 @@ with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, 
 left_col, right_col = st.columns([2, 1])
 
 with right_col:
-    if 'scene_id' not in st.session_state:
-        st.session_state.fig = refresh_scene()
-        
-    if st.button("**Click here for a new scene**"):
+    if 'scene_id' not in st.session_state or st.button("**Click here for a new scene**"):
+        st.session_state.scene_id = random.choice(list(SCENE_ID_TO_FILE.keys()))
         st.session_state.fig = refresh_scene()
         
     scene_id = st.session_state.scene_id
@@ -187,9 +185,13 @@ with right_col:
     st.markdown("<div style='font-weight: bold; font-size: 20px;'>Answer</div>", unsafe_allow_html=True)
     answer = st.text_area("Answer has to be a simple word or a phrase.", key="answer", placeholder="Type here...", height=10)
 
+    valid_start_words = ['Do', 'Does', 'What', 'Which', 'How', 'Where', 'When', 'Who', 'Why', 'Are', 'Is', 'Can', 'Could', 'Should', 'Would', 'Will', 'Did', 'Have', 'Has', 'Had', 'May', 'Might', 'Must', 'Shall', 'Was', 'Were', 'Am']
+    
     if st.button("Submit"):
-        if not context_change or not question or not answer:
-            st.warning("Please fill in all fields before submitting.")
+        if len(context_change.strip()) < 20 or len(question.strip()) < 20 or len(answer.strip()) < 1:
+            st.warning("Please ensure your descriptions are detailed enough.")
+        elif not any(question.strip().startswith(word) for word in valid_start_words):
+            st.warning("Your question must start with one of the following words: 'What', 'Which', 'How', 'Where', 'Does', 'If', 'Can', 'Is'.")
         else:
             entry = {
                 'scene_id': scene_id,

@@ -38,8 +38,10 @@ if firebase_credentials:
         # Iterate over documents and collect data
         for doc in docs:
             dict_data = {k:v for k, v in doc.to_dict().items() if k != 'survey_code'}
-            if dict_data not in data.values():
+            if dict_data not in data.values() and len(dict_data['context_change']) > 20 and len(dict_data['question']) > 20:
                 data[doc.to_dict()['survey_code']] = dict_data
+            else:
+                print(dict_data)
 
         # Write data to a JSON file
         with open(output_file, 'w') as f:
@@ -48,18 +50,16 @@ if firebase_credentials:
 
     # Example: Export data from 'your-collection-name' to 'output.json'
     collection_name = 'ContextVQA'
-    output_file = 'new_user.json'
+    output_file = 'new_user_1.json'
 
     export_firestore_collection_to_json(collection_name, output_file)
-    
-
 
 
 import json
 import numpy as np
 import os
 
-with open('new_user.json', 'r') as f:
+with open('new_user_1.json', 'r') as f:
     data = json.load(f)
     
     
