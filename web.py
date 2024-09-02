@@ -33,7 +33,7 @@ def load_scene_annotations():
     
 # Function to save context data to Firestore
 def save_context_data(data):
-    db.collection('ContextReason').add(data)
+    db.collection('ContextVQA').add(data)
 
 # Function to refresh the scene
 def refresh_scene():
@@ -131,12 +131,10 @@ You need to firstly understand the given 3D scene. Then, think of a hypothetical
 
 ###### Hypothetical Scene Change
 - Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, function, adding, or removing **one or more objects**—any realistic change is acceptable.
-- The change decription should be **clear**, **detailed**, and **realistic** to avoid <span style="color:red;">**rejection**</span>.
 
 ###### Question - Ask a question about the scene following the hypothetical change.
 - Your questions shouldn't be answered solely by reading the Scene Change without viewing the scene.
 - Your questions shouldn't give the same answer, no matter whether the scene change happened.
-- Your questions shouldn't have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers to avoid <span style="color:red;">**rejection**</span>.
 
 ###### Answer - Provide a simple word or phrase as an <span style="color:red;"> **unique** </span>  answer to your question.
 
@@ -150,7 +148,9 @@ You need to firstly understand the given 3D scene. Then, think of a hypothetical
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown. (**The pillow color is not affected by the change**)
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What is on the gray couch now? **A:** Pillow. (**The question can be answered by only reading the scene change**) 
 
-<span style="color:blue;">**Note:** Please ensure your three submissions are as diverse as possible to maintain the quality of our dataset. *Don't just copy the style of the example.* </span>
+<span style="color:blue;">**Note:** 
+- Please make sure all your descriptions are **clear**, **detailed**, and **realistic** enough. <span style="color:red;"> (very short or vague descriptions will be rejected) </span> 
+- Please ensure your three submissions are as diverse as possible to maintain the quality of our dataset. *Don't just copy the style of the example.* </span>
 
 *<span style="color:red;"> If you're stuck, try to get a new scene. Be creative! Good luck!</span>* 😁
 """
@@ -214,8 +214,10 @@ with right_col:
             if duplicates:
                 st.warning("This submission has already been made. Please do not submit duplicate entries.")
             else:
-                save_context_data(entry)
                 survey_code = generate_survey_code()
+                entry['survey_code'] = survey_code
+                save_context_data(entry)
+                
                 st.success(f"Thanks for subitting your responses. Here is your Completion Code: {survey_code}. You need obtain 3 codes to complete the task.")
 
 with left_col:
