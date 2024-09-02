@@ -54,9 +54,8 @@ SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_cle
 scene_annotations = load_scene_annotations()
 
 def read_instance_labels(scene_id):
-    instance_labels = np.load(f'{ROOT_1}/{scene_id}/{scene_id}_instance_labels.npy')
     id2labels = load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
-    return instance_labels, id2labels
+    return id2labels
 
 def generate_survey_code():
     return 'CQA_' + ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=8))
@@ -215,7 +214,7 @@ with left_col:
     if 'fig' not in st.session_state:
         st.session_state.fig = refresh_scene()
     
-    instance_labels, id2labels = read_instance_labels(st.session_state.scene_id)
+    id2labels = read_instance_labels(st.session_state.scene_id)
     excluded_categories = {'wall', 'object', 'floor', 'ceiling'}
     objects_by_category = {}
     for label in id2labels.values():
