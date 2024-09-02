@@ -148,7 +148,7 @@ This scene contains 2 windows, 2 tables, 1 kitchen counter, 1 shower, 2 curtains
 
 - <span style="color:red;"> **Good:** </span> **Scene Change:** There are two new guitars has been leaned against the refrigerator. **Q:**  How many guitars in this room now? **Answer:** Three.
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
-- <span style="color:red;"> **Good:** </span> **Scene Change:** The coffee table has been changed to match the color of the bed. **Q:** What is the color of the coffee table? **Answer:** Blue.
+- <span style="color:red;"> **Good:** </span> **Scene Change:** The coffee table has been changed to match the color of the bed. **Q:** What is the color of the coffee table? **Answer:** Blue.st
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown.
 (**The pillow color is not affected by the scene change**)
  

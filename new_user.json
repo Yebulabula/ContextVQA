@@ -1,0 +1,170 @@
+{
+  "2bsMFOf6eNuwalkHbBTf": {
+    "answer": "Two",
+    "context_change": "The mirror above the toilet has been removed",
+    "scene_id": "scene0693_00",
+    "question": "How many mirrors are in the room now?",
+    "survey_code": "CQA_16VSH1B3"
+  },
+  "2qRlwKnOqYgvsljiLL90": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??",
+    "survey_code": "CQA_YQA1RX0C"
+  },
+  "5SjYD9q1ukr3qgoD4Flz": {
+    "answer": "the storage bin",
+    "context_change": "the stool was moved near the cart",
+    "scene_id": "scene0688_00",
+    "question": "what object is closest to the curtain",
+    "survey_code": "CQA_CHL7GFKF"
+  },
+  "BN2QvlN2OMyRPfMI0EdP": {
+    "answer": "Not fully as the file cabinet is blocking the door",
+    "context_change": "The file cabinet is moved to beside the door",
+    "scene_id": "scene0141_00",
+    "question": "Can you open the door",
+    "survey_code": "CQA_U6UR0Z6L"
+  },
+  "HdZwHyIfHQrnLNBRypdX": {
+    "answer": "the table",
+    "context_change": "the backpack was moved near the monitor",
+    "scene_id": "scene0300_00",
+    "question": "what object is closest to the divider",
+    "survey_code": "CQA_2BKXJG7P"
+  },
+  "Jfg5xADAmntefLoscfrk": {
+    "answer": "Yes, they are facing the table on either side.",
+    "context_change": "The two chairs by the round table have been turned to face inwards towards the table. ",
+    "scene_id": "scene0622_00",
+    "question": "Can you reach the round table from each of the two chairs?",
+    "survey_code": "CQA_1UIIA39I"
+  },
+  "Nm3PNzMiWrod9GVK4K5i": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??",
+    "survey_code": "CQA_7CLSIGM4"
+  },
+  "PN5DJ0ehFriu1mob9Guf": {
+    "answer": "Not fully as the file cabinet is blocking the door",
+    "context_change": "The file cabinet is moved to beside the door",
+    "scene_id": "scene0141_00",
+    "question": "Can you open the door",
+    "survey_code": "CQA_7QL34OIM"
+  },
+  "PStPhzlBemLoauVTC00O": {
+    "answer": "The printer",
+    "context_change": "The trash can that was closer to the recycling bin has been moved to near the cabinet",
+    "scene_id": "scene0255_00",
+    "question": "Which is the closest item to the recycling bin now?",
+    "survey_code": "CQA_M40X8P7N"
+  },
+  "Wjo8H6GuppdJjfjJdHgK": {
+    "answer": "Copier",
+    "context_change": "The bulletin board has been moved to the opposite wall",
+    "scene_id": "scene0478_00",
+    "question": "Is the bulletin board closer to the copier or a printer?",
+    "survey_code": "CQA_Y4VHSC4F"
+  },
+  "X20SMbWNgjx4LmThVZni": {
+    "answer": "The printer",
+    "context_change": "The trash can that was closer to the recycling bin has been moved to near the cabinet",
+    "scene_id": "scene0255_00",
+    "question": "Which is the closest item to the recycling bin now?",
+    "survey_code": "CQA_98ABM77O"
+  },
+  "X7ogx6jo7Dw9VUmesVfQ": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??",
+    "survey_code": "CQA_28R69ZGA"
+  },
+  "YtmigKljoanDq9KHFI0o": {
+    "answer": "nine",
+    "context_change": "the suitcase was moved near the bed",
+    "scene_id": "scene0567_00",
+    "question": "how many items are in the bedroom now",
+    "survey_code": "CQA_UKS84GGV"
+  },
+  "a52Vyu7XTNBTBjUd5Cda": {
+    "answer": "Five books are on the floor now.",
+    "context_change": "The books are thrown off cabinet and fall onto the floor.",
+    "scene_id": "scene0241_00",
+    "question": "How many books are on the floor now?",
+    "survey_code": "CQA_VW2QKRR3"
+  },
+  "ho0jzjHzMOPbAmbVsf8k": {
+    "answer": "The shelf",
+    "context_change": "The chair that was paired with the table has been moved near  to the bed",
+    "scene_id": "scene0400_00",
+    "question": "Which is the closest item to the desk now??",
+    "survey_code": "CQA_ST8X7SBW"
+  },
+  "i9rZxnQcc4PQJ099GOqb": {
+    "answer": "Yes, because they need to be beside the bathtub",
+    "context_change": "The bathtub is moved to the other side of the room",
+    "scene_id": "scene0676_00",
+    "question": "Are the shower walls to be moved too",
+    "survey_code": "CQA_7CECHWXZ"
+  },
+  "nca92cv46Qj0hPqiQzMD": {
+    "answer": "Five books are on the floor now.",
+    "context_change": "The books are thrown off cabinet and fall onto the floor.",
+    "scene_id": "scene0241_00",
+    "question": "How many books are on the floor now?",
+    "survey_code": "CQA_8B1SZG6K"
+  },
+  "nx3b022tTW194mIDHC4U": {
+    "answer": "The nightstand",
+    "context_change": "The nightstand that was closer to the window has been moved near  the dresser",
+    "scene_id": "scene0035_00",
+    "question": "Which is the closest item to he dresser now?",
+    "survey_code": "CQA_L7MBICZQ"
+  },
+  "qV2GtirAmv2nQi9c549N": {
+    "answer": "Cabinet",
+    "context_change": "The picture has been moved below the TV",
+    "scene_id": "scene0297_00",
+    "question": "What is directly below the picture now?",
+    "survey_code": "CQA_R771LUOG"
+  },
+  "sYGtgUGd2PjXGUwMOcoo": {
+    "answer": "Yes",
+    "context_change": "The file cabinet is moved to the center of the room",
+    "scene_id": "scene0066_00",
+    "question": "Is the table in the way of the cabinet",
+    "survey_code": "CQA_S0IXKAFK"
+  },
+  "ssgomyQDNbsjsxUwYMl2": {
+    "answer": "yes",
+    "context_change": "move the bag alongside the trashcan and laundry",
+    "scene_id": "scene0695_00",
+    "question": "would this change give some space in front of the window",
+    "survey_code": "CQA_5QAYAE2B"
+  },
+  "uRq1dGNZltZo6qsK72WF": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??",
+    "survey_code": "CQA_P7191GKJ"
+  },
+  "xHc9pL3l4IHt9Z4lWPkD": {
+    "answer": "yes",
+    "context_change": "swap the postions of vanity and toilet",
+    "scene_id": "scene0583_00",
+    "question": "would you be more comfortable not having the toilet right in front of the window",
+    "survey_code": "CQA_ODERKJ7D"
+  },
+  "xKUi12iPrcdIoG6dCmcL": {
+    "answer": "The printer",
+    "context_change": "The trash can that was closer to the recycling bin has been moved to near the cabinet",
+    "scene_id": "scene0255_00",
+    "question": "Which is the closest item to the recycling bin now?",
+    "survey_code": "CQA_XRWKSV8T"
+  }
+}

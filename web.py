@@ -50,7 +50,8 @@ SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('s
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
 # question_inspirations = load_json('question_inspirations.json')
-# context_inspirations = load_json('context_inspirations.json')
+context_inspirations = load_json('context_inspirations.json')
+question_inspirations = load_json('question_inspirations.json')
 scene_annotations = load_scene_annotations()
 
 def read_instance_labels(scene_id):
@@ -119,11 +120,11 @@ guideline_text = """
 
 You need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene you can make to the scene and write it down. After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question. <span style="color:red;">**Repeat this process for three times to complete the task.**</span>
 
-###### Hypothetical Scene Change
+###### Scene Change
 - Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, function, adding, or removing **one or more objects**—any **realistic change** is acceptable.
 - To avoid <span style="color:red;">**rejection**</span>, your description of the change must be clear enough so we know exactly which object(s) you changed. You can use nearby objects or unique attributes (e.g., color) to describe the objects.
 
-###### Question - Ask a question about the scene following the hypothetical change.
+###### Question - Ask a question about the scene following the scene change.
 - Your questions **shouldn't** be answered solely by reading the Scene Change without viewing the scene.
 - Your questions **shouldn't** give the same answer, no matter whether the scene change happened.
 - Your questions **shouldn't** have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers to avoid <span style="color:red;">**rejection**</span>.
@@ -140,7 +141,7 @@ You need to firstly understand the given 3D scene. Then, think of a hypothetical
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown. (**The pillow color is not affected by the change**)
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What is on the gray couch now? **A:** Pillow. (**The question can be answered by only reading the scene change**) 
 
-<span style="color:blue;">**Note:** Please ensure your three submissions are as diverse as possible to maintain the quality of our dataset. *Don't just copy the style of the example.* </span>
+<span style="color:blue;">**Note:** We do have some templates to inspire you. But these templates are not related to the scene you are looking at. You should not copy them. </span>
 
 *<span style="color:red;"> If you're stuck, try to get a new scene. Be creative! Good luck!</span>* 😁
 """
@@ -177,8 +178,14 @@ with right_col:
     st.markdown("<div style='font-weight: bold; font-size: 20px;'>Scene Change</div>", unsafe_allow_html=True)
     context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="context_change", placeholder="Type here...", height=10)
     
+    if st.button("Click here to view some example context changes."):
+        st.info(random.choice(context_inspirations))
+        
     st.markdown("<div style='font-weight: bold; font-size: 20px;'>Question</div>", unsafe_allow_html=True)
     question = st.text_area("Imagine the scene after change, then ask a question.", key="question", placeholder="Type here...", height=10)
+    
+    if st.button("Click here to view some example questions."):
+        st.info(random.choice(question_inspirations))
 
     st.markdown("<div style='font-weight: bold; font-size: 20px;'>Answer</div>", unsafe_allow_html=True)
     answer = st.text_area("Answer has to be a simple word or a phrase.", key="answer", placeholder="Type here...", height=10)
