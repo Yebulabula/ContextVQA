@@ -1,0 +1,284 @@
+{
+  "CQA_ZXIHYRJX": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_3IZ9LE0D": {
+    "answer": "PRINTER",
+    "context_change": "RECYCLE BIN IS MOVED NEAR THE DOOR",
+    "scene_id": "scene0198_00",
+    "question": "WHAT THING IS OPPOSITE TO THE REFRIGERATOR?"
+  },
+  "CQA_16VSH1B3": {
+    "answer": "Two",
+    "context_change": "The mirror above the toilet has been removed",
+    "scene_id": "scene0693_00",
+    "question": "How many mirrors are in the room now?"
+  },
+  "CQA_YQA1RX0C": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??"
+  },
+  "CQA_EE2BA2AM": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
+  "CQA_CHL7GFKF": {
+    "answer": "the storage bin",
+    "context_change": "the stool was moved near the cart",
+    "scene_id": "scene0688_00",
+    "question": "what object is closest to the curtain"
+  },
+  "CQA_LO9KK3GS": {
+    "answer": "laundry hamper, trash can, recycling bin",
+    "context_change": "move the laundry hamper, recycling bin, and trash can along the wall under the window. ",
+    "scene_id": "scene0331_00",
+    "question": "What is now behind the desk chair? "
+  },
+  "CQA_26Y2FQVQ": {
+    "answer": "No",
+    "context_change": "The fan has been removed from the room",
+    "scene_id": "scene0222_00",
+    "question": "Is there any object between the window and the radiator?"
+  },
+  "CQA_U6UR0Z6L": {
+    "answer": "Not fully as the file cabinet is blocking the door",
+    "context_change": "The file cabinet is moved to beside the door",
+    "scene_id": "scene0141_00",
+    "question": "Can you open the door"
+  },
+  "CQA_04MQNP9H": {
+    "answer": "The TV was turned upside down.",
+    "context_change": "The chair from the left corner was moved into the middle of the tables.",
+    "scene_id": "scene0401_00",
+    "question": "The whiteboard was moved to the opposite wall."
+  },
+  "CQA_NCIBWSY4": {
+    "answer": "The nearest object is the couch.",
+    "context_change": "Move the legs onto the couch",
+    "scene_id": "scene0591_00",
+    "question": "What is in front of the cabinet now?"
+  },
+  "CQA_S0EIG74K": {
+    "answer": "what object is the towel now closest to?",
+    "context_change": "The towel is moved to the floor",
+    "scene_id": "scene0105_00",
+    "question": "Where was the towel left after the shower?"
+  },
+  "CQA_ARX2L08A": {
+    "answer": "One.",
+    "context_change": "Move the plant in the red pot onto the 2nd shelf of the bookshelf",
+    "scene_id": "scene0591_00",
+    "question": "How many plants are there in front of the window now?"
+  },
+  "CQA_2BKXJG7P": {
+    "answer": "the table",
+    "context_change": "the backpack was moved near the monitor",
+    "scene_id": "scene0300_00",
+    "question": "what object is closest to the divider"
+  },
+  "CQA_G3QDPBTN": {
+    "answer": "Yes",
+    "context_change": "the mat at the bottom of the bed has been moved to the center of the room",
+    "scene_id": "scene0172_00",
+    "question": "does this effect the movement of someone in the room?"
+  },
+  "CQA_1UIIA39I": {
+    "answer": "Yes, they are facing the table on either side.",
+    "context_change": "The two chairs by the round table have been turned to face inwards towards the table. ",
+    "scene_id": "scene0622_00",
+    "question": "Can you reach the round table from each of the two chairs?"
+  },
+  "CQA_8D197W7W": {
+    "answer": "In front of the door to the right of the stove",
+    "context_change": "Put the recycling bin in front of the door to the right of the stove",
+    "scene_id": "scene0288_00",
+    "question": "Where is the recycling bin?"
+  },
+  "CQA_W4CIVI5U": {
+    "answer": "No",
+    "context_change": "The kitchen cabinet under the sink has been closed.",
+    "scene_id": "scene0540_00",
+    "question": "Are there any more kitchen cabinets open?"
+  },
+  "CQA_M40X8P7N": {
+    "answer": "The printer",
+    "context_change": "The trash can that was closer to the recycling bin has been moved to near the cabinet",
+    "scene_id": "scene0255_00",
+    "question": "Which is the closest item to the recycling bin now?"
+  },
+  "CQA_OZA6ZRYC": {
+    "answer": "shower wall",
+    "context_change": "the shower curtain was removed from the toilet",
+    "scene_id": "scene0268_00",
+    "question": " which side of the place shower curtains can be hang?"
+  },
+  "CQA_M627C4JL": {
+    "answer": "3",
+    "context_change": "add a bed.",
+    "scene_id": "scene0416_00",
+    "question": "How many beds."
+  },
+  "CQA_Y4VHSC4F": {
+    "answer": "Copier",
+    "context_change": "The bulletin board has been moved to the opposite wall",
+    "scene_id": "scene0478_00",
+    "question": "Is the bulletin board closer to the copier or a printer?"
+  },
+  "CQA_DOV2W5FU": {
+    "answer": "Can we clean the room",
+    "context_change": "Door closed\n",
+    "scene_id": "scene0417_00",
+    "question": "Can we clean the room"
+  },
+  "CQA_UKS84GGV": {
+    "answer": "nine",
+    "context_change": "the suitcase was moved near the bed",
+    "scene_id": "scene0567_00",
+    "question": "how many items are in the bedroom now"
+  },
+  "CQA_VBD7DG4T": {
+    "answer": "The trash can.",
+    "context_change": "The trash can has been moved from in front of the window to beside the armchair.",
+    "scene_id": "scene0487_00",
+    "question": "What is now located beside of the armchair?"
+  },
+  "CQA_VW2QKRR3": {
+    "answer": "Five books are on the floor now.",
+    "context_change": "The books are thrown off cabinet and fall onto the floor.",
+    "scene_id": "scene0241_00",
+    "question": "How many books are on the floor now?"
+  },
+  "CQA_KC7E8O1X": {
+    "answer": "Nothing",
+    "context_change": "The microwave on the table has been moved onto the kitchen island",
+    "scene_id": "scene0063_00",
+    "question": "What is on the table now?"
+  },
+  "CQA_0MNS67P5": {
+    "answer": "No",
+    "context_change": "The trash can has been removed from the room",
+    "scene_id": "scene0530_00",
+    "question": "Is there any object between the door and the elevator?"
+  },
+  "CQA_6DIPB4LU": {
+    "answer": "Clock",
+    "context_change": "The guitar and keyboard piano have been moved near the sofa chair.",
+    "scene_id": "scene0608_00",
+    "question": "What item is closest to the plant now?"
+  },
+  "CQA_2PFWVTP0": {
+    "answer": "COUCH",
+    "context_change": "THE PICTURE IS REMOVED IN THE WALL AND PLACED IN CLOCK",
+    "scene_id": "scene0608_00",
+    "question": "WHAT THING IS INBETWEEN IN TWO PILLOWS?"
+  },
+  "CQA_ST8X7SBW": {
+    "answer": "The shelf",
+    "context_change": "The chair that was paired with the table has been moved near  to the bed",
+    "scene_id": "scene0400_00",
+    "question": "Which is the closest item to the desk now??"
+  },
+  "CQA_7CECHWXZ": {
+    "answer": "Yes, because they need to be beside the bathtub",
+    "context_change": "The bathtub is moved to the other side of the room",
+    "scene_id": "scene0676_00",
+    "question": "Are the shower walls to be moved too"
+  },
+  "CQA_XCSPAJR3": {
+    "answer": "Green",
+    "context_change": "the top shelf has been removed and the towel has been left hanging from the shower curtain",
+    "scene_id": "scene0135_00",
+    "question": "what colour is the towel?"
+  },
+  "CQA_X0K2MOGQ": {
+    "answer": "7 chairs left.",
+    "context_change": "One chair has been removed from the room.",
+    "scene_id": "scene0171_00",
+    "question": "How many chairs are there left?"
+  },
+  "CQA_4YZNC6GP": {
+    "answer": "Carpet and wardrobe chest",
+    "context_change": "The pillow has been moved from the couch to the bed.",
+    "scene_id": "scene0224_00",
+    "question": "What items are touching the couch now?"
+  },
+  "CQA_PEDLBNHD": {
+    "answer": "Backpack.",
+    "context_change": "The backpack has been moved to the front of the brown couch on the floor.",
+    "scene_id": "scene0111_00",
+    "question": "What is on the floor in front of the brown couch?"
+  },
+  "CQA_I1R783EC": {
+    "answer": "Radiator",
+    "context_change": "The fan has been removed from the room",
+    "scene_id": "scene0222_00",
+    "question": "What object is directly in front of the window?"
+  },
+  "CQA_7BM1W8O8": {
+    "answer": "The hat rack.",
+    "context_change": "The hat rack has been moved to the right of the trashcan.",
+    "scene_id": "scene0644_00",
+    "question": "What's the closest item to the shelf?"
+  },
+  "CQA_J8VTRF55": {
+    "answer": "The microwave was white",
+    "context_change": "The microwave was removed",
+    "scene_id": "scene0076_00",
+    "question": "What color was the microwave"
+  },
+  "CQA_R771LUOG": {
+    "answer": "Cabinet",
+    "context_change": "The picture has been moved below the TV",
+    "scene_id": "scene0297_00",
+    "question": "What is directly below the picture now?"
+  },
+  "CQA_8FHP3K71": {
+    "answer": "Stool.",
+    "context_change": "The stool has been moved from beside the bathtub to the side of the bathroom vanity.",
+    "scene_id": "scene0610_00",
+    "question": "What is beside the bathroom vanity?"
+  },
+  "CQA_S0IXKAFK": {
+    "answer": "Yes",
+    "context_change": "The file cabinet is moved to the center of the room",
+    "scene_id": "scene0066_00",
+    "question": "Is the table in the way of the cabinet"
+  },
+  "CQA_5QAYAE2B": {
+    "answer": "yes",
+    "context_change": "move the bag alongside the trashcan and laundry",
+    "scene_id": "scene0695_00",
+    "question": "would this change give some space in front of the window"
+  },
+  "CQA_HT92C3Y5": {
+    "answer": "One - the jacket",
+    "context_change": "Put the jacket on top of the refridgerator",
+    "scene_id": "scene0288_00",
+    "question": "How many items are on top of the refridgerator"
+  },
+  "CQA_OS8UH9NJ": {
+    "answer": "Yes",
+    "context_change": "the box below the cabinet has been removed",
+    "scene_id": "scene0263_00",
+    "question": "is there more room for the someone to get to the  cabinet?"
+  },
+  "CQA_ODERKJ7D": {
+    "answer": "yes",
+    "context_change": "swap the postions of vanity and toilet",
+    "scene_id": "scene0583_00",
+    "question": "would you be more comfortable not having the toilet right in front of the window"
+  },
+  "CQA_2905PM6P": {
+    "answer": "6",
+    "context_change": "The door had opened and the chair closest to the door rolled out of the room",
+    "scene_id": "scene0644_00",
+    "question": "How many chairs are there between the two tables?"
+  }
+}
