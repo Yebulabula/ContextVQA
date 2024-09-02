@@ -35,10 +35,6 @@ def load_scene_annotations():
 def save_context_data(data):
     db.collection('ContextVQA').add(data)
 
-# Function to refresh the scene
-def refresh_scene():
-    st.session_state.scene_id = random.choice(list(SCENE_ID_TO_FILE.keys()))
-
 # Streamlit app configuration
 st.set_page_config(
     page_title="ContextQA Data Collection App",
@@ -69,21 +65,9 @@ def generate_survey_code():
 def load_mesh(ply_file):
     return np.load(ply_file, allow_pickle=True, mmap_mode='r')
 
-def initialize_plot(vertices, triangles, vertex_colors, annotations, id2labels):
+def initialize_plot(vertices, triangles, vertex_colors, annotations):
     vertex_colors_rgb = [f'rgb({r}, {g}, {b})' for r, g, b in vertex_colors]
 
-    excluded_categories = {'wall', 'object', 'floor', 'ceiling'}
-    objects_by_category = {}
-    for label in id2labels.values():
-        category = label.split('_')[0]
-        objects_by_category.setdefault(category, []).append(label)
-
-    summary_text = "This scene contains " + ", ".join(
-        f"{len(labels)} {category + ('s' if len(labels) > 1 else '')}"
-        for category, labels in objects_by_category.items() if category not in excluded_categories
-    ) + "."
-
-    st.markdown(f"\n{summary_text}")
     trace1 = go.Mesh3d(x=vertices[:, 0], y=vertices[:, 1], z=vertices[:, 2], i=triangles[:, 0], j=triangles[:, 1], k=triangles[:, 2], vertexcolor=vertex_colors_rgb, opacity=1.0)
     fig = go.Figure(data=[trace1])
 
@@ -116,13 +100,20 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations, id2labels):
     return fig
 
 def initialize_state():
-    if 'selected_label' not in st.session_state:
-        st.session_state.selected_label = None
-
     if 'scene_id' not in st.session_state:
         st.session_state.scene_id = None
 
 initialize_state()
+
+def refresh_scene():
+    st.session_state.scene_id = random.choice(list(SCENE_ID_TO_FILE.keys()))
+    scene_id = st.session_state.scene_id
+    ply_file = SCENE_ID_TO_FILE[scene_id]
+    mesh_data = load_mesh(ply_file)
+    vertices, triangles, vertex_colors = mesh_data.values()
+    
+    annotations = scene_annotations[scene_id]
+    return initialize_plot(vertices, triangles, vertex_colors, annotations)
 
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span> 
@@ -176,11 +167,11 @@ with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, 
 left_col, right_col = st.columns([2, 1])
 
 with right_col:
-    if 'scene_id' not in st.session_state or st.session_state.scene_id is None:
-        refresh_scene()
+    if 'scene_id' not in st.session_state:
+        st.session_state.fig = refresh_scene()
         
     if st.button("**Click here for a new scene**"):
-        refresh_scene()
+        st.session_state.fig = refresh_scene()
         
     scene_id = st.session_state.scene_id
 
@@ -221,14 +212,21 @@ with right_col:
                 st.success(f"Thanks for subitting your responses. Here is your Completion Code: {survey_code}. You need obtain 3 codes to complete the task.")
 
 with left_col:
-    ply_file = SCENE_ID_TO_FILE[scene_id]
-    mesh_data = load_mesh(ply_file)
-    vertices, triangles, vertex_colors = mesh_data.values()
-    # vertex_colors = vertex_colors[:, :3]
+    if 'fig' not in st.session_state:
+        st.session_state.fig = refresh_scene()
+    
+    instance_labels, id2labels = read_instance_labels(st.session_state.scene_id)
+    excluded_categories = {'wall', 'object', 'floor', 'ceiling'}
+    objects_by_category = {}
+    for label in id2labels.values():
+        category = label.split('_')[0]
+        objects_by_category.setdefault(category, []).append(label)
 
-    instance_labels, id2labels = read_instance_labels(scene_id)
-    annotations = scene_annotations[scene_id]
+    summary_text = "This scene contains " + ", ".join(
+        f"{len(labels)} {category + ('s' if len(labels) > 1 else '')}"
+        for category, labels in objects_by_category.items() if category not in excluded_categories
+    ) + "."
+
+    st.markdown(f"\n{summary_text}")
     
-    fig = initialize_plot(vertices, triangles, vertex_colors, annotations, id2labels)
-    
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(st.session_state.fig, use_container_width=True)
