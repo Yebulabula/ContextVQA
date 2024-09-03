@@ -18,7 +18,7 @@
     "question": "WHAT THING IS OPPOSITE TO THE REFRIGERATOR?"
   },
   "CQA_O0OLER": {
-    "answer": "Consolidating boxes would provide  more floor space\n",
+    "answer": "Consolidating boxes would provide more floor space\n",
     "context_change": "\nBoth pillows removed from couch",
     "scene_id": "scene0384_00",
     "question": "Why are boxes in muli places?\n"
@@ -83,6 +83,12 @@
     "scene_id": "scene0015_00",
     "question": "Why are containers which hold liquid left on tables?\n"
   },
+  "CQA_RNT3NS": {
+    "answer": "Nothing",
+    "context_change": "Move the tissue box on to the desn",
+    "scene_id": "scene0426_00",
+    "question": "What is on the brown chair?"
+  },
   "CQA_26Y2FQVQ": {
     "answer": "No",
     "context_change": "The fan has been removed from the room",
@@ -111,7 +117,7 @@
     "answer": "The backpack and trash can",
     "context_change": "The backpack is moved into the trash can",
     "scene_id": "scene0534_00",
-    "question": "Which objects are closest to the bulletin bboard"
+    "question": "Which objects are closest to the bulletin board"
   },
   "CQA_S0EIG74K": {
     "answer": "what object is the towel now closest to?",
@@ -124,6 +130,12 @@
     "context_change": "Move the plant in the red pot onto the 2nd shelf of the bookshelf",
     "scene_id": "scene0591_00",
     "question": "How many plants are there in front of the window now?"
+  },
+  "CQA_A5U55R": {
+    "answer": "Six",
+    "context_change": "Move the brown chair by the trash can to the dining table ",
+    "scene_id": "scene0409_00",
+    "question": "How many chairs are around the dining table?"
   },
   "CQA_2BKXJG7P": {
     "answer": "the table",
@@ -257,6 +269,12 @@
     "scene_id": "scene0700_00",
     "question": "What is closest to the computer tower now?"
   },
+  "CQA_P00WUD": {
+    "answer": "Nothing",
+    "context_change": "Move the coffee table under the whiteboard, against the wall",
+    "scene_id": "scene0626_00",
+    "question": "What is blocking someone from walking from one side of the room to another?"
+  },
   "CQA_Y4VHSC4F": {
     "answer": "Copier",
     "context_change": "The bulletin board has been moved to the opposite wall",
@@ -306,7 +324,7 @@
     "question": "What item is closest to the plant now?"
   },
   "CQA_49CQ8B": {
-    "answer": "by removing pillows you allow seating for two or  three people\n",
+    "answer": "by removing pillows you allow seating for two or three people\n",
     "context_change": "\nBoth pillows removed from couch",
     "scene_id": "scene0385_00",
     "question": "Does this allow for additional seating?"

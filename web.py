@@ -49,10 +49,6 @@ ROOT_1 = "3D_scans"
 SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('scene')])
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
-context_inspirations = load_json('context_inspirations.json')
-question_inspirations = load_json('question_inspirations.json')
-scene_annotations = load_scene_annotations()
-
 def read_instance_labels(scene_id):
     return load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
 
@@ -101,6 +97,15 @@ def initialize_state():
     if 'scene_id' not in st.session_state:
         st.session_state.scene_id = None
 
+    if 'questions' not in st.session_state:
+        st.session_state.questions = load_json('question_inspirations.json')
+    
+    if 'context_changes' not in st.session_state:
+        st.session_state.context_changes = load_json('context_inspirations.json')
+        
+    if 'annotations' not in st.session_state:
+        st.session_state.annotations = load_scene_annotations()
+        
 initialize_state()
 
 def refresh_scene():
@@ -110,7 +115,7 @@ def refresh_scene():
     mesh_data = load_mesh(ply_file)
     vertices, triangles, vertex_colors = mesh_data.values()
     
-    annotations = scene_annotations[scene_id]
+    annotations = st.session_state.annotations[scene_id]
     return initialize_plot(vertices, triangles, vertex_colors, annotations)
 
 guideline_text = """
@@ -135,7 +140,7 @@ You need to firstly understand the given 3D scene. Then, think of a hypothetical
 
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The gray coffee table has been removed from the room. **Q:** Which piece of furniture is directly behind the shelf now? **Answer:** Couch.
 - <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
-- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the pillow? **A:** Brown. (**The pillow color is not affected by the change**)
+- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the bed? **A:** Blue. (**The pillow color is not affected by the change**)
 - <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What is on the gray couch now? **A:** Pillow. (**The question can be answered by only reading the scene change**) 
 
 <span style="color:blue;">**Note:** We do have some templates to inspire you. But these templates are not related to the scene you are looking at. You should not copy them. </span>
@@ -174,22 +179,24 @@ with right_col:
     context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="context_change", placeholder="Type here...", height=10)
     
     if st.button("Click here to view some example context changes."):
-        st.info(random.choice(context_inspirations))
+        st.info(random.choice(st.session_state.context_changes))
         
     st.markdown("<div style='font-weight: bold; font-size: 20px;'>Question</div>", unsafe_allow_html=True)
     question = st.text_area("Imagine the scene after change, then ask a question.", key="question", placeholder="Type here...", height=10)
     
     if st.button("Click here to view some example questions."):
-        st.info(random.choice(question_inspirations))
+        st.info(random.choice(st.session_state.questions))
 
     st.markdown("<div style='font-weight: bold; font-size: 20px;'>Answer</div>", unsafe_allow_html=True)
     answer = st.text_area("Answer has to be a simple word or a phrase.", key="answer", placeholder="Type here...", height=10)
 
-    valid_start_words = ['Do', 'Does', 'What', 'Which', 'How', 'Where', 'When', 'Who', 'Why', 'Are', 'Is', 'Can', 'Could', 'Should', 'Would', 'Will', 'Did', 'Have', 'Has', 'Had', 'May', 'Might', 'Must', 'Shall', 'Was', 'Were', 'Am']
+    valid_start_words = ['Do', 'Does', 'What', 'Which', 'How', 'Where', 'When', 'Who', 'Why', 'Are', 'Is', 'Can', 'Could', 'Should', 'Would', 'Will', 'Have', 'Has', 'Had', 'May', 'Might', 'Must', 'Shall', 'Were', 'Am']
     
     if st.button("Submit"):
-        if len(context_change.strip()) < 20 or len(question.strip()) < 20 or len(answer.strip()) < 1:
-            st.warning("Please ensure your descriptions are detailed enough.")
+        if len(context_change.strip()) < 20 or len(question.strip()) < 20:
+            st.warning("Your scene change or question needs more detail.")
+        elif len(answer.strip()) > 20:
+            st.warning("Your answer is too long. Please provide a concise answer.")
         elif not any(question.strip().startswith(word) for word in valid_start_words):
             st.warning("Your question must start with one of the following words: 'What', 'Which', 'How', 'Where', 'Does', 'If', 'Can', 'Is'.")
         else:
