@@ -35,6 +35,10 @@ def load_scene_annotations():
 def save_context_data(data):
     db.collection('ContextVQA').add(data)
 
+# Function to generate and return a confirmation code
+def generate_survey_code():
+    return 'CQA_' + ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=6))
+
 # Streamlit app configuration
 st.set_page_config(
     page_title="ContextQA Data Collection App",
@@ -51,9 +55,6 @@ SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_cle
 
 def read_instance_labels(scene_id):
     return load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
-
-def generate_survey_code():
-    return 'CQA_' + ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=6))
 
 @st.cache_resource
 def load_mesh(ply_file):
@@ -106,6 +107,12 @@ def initialize_state():
     if 'annotations' not in st.session_state:
         st.session_state.annotations = load_scene_annotations()
         
+    if 'submission_count' not in st.session_state:
+        st.session_state.submission_count = 0
+        
+    if 'survey_code' not in st.session_state:
+        st.session_state.survey_code = generate_survey_code()
+        
 initialize_state()
 
 def refresh_scene():
@@ -121,13 +128,13 @@ def refresh_scene():
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span> 
 
-You need to firstly understand the given 3D scene. Then, think of a hypothetical change the scene you can make to the scene and write it down. After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question. <span style="color:red;">**Repeat this process for three times to complete the task.**</span>
+You need to firstly understand the given 3D scene. Then, describe a hypothetical change you can make to the scene. After that, imagine what the scene looks like with the change and ask a question about the 'changed' scene. Finally, give a concise answer to your question.  <span style="color:red;">**Repeat this process for three times to complete the task.**</span>
 
-###### Scene Change
-- Imagine a change that could happen in the scene. This is just pretend, so you don't need to actually change anything in the scene. You can think of moving, rotating, resizing, or changing the color, state, adding, or removing objects—any **realistic change** is fine.
+###### Scene Change 
+- Imagine a change that could happen in the scene. You can think of moving, rotating, resizing, or changing the color, state, adding, or removing objects—any **realistic change** is fine.
 - To avoid <span style="color:red;">**rejection**</span>, your description of the change must be clear enough so we know exactly which object(s) you changed. 
 
-###### Question - Ask a question about the scene following the scene change.
+###### Question - Imagine what the changed scene looks like in your mind, then ask a question about it.
 - Your questions **shouldn't** be answered solely by reading the Scene Change without viewing the scene.
 - Your questions **shouldn't** give the same answer, no matter whether the scene change happened.
 - Your questions **shouldn't** have **multiple**, **ambiguous**, **subjective**, or **yes/no** answers to avoid <span style="color:red;">**rejection**</span>.
@@ -138,10 +145,10 @@ You need to firstly understand the given 3D scene. Then, think of a hypothetical
 
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
-- <span style="color:red;"> **Good:** </span> **Scene Change:** The gray coffee table has been removed from the room. **Q:** Which piece of furniture is directly behind the shelf now? **Answer:** Couch.
-- <span style="color:red;"> **Good:** </span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:**  What is the closest item in front of the pillow now? **Answer:** Coffee table.
-- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What color is the bed? **A:** Blue. (**The pillow color is not affected by the change**)
-- <span style="color:green;">**Bad:**</span> **Scene Change:** The brown pillow that was on the bed has been moved to the gray couch. **Q:** What is on the gray couch now? **A:** Pillow. (**The question can be answered by only reading the scene change**) 
+- <span style="color:red;"> Good: </span> Scene Change: The gray coffee table has been removed from the room. Q: After the change, which piece of furniture is now directly behind the shelf? Answer: Couch.
+- <span style="color:red;"> Good: </span> Scene Change: The brown pillow that was on the bed has been moved to the gray couch. Q: After the change, what is the closest item in front of the pillow? Answer: Coffee table.
+- <span style="color:green;">Bad:</span> Scene Change: The brown pillow that was on the bed has been moved to the gray couch. Q: After the change, what color is the bed? A: Blue. (The bed's color remains blue regardless of the change)
+- <span style="color:green;">Bad:</span> Scene Change: The brown pillow that was on the bed has been moved to the gray couch. Q: After the change, what is on the gray couch now? A: Pillow. (This question can be answered just by reading the scene change description)
 
 <span style="color:blue;">**Note:** We do have some templates to inspire you. But these templates are not related to the scene you are looking at. You should not copy them. </span>
 
@@ -189,39 +196,35 @@ with right_col:
 
     st.markdown("<div style='font-weight: bold; font-size: 20px;'>Answer</div>", unsafe_allow_html=True)
     answer = st.text_area("Answer has to be a simple word or a phrase.", key="answer", placeholder="Type here...", height=10)
-
-    valid_start_words = ['Do', 'Does', 'What', 'Which', 'How', 'Where', 'When', 'Who', 'Why', 'Are', 'Is', 'Can', 'Could', 'Should', 'Would', 'Will', 'Have', 'Has', 'Had', 'May', 'Might', 'Must', 'Shall', 'Were', 'Am']
     
     if st.button("Submit"):
-        if len(context_change.strip()) < 20 or len(question.strip()) < 20:
-            st.warning("Your scene change or question needs more detail.")
-        elif len(answer.strip()) > 20:
-            st.warning("Your answer is too long. Please provide a concise answer.")
-        elif not any(question.strip().startswith(word) for word in valid_start_words):
-            st.warning("Your question must start with one of the following words: 'What', 'Which', 'How', 'Where', 'Does', 'If', 'Can', 'Is'.")
+        entry = {
+            'scene_id': scene_id,
+            'context_change': context_change,
+            'question': question,
+            'answer': answer,
+            'survey_code': st.session_state.survey_code
+        }
+        
+        duplicates_query = db.collection('ContextVQA').where('question', '==', question).stream()
+        duplicates = list(duplicates_query)
+
+        if duplicates:
+            st.warning("This submission has already been made. Please do not submit duplicate entries.")
         else:
-            entry = {
-                'scene_id': scene_id,
-                'context_change': context_change,
-                'question': question,
-                'answer': answer,
-            }
-
-            duplicates_query = db.collection('ContextVQA').where('scene_id', '==', scene_id) \
-                                                .where('context_change', '==', context_change) \
-                                                .where('question', '==', question) \
-                                                .where('answer', '==', answer) \
-                                                .stream()
-            duplicates = list(duplicates_query)
-
-            if duplicates:
-                st.warning("This submission has already been made. Please do not submit duplicate entries.")
-            else:
-                survey_code = generate_survey_code()
-                entry['survey_code'] = survey_code
-                save_context_data(entry)
+            # Store the entry temporarily
+            st.session_state.submission_count += 1
+            
+            save_context_data(entry)
+            
+            if st.session_state.submission_count == 3:
+                st.session_state.submission_count = 0
                 
-                st.success(f"Thank you for submitting your responses. Your Completion Code is: {survey_code}. Please submit 3 codes to CloudResearch to complete the task.")
+                st.success(f"Thank you for submitting your responses. Your Completion Code is: {st.session_state.survey_code}. Please submit this code to CloudResearch to complete the task.")
+                
+                st.session_state.survey_code = generate_survey_code()
+            else:
+                st.success("Your submission has been recorded. Please submit {} more entries to complete the task.".format(3 - st.session_state.submission_count))
 
 with left_col:
     if 'fig' not in st.session_state:

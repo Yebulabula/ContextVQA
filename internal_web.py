@@ -7,7 +7,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import base64
 import random
-
+import msgpack
 
 
 # firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
@@ -63,8 +63,11 @@ question_inspirations = json.load(open('question_inspirations.json'))
 
 context_inspirations = json.load(open('context_inspirations.json'))
 
-scene_annotations = json.load(open('scene_annotations.json'))
-
+@st.cache_data
+def load_scene_annotations():
+    with open('scene_annotations.msgpack', 'rb') as file:
+        return msgpack.unpack(file, raw=False)
+scene_annotations = load_scene_annotations()
 # Cached function to read instance labels
 @st.cache_data
 def read_instance_labels(scene_id):

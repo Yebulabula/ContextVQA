@@ -5,6 +5,30 @@
     "scene_id": "scene0220_00",
     "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
   },
+  "CQA_D457AH": {
+    "answer": "Paper Bag",
+    "context_change": "Remove the Trash Can.",
+    "scene_id": "scene0306_00",
+    "question": "What is next to the desk on the floor now?"
+  },
+  "CQA_CKGSI4": {
+    "answer": "The copier.",
+    "context_change": "The bulletin board is now hung on the back wall.",
+    "scene_id": "scene0511_00",
+    "question": "What is now below the bulletin board?"
+  },
+  "CQA_87L9F8": {
+    "answer": "a",
+    "context_change": "sdasd",
+    "scene_id": "scene0082_00",
+    "question": "sadas"
+  },
+  "CQA_XC563W7D": {
+    "answer": "232",
+    "context_change": "23",
+    "scene_id": "scene0573_00",
+    "question": "123"
+  },
   "CQA_XZ0FZRTG": {
     "answer": "TRASH CAN",
     "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
@@ -18,7 +42,7 @@
     "question": "WHAT THING IS OPPOSITE TO THE REFRIGERATOR?"
   },
   "CQA_O0OLER": {
-    "answer": "Consolidating boxes would provide more floor space\n",
+    "answer": "Consolidating boxes would provide  more floor space\n",
     "context_change": "\nBoth pillows removed from couch",
     "scene_id": "scene0384_00",
     "question": "Why are boxes in muli places?\n"
@@ -35,11 +59,29 @@
     "scene_id": "scene0230_00",
     "question": "Which is the closest item to the trash can now??"
   },
+  "CQA_6FZYY7": {
+    "answer": "Shelf.",
+    "context_change": "The whiteboard has been moved to the opposite wall.",
+    "scene_id": "scene0499_00",
+    "question": "Which object is now directly in front of the whiteboard?"
+  },
+  "CQA_F2U9JWW4": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_EE2BA2AM": {
     "answer": "END TABLLE",
     "context_change": "THE STOOL IS MOVED NEAR THE BALL",
     "scene_id": "scene0301_00",
     "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
+  "CQA_9QXBGK": {
+    "answer": "wooden table ",
+    "context_change": "The trash can is disposed when full",
+    "scene_id": "scene0494_00",
+    "question": "What type of table is in the middle of the chairs ?"
   },
   "CQA_8B86FQ": {
     "answer": "The whiteboard. ",
@@ -52,6 +94,12 @@
     "context_change": "the stool was moved near the cart",
     "scene_id": "scene0688_00",
     "question": "what object is closest to the curtain"
+  },
+  "CQA_V90G1MFH": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
   },
   "CQA_LO9KK3GS": {
     "answer": "laundry hamper, trash can, recycling bin",
@@ -83,17 +131,65 @@
     "scene_id": "scene0015_00",
     "question": "Why are containers which hold liquid left on tables?\n"
   },
+  "CQA_9H2DAK": {
+    "answer": "yes",
+    "context_change": "change the bed and coffee table position ",
+    "scene_id": "scene0116_00",
+    "question": "Would this be a better place for one to sleep?"
+  },
+  "CQA_WGUFHQG0": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
+  "CQA_NEHK95": {
+    "answer": "aa",
+    "context_change": "sdasd",
+    "scene_id": "scene0082_00",
+    "question": "sadas"
+  },
+  "CQA_MUDQCDQQ": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_OKF5PBLV": {
+    "answer": "PRINTER",
+    "context_change": "RECYCLE BIN IS MOVED NEAR THE DOOR",
+    "scene_id": "scene0198_00",
+    "question": "WHAT THING IS OPPOSITE TO THE REFRIGERATOR?"
+  },
+  "CQA_3DWBOK9R": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_RNT3NS": {
     "answer": "Nothing",
     "context_change": "Move the tissue box on to the desn",
     "scene_id": "scene0426_00",
     "question": "What is on the brown chair?"
   },
+  "CQA_R4JZJ3XZ": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_26Y2FQVQ": {
     "answer": "No",
     "context_change": "The fan has been removed from the room",
     "scene_id": "scene0222_00",
     "question": "Is there any object between the window and the radiator?"
+  },
+  "CQA_KQUFZX": {
+    "answer": "Three.",
+    "context_change": "I move the lamp to the coffee table. ",
+    "scene_id": "scene0226_00",
+    "question": "How many sofa chairs surround the lamp?"
   },
   "CQA_U6UR0Z6L": {
     "answer": "Not fully as the file cabinet is blocking the door",
@@ -107,6 +203,30 @@
     "scene_id": "scene0401_00",
     "question": "The whiteboard was moved to the opposite wall."
   },
+  "CQA_I3YEIL": {
+    "answer": "Bookshelves",
+    "context_change": "Remove the boxes and add a bookshelf so it is even all across the wall.",
+    "scene_id": "scene0030_00",
+    "question": "What is all along the wall by the door?"
+  },
+  "CQA_WNA7CG": {
+    "answer": "One",
+    "context_change": "Remove the Rod from the wall next to the toilet",
+    "scene_id": "scene0553_00",
+    "question": "How many bars are on the walls now."
+  },
+  "CQA_3IXR68": {
+    "answer": "sadasda",
+    "context_change": "sdsadsdsadsdsadsdsadsdsadsdsadsdsad",
+    "scene_id": "scene0164_00",
+    "question": "What sdsadsdsadsdsadsdsadsdsadsdsadsdsad"
+  },
+  "CQA_D7GVBL": {
+    "answer": "The bed.",
+    "context_change": "The clothing ottoman is now against the adjacent wall.",
+    "scene_id": "scene0286_00",
+    "question": "What is now next to the ottoman?"
+  },
   "CQA_NCIBWSY4": {
     "answer": "The nearest object is the couch.",
     "context_change": "Move the legs onto the couch",
@@ -117,7 +237,7 @@
     "answer": "The backpack and trash can",
     "context_change": "The backpack is moved into the trash can",
     "scene_id": "scene0534_00",
-    "question": "Which objects are closest to the bulletin board"
+    "question": "Which objects are closest to the bulletin bboard"
   },
   "CQA_S0EIG74K": {
     "answer": "what object is the towel now closest to?",
@@ -125,11 +245,23 @@
     "scene_id": "scene0105_00",
     "question": "Where was the towel left after the shower?"
   },
+  "CQA_CDAQY5": {
+    "answer": "2",
+    "context_change": "Move the trash can next to the sink under the paper towel dispenser",
+    "scene_id": "scene0579_00",
+    "question": "How many trash cans are now next to the paper towel dispenser"
+  },
   "CQA_ARX2L08A": {
     "answer": "One.",
     "context_change": "Move the plant in the red pot onto the 2nd shelf of the bookshelf",
     "scene_id": "scene0591_00",
     "question": "How many plants are there in front of the window now?"
+  },
+  "CQA_CI88RV": {
+    "answer": "4",
+    "context_change": "2312",
+    "scene_id": "scene0608_00",
+    "question": "2"
   },
   "CQA_A5U55R": {
     "answer": "Six",
@@ -143,6 +275,24 @@
     "scene_id": "scene0300_00",
     "question": "what object is closest to the divider"
   },
+  "CQA_BZQRXN": {
+    "answer": "her e is my answer",
+    "context_change": "sdas",
+    "scene_id": "scene0558_00",
+    "question": "1"
+  },
+  "CQA_HMPMSV": {
+    "answer": "one",
+    "context_change": "The mirror is moved to the other side of the sink.",
+    "scene_id": "scene0441_00",
+    "question": "How many mirrors are there?"
+  },
+  "CQA_4UF7P0JZ": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
   "CQA_7IBBSM": {
     "answer": "The Shelf ",
     "context_change": "The table has been moved to the wall on it's left side. ",
@@ -154,6 +304,18 @@
     "context_change": "the mat at the bottom of the bed has been moved to the center of the room",
     "scene_id": "scene0172_00",
     "question": "does this effect the movement of someone in the room?"
+  },
+  "CQA_ZSKSIYSI": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
+  "CQA_XX8G3CAB": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
   },
   "CQA_QIZGU7": {
     "answer": "Three",
@@ -179,6 +341,12 @@
     "scene_id": "scene0384_00",
     "question": "Why are boxes in muli places?\n"
   },
+  "CQA_STPZEHHD": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
   "CQA_8D197W7W": {
     "answer": "In front of the door to the right of the stove",
     "context_change": "Put the recycling bin in front of the door to the right of the stove",
@@ -191,11 +359,53 @@
     "scene_id": "scene0540_00",
     "question": "Are there any more kitchen cabinets open?"
   },
+  "CQA_SGNGX9": {
+    "answer": "aad",
+    "context_change": "sdasd",
+    "scene_id": "scene0082_00",
+    "question": "sadas"
+  },
+  "CQA_DI0IRG0T": {
+    "answer": "2321",
+    "context_change": "asda",
+    "scene_id": "scene0016_00",
+    "question": "231312"
+  },
+  "CQA_KJQ7A8": {
+    "answer": "Soap Dispenser",
+    "context_change": "Soap dispenser that wa on the bathroom cabinet has been moved on the mat.",
+    "scene_id": "scene0080_00",
+    "question": "What is the closest item in front of the toilet?"
+  },
+  "CQA_FASFD9": {
+    "answer": "1",
+    "context_change": "Move the jacket on top of the coffee table",
+    "scene_id": "scene0162_00",
+    "question": "How many total objects are on top of the coffee table now"
+  },
+  "CQA_3IP9DRFP": {
+    "answer": "232",
+    "context_change": "23",
+    "scene_id": "scene0573_00",
+    "question": "123"
+  },
   "CQA_DOXEDJ": {
     "answer": "The nerf gun table",
     "context_change": "The chair is moved to the corner between the tv and the couch",
     "scene_id": "scene0151_00",
     "question": "What is next to radiator now?"
+  },
+  "CQA_7CLSIGM4": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??"
+  },
+  "CQA_GE5N2U": {
+    "answer": "Two.",
+    "context_change": "I move 2 sets of books to the empty book shelves. ",
+    "scene_id": "scene0481_00",
+    "question": "How many sets of books got closer to chairs?"
   },
   "CQA_GQXOEC": {
     "answer": "Ten.",
@@ -215,6 +425,12 @@
     "scene_id": "scene0476_00",
     "question": "How many monitors are in the room?"
   },
+  "CQA_7QL34OIM": {
+    "answer": "Not fully as the file cabinet is blocking the door",
+    "context_change": "The file cabinet is moved to beside the door",
+    "scene_id": "scene0141_00",
+    "question": "Can you open the door"
+  },
   "CQA_M40X8P7N": {
     "answer": "The printer",
     "context_change": "The trash can that was closer to the recycling bin has been moved to near the cabinet",
@@ -226,6 +442,18 @@
     "context_change": "The clock has0 been moved to the adjacent wall",
     "scene_id": "scene0311_00",
     "question": "What is directly opposite the door now?"
+  },
+  "CQA_7YKH3Z39": {
+    "answer": "232",
+    "context_change": "23",
+    "scene_id": "scene0573_00",
+    "question": "123"
+  },
+  "CQA_3T7D2M": {
+    "answer": "Mat",
+    "context_change": "The mat on the bathtub has been moved to the floor",
+    "scene_id": "scene0583_00",
+    "question": "What is the closest item near the toilet?"
   },
   "CQA_072SE0": {
     "answer": "4 chairs.",
@@ -239,11 +467,47 @@
     "scene_id": "scene0686_00",
     "question": "why is it looking so rough?"
   },
+  "CQA_7XUA4GME": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
+  "CQA_63QTHIOA": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_0PQDK3": {
+    "answer": "For sitting ",
+    "context_change": "The room get arranged and well cleaned from time to time ",
+    "scene_id": "scene0518_00",
+    "question": "What is the use for two office chair ?"
+  },
+  "CQA_56JLVR8Q": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_OZA6ZRYC": {
     "answer": "shower wall",
     "context_change": "the shower curtain was removed from the toilet",
     "scene_id": "scene0268_00",
     "question": " which side of the place shower curtains can be hang?"
+  },
+  "CQA_M627C4JL": {
+    "answer": "3",
+    "context_change": "add a bed.",
+    "scene_id": "scene0416_00",
+    "question": "How many beds."
+  },
+  "CQA_FFS80S": {
+    "answer": "One",
+    "context_change": "Remove one of the monitors on the desk.",
+    "scene_id": "scene0614_00",
+    "question": "How many monitors are on the desk now?"
   },
   "CQA_97DIKN": {
     "answer": "1 picture.",
@@ -257,11 +521,41 @@
     "scene_id": "scene0479_00",
     "question": "What is next to the dish rack on the opposite side of the sink?"
   },
+  "CQA_SR4J9DBZ": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_ARP70G": {
+    "answer": "yes",
+    "context_change": "The lamps and the tables are moved to the opposite side of the chair and couch.",
+    "scene_id": "scene0008_00",
+    "question": "Is that a window next to the door frame?"
+  },
+  "CQA_089U7A": {
+    "answer": "Four objects.",
+    "context_change": "The towel has been moved on top of the bathroom vanity. ",
+    "scene_id": "scene0683_00",
+    "question": "How many objects are underneath the light now?"
+  },
+  "CQA_TIBZDCH6": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_Q5HBYW": {
     "answer": "The Backpack ",
     "context_change": "The trash can has been placed on the table. ",
     "scene_id": "scene0191_00",
     "question": "What is next to the Trash Can "
+  },
+  "CQA_CT5GL2": {
+    "answer": "The monitor",
+    "context_change": "The box has been moved form the desk to the sink.",
+    "scene_id": "scene0555_00",
+    "question": "What is the item left on the desk?"
   },
   "CQA_82JPP9": {
     "answer": "Chair",
@@ -275,11 +569,47 @@
     "scene_id": "scene0626_00",
     "question": "What is blocking someone from walking from one side of the room to another?"
   },
+  "CQA_6PIM5L": {
+    "answer": "sadasda",
+    "context_change": "sdsadsdsadsdsadsdsadsdsadsdsadsdsad",
+    "scene_id": "scene0164_00",
+    "question": "What sdsadsdsadsdsadsdsadsdsadsdsadsdsad"
+  },
+  "CQA_D2D7W4": {
+    "answer": "A  coffee table ",
+    "context_change": "The blanket was removed from the  floor and placed on the couch  beside the bag ",
+    "scene_id": "scene0203_00",
+    "question": "What is at the front of the couch in which the blanket was placed ?"
+  },
+  "CQA_5JZCMK": {
+    "answer": "Shelf",
+    "context_change": "The coffee table is removed from the room.",
+    "scene_id": "scene0514_00",
+    "question": "What furniture is in front of the couch?"
+  },
+  "CQA_CDV26J1R": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_Y4VHSC4F": {
     "answer": "Copier",
     "context_change": "The bulletin board has been moved to the opposite wall",
     "scene_id": "scene0478_00",
     "question": "Is the bulletin board closer to the copier or a printer?"
+  },
+  "CQA_98ABM77O": {
+    "answer": "The printer",
+    "context_change": "The trash can that was closer to the recycling bin has been moved to near the cabinet",
+    "scene_id": "scene0255_00",
+    "question": "Which is the closest item to the recycling bin now?"
+  },
+  "CQA_28R69ZGA": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??"
   },
   "CQA_M4ZDG5": {
     "answer": "Laundry basket",
@@ -287,11 +617,41 @@
     "scene_id": "scene0678_00",
     "question": "What object is closest to the washing machines that are next to the vending machine now?"
   },
+  "CQA_DOV2W5FU": {
+    "answer": "Can we clean the room",
+    "context_change": "Door closed\n",
+    "scene_id": "scene0417_00",
+    "question": "Can we clean the room"
+  },
+  "CQA_R5A75B2P": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_U47WMLRB": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_UKS84GGV": {
     "answer": "nine",
     "context_change": "the suitcase was moved near the bed",
     "scene_id": "scene0567_00",
     "question": "how many items are in the bedroom now"
+  },
+  "CQA_DNJFIF": {
+    "answer": "Book",
+    "context_change": "Which object is now underneath the computer tower?",
+    "scene_id": "scene0138_00",
+    "question": "Which object is now underneath the computer tower?"
+  },
+  "CQA_W4I2NF8S": {
+    "answer": "232",
+    "context_change": "23",
+    "scene_id": "scene0573_00",
+    "question": "123"
   },
   "CQA_VBD7DG4T": {
     "answer": "The trash can.",
@@ -323,11 +683,41 @@
     "scene_id": "scene0608_00",
     "question": "What item is closest to the plant now?"
   },
+  "CQA_QIV4P2": {
+    "answer": "The lamp",
+    "context_change": "The lamp on the nightstand is moved to the desk",
+    "scene_id": "scene0576_00",
+    "question": "What is on the desk?"
+  },
+  "CQA_TERMI30Q": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_WSCOH5": {
+    "answer": "The chair.",
+    "context_change": "The trash can has been moved from its current position and relocated between the chair and the bookshelf.",
+    "scene_id": "scene0126_00",
+    "question": "What is the closest item to the trash can now?"
+  },
+  "CQA_K7RHUE97": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0608_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_49CQ8B": {
-    "answer": "by removing pillows you allow seating for two or three people\n",
+    "answer": "by removing pillows you allow seating for two or  three people\n",
     "context_change": "\nBoth pillows removed from couch",
     "scene_id": "scene0385_00",
     "question": "Does this allow for additional seating?"
+  },
+  "CQA_0W4D1ZAB": {
+    "answer": "PRINTER",
+    "context_change": "RECYCLE BIN IS MOVED NEAR THE DOOR",
+    "scene_id": "scene0198_00",
+    "question": "WHAT THING IS OPPOSITE TO THE REFRIGERATOR?"
   },
   "CQA_2PFWVTP0": {
     "answer": "COUCH",
@@ -335,11 +725,41 @@
     "scene_id": "scene0608_00",
     "question": "WHAT THING IS INBETWEEN IN TWO PILLOWS?"
   },
+  "CQA_4TSRQNI8": {
+    "answer": "3",
+    "context_change": "add a bed.",
+    "scene_id": "scene0416_00",
+    "question": "How many beds."
+  },
+  "CQA_LF6IKONR": {
+    "answer": "2321",
+    "context_change": "asda",
+    "scene_id": "scene0016_00",
+    "question": "231312"
+  },
+  "CQA_EWJPAO": {
+    "answer": "because",
+    "context_change": "1 couch",
+    "scene_id": "scene0059_00",
+    "question": "why is there 1 couch?"
+  },
   "CQA_8BCR0C": {
     "answer": "The office chair at the head of the table.",
     "context_change": "The stack of chairs is removed from the front of the window",
     "scene_id": "scene0456_00",
     "question": "What is the closest object to the window?"
+  },
+  "CQA_KFOYM4": {
+    "answer": " toilet seat",
+    "context_change": "The jacket was removed from the door frame and hanged on the rail above the toilet paper holder ",
+    "scene_id": "scene0062_00",
+    "question": "What is the railing that the jacket was hanged on facing  ? "
+  },
+  "CQA_SJL43M": {
+    "answer": "a mini fridge",
+    "context_change": "The bedsheet is replaced when found dirty ",
+    "scene_id": "scene0107_00",
+    "question": "What type  of fridge is in the room ?"
   },
   "CQA_SVQRFF": {
     "answer": "The mirror",
@@ -353,11 +773,41 @@
     "scene_id": "scene0400_00",
     "question": "Which is the closest item to the desk now??"
   },
+  "CQA_X3EH6P03": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
   "CQA_7CECHWXZ": {
     "answer": "Yes, because they need to be beside the bathtub",
     "context_change": "The bathtub is moved to the other side of the room",
     "scene_id": "scene0676_00",
     "question": "Are the shower walls to be moved too"
+  },
+  "CQA_BH4BB5PO": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_Y3W1M2": {
+    "answer": "sadasda",
+    "context_change": "sdsadsdsadsdsadsdsadsdsadsdsadsdsad",
+    "scene_id": "scene0164_00",
+    "question": "What sdsadsdsadsdsadsdsadsdsadsdsadsdsad"
+  },
+  "CQA_LVCWU9LR": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
+  "CQA_7G7XPB": {
+    "answer": "Two",
+    "context_change": "What is now in the space where the jacket used to be?",
+    "scene_id": "scene0391_00",
+    "question": "How many chairs are now stacked together?"
   },
   "CQA_XCSPAJR3": {
     "answer": "Green",
@@ -371,11 +821,41 @@
     "scene_id": "scene0171_00",
     "question": "How many chairs are there left?"
   },
+  "CQA_GJTZMQLC": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_4YZNC6GP": {
     "answer": "Carpet and wardrobe chest",
     "context_change": "The pillow has been moved from the couch to the bed.",
     "scene_id": "scene0224_00",
     "question": "What items are touching the couch now?"
+  },
+  "CQA_EANS1V43": {
+    "answer": "COUCH",
+    "context_change": "THE PICTURE IS REMOVED IN THE WALL AND PLACED IN CLOCK",
+    "scene_id": "scene0608_00",
+    "question": "WHAT THING IS INBETWEEN IN TWO PILLOWS?"
+  },
+  "CQA_WORJ8XHY": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_2PF5MS": {
+    "answer": "Sofa Chair",
+    "context_change": "The flower pot with plant is moved to the corner with the board next to the wall with the picture. ",
+    "scene_id": "scene0226_00",
+    "question": "When looking at the flowerpot with the board to the left, what is to the right of the flowerpot?"
+  },
+  "CQA_0SZEN7": {
+    "answer": "A chair.",
+    "context_change": "The stool under the black table is moved under the spotted table.",
+    "scene_id": "scene0266_00",
+    "question": "What is now in front of the stool?"
   },
   "CQA_PEDLBNHD": {
     "answer": "Backpack.",
@@ -383,11 +863,29 @@
     "scene_id": "scene0111_00",
     "question": "What is on the floor in front of the brown couch?"
   },
+  "CQA_MQOD40SH": {
+    "answer": "COUCH",
+    "context_change": "THE PICTURE IS REMOVED IN THE WALL AND PLACED IN CLOCK",
+    "scene_id": "scene0608_00",
+    "question": "WHAT THING IS INBETWEEN IN TWO PILLOWS?"
+  },
+  "CQA_8B1SZG6K": {
+    "answer": "Five books are on the floor now.",
+    "context_change": "The books are thrown off cabinet and fall onto the floor.",
+    "scene_id": "scene0241_00",
+    "question": "How many books are on the floor now?"
+  },
   "CQA_L7MBICZQ": {
     "answer": "The nightstand",
     "context_change": "The nightstand that was closer to the window has been moved near  the dresser",
     "scene_id": "scene0035_00",
     "question": "Which is the closest item to he dresser now?"
+  },
+  "CQA_U2FOKZ2U": {
+    "answer": "3",
+    "context_change": "add a bed.",
+    "scene_id": "scene0416_00",
+    "question": "How many beds."
   },
   "CQA_JCA6LR": {
     "answer": "Four.",
@@ -401,11 +899,23 @@
     "scene_id": "scene0222_00",
     "question": "What object is directly in front of the window?"
   },
+  "CQA_4LSRGV": {
+    "answer": "couch",
+    "context_change": "Move the coffee table under the window",
+    "scene_id": "scene0162_00",
+    "question": "What is on the right of the coffee table now"
+  },
   "CQA_7BM1W8O8": {
     "answer": "The hat rack.",
     "context_change": "The hat rack has been moved to the right of the trashcan.",
     "scene_id": "scene0644_00",
     "question": "What's the closest item to the shelf?"
+  },
+  "CQA_I9KR5QZE": {
+    "answer": "PRINTER",
+    "context_change": "RECYCLE BIN IS MOVED NEAR THE DOOR",
+    "scene_id": "scene0198_00",
+    "question": "WHAT THING IS OPPOSITE TO THE REFRIGERATOR?"
   },
   "CQA_USMKBJ": {
     "answer": "Yes",
@@ -413,11 +923,23 @@
     "scene_id": "scene0140_00",
     "question": "Can people clearly see out of the window?"
   },
+  "CQA_XAFKIXJT": {
+    "answer": "END TABLLE",
+    "context_change": "THE STOOL IS MOVED NEAR THE BALL",
+    "scene_id": "scene0301_00",
+    "question": "WHAT THING IS INBETWEEN THEGLOBE AND LEDGE"
+  },
   "CQA_J8VTRF55": {
     "answer": "The microwave was white",
     "context_change": "The microwave was removed",
     "scene_id": "scene0076_00",
     "question": "What color was the microwave"
+  },
+  "CQA_00XXDRBG": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
   },
   "CQA_R771LUOG": {
     "answer": "Cabinet",
@@ -431,6 +953,18 @@
     "scene_id": "scene0223_00",
     "question": "I opened the left wardobe door."
   },
+  "CQA_EWTC6JII": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_CLUQYYYG": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
   "CQA_8FHP3K71": {
     "answer": "Stool.",
     "context_change": "The stool has been moved from beside the bathtub to the side of the bathroom vanity.",
@@ -442,6 +976,12 @@
     "context_change": "The file cabinet is moved to the center of the room",
     "scene_id": "scene0066_00",
     "question": "Is the table in the way of the cabinet"
+  },
+  "CQA_9KUC5RSD": {
+    "answer": "232",
+    "context_change": "23",
+    "scene_id": "scene0573_00",
+    "question": "123"
   },
   "CQA_5QAYAE2B": {
     "answer": "yes",
@@ -455,6 +995,12 @@
     "scene_id": "scene0132_00",
     "question": "How many tables are in the room?"
   },
+  "CQA_P7191GKJ": {
+    "answer": "The bag",
+    "context_change": "The chair and clothes that was closer to the trash can  has been moved  to near the couch.",
+    "scene_id": "scene0230_00",
+    "question": "Which is the closest item to the trash can now??"
+  },
   "CQA_NCJM7N": {
     "answer": "End table",
     "context_change": "the ottoman has been moved in front of the armchair",
@@ -467,11 +1013,29 @@
     "scene_id": "scene0288_00",
     "question": "How many items are on top of the refridgerator"
   },
+  "CQA_8MVHU2SU": {
+    "answer": "PRINTER",
+    "context_change": "RECYCLE BIN IS MOVED NEAR THE DOOR",
+    "scene_id": "scene0198_00",
+    "question": "WHAT THING IS OPPOSITE TO THE REFRIGERATOR?"
+  },
+  "CQA_BEZR0Q": {
+    "answer": "chair",
+    "context_change": "I see a floor plan with several appliances (TV, dishwasher, etc.) along with built in items like cabinets and a bathroom vanity.  The cabinets are in a straight line along the wall.",
+    "scene_id": "scene0335_00",
+    "question": "What is that object that is in front of the TV, between the wall and the TV?"
+  },
   "CQA_OS8UH9NJ": {
     "answer": "Yes",
     "context_change": "the box below the cabinet has been removed",
     "scene_id": "scene0263_00",
     "question": "is there more room for the someone to get to the  cabinet?"
+  },
+  "CQA_V7YP6RPQ": {
+    "answer": "laundry hamper, trash can, recycling bin",
+    "context_change": "move the laundry hamper, recycling bin, and trash can along the wall under the window. ",
+    "scene_id": "scene0331_00",
+    "question": "What is now behind the desk chair? "
   },
   "CQA_P1H5RP": {
     "answer": "Yes",
@@ -485,10 +1049,40 @@
     "scene_id": "scene0583_00",
     "question": "would you be more comfortable not having the toilet right in front of the window"
   },
+  "CQA_XRWKSV8T": {
+    "answer": "The printer",
+    "context_change": "The trash can that was closer to the recycling bin has been moved to near the cabinet",
+    "scene_id": "scene0255_00",
+    "question": "Which is the closest item to the recycling bin now?"
+  },
+  "CQA_E8MMK1QP": {
+    "answer": "Carpet and wardrobe chest",
+    "context_change": "The pillow has been moved from the couch to the bed.",
+    "scene_id": "scene0224_00",
+    "question": "What items are touching the couch now?"
+  },
+  "CQA_AQ0A37": {
+    "answer": "One table",
+    "context_change": "The table with the Clothe has been removed from the room.",
+    "scene_id": "scene0123_00",
+    "question": "How many tables are against the wall?"
+  },
   "CQA_2905PM6P": {
     "answer": "6",
     "context_change": "The door had opened and the chair closest to the door rolled out of the room",
     "scene_id": "scene0644_00",
     "question": "How many chairs are there between the two tables?"
+  },
+  "CQA_PYULVQUT": {
+    "answer": "TRASH CAN",
+    "context_change": "THE MICROWAVE IS REMOVED IN THE KITCHEN CABINETAND ADDED IN THE INDUCTION STOVE",
+    "scene_id": "scene0220_00",
+    "question": "WHAT THING IS INBETWEEN WINDOW AND WINDOW CYCLING BIN?"
+  },
+  "CQA_UNUA8G5U": {
+    "answer": "Yes we can add 1 black table",
+    "context_change": "Add 1 table",
+    "scene_id": "scene0326_00",
+    "question": "Add 1 black table"
   }
 }
