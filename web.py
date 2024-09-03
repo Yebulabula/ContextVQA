@@ -50,7 +50,7 @@ st.set_page_config(
 st.title("ContextQA")
 
 ROOT_1 = "3D_scans"
-SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('scene')])
+SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1)])
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
 def read_instance_labels(scene_id):
@@ -61,7 +61,7 @@ def load_mesh(ply_file):
     return np.load(ply_file, allow_pickle=True, mmap_mode='r')
 
 def initialize_plot(vertices, triangles, vertex_colors, annotations):
-    vertex_colors_rgb = [f'rgb({r}, {g}, {b})' for r, g, b in vertex_colors]
+    vertex_colors_rgb = [f'rgb({r}, {g}, {b})' for r, g, b in vertex_colors[:, :3]]
 
     trace1 = go.Mesh3d(x=vertices[:, 0], y=vertices[:, 1], z=vertices[:, 2], i=triangles[:, 0], j=triangles[:, 1], k=triangles[:, 2], vertexcolor=vertex_colors_rgb, opacity=1.0)
     fig = go.Figure(data=[trace1])
