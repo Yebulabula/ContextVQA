@@ -3,7 +3,6 @@ import json
 import os
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import open3d as o3d
 ROOT_1 = "3D_scans"
 
 def read_instance_labels(scene_id):
