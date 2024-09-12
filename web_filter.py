@@ -10,7 +10,9 @@ import random
 import msgpack
 
 # Initialize Firebase credentials (dummy credentials for example)
-firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
+# firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
+
+firebase_credentials="ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29udGV4dHZxYSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjNiMWVhOGQ5ZjBjMDJiYjEwZDQwNTI4YWFlNWFmODI0MDAzMzZlZDEiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1kvdkV3QkpkN2RUcW1cblZkeHFVcExFMFFldTRFbS96dVA3YlV5YmxzUUZrVzhoNjBUUGdORlp0UXo2Z012L1VpZFBIcGxaSjRHWDVLZFhcbldVd2wrZkpHM2phZFhPcEJsaFlXaTBiNGhkWEhOY3NWSjR1dlFab0xrM05IcUJCbGhzSTU5eS96VU9QTTExc2xcbkRIVXVTL3ZhaGg4VHBwWEVubnRGV2lxNkYrTitmQmxhL3BtQlA1RDNuNG5qMnhObzgwbWsva3V3UjY0akpSZC9cbkVXeTZUaGExOXhPc3hWUFhCRUxFRXlLTGY2RzYwbU9jbnZpQWRwcU5MU2J0MUlwZUMwaWw0RlFuQUcwUUR3c3FcbmE5ay90b2t0OWs2NUFzc085dFcvVjcrTzVodmlySXUwL1pneXV3bGowbmNGRHNYb211UTRndXQ0Q3g3UUp2bndcbnA5Q3BMNTJaQWdNQkFBRUNnZ0VBRUNIdHo3amtPajNwd2NsUzlSa2c1Y1QrME9kUWozdWkyWXUwWk1HWWlOZkZcbmhxZVd1V1NsYnBhak9EVGxqZFlkVS8vdmZwR21YaHhic3QrMUlsb0JQSXpJNkgzNEs1TkdYL2t1c2h6MnBrdGJcblR5ODgwTzJUYno0TWpWVkE2VnUwMWtUazF2ekVFSUR5Mk95LzNISmhxN0N4elRJbkg3VHdYYWM4MHlPYXR1YjRcblRWMGNFYXRnVUdHQlJudjRzbVVmVG1LeU9MeFkvdWxEbllPTWtmRXlEL2lzaVlhaTBCbEY4RC9CbGlCVmJEVERcbk0veEthM21yYkh0YU0zTVVLVVdWZ1JFTFlOU0IwbWcxRGVDdldSM2RwQ1JxSUg4dWJzMGlGc0JvVG4vb0NNbUpcbkdpaHA1OGtTSlV2d2c3YWJSKzRpd2liaktrdFhEYjRrejFiNlN2MElTd0tCZ1FESlBObE8vMk12ZmtwZ1h6SDhcbmlnNW1CbGI2VWRkR29QT1pBTDdmeHpDVTd1TmtTTHJXUEVkY2gzcDNKV05tNDR6SWp0czJqd0VaZHBWdXdxTS9cbnY1Q2lwZExHMCtEMUhIL1BJK2lhUUJLWWExbHZWMHI0S2kxVWJiVFYzOVBPbkJ1S2RIZ3BRNkRhUS9tQ2RTK2hcbnkwQllXd0NJdUIzRUg1Wk5pTDY4azJHMnV3S0JnUURDb1ZnVkUvTTgrWnVpZUlUanZDSk5hNUYrakVMaXlQVlVcbitXRlBXQkpmN2tmRktuZHRleXdiZUR0U2NJRWV5OXJyVWo0anRyMCs2NDM0UTVoS2pPM2Q3c1VGRTlxcms2K09cbngrOUhtYlB6OGg3N3d2TXc3dXFncFEvZzlwUkJOZGFHS2FCMGszUWh6OFY2QXQra01sZkN6NXl0RGk5SUZ3c0RcblM3VmdqQ2E1dXdLQmdBemMyOU1GMWZRcU1WelptTnRZZzdVWHdLVjlaN0kzQlhzSkppb3RsRGhnMEo0UFhBbm5cbmpuUW1vTGhPNW55a0hOS1E5d2dVdWZCRHVTZDhQMjBLdEpjQTNHa2pEK1Q2N2x4eUlpTUI1MjVncGpYTXNaa05cbk1ScU5iSnFqRk9uRzVxZkI3QkJQSjAvc09sMlJXZnNRZjh0bC9iRy9lditYT1VjNWIxK2tXQUdUQW9HQURyTk5cbkNkcUY1cmNic0R2V0hiVmFDZXIwQkZEbnhHVlZVbU83bTlpVkdyWE9xZSs1TVlXNklTRUZxZ1poV2tnZmN1SzFcbld0RTBuZ29Bb1IzSjVPZWNGOFV2RUdFZGhSUVVrSDQ5Ym5VSGlJZGpHN1R2MVdSV1NHZnZPUmltdmY0cEE5MGxcbkIya1R2bklKQWx3eE5CK3hUVCtOSCswUVdTdVVZMTFXaDhKT01uMENnWUVBaHlYUGkxaC9MMWZybW1lWFlKTWRcblpROEhrT3dTVGdrelF6eER4WWttQ1dJN1lIeThzbU9SUGRSRlBOVEpUMVVRU0Y1d2Mwd1pENlUvTnFKMGlqTEtcblFqYzBOVUlkNmhlVFQ3cXpwdnp4VFZCcFNtbFJCVm1MTGJ3Q0plditQajczaU0rZEtSemIxYmpBQ1lEamM5OWhcbjhVazFDZW1GWXhzS2s5Z1Y0bktaQ2M4PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImZpcmViYXNlLWFkbWluc2RrLXRxc2I3QGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA1OTg2MTIxMjI3NjY5MjQ1MDM1IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9maXJlYmFzZS1hZG1pbnNkay10cXNiNyU0MGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"
 
 if firebase_credentials:
     if not firebase_admin._apps:
@@ -50,13 +52,7 @@ st.title("ContextQA")
 
 ROOT_1 = "3D_scans"
 # Get sorted scene IDs that start with 'scene'
-scene_ids = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('scene')])
-
-# Get sorted rscans that do not start with 'scene', limited to the first 200
-rscans = sorted([scene for scene in os.listdir(ROOT_1) if not scene.startswith('scene')])[:200]
-
-# Combine scene_ids and rscans
-SCENE_IDs = scene_ids + rscans
+SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1)])
 
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
@@ -124,29 +120,33 @@ def refresh_scene():
     return initialize_plot(vertices, triangles, vertex_colors, annotations)
 
 guideline_text = """
-<span style="color:brown;">**Welcome!**</span> 
+<span style="color:brown;">**Welcome!**</span>
 
-First, look at the 3D scene and think about how you could change the objects in it. Then, describe five different changes. Follow these rules:
+First, explore the 3D scene and think about how you could modify **one or more objects** within it. Then, describe **five distinct changes**. Follow these important rules:
 
-1. Any change that fits naturally within the scene's layout and context is acceptable. For example, you might consider:
-- Moving objects in the scene. 
-- Changing visual appearance of object(s) (e.g., changing object color).
-- Altering the functionality or state of objects(s) (e.g., open/close a fridge door).
-- Adding, removing, or replacing objects within the scene.
-- ... and more!
-2. You can change one or more objects in the scene. 
-3. Provide a detailed description of the change, specifying exactly which object(s) are changed and how they are changed. Vague or brief descriptions will be <span style="color:red;">rejected</span>.
-4. Ensure the five changes are unique in type and applied to different objects. Repetitive changes will be <span style="color:red;">rejected</span>, while diverse changes may receive a <span style="color:green;">bonus</span>.
+1. **Natural, Contextual Changes**: Any change that fits seamlessly within the scene's layout and context is acceptable. For example, you might:
+   - Rearrange objects (e.g., move a chair to a different location).
+   - Modify the visual appearance of objects (e.g., change the color of a lamp).
+   - Adjust the functionality or state of objects (e.g., open or close a door).
+   - Add, remove, or replace objects in the scene.
+   - ...and much more!
 
-Examples:
-- *The black jacket that was next to the couch has been placed in the laundry basket.*
-- *A coffee machine is added on the kitchen counter next to the toaster oven for added convenience.*
+2. **Detailed, Deterministic Descriptions**: Be precise and specific. Use nearby objects or unique attributes to clearly identify the objects you're changing. Make sure to describe exactly *how* the change occurs. Avoid vague or uncertain language like "maybe," "could be," or "either...or." Each description is at least 10 words long.
 
-Note: To maintain data quality, we encourage you to make complex and diverse changes that are neither too simple nor too similar. After submitting your changes, you'll receive a completion code. Be sure to save this code and submit it to CloudResearch to receive your payment.
+   <span style="color:red;">**Bad examples:**</span>
+   - The black chair is removed. (Too brief.)
+   - The table could be longer. (Vague—what table? How much longer?)
+   - Door has opened. (Unclear—which door?)
+   - The cup could either be removed or placed on the table. (Indecisive—removed or placed?)
 
-**If you find your scene too simple, you can refresh the page to load a new one. However, make sure all your changes are based on the same scene.**
+   <span style="color:green;">**Good example:**</span>
+   - A coffee machine has been added to the kitchen counter next to the toaster oven for added convenience.
 
-*<span style="color:red;"> Feel free to unleash your creativity to the fullest! Best of luck!</span>* 😁
+3. **Unique and Varied Changes**: Each of your five changes must be unique and applied to different objects. **Repetitive changes** will be <span style="color:red;">rejected</span>, but creative and diverse changes may receive a <span style="color:green;">bonus</span>.
+
+**Note**: Overall, to ensure data quality, we encourage you to make thoughtful, detailed changes. Avoid overly simple or repetitive modifications. If your scene seems too simple, feel free to refresh the page for a new one. However, all changes must be based on the same scene. After submitting your changes, you’ll receive a completion code—be sure to save this and submit it to CloudResearch to claim your payment.
+
+<span style="color:red;">**Unleash your creativity! Good luck!**</span> 😁
 """
 
 with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, icon="📝"):
@@ -181,6 +181,8 @@ with right_col:
             st.warning("Please ensure that all changes are unique.")
         elif not all(changes):
             st.warning("Please fill in all the changes.")
+        elif not all(len(change.split()) >= 10 for change in changes):  # Check if each change has at least 10 words
+            st.warning("Please ensure that all changes are at least 10 words long.")
         else:
             # Proceed with success case
             st.session_state.survey_code = generate_survey_code()
