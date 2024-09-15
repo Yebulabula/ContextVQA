@@ -53,7 +53,7 @@ st.title("ContextQA")
 
 ROOT_1 = "3D_scans"
 # Get sorted scene IDs that start with 'scene'
-SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1)])
+SCENE_IDs = sorted([scene for scene in os.listdir(ROOT_1) if scene.startswith('scene')])
 
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_filtered_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
@@ -70,6 +70,10 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations):
     trace1 = go.Mesh3d(x=vertices[:, 0], y=vertices[:, 1], z=vertices[:, 2], i=triangles[:, 0], j=triangles[:, 1], k=triangles[:, 2], vertexcolor=vertex_colors_rgb, opacity=1.0)
     fig = go.Figure(data=[trace1])
 
+    for annotation in annotations:
+        annotation['font'] = dict(color='white', size=12)  # Set font to white
+        annotation['bgcolor'] = 'black'  # Add a black background for contrast
+    
     fig.update_layout(
         scene=dict(
             aspectmode='data',
@@ -125,10 +129,11 @@ guideline_text = """
 
 Explore the 3D scene and describe **five** different ways to move objects within it. 
 
-Example movements for the given scene:
-<img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
+**Conside the example scene below, possible movements can include:**
 - The brown pillow, originally on the bed, has been moved to the gray couch.
 - The desk, which was next to the white cabinet, is now positioned between the refrigerator and the two trash cans.
+
+<img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
 <span style="color:brown;">**Instructions:** </span>
 

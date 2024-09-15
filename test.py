@@ -26,12 +26,13 @@ def read_scene_mesh(scene_id):
 
 def plot_scene_with_labels(scene_id, vertices, faces, vertex_colors, instance_labels, id2labels):
     # Exclude the ceiling category
-    ceiling_indices = [int(id) for id, label in id2labels.items() if 'ceiling' in label or 'wall' in label]
+    print(id2labels)
+    ceiling_indices = [int(id) for id, label in id2labels.items() if 'ceiling' in label]
     mask = np.isin(instance_labels, ceiling_indices, invert=True)
 
     filtered_vertices = vertices[mask]
     filtered_vertex_colors = vertex_colors[mask]
-    # filtered_instance_labels = instance_labels[mask]
+    filtered_instance_labels = instance_labels[mask]
     
     
     # Create a mapping from old vertex indices to new vertex indices
@@ -49,21 +50,21 @@ def plot_scene_with_labels(scene_id, vertices, faces, vertex_colors, instance_la
     # Create subplots with 1 row and 2 columns, with reduced horizontal spacing
     # fig = make_subplots(rows=1, cols=1, specs=[[{'type': 'mesh3d'},]])
 
-    # Plot original mesh
+    # # Plot original mesh
     # x, y, z = filtered_vertices.T
     # i, j, k = filtered_faces.T
     
-    x, y, z = vertices.T
-    i, j, k = faces.T
+    # # x, y, z = vertices.T
+    # # i, j, k = faces.T
     
-    # Apply color coding based on depth (z-axis)
-    # colorscale = 'Greys'
-    # color_intensity = np.interp(z, (z.min(), z.max()), (0, 255))
+    # # Apply color coding based on depth (z-axis)
+    # # colorscale = 'Greys'
+    # # color_intensity = np.interp(z, (z.min(), z.max()), (0, 255))
     
     # trace_mesh_gray = go.Mesh3d(
     #     x=x, y=y, z=z, 
     #     i=i, j=j, k=k, 
-    #     vertexcolor=vertex_colors, 
+    #     vertexcolor=filtered_vertex_colors, 
     #     opacity=1.0, 
     #     name='Original Mesh'
     # )
@@ -92,8 +93,8 @@ def plot_scene_with_labels(scene_id, vertices, faces, vertex_colors, instance_la
     # objects_by_category = {}
     # for instance_id, label in id2labels.items():
     #     category = label.split('_')[0]
-    #     if category == 'wall' or category == 'object' or category == 'floor' or category == 'ceiling':
-    #         continue
+    #     # if category == 'wall' or category == 'object' or category == 'floor' or category == 'ceiling':
+    #     #     continue
     #     if category not in objects_by_category:
     #         objects_by_category[category] = []
     #     objects_by_category[category].append(label)
@@ -108,9 +109,10 @@ def plot_scene_with_labels(scene_id, vertices, faces, vertex_colors, instance_la
     # annotations = []
     # markers = []
     # for instance_id, label in id2labels.items():
-    #     category = label.split('_')[0]
-    #     if category == 'wall' or category == 'object' or category == 'floor' or category == 'ceiling':
-    #         continue
+    #     category = label
+    #     # print(label)
+    #     # if category == 'wall' or category == 'object' or category == 'floor' or category == 'ceiling':
+    #     #     continue
     #     instance_indices = np.where(filtered_instance_labels == int(instance_id))[0]
         
     #     if len(instance_indices) > 0:
@@ -152,8 +154,8 @@ def plot_scene_with_labels(scene_id, vertices, faces, vertex_colors, instance_la
     
     # return caption
 
-scenes = sorted([scene_id for scene_id in os.listdir(ROOT_1) if not scene_id.startswith('scene')])
-for scene_id in scenes[:]:
+scenes = sorted([scene_id for scene_id in os.listdir(ROOT_1) if scene_id.startswith('scene')])
+for scene_id in scenes:
     # if scene_id == 'scene0038_00':
     print(scene_id)
     instance_labels, id2labels = read_instance_labels(scene_id)
@@ -167,7 +169,4 @@ for scene_id in scenes[:]:
 
 
 # for idx, scene_id in os.listdir('/mnt/new_drive/Documents/ContextVQA/3D_scans'):
-#     if not scene_id.startswith('scene'):
-#         # rename folder
-#         new_scene_id = '3rscan_' + idx + '_' + scene_id
-#         os.rename(f'/mnt/new_drive/Documents/ContextVQA/3D_scans/{scene_id}', f'/mnt/new_drive/Documents/ContextVQA/3D_scans/{new_scene_id}')
+    i, j, k = faces.T
