@@ -149,10 +149,20 @@ import json
 
 # json.dump(total_movement_descriptions, open('movement_changes.json', 'w'), indent=2)
 
-addition_descriptions = json.load(open('attribute_changes.json', 'r'))
+addition_descriptions = json.load(open('addition_changes.json', 'r'))
 
-addition_descriptions_0 = {k: v for k, v in sorted(addition_descriptions.items(), key=lambda item: item[0]) if k.startswith('scene')}
-addition_descriptions_1 = {k: v for k, v in sorted(addition_descriptions.items(), key=lambda item: item[0]) if not k.startswith('scene')}
-total_addition_descriptions = {**addition_descriptions_0, **addition_descriptions_1}
+add_changes = []
+for scene in addition_descriptions:
+    changes = addition_descriptions[scene]
 
-json.dump(total_addition_descriptions, open('attribute_changes.json', 'w'), indent=2)
+    print(scene)
+    for change in changes:
+        if 'add' in change and 'remove' not in change and 'replace' not in change:
+           add_changes.append(change)
+
+# save them it text file
+with open('addition.txt', 'w') as f:
+    for change in add_changes:
+        f.write(change + '\n')
+
+# json.dump(total_addition_descriptions, open('attribute_changes.json', 'w'), indent=2)
