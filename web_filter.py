@@ -169,20 +169,20 @@ left_col, right_col = st.columns([2, 1])
 with right_col:
     scene_id = st.session_state.scene_id
 
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Scene Change 1</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="change1", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Movement 1</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object movement within the scene in details.", key="change1", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Scene Change 2</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="change2", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Movement 2</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object movement within the scene in details.", key="change2", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Scene Change 3</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="change3", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Movement 3</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object movement within the scene in details.", key="change3", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Scene Change 4</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="change4", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Movement 4</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object movement within the scene in details.", key="change4", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Scene Change 5</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Imagine a change that is reasonably happen in the given 3D scene.", key="change5", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Movement 5</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object movement within the scene in details.", key="change5", placeholder="Type here...", height=10)
 
     if st.button("Submit"):
         # Extract changes using list comprehension
