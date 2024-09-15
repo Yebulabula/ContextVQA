@@ -125,7 +125,7 @@ def refresh_scene():
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-Explore the 3D scene and describe **five** different ways to move objects within it. 
+Explore the given 3D scene visualization and describe **five** different ways to move objects within it. 
 
 **Conside the example scene below, possible movements can include:**
 - The brown pillow, originally on the bed, has been moved to the gray couch.
@@ -137,9 +137,11 @@ Explore the 3D scene and describe **five** different ways to move objects within
 
 <span style="color:brown;">- Movements must be spatially feasible within the scene's layout. </span>
 
-<span style="color:brown;">- Each movement description should clearly specify the object(s) being moved, its original location, and its new location in a unique way. Ambigious or wrong descriptions/too short descriptions will be </span> <span style="color:red;"> **rejected**.</span> 
+<span style="color:brown;">- Each movement description should clearly specify the object(s) being moved, its original location, and its new location in a unique way. Ambigious or wrong description descriptions will be </span> <span style="color:red;"> **rejected**.</span> 
 
 <span style="color:brown;">- Each description should move different objects in the scene. </span>
+
+<span style="color:brown;">- Each description should be more than 10 words. </span>
 
 <span style="color:brown;">- All movements must occur within the same scene and be independent of one another. </span>
 
