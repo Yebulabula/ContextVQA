@@ -149,6 +149,26 @@
     ],
     "scene_id": "scene0178_00"
   },
+  "CQA_EH425AOXOE": {
+    "changes": [
+      "the hair dryer is moved to the table near the clock",
+      "the trashcan  from near the sink is moved to the door",
+      "shoes near the clock is moved to the bench in the corner",
+      "the other towel moved to the ironing board near the bench",
+      "the towel from the sink moved to the clothes hanger "
+    ],
+    "scene_id": "scene0574_00"
+  },
+  "CQA_RRONESLV1C": {
+    "changes": [
+      "The two tables, which were originally separate, were pushed together to form one longer table in the middle of the room.",
+      "One of the chairs originally positioned near the computer at the table next to the wall has been moved to the head of the table in the center of the room.",
+      "The printer, which was originally positioned between the computer tower and the wall, was moved to the opposite side of the computer monitor.",
+      "The table that was originally in the middle of the room is moved to the far corner of the room, next to the other free-standing table.",
+      "The whiteboard, which was on the wall near the printer, was moved to the center of the wall."
+    ],
+    "scene_id": "scene0023_00"
+  },
   "CQA_9EUZZN1HZR": {
     "changes": [
       "The shoes have been moved away from the radiator to the front of the wardrobe closest",
@@ -158,6 +178,16 @@
       "The clothes and backpack were placed on the bed as they will be applied for later."
     ],
     "scene_id": "scene0243_00"
+  },
+  "CQA_9UOTR4NQC3": {
+    "changes": [
+      "The vase on the gray coffee table has been carefully lifted and moved to the top shelf of the white cabinet, where it now sits next to the decorative box. This movement involves a change in both the object's height and its position within the scene.\n\n",
+      "The blue book lying on the floor beside the gray couch has been picked up and placed on the edge of the desk, where it now rests beside the laptop and notepad. This movement requires the object to be lifted from the floor and relocated to a new surface",
+      "The small trash can on the floor near the refrigerator has been moved to the opposite side of the desk, where it now sits next to the two larger trash cans, creating a trio of waste containers. This movement involves a change in the object's position within the scene, as well as its relationship to other objects.",
+      "The framed picture hanging on the wall above the bed has been removed from its hook and relocated to a shelf on the white cabinet, where it now hangs next to a decorative vase and a bookend. This movement requires the object to be lifted from its original location and relocated to a new surface.",
+      "The laptop on the desk has been closed and carried across the room to the gray couch, where it has been placed on the cushion next to the brown pillow, creating a cozy reading nook. This movement involves both a change in location and a change in context, as the laptop is no longer being used as a workspace."
+    ],
+    "scene_id": "scene0588_00"
   },
   "CQA_7AFDMMYOJ7": {
     "changes": [
@@ -219,6 +249,16 @@
     ],
     "scene_id": "scene0584_00"
   },
+  "CQA_88GIQIDO44": {
+    "changes": [
+      "The pillow on the couch in the center has been placed on the footrest in front of it.",
+      "The recycling bin next to the plant has been placed to the left of the backpack.",
+      "The footrest which is beside the table and the central couch has been thrown onto the table furthest away.\n",
+      "The whiteboard which is across from the couch has been shoved beside the blue stool.",
+      "The chair which is beside the table and next to the couch has been flung towards the whiteboard."
+    ],
+    "scene_id": "scene0299_00"
+  },
   "CQA_I67LXLILO1": {
     "changes": [
       "The chair in the middle of the square table arrangement has been moved to the center.",
@@ -228,6 +268,16 @@
       "The door, which was previously open, is now closed completely."
     ],
     "scene_id": "scene0173_00"
+  },
+  "CQA_F7XDWA3TO1": {
+    "changes": [
+      "The foosball table and the green pool table have been moved to the centermost point of the room and they are touching one another on their short ends.",
+      "The  green pool table has been rotated so that it sits with its two shorter sides facing each column. ",
+      "The foosball table has been moved parallel to the pool table and in between the two columns. ",
+      "The yellow chair has been moved with its back to the wall between the column and the door. ",
+      "The cabinet has been shifted to the right of its current location on the same wall, immediately to the left of the column. "
+    ],
+    "scene_id": "scene0115_00"
   },
   "CQA_AVNPSSO7GM": {
     "changes": [
@@ -278,6 +328,26 @@
       "The recycling bin near the books has been moved to the cabinets near the counter."
     ],
     "scene_id": "scene0534_00"
+  },
+  "CQA_UFF06BAUOX": {
+    "changes": [
+      "The White board eraser  was taken from the whiteboard by the shelf and placed by the whiteboard over the bin",
+      "The cuddly teddy bear was picked up and moved from the couch to the desk",
+      "The new headphones were taken from the bookshelf by the window and connected to the nearby monitor on the shelf",
+      "The old trashcan was taken away from behind the couch and next to the bookshelf by the door",
+      "the small tube was lifted up off the office chair and placed next to the other tube by the cabinet at the back of the room"
+    ],
+    "scene_id": "scene0040_00"
+  },
+  "CQA_SB75WCEU3L": {
+    "changes": [
+      "Move the shelf to the empty space on the opposite corner",
+      "Move the white board to the opposite empty space where the shelf was moved",
+      "Move the computer tower and monitor to the other side where windows at",
+      "Move table and chairs from outside table closer to the corner ",
+      "Move printer to the table with chairs closest to it"
+    ],
+    "scene_id": "scene0023_00"
   },
   "CQA_N7986LA1RP": {
     "changes": [
@@ -369,6 +439,16 @@
     ],
     "scene_id": "scene0410_00"
   },
+  "CQA_2LFOXD1MZ9": {
+    "changes": [
+      "The trashcan was moved from beneath desk to the foot of the bed. ",
+      "The lamp with the black shade was moved from the left side of the desk to the right side. ",
+      "The dark office chair was moved from the desk to the front of the window, left of the night stand",
+      "The desk, along with the chair, lamp, and trashcan switched positions with the nightstand with th elamp on top.",
+      "The trashcan under the desk was moved to the left side of the shelf facing the foot of the bed. "
+    ],
+    "scene_id": "scene0039_00"
+  },
   "CQA_TL56PYJGZE": {
     "changes": [
       "The keyboard, originally on the table, has been moved to the stack of chairs in the corner.",
@@ -378,6 +458,16 @@
       "The boxes, originally underneath the projector, were moved to the cabinet."
     ],
     "scene_id": "scene0584_00"
+  },
+  "CQA_LNY6Y91ZWE": {
+    "changes": [
+      "The fan has been moved to the left of the monitor on the desk.",
+      "white board has been moved to the left  on the wall by the office chair.",
+      "The shelf has been moved to the far right against the wall on the desk in front of the office chair.",
+      "the cup has been moved to the right of the monitor in the space where the fan used to be",
+      "the box has been moved to the top of the mini fridge."
+    ],
+    "scene_id": "scene0131_00"
   },
   "CQA_21HXI1XOG9": {
     "changes": [
@@ -478,6 +568,16 @@
       "The picture that's near the coffee table has been moved to the couch's previous location to in front of the table next to the coffee table."
     ],
     "scene_id": "scene0297_00"
+  },
+  "CQA_8LC6C47BEH": {
+    "changes": [
+      "The mini fridge has been opened and moved near the sink.",
+      "The towel in the living room has been moved by the ironing board.",
+      "The two doors have been opened and can be seen through.",
+      "The window glass in the kitchen has been broken into pieces.",
+      "The cabinets inside of the kitchen have been opened, revealing their contents."
+    ],
+    "scene_id": "scene0261_00"
   },
   "CQA_ONCY9IYX1F": {
     "changes": [
@@ -599,6 +699,16 @@
     ],
     "scene_id": "scene0316_00"
   },
+  "CQA_N0P8QSK3OW": {
+    "changes": [
+      "The trash can, which was next to the fireplace, is now between the doorframe and cabinets.",
+      "The person, who was on the bed near the chair, is now standing in front of the fireplace.",
+      "The pillow, which was on the bed close to the lamp and chair, is now on the floor between the two beds.",
+      "The person, who was on the bed closest to the wall, is now standing by the chair near the doorframe.",
+      "The backpack, which was on the bed near the lamp and chair, is now sitting atop the cabinets near the trash can."
+    ],
+    "scene_id": "scene0178_00"
+  },
   "CQA_PJ3KXCV0YK": {
     "changes": [
       "The picture can be placed from above the monitor to above the bookshelf.",
@@ -648,6 +758,16 @@
       "the scale by the cream shower curtain was moved and placed by the towel by the shower walls."
     ],
     "scene_id": "scene0501_00"
+  },
+  "CQA_9F3I6ZGIVH": {
+    "changes": [
+      "The trash can by the desk has been moved in front of the nightstand between the beds.",
+      "The left pillow on the left bed has been moved to be on top of the right side pillow on the right side bed.",
+      "The towel in the bathroom closest to the mirror has been moved to hang over the shower curtain to dry.",
+      "The towel furthest from the mirror has been moved to the grab bar to be closer to the shower.",
+      "The picture by the desk has been moved to be hung behind the nightstand."
+    ],
+    "scene_id": "scene0642_00"
   },
   "CQA_2VJLMR6V49": {
     "changes": [
@@ -769,6 +889,26 @@
     ],
     "scene_id": "scene0340_00"
   },
+  "CQA_JKP7VN22LD": {
+    "changes": [
+      "The pillow on the chair behind the couch can be moved to the tv stand",
+      "The fan in front of the windows can be moved in front of the chair which is in front of the radiator",
+      "The shoe on the floor can be moved under the chair  behind the couch",
+      "The tea kettle can be moved to the table next to the chair.",
+      "The trash can near the door can be moved in front of the tv stand"
+    ],
+    "scene_id": "scene0002_00"
+  },
+  "CQA_OJ6BTF1ZJZ": {
+    "changes": [
+      "the bag on the sink has been moved to the bar",
+      "the toil towel has been draped over the side of the bathtub",
+      "the hair dyer has been moved to the sink counter, which is dangerous",
+      "The tissue box as been discarded into the trash can",
+      "the trash can has been moved in front of the center of the doorframe"
+    ],
+    "scene_id": "scene0509_00"
+  },
   "CQA_9SOS0RWQQ5": {
     "changes": [
       "The lightswitch by the bed has been moved to the wall by the door",
@@ -778,6 +918,16 @@
       "The Chair by the desk has been moved into the wardrobe closet. "
     ],
     "scene_id": "scene0110_00"
+  },
+  "CQA_AC33XF1F9A": {
+    "changes": [
+      "Brown old Pillow originally on the bed onto sofa chair",
+      "Lamp originally nightstand onto cabinet which is next to the mini fridge",
+      "Shoes originally in between the two beds to be next to the door",
+      "Clothes that were originally on the sofa chair on Bed",
+      "Suitcase that is near the mini fridge originally next to bed"
+    ],
+    "scene_id": "scene0416_00"
   },
   "CQA_OA6XIYRG2M": {
     "changes": [
@@ -849,6 +999,16 @@
     ],
     "scene_id": "scene0533_00"
   },
+  "CQA_QTTXQ8QBNT": {
+    "changes": [
+      "The vacuum cleaner, to the right of the fireplace, is now next to the blue trash can.",
+      "One brown armchair, originally to the right of the fireplace, is now in front of the fireplace where the blue chair was positioned.",
+      "The green chair near the white table by the windowsill is now positioned closer to that white table. ",
+      "The lamp on the table in front of the picture is now on the white table nearest to the window. ",
+      "The blue chair, originally in front of the fireplace, is now placed by the white table near the window."
+    ],
+    "scene_id": "scene0616_00"
+  },
   "CQA_F6U880KPVG": {
     "changes": [
       "Table can be repositioned anywhere within the room if chairs are moved",
@@ -908,6 +1068,16 @@
       "The two towels have been moved to where the picture used to be."
     ],
     "scene_id": "scene0410_00"
+  },
+  "CQA_GCZI5FM0JZ": {
+    "changes": [
+      "The trashcan was moved from beneath desk to the foot of the bed. ",
+      "The lamp with the black shade was moved from the left side of the desk to the right side. ",
+      "The dark office chair was moved from the desk to the front of the window, left of the night stand",
+      "The desk, along with the chair, lamp, and trashcan switched positions with the nightstand with th elamp on top.",
+      "The trashcan under the desk was moved to the left side of the shelf facing the foot of the bed. "
+    ],
+    "scene_id": "scene0039_00"
   },
   "CQA_VE71PXQXVZ": {
     "changes": [
@@ -999,6 +1169,16 @@
     ],
     "scene_id": "scene0319_00"
   },
+  "CQA_2GPN9HHOGW": {
+    "changes": [
+      "Brown old Pillow originally on the bed onto sofa chair",
+      "Lamp originally nightstand onto cabinet which is next to the mini fridge",
+      "Shoes originally in between the two beds to be next to the door",
+      "Clothes that were originally on the sofa chair on Bed",
+      "Suitcase that is near the mini fridge originally next to bed"
+    ],
+    "scene_id": "scene0416_00"
+  },
   "CQA_MRJR0FX22V": {
     "changes": [
       "The cabinet, which was next to the whiteboard, has now moved to the left of the two office chairs on the left of the brown table. ",
@@ -1008,6 +1188,16 @@
       "The whiteboard on the right side of the room, has been de-attached from the wall and is now on top of the brown table in the center of the room"
     ],
     "scene_id": "scene0225_00"
+  },
+  "CQA_W7OJOQ3AII": {
+    "changes": [
+      "The chair, which is near the backpack, has been moved to the table at the back.",
+      "The seat, which is to the right of the chair, has been moved to the table at the back.",
+      "The backpack, which is near the chair, has been moved to the coffee table\n",
+      "The seat, which is near the table, has been moved to the coffee table.",
+      "The table, which is in-between two chairs, has been moved the seat at the far left corner."
+    ],
+    "scene_id": "scene0187_00"
   },
   "CQA_D2PKC5RQQ0": {
     "changes": [
@@ -1048,6 +1238,16 @@
       "The larger trash can, which was once stationed by the refrigerator, is beneath the window under the kitchen counter."
     ],
     "scene_id": "48699c02-d4a2-2f10-81c3-552d06ffcbb8"
+  },
+  "CQA_4C0LZDX2OL": {
+    "changes": [
+      "The chairs can be placed closer to the table, so the main part is under the table. ",
+      "The backpack can be placed by the door, so it keeps the door open",
+      "The picture can be placed on the tv, to block the screen",
+      "The chairs can be stacked on each other, to save space",
+      "You can move the black backpack near the whiteboard underneath"
+    ],
+    "scene_id": "scene0252_00"
   },
   "CQA_QIWTJAHFYZ": {
     "changes": [
@@ -1139,6 +1339,16 @@
     ],
     "scene_id": "scene0238_00"
   },
+  "CQA_6TKJ7SA5Y4": {
+    "changes": [
+      "The white Trashcan has been moved to the front of the window",
+      "The table has been moved to the front of the black trash can",
+      "The recycling bin with the green top has been moved to the doorframe",
+      "The stack of chairs at the end of the back row has been moved to the door",
+      "The chair has been moved to the right of the black table"
+    ],
+    "scene_id": "scene0459_00"
+  },
   "CQA_3MYI9O8DPG": {
     "changes": [
       "The throw pillow shown to the right of the TV was moved there from the couch.",
@@ -1209,6 +1419,16 @@
     ],
     "scene_id": "scene0301_00"
   },
+  "CQA_G0B6AV7ZFO": {
+    "changes": [
+      "Take the guitar case and move it across the room and place it on the shelf. ",
+      "Take all of the books and move them across the room and place them on the shelf.",
+      "Take the guitar and place it in the guitar case that is on the shelf.",
+      "Move the backpack that is on the ground and place it on a chair.",
+      "Take the ball that is in the middle of the room and place it underneath the left most desk. "
+    ],
+    "scene_id": "scene0141_00"
+  },
   "CQA_9DHG9DN1LR": {
     "changes": [
       "The table holding the two printers and a paper tray can be swapped with the copier",
@@ -1218,6 +1438,16 @@
       "The recycling bin can be moved to the far right side in the corner where the table and wooden table meet and the copier can be pushed to the boettom left corner of the room"
     ],
     "scene_id": "scene0018_00"
+  },
+  "CQA_6M1UZD6W0L": {
+    "changes": [
+      "The jacket, originally hanging on the doorframe, has been moved to rest on the bathroom counter beside the sinks.",
+      "One of the trash cans, which was located near the entrance next to the doorframe, has been repositioned beside the third bathroom stall door.",
+      "The paper towel dispenser that was mounted between the two sinks on the left wall has now been relocated above the far right sink, next to the bathroom mirror.",
+      "The second toilet paper dispenser, which was previously attached to the second bathroom stall, has now been moved inside the first stall, mounted near the door.\n\n",
+      "One of the mirrors that was placed above the leftmost sink has been removed and placed directly above the second toilet inside the stall."
+    ],
+    "scene_id": "scene0359_00"
   },
   "CQA_H1FBTHB0HV": {
     "changes": [
@@ -1238,6 +1468,16 @@
       "The clothing on the file cabinet is placed in the trash can."
     ],
     "scene_id": "scene0476_00"
+  },
+  "CQA_0GGE3PRSRA": {
+    "changes": [
+      "The towel have been moved from the vanity into the laundry hamper.",
+      "The plant has been moved from the corner of the bathroom by the tub onto the bathroom vanity.",
+      "The towel next to the shower has been moved to the shower floor.",
+      "The clothes have been moved from the floor into the laundry hamper.",
+      "The towel has been removed from the bathroom door and put into the laundry hamper."
+    ],
+    "scene_id": "scene0581_00"
   },
   "CQA_VFF20XXGX8": {
     "changes": [
@@ -1449,6 +1689,16 @@
     ],
     "scene_id": "scene0646_00"
   },
+  "CQA_1NY75GK8QT": {
+    "changes": [
+      "The whiteboard on the wall is hung above the desk. \n",
+      "The book on the table is moved next to the keyboard on the desk. ",
+      "The messenger bag is moved from the desk to the table against the opposite wall. ",
+      "The mini fridge is moved from one side of the desk to near the door. ",
+      "The book on the computer desk is moved to the desk on the opposite side of the room. "
+    ],
+    "scene_id": "scene0643_00"
+  },
   "CQA_TS6MIZFMD9": {
     "changes": [
       "The by the box can be moved to the mat in front of the window. ",
@@ -1469,6 +1719,16 @@
     ],
     "scene_id": "scene0316_00"
   },
+  "CQA_HSR3UWP8DZ": {
+    "changes": [
+      "The paper towel dispenser that is near the sink has been moved to next to the brown cabinet.",
+      "The coffee maker that is next to the coffee kettle has been moved next to the white microwave that is on the counter.",
+      "The black coffee kettle that is next to the coffee maker has been moved to the sink that is near the refrigerator.",
+      "The white coffee cups that next to the sink have been placed on top of the white microwave that is near the cabinet.",
+      "The blue trash can that is near the white microwave has been moved next to the white sink."
+    ],
+    "scene_id": "scene0347_00"
+  },
   "CQA_PED9SSXTA8": {
     "changes": [
       "The trash can by the window moves on top of the table.",
@@ -1488,6 +1748,16 @@
       "The ottoman to the armchair's right without the jacket on top of it is moved in front of the armchair and to the right of the other ottoman."
     ],
     "scene_id": "scene0031_00"
+  },
+  "CQA_RG5R7IGSXG": {
+    "changes": [
+      "the couch was moved to where the  shelf is and the shelf to where the couch was.",
+      "the lamp was moved to the table by the bed.",
+      "the picture was taken down and replaced with the tv",
+      "the alarm clock is moved to where the tv used to be sitting.",
+      "the clothes were moved from the bed and put into the closet."
+    ],
+    "scene_id": "scene0085_00"
   },
   "CQA_KAA9MNN7B6": {
     "changes": [
