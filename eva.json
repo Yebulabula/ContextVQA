@@ -1,0 +1,81 @@
+{
+    "CQA_NZEYGUXF9OKG": {
+      "answer": "paper towel dispenser",
+      "context_change": "The microwave has been moved to the kitchen counter.",
+      "scene_id": "scene0003_00",
+      "question": "What is above the microwave now?"
+    },
+    "CQA_QMZE00GW6ZOJ": {
+      "answer": "1",
+      "context_change": "The telephone has been moved to the bed on the left.",
+      "scene_id": "scene0006_00",
+      "question": "How many items are on the nightstand now?"
+    },
+    "CQA_5BEFS34Z53XE": {
+      "answer": "1",
+      "context_change": "The blue storage bin has been moved to the left of the white cabinet on the right side of the door.",
+      "scene_id": "scene0002_00",
+      "question": "How many storage bins are on the highest shelf now?"
+    },
+    "CQA_FDJ4MY92HKSH": {
+      "answer": "no",
+      "context_change": "The water cooler has been moved to the right of the trash can.",
+      "scene_id": "scene0003_00",
+      "question": "Is there any furniture to the left of the left side of the trash can now?"
+    },
+    "CQA_DU9MCOY46XHT": {
+      "answer": "three",
+      "context_change": "The pillow on the yellow wooden chair has been moved to the middle of the two pillows on the couch.",
+      "scene_id": "scene0002_00",
+      "question": "How many pillows are on the couch now?"
+    },
+    "CQA_7PQ5P04EZFT0": {
+      "answer": "no",
+      "context_change": "The TV has been moved directly above the cart.",
+      "scene_id": "scene0005_00",
+      "question": "Is there any furniture on the wall to the right of the door?"
+    },
+    "CQA_LCG8N29BHYP6": {
+      "answer": "one",
+      "context_change": "The smallest trash can near the refrigerator has been moved to the white table with four stools.",
+      "scene_id": "scene0000_00",
+      "question": "How many trash cans are next to the left refrigerator?"
+    },
+    "CQA_B0PKDEL3CORG": {
+      "answer": "yes",
+      "context_change": "The table closest to the picture and in the corner has been moved to the right side of the couch in front.",
+      "scene_id": "scene0001_00",
+      "question": "Is there any furniture between the purple couch and the armchair in front of the door?"
+    },
+    "CQA_EPS135GPFO2F": {
+      "answer": "guitar",
+      "context_change": "The kitchen cabinets on top of the refrigerator have been moved in front of the tallest cabinet next to the door.",
+      "scene_id": "scene0000_00",
+      "question": "What is in front of the kitchen cabinets on the left?"
+    },
+    "CQA_UZ10C41GDQ9G": {
+      "answer": "trash can",
+      "context_change": "The refrigerator has been rotated 90 degrees to the right.",
+      "scene_id": "scene0003_00",
+      "question": "What is directly in front of the refrigerator now?"
+    },
+    "CQA_3341UEDZAB4F": {
+      "answer": "1",
+      "context_change": "The blue storage bin has been moved to the left of the white cabinet.",
+      "scene_id": "scene0002_00",
+      "question": "How many storage bins are on the highest shelf now?"
+    },
+    "CQA_DH3I9U41YZC3": {
+      "answer": "no",
+      "context_change": "The trash can has been moved to the right of the suitcase in the front left.",
+      "scene_id": "scene0006_00",
+      "question": "Is there any item to the right of the chair closest to the desk?"
+    },
+    "CQA_XJ2IK72O31CZ": {
+      "answer": "cabinet",
+      "context_change": "The cart has been moved between two tables.",
+      "scene_id": "scene0005_00",
+      "question": "What is the piece of furniture two spots to the left of the cart?"
+    }
+  }
+  
