@@ -26,6 +26,7 @@ def load_json(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
     
+    
 @st.cache_data
 def load_scene_annotations():
     with open('scene_annotations.msgpack', 'rb') as file:
