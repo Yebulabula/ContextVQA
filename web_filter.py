@@ -170,7 +170,7 @@ def image_to_base64(image_path):
     return base64_image
 
 with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, icon="📝"):
-    image_path = "scene0000_00.png"
+    image_path = "example.png"
     st.markdown(guideline_text.format(image_to_base64(image_path)), unsafe_allow_html=True)
 
 left_col, right_col = st.columns([2, 1])
