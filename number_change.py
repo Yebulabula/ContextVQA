@@ -33,7 +33,7 @@ def load_scene_annotations():
     
 # Function to save context data to Firestore
 def save_context_data(data):
-    db.collection('Move_Changes').add(data)
+    db.collection('Addition_Changes').add(data)
 
 # Function to generate and return a confirmation code
 def generate_survey_code():
@@ -125,7 +125,7 @@ def refresh_scene():
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-Explore the given 3D scene visualization and describe **five** different ways to **add** objects within it. 
+Explore the given 3D scene visualization and hypothetically describe **five** different ways to **add** objects within it. 
 
 **Conside the example scene below, possible object additions can include:**
 - Two additional stools are arranged around the long, white rectangular table.
@@ -137,7 +137,7 @@ Explore the given 3D scene visualization and describe **five** different ways to
 
 <span style="color:brown;">- The added objects must be placed at the location with enough spare space. </span>
 
-<span style="color:brown;">- Each description should clearly and uniquely specify the location where the added object(s) are being placed. Ambigious or wrong descriptions will be </span> <span style="color:red;"> **rejected**.</span> 
+<span style="color:brown;">- Each description should clearly and uniquely specify the location where the object(s) are being added. Ambigious or wrong descriptions will be </span> <span style="color:red;"> **rejected**.</span> 
 
 <span style="color:red;"> Good Description: </span> Another red apple has been placed in the sink near the refrigerator. 
 <span style="color:green;"> Bad Description: </span> Another apple has been placed in the sink. </span> (which sink?)
