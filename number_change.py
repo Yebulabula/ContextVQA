@@ -127,7 +127,7 @@ def refresh_scene():
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-Explore the given 3D scene visualization and hypothetically describe **five** different ways to **add** objects within it. 
+Explore the given 3D scene visualization and hypothetically describe **five** different ways to **add new** objects within it. (not move exisiting objects) 
 
 **Conside the example scene below, possible object additions can include:**
 - Two additional stools are arranged around the long, white rectangular table.
