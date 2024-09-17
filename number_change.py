@@ -160,7 +160,7 @@ def render_img_html(image_b64):
 @st.cache_resource
 def image_to_base64(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
-    target_size = (700, 700)
+    target_size = (800, 800)
     resized_image = cv2.resize(image, target_size, interpolation=cv2.INTER_AREA)
     
     _, encoded_image = cv2.imencode(".png", resized_image)
