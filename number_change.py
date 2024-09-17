@@ -139,10 +139,10 @@ Explore the given 3D scene visualization and hypothetically describe **five** di
 
 <span style="color:brown;">- The added objects must be placed at the location with enough spare space. </span>
 
-<span style="color:brown;">- Each description should clearly and uniquely specify the location where the object(s) are being added. Ambigious or wrong descriptions will be </span> <span style="color:red;"> **rejected**.</span> 
+<span style="color:brown;">- Each description should clearly and uniquely indicate the number of objects you added and specify where each object was placed. Ambigious or wrong descriptions will be </span> <span style="color:red;"> **rejected**.</span> 
 
-<span style="color:red;"> Good Description: </span> Another red apple has been placed in the sink near the refrigerator. 
-<span style="color:green;"> Bad Description: </span> Another apple has been placed in the sink. </span> (which sink?)
+<span style="color:red;"> Good Description: </span> Two red apples has been placed in the sink near the refrigerator. 
+<span style="color:green;"> Bad Description: </span> Some apples has been placed in the sink. </span> (how many apples? which sink?)
 
 <span style="color:brown;">- Each description should add different objects in the scene. </span>
 
