@@ -1,0 +1,1012 @@
+{
+  "CQA_7P3NVI93RZ": {
+    "changes": [
+      "The soap dispenser has been removed from the sink in the bathroom",
+      "The towel has been removed from the wall to the right side of the sink in the bathroom",
+      "The toilet paper has been removed from next to the toilet in the bathroom",
+      "The picture has been removed from the wall next to the bathroom door",
+      "The light has been removed from the bathroom wall on the left side of the mirror"
+    ],
+    "scene_id": "scene0124_00"
+  },
+  "CQA_I00UTUMGSO": {
+    "changes": [
+      "Dirty laundry has been removed from the laundry room",
+      "A door was removed from the hallway between kitchen and room",
+      "A ceiling light was removed from the ceiling in the kitchen ",
+      "a window curtain was removed from the window in the kitchen ",
+      "A chair was removed from the kitchen of this house"
+    ],
+    "scene_id": "scene0417_00"
+  },
+  "CQA_VCCEESS99K": {
+    "changes": [
+      "Remove the rolling chair that is not near the desk.",
+      "Remove the far right monitor that is on the desk.",
+      "Remove the chair on the far left of the image.",
+      "Remove the large main desk from the image.",
+      "Remove the 2 non rolling chairs on the far right."
+    ],
+    "scene_id": "scene0258_00"
+  },
+  "CQA_H9PS11J1GL": {
+    "changes": [
+      "I am removing the office chair that is next to the backpack.",
+      "I am removing the office chair at the foot of the table.",
+      "I am removing the whiteboard off of the wall.",
+      "I am removing the backpack off the chair.",
+      "I am removing the first office chair on the right side of the table "
+    ],
+    "scene_id": "scene0388_00"
+  },
+  "CQA_FGSH6MRR1C": {
+    "changes": [
+      "The clothes on top of the table in the lower left of the scene have been removed.",
+      "The two chairs in the front of the table in the upper left of the scene have been removed.",
+      "The two chairs behind the table in the upper left of the scene have been removed.",
+      "The two chairs in the front of the table in the upper right of the scene have been removed.",
+      "The two chairs in the behind the table in the upper right of the scene have been removed."
+    ],
+    "scene_id": "scene0123_00"
+  },
+  "CQA_XJRRUH9962": {
+    "changes": [
+      "the back pack should be  remove from a coach",
+      "guitar case should remove from near coffee table",
+      "bicycle it should be out side the home",
+      "the trash can should be near a door because it was trashcan",
+      "shoes should be near door or outside because we use it outside"
+    ],
+    "scene_id": "scene0033_00"
+  },
+  "CQA_B8NJASEA19": {
+    "changes": [
+      "1 clock has been removed from the wall to the left of the opened door\n",
+      "1 bookshelf has been removed from underneath the one whiteboard that is on the same wall as the door\n",
+      "One telephone can be removed which is on the desk next to the window in the far right corner of the room\n",
+      "1 backpack can be removed that is next to the couch and pillow in front of the doorway\n",
+      "1 office chair can be removed which is closest to the desk and window in the far right corner of the room\n"
+    ],
+    "scene_id": "scene0262_00"
+  },
+  "CQA_RKYCP64LA8": {
+    "changes": [
+      "one trash bin has been removed from the room",
+      "The mirror has been removed from the room",
+      "The shower curtain rod has been removed from the room",
+      "The sign has been removed from the room",
+      "The toilet paper has been removed from the room"
+    ],
+    "scene_id": "scene0510_00"
+  },
+  "CQA_BKV3T3HS5L": {
+    "changes": [
+      "The nightstand between the bed and wardrobe closet can be removed. ",
+      "The table in front of the bed near the couch may be removed. ",
+      "The mirror above the sink in the bathroom can be taken down and removed. ",
+      "The toilet paper next to the toilet in the bathroom may be removed. ",
+      "The blue telephone in front of the door and doorframe may be removed. "
+    ],
+    "scene_id": "scene0276_00"
+  },
+  "CQA_UNFV9FETUP": {
+    "changes": [
+      "I am removing the office chair that is next to the backpack.",
+      "I am removing the office chair at the foot of the table.",
+      "I am removing the whiteboard off of the wall.",
+      "I am removing the backpack off the chair.",
+      "I am removing the first office chair on the right side of the table "
+    ],
+    "scene_id": "scene0388_00"
+  },
+  "CQA_KHY9B9N53X": {
+    "changes": [
+      "The individual guitar case on the left side of the scene, could be placed under the bed.",
+      "The small trash can by the office chair can be removed.",
+      "The picture nearest to the books, board, and table could potentially be placed within the cabinet",
+      "The plant nearest to the books, board, and table in the top right corner of the room can be removed.",
+      "one of three office chairs and be place within the cabinet nearest to the doors."
+    ],
+    "scene_id": "scene0525_00"
+  },
+  "CQA_2V59VN13XD": {
+    "changes": [
+      "The messenger bag has been removed from the scene",
+      "The white board on the wall has been removed from the scene.",
+      "The file cabinet has been removed from the scene.",
+      "The chair by the desk has been removed from the scene.",
+      "The telephone on the desk has been removed from the scene."
+    ],
+    "scene_id": "scene0380_00"
+  },
+  "CQA_VN76YBU6A3": {
+    "changes": [
+      "The backpack has been removed  from the table in the center of the room.",
+      "The TV on the far wall, aove the office chair has been removed.",
+      "The office chair has been removed from beneath the window to the left of the wall with the TV.",
+      "The table with the backpack on it has been removed from the center of the room.",
+      "The whiteboard on the wall to the right of the TV has been removed."
+    ],
+    "scene_id": "scene0680_00"
+  },
+  "CQA_45I0VL24LZ": {
+    "changes": [
+      "the backback is removed  from  near the chair",
+      "the monitor is removed from near one  table",
+      "one whiteboard is removed from against the  window",
+      "trash can is removed from near the window and door",
+      "one chair is removed from near the table"
+    ],
+    "scene_id": "scene0578_00"
+  },
+  "CQA_4QU0LNYFOM": {
+    "changes": [
+      "One jacket can be removed from the seat",
+      "One seat can be removed from the scene",
+      "One trash bin can be removed from the scene",
+      "One jacket can be removed from the scene",
+      "One radiator can be removed from the scene"
+    ],
+    "scene_id": "scene0052_00"
+  },
+  "CQA_AI604XWDI9": {
+    "changes": [
+      "A table and monitor has been removed from between the two white boards.",
+      "A trash can has been removed from next to the window and door across from the whiteboard.",
+      "A backpack has been removed from the chair next to the table that is closest to the whiteboard furthest from the door and with a window behind it.",
+      "A table has been removed from the center of the room that was surrounded by four chairs and a backpack.",
+      "Four chairs have been removed from the center of the room that were surrounding a table and one of the chairs had a backpack on it."
+    ],
+    "scene_id": "scene0578_00"
+  },
+  "CQA_U7CB7OL20O": {
+    "changes": [
+      "One yellow coffee table near the couch  with no pillow has been removed",
+      "One pillow has been removed from the couch",
+      "One blue coffee table next to the four pillows has been removed",
+      "One pillow on the bed has been removed",
+      "One chair next to the coffee table with the stool has been removed."
+    ],
+    "scene_id": "scene0330_00"
+  },
+  "CQA_8QU4O04X6Y": {
+    "changes": [
+      "one mirror has been removed from the wall\n",
+      "one shelf was removed from wall above dresser",
+      "one office chair was removed from in front of desk",
+      "bookshelf was removed from wall next to bed",
+      "window was  partially removed from above bookshelf and desk"
+    ],
+    "scene_id": "scene0506_00"
+  },
+  "CQA_INEH9KMVYT": {
+    "changes": [
+      "the 3 smaller pillows have been removed from the couch",
+      "The large coffee table in front of the couch has been removed",
+      "The small coffee table beside the couch is removed",
+      "The shelf behind and above the couch has been removed",
+      "The lamp on the wall facing the couch has been removed"
+    ],
+    "scene_id": "scene0128_00"
+  },
+  "CQA_94R0EAI5VA": {
+    "changes": [
+      "I move the table that is below the pictures  to the rigth close to the door frame ",
+      "I move the two trashcan that are in between the two door frames and move them next to the table that is under the pictures ",
+      "I move the red rolling chair that is next to the  table and move it to the empty table next to the corner",
+      "I move the shelf that is in between the two tables and move it to wall space that is in between the table that is in the corner and the left door frame that is to the left of the two trash cans",
+      "I move the lamp that is to the right of the couch that is agaisnt the wall and put it on the table that is in the corner of the room"
+    ],
+    "scene_id": "scene0329_00"
+  },
+  "CQA_EO20SB3IQJ": {
+    "changes": [
+      "The TV on top of the TV stand by the wall has been removed",
+      "The lamp on the desk in the corner has been removed",
+      "The picture on the front wall has been removed",
+      "The curtain on the window next to the radiator has been removed ",
+      "The leftmost pillow on the couch has been removed"
+    ],
+    "scene_id": "scene0362_00"
+  },
+  "CQA_D07NY1CHKV": {
+    "changes": [
+      "The telephone has been removed from the wall near the door and the toilet paper.",
+      "The toilet has been removed near the trash can.",
+      "The bar above the bathtub has been removed from the shower wall, near the soap dish.",
+      "The shower curtain above the bathtub has been removed.",
+      "The toilet paper has been removed from the wall near the trash can and telephone."
+    ],
+    "scene_id": "scene0702_00"
+  },
+  "CQA_P4FHL2SX1S": {
+    "changes": [
+      "Two printers have been removed from the counter to the right of the recycling bin",
+      "One copier to the left of the door frame has been removed",
+      "One paper cutter on top of the counter and to the right of the bottle has been removed",
+      "One bucket that is on top of the counter and is in between the printer and the bottle has been removed",
+      "One recycling bin which is to the left of the cabinet with the printer on top has been removed"
+    ],
+    "scene_id": "scene0255_00"
+  },
+  "CQA_45W91JFAZB": {
+    "changes": [
+      "the two pictures above the two separate bed have been removed from the scene.",
+      "The backpack on the couch has been removed from the scene.",
+      "The lamp on the nightstand has been removed from the scene.",
+      "The pillow has been removed from the coffee table.",
+      "The lunchbox next to the suitcase and cabinet has been removed from the scene."
+    ],
+    "scene_id": "scene0296_00"
+  },
+  "CQA_A10EM6P85Y": {
+    "changes": [
+      "A handful of soap has been removed from the left stall soap dispenser",
+      "A handful of soap has been removed from the right stall soap dispenser",
+      "One paper towel has been removed from the left stall paper towel dispenser",
+      "One paper towel has been removed from the right stall paper towel dispenser",
+      "One piece of trash has been removed from the left stall trash can."
+    ],
+    "scene_id": "scene0009_00"
+  },
+  "CQA_V0RM96AWWZ": {
+    "changes": [
+      "Two pictures were removed by the kitchen cabinet",
+      "The refrigerator was removed underneath the kitchen cabinet",
+      "One teapot was removed from the kitchen counter",
+      "One clock was removed from the right side of the shelf",
+      "The oven was removed next to the kitchen cabinets."
+    ],
+    "scene_id": "scene0542_00"
+  },
+  "CQA_0VKQ7IA7EJ": {
+    "changes": [
+      "One plate has been removed from the counter to the left of the sink.",
+      "One soap dispenser has been removed from the kitchen sink.",
+      "One chair has been removed from the space across from the front of the refrigerator.",
+      "One trash can has been removed from the area in front of the refrigerator doors.",
+      "One fire extinguisher has been removed from the floor near three chairs. "
+    ],
+    "scene_id": "scene0409_00"
+  },
+  "CQA_YXBMA8O4BV": {
+    "changes": [
+      "The clock on the wall to the left of the window was removed",
+      "The chair to the left of the desk was removed",
+      "The two trash cans next to the door were removed",
+      "The laptop on the desk to the right of the window was removed",
+      "The chair next to the desk to the right of the window was removed."
+    ],
+    "scene_id": "scene0628_00"
+  },
+  "CQA_TSC1QGX0DS": {
+    "changes": [
+      "One red curtain has been removed from the room.",
+      "One blue pillow and one white pillow has been removed from the bed.",
+      "One mirror has been removed from underneath the shelf. ",
+      "One nightstand has been removed from next to the bed. ",
+      "One white lamp has been removed from next to the chair. "
+    ],
+    "scene_id": "scene0246_00"
+  },
+  "CQA_NBBMEPT1FP": {
+    "changes": [
+      "5 chairs has been removed from the sink near the refrigerator\n",
+      "8 boxes was removed from the image because they needed to be moved",
+      "1 trash can was removed from the initial place to another place",
+      "2 tripods was also removed from the image to another image",
+      "1 book shelf was removed from where the book shelf was placed"
+    ],
+    "scene_id": "scene0206_00"
+  },
+  "CQA_X6MGRPGUK0": {
+    "changes": [
+      "Remove the chair that is next to the laptop.",
+      "Remove the bag that is next to the blue trash can.",
+      "Remove the whiteboard that is next to the couch.",
+      "Remove the cabinet that is next to the desk.",
+      "Remove the keyboard that is next to the monitor."
+    ],
+    "scene_id": "scene0230_00"
+  },
+  "CQA_UB4BNQVI0L": {
+    "changes": [
+      "The jacket on the table is out of place, remove the jacket.",
+      "Remove 5 of the red books from the third shelf from the bottom. ",
+      "Remove 3 chairs from the farthest back table.",
+      "Remove four books from the right side of the bookcase, 3 shelves up.",
+      "Remove the remaining chairs from the table that your already removed 3 from."
+    ],
+    "scene_id": "scene0481_00"
+  },
+  "CQA_AD2JK4IKDC": {
+    "changes": [
+      "The single nightstand next to the bed has been removed from the bedroom.",
+      "The chair in front of the desk has been removed from the bedroom.",
+      "The shelf to the left of the desk and directly facing the head of the bed has been removed from the bedroom.",
+      "The cabinet opposite the bed has been removed from the bedroom.",
+      "The shelf to the right of the desk and next to the radiator has been removed from the bedroom."
+    ],
+    "scene_id": "scene0200_00"
+  },
+  "CQA_H7RU0O06ZR": {
+    "changes": [
+      "The cart has been removed from near the door and placed further to the left of it",
+      "The cabinet under the TV has been moved and placed where the cart was by the door",
+      "The chair by the table closest to the TV has been removed and placed with the table furthest away form the TV",
+      "The remaining chair by the table closest to the TV is moved from one  side of the table to the shorter side of it and is now facing the TV",
+      "The table near the TV is pulled slightly away from the bench"
+    ],
+    "scene_id": "scene0005_00"
+  },
+  "CQA_CS1AF1XPM4": {
+    "changes": [
+      " Two trash cans have been removed from under the paper towel dispensers.",
+      "One mirror has been removed from next to the cabinet.",
+      "One bench has been removed from under the towel.",
+      "Two showers have been removed from beyond the shower curtains.",
+      "One sink has been removed from under the mirror and beside the two soap dispensers. "
+    ],
+    "scene_id": "scene0350_00"
+  },
+  "CQA_4SYDMT8XYD": {
+    "changes": [
+      "One office chair between the door and the trash can has been removed. ",
+      "The TV above the cart by the blackboard has been removed. ",
+      "The chair under the blackboard and next to the cart has been removed.",
+      "The radiator below the window next to the office chair has been removed. ",
+      "The table between the seven office chairs has been removed. "
+    ],
+    "scene_id": "scene0289_00"
+  },
+  "CQA_27LC1H4GN6": {
+    "changes": [
+      "I can remove the table in the middle of the room.",
+      "I will remove the picture hanging on the wall.",
+      "I can remove the chair by the table.",
+      "I can remove the second chair from the table. ",
+      "Remove the ceiling light hanging from the top ceiling. "
+    ],
+    "scene_id": "scene0284_00"
+  },
+  "CQA_EKKOFMI0KU": {
+    "changes": [
+      "Take the basket closest to the carpet and head out the door with it.",
+      "Open the door and kick the footstool out the opened door.",
+      "Put the bar of soap into the toilet and flush it down.",
+      "Roll up the carpet and toss it out the door.",
+      "Shove all three towels into the laundry basket and carry it out the door."
+    ],
+    "scene_id": "scene0195_00"
+  },
+  "CQA_63M9Z6G3V2": {
+    "changes": [
+      "One chair has been removed near two desks.",
+      "The window can be removed near the doorframe and trash can",
+      "Three chairs can be removed infront of the whiteboard",
+      "Two chairs can be removed infront of the window and door.",
+      "Two windows can be removed on either side of the door and chair"
+    ],
+    "scene_id": "scene0611_00"
+  },
+  "CQA_183IDQXGZI": {
+    "changes": [
+      "The trash has been removed from the kitchen.",
+      "The microwave on the counter above the kitchen cabinets that is to the left of the sink can be removed.",
+      "The refrigerator can be removed from next to the dishwasher.",
+      "The dishwasher next to the refrigerator can be removed.",
+      "The dish rack next to the sink and above the dishwasher can be removed."
+    ],
+    "scene_id": "scene0682_00"
+  },
+  "CQA_DWFEAWIXRT": {
+    "changes": [
+      "remove garbage bag in middle of floor that is in front of the shelf and next to the case",
+      "remove ladder to the left of the dolly",
+      "remove the dolly by the carseat and in front of the box",
+      "remove the box that is in front of 3 file cabinets",
+      "remove the board that is to the right of the file cabinet and the left of the box"
+    ],
+    "scene_id": "scene0635_00"
+  },
+  "CQA_7XQ1BQRR5W": {
+    "changes": [
+      "Seven chairs that were at the red table by the trash can have been removed from the room.",
+      "A jacket that was on one of the chairs by the large coffee table has been removed from the room.",
+      "The 4 chairs surrounding the large coffee table have been removed from the room.",
+      "The small coffee table near the red table has been removed from the room.",
+      "The two chairs by the small coffee table near the red table have been removed from the room."
+    ],
+    "scene_id": "scene0038_00"
+  },
+  "CQA_QIYC981WYF": {
+    "changes": [
+      "The couch has been removed from the room.",
+      "The lamp has been moved to the couch. ",
+      "The endtable by the table has been removed.",
+      "The couch has been moved next to the second armchair.",
+      "The armchair closest to the right has been removed."
+    ],
+    "scene_id": "scene0344_00"
+  },
+  "CQA_WBCCKCOSA9": {
+    "changes": [
+      "One pillow has been removed from the bed.",
+      "One monitor and One laptop have been removed from the right side of the desk.",
+      "One tissue box has been removed from the bookshelf.",
+      "Two boxes have been removed from the floor.",
+      "One picture has been removed from the wall."
+    ],
+    "scene_id": "scene0695_00"
+  },
+  "CQA_HE3CKD0G82": {
+    "changes": [
+      "The paper towel dispenser on top of the large trash can has been removed from the scene",
+      "Mirror on top of the first sink from the right has been removed from the bathroom ",
+      "The soap dispenser between the two sinks on the right side of the bathroom has been removed",
+      "The paper towel dispenser on top of the second sink from the left has been removed from the bathroom",
+      "The first sink from the left has been removed from the scene"
+    ],
+    "scene_id": "scene0009_00"
+  },
+  "CQA_X9V124ZPWY": {
+    "changes": [
+      "The plant above the kitchen cabinets has been removed from the kitchen",
+      "The rice cooker above the breakfast bar has been removed from the scene",
+      "the picture above the fireplace has been removed from the wall",
+      "the jacket on the chair on a side from the breakfast bar has been removed from the scene",
+      "the stool under the breakfast bar has been removed from the scene"
+    ],
+    "scene_id": "scene0231_00"
+  },
+  "CQA_G0XQMS5TY2": {
+    "changes": [
+      "The trash can can be removed from this",
+      "The bicycle itself can be removed from this",
+      "the stools themselves can be removed from this",
+      "The backpack itself can be removed from this",
+      "the scale itself can be removed from this"
+    ],
+    "scene_id": "scene0158_00"
+  },
+  "CQA_VF4OC4A4E4": {
+    "changes": [
+      "The stack of chairs in the corner has been removed from the room.",
+      "The backpack on the office chair has been removed from the room.",
+      "The whiteboard on the wall has been removed from the room.",
+      "The TV on the wall has been removed from the room.",
+      "The trash can against the wall has been removed from the room."
+    ],
+    "scene_id": "scene0456_00"
+  },
+  "CQA_FWCDPSJICD": {
+    "changes": [
+      "The backpack on the chair near the table next to the back whiteboard has been removed.",
+      "The water bottle on the table near the windowsill has been removed.",
+      "The chair closest to the entrance of the room has been removed.",
+      "The whiteboard next to the entrance of the room has been removed.",
+      "The starbucks cup on the table near the windowsill has been removed."
+    ],
+    "scene_id": "scene0015_00"
+  },
+  "CQA_YWO5AMHTSZ": {
+    "changes": [
+      "I would remove the Bottles next to trash can",
+      "I would remove Containers near bottles and trash can",
+      "Remove other mirror near toiler and soap dish",
+      "I would Remove tissue box near mirror and sink",
+      "I would remove mirror near other mirror and doorframe"
+    ],
+    "scene_id": "scene0693_00"
+  },
+  "CQA_N2QKVXNULU": {
+    "changes": [
+      "The fire extinguisher near the kitchen door has been removed.",
+      "Three glasses and a bowl have been removed from the kitchen cabinet.",
+      "The Kraft cheese slices have been removed from the refrigerator.",
+      "The pan of boiling water has been removed from the front right burner on the stove.",
+      "The petunia plant and pot that it's planted in have been removed from the window over the sink."
+    ],
+    "scene_id": "scene0532_00"
+  },
+  "CQA_7UJ180Q2XV": {
+    "changes": [
+      "The individual trash can by the door, which is the entrance to the room, has been removed. ",
+      "The single cabinet next to the table and office chair is removed. This is at the far end of the room on the wall opposite the door. ",
+      "The large table which is next to the cabinet has been removed. It was surrounded by 6 office chairs and a normal chair. ",
+      "Six Office chairs that were around the table have been removed. ",
+      "The chair next to the trash can by the entrance way has been removed. "
+    ],
+    "scene_id": "scene0066_00"
+  },
+  "CQA_0IQYD764OY": {
+    "changes": [
+      "The picture above the toilet has been removed from the wall.",
+      "The soap dish above the bathtub has been removed from the bathroom.",
+      "The telephone next to the door has been removed from the scene.",
+      "The trash can behind the two rolls of toilet paper has been removed from the corner.",
+      "The towel next to the shower walls has been removed from the shower."
+    ],
+    "scene_id": "scene0702_00"
+  },
+  "CQA_LQ12Y94MGI": {
+    "changes": [
+      "The 2 towels hanging closest to the shower have been removed from the bathroom.",
+      "The shower curtain has been removed from the bathroom",
+      "The toilet paper has been removed from the bathroom",
+      "The bar of soap has been removed from the bathroom",
+      "The shower curtain rod has been removed from the bathroom"
+    ],
+    "scene_id": "scene0410_00"
+  },
+  "CQA_5S6YF8T2H8": {
+    "changes": [
+      "One picture above the fireplace has been removed.",
+      "One couch in the middle of the room has been removed.\n",
+      "One window next to the tv has been removed.\n",
+      "One piano underneath the picture has been removed.",
+      "One tv stand underneath the tv has been removed."
+    ],
+    "scene_id": "scene0672_00"
+  },
+  "CQA_7OU6N48UC6": {
+    "changes": [
+      "The toilet can be removed through the bathroom stall door.",
+      "The trash bin by the divider can be removed through the door.",
+      "The trash can by the door can be removed through the door.",
+      "The mirror under the light can be removed through the door.",
+      "The light above the mirror can be taken out through the door."
+    ],
+    "scene_id": "scene0441_00"
+  },
+  "CQA_ERHNGIBXL2": {
+    "changes": [
+      "The microwave can be removed from the top of the table.",
+      "The doorframe can be removed from around the door, leaving the door balancing precariously. ",
+      "For some reason there are 4 coffee makers on the counter next to the refrigerator. Three of them can be removed.",
+      "At least one of the trash cans near the door can be removed and replaced with a recycling bin.",
+      "The cup can be removed from its place on top of the sink to tidy up the area."
+    ],
+    "scene_id": "scene0586_00"
+  },
+  "CQA_YYX72C00V3": {
+    "changes": [
+      "REMOVE CHAIR LOCATED ON LEFT SIDE OF ROOM BY WINDOW",
+      "REMOVE THE BOXES ON RIGHT SIDE  OF ROOM BACK WALL",
+      "REMOVE THE STACK OF CHAIRS FROM RIGHT  FRONT CORNOR",
+      "REMOVE THE KEYBOARD FROM CENTER OF THE ROOM",
+      "REMOVE THE MONITOR LOCATED RIGHT ABOVE THE KEYBOARD THAT WE ARE REMOVING"
+    ],
+    "scene_id": "scene0569_00"
+  },
+  "CQA_GSMLVTMZ3U": {
+    "changes": [
+      "The single shower curtain has been removed from the shower.",
+      "The toilet paper next to the toilet has been removed.",
+      "The trash can next to the toilet has been removed.",
+      "The trash can in the shower has been removed.",
+      "The picture to the left of the toilet has been removed."
+    ],
+    "scene_id": "scene0429_00"
+  },
+  "CQA_5Z4VRY0CSL": {
+    "changes": [
+      "The lamp had been removed from the top of end table.",
+      "The end table that was holding the lamp has been removed. ",
+      "The table next to the couch has been removed.",
+      "The couch next to the table has been removed.",
+      "The table in between the armchairs has been removed. "
+    ],
+    "scene_id": "scene0344_00"
+  },
+  "CQA_8VFBS3GMTQ": {
+    "changes": [
+      "The black office chair on the right side of the open front door has been removed through the open front door. ",
+      "The recycle bin sitting under the dart board hanging on the wall across from the open front  door has been removed. ",
+      "The two round stool in front of the wall to the right of the open front door has been removed. ",
+      "The whiteboard on the same wall as the open front door and to the right of it has been removed. ",
+      "The tv sitting on top of the tv stand on the wall across from the open front door has been removed. "
+    ],
+    "scene_id": "scene0502_00"
+  },
+  "CQA_4FBFI7IBNN": {
+    "changes": [
+      "1 tv has been removed from the top of the tv stand.",
+      "3 pillows have been removed from the bed closer to the door.",
+      "1 lamp has been removed from the middle of the 2 beds.",
+      "1 door closer to the bed has been removed from the scene.",
+      "1 purse between the tv stand and the picture has been removed."
+    ],
+    "scene_id": "scene0137_00"
+  },
+  "CQA_V6ZAPCVVU4": {
+    "changes": [
+      "The armchair against the wall has been removed from the scene.",
+      "The table by the fireplace has been removed from the scene.",
+      "The vacuum cleaner by the staircase has been removed from the scene.",
+      "The ping pong table in the center of the room has been removed from the scene.",
+      "The end table between the chair and the couch has been removed from the scene."
+    ],
+    "scene_id": "scene0499_00"
+  },
+  "CQA_Y8JBA82TEF": {
+    "changes": [
+      "the guitar and  a scale near the bed have been removed\n",
+      "the bicycle and curtain close to the tv cabinet has been removed",
+      "the dish rack and a toaster on the kitchen counter has been removed.",
+      "the guitar case and a couch by the coffee table has been removed.",
+      "One paper towel dispenser lying on the microwave has been removed. "
+    ],
+    "scene_id": "scene0097_00"
+  },
+  "CQA_BZLWUOE0FQ": {
+    "changes": [
+      "Remove the stove between the kitchen cabinets and below where the microwave is.",
+      "Remove the sink in the kitchen island that is in the center of the room.",
+      "Remove the refrigerator in the corner next to the kitchen cabinet that is next to where the stove is.",
+      "Remove the 2 white plates in the third shelf from the bottom on the left side facing the shelf.",
+      "Remove the microwave that is in-between and below the kitchen cabinets. "
+    ],
+    "scene_id": "scene0681_00"
+  },
+  "CQA_F6OVD95PYL": {
+    "changes": [
+      "The middle pillow is removed from the longer green couch near the table and lamp",
+      "The coffee table between the couches is removed.",
+      "The lamp on the round table adjacent to the long couch is removed.",
+      "The purple jacket on the floor next to the backpack is removed.",
+      "The TV stand below the TV is removed."
+    ],
+    "scene_id": "scene0312_00"
+  },
+  "CQA_4QIYIHH5K7": {
+    "changes": [
+      "The trash can next to the toilet has been removed from the scene.",
+      "The shower bar on the wall above the bathtub has been removed from the scene.",
+      "The picture on the wall above the toilet has been removed from the scene.",
+      "The hair dryer on the shelf below the sink has been removed from the scene.",
+      "The bag on the counter next to the sink has been removed from the scene."
+    ],
+    "scene_id": "scene0509_00"
+  },
+  "CQA_33G4VGGCOP": {
+    "changes": [
+      "The jacket can be hidden inside any of the couches or even under the center table.",
+      "The small table up against the wall next to the couch can be thrown out of the window.",
+      "Any of the pictures can be thrown out of the window.",
+      "The small table next to the armchair can be thrown out the window.",
+      "The small picture above the couch and small table can be hidden inside any of the larger couches."
+    ],
+    "scene_id": "scene0363_00"
+  },
+  "CQA_YRI5SRZLNO": {
+    "changes": [
+      "The microwave on the couter has been removed from the scene.",
+      "The trash can next to the door has been removed from the scene.",
+      "The larger trash can next to the refrigerator has been removed from the scene.",
+      "Three cups have been removed from the Kichen counter near the sink.",
+      "The coffee kettle next to the coffee maker over the kitchen counter has been removed from the scene."
+    ],
+    "scene_id": "scene0347_00"
+  },
+  "CQA_E7JJ3OT69E": {
+    "changes": [
+      "The paper towel dispenser on top of the large trash can has been removed from the scene",
+      "Mirror on top of the first sink from the right has been removed from the bathroom ",
+      "The soap dispenser between the two sinks on the right side of the bathroom has been removed",
+      "The paper towel dispenser on top of the second sink from the left has been removed from the bathroom",
+      "The first sink from the left has been removed from the scene"
+    ],
+    "scene_id": "scene0009_00"
+  },
+  "CQA_LBWV38J0YD": {
+    "changes": [
+      "the door has been removed from the scene",
+      "two towels by the door have been removed from the scene",
+      "the sink has been removed from the scene",
+      "the bathtub has been removed from the scene",
+      "the sink and counter have been removed from the scene"
+    ],
+    "scene_id": "scene0406_00"
+  },
+  "CQA_FWWKUUWAWM": {
+    "changes": [
+      "Please remove the folded chair next to the whiteboard",
+      "Please remove the ceiling light next to the whiteboard",
+      "Please remove the red chair next to the two black chairs",
+      "Please remove the backpack sitting on the chair around the table",
+      "Please remove the trash can next to the door"
+    ],
+    "scene_id": "scene0563_00"
+  },
+  "CQA_NDQHV2PPIN": {
+    "changes": [
+      "You could remove the picture above the toilet.",
+      "The stool to the right of the doorway against the wall.",
+      "The bottle on top of the sink, on the left side.",
+      "The two mats that are in front of the bathtub.",
+      "The trash can in between the toilet and the sink."
+    ],
+    "scene_id": "scene0583_00"
+  },
+  "CQA_RD7YQXWEK8": {
+    "changes": [
+      "One oven mitt has been removed from the kitchen. ",
+      "One picture has been removed from the wall above the shelf. ",
+      "One pot has been removed from the bathroom vanity. ",
+      "One microwave has been removed from the kitchen. ",
+      "One TV has been removed from the living room. "
+    ],
+    "scene_id": "scene0335_00"
+  },
+  "CQA_U7QL60P4NP": {
+    "changes": [
+      "The foosball table near the counter has been removed.",
+      "The pool table in the center of the room has been removed.",
+      "The chair next to the cabinet has been removed.",
+      "The column near the door has been removed.",
+      "The column near the cabinet  has been removed."
+    ],
+    "scene_id": "scene0115_00"
+  },
+  "CQA_83V2FA198B": {
+    "changes": [
+      "The lamp on the table to the right of the couch has been removed.",
+      "The lamp on the table to the left of the couch has been removed.",
+      "The table to the left of the couch has been removed.",
+      "The table to the right of the couch has been removed.",
+      "The coffee table in the center of the room has been removed."
+    ],
+    "scene_id": "scene0690_00"
+  },
+  "CQA_8VMXPPGUXD": {
+    "changes": [
+      "The chair next to the window can be removed. ",
+      "The table next to the radiator can be removed.",
+      "The pool table can be removed from the room.",
+      "The two chairs on the right corner of the room next to the table can be removed.",
+      "The chair the is in between the two columns can be removed."
+    ],
+    "scene_id": "scene0618_00"
+  },
+  "CQA_0S2SFAABBF": {
+    "changes": [
+      "two umbrellas have been removed  from the coat rack near the ladder",
+      "three tires have been removed next to the box and the shelf",
+      "one trash can has been removed by the car ",
+      "one bicycle has been removed by the coat rack ",
+      "two shoes have been removed by the door and by the trash can"
+    ],
+    "scene_id": "scene0605_00"
+  },
+  "CQA_C7ICB02XK5": {
+    "changes": [
+      "Seven chairs that were at the red table by the trash can have been removed from the room.",
+      "A jacket that was on one of the chairs by the large coffee table has been removed from the room.",
+      "The 4 chairs surrounding the large coffee table have been removed from the room.",
+      "The small coffee table near the red table has been removed from the room.",
+      "The two chairs by the small coffee table near the red table have been removed from the room."
+    ],
+    "scene_id": "scene0038_00"
+  },
+  "CQA_8DSLMVRGYC": {
+    "changes": [
+      "The lamp had been removed from the top of end table.",
+      "The end table that was holding the lamp has been removed. ",
+      "The table next to the couch has been removed.",
+      "The couch next to the table has been removed.",
+      "The table in between the armchairs has been removed. "
+    ],
+    "scene_id": "scene0344_00"
+  },
+  "CQA_GYPZCWN2K9": {
+    "changes": [
+      "The crate under the bathroom counter has been removed from the bathroom",
+      "The trash bin on the bathroom floor has been removed",
+      "The trash bin under the bathroom counter has been removed\n",
+      "The trash bin from the corner of the bathroom has been removed",
+      "The soap dispenser in the bathroom has been emptied and removed."
+    ],
+    "scene_id": "scene0612_00"
+  },
+  "CQA_K2PTYT56P5": {
+    "changes": [
+      "The trash can in the corner of the room by the door has been remove.",
+      "The cabinet along the table has been removed.",
+      "The door by the trash can has been removed from the scene.",
+      "The curtains have been removed from the scene.",
+      "The six office chairs have been removed from near the table."
+    ],
+    "scene_id": "scene0066_00"
+  },
+  "CQA_JGSMW3GSQL": {
+    "changes": [
+      "One roll of toilet paper has been removed from beside the bathroom toilet.",
+      "One plant has been removed from above the bathroom toilet.",
+      "A mirror has been removed from between the bathroom sinks above the bathroom counter.",
+      "the light above the bathroom mirror has been removed.",
+      "The scale that's on the bathroom floor, beside the trash can has been removed."
+    ],
+    "scene_id": "scene0366_00"
+  },
+  "CQA_8XO49ZHMVR": {
+    "changes": [
+      "Please Remove the paper cutter from the table",
+      "Please Remove the 7 chairs from the table",
+      "Please Remove the refrigerator from the big room",
+      "Please Remove the microwave from the kitchen counter",
+      "Please Remove the 2 boxes from the room"
+    ],
+    "scene_id": "scene0552_00"
+  },
+  "CQA_F01D61PGRL": {
+    "changes": [
+      "Removing the blackboard would leave a blank section on the wall where it was mounted, possibly leaving behind faint chalk marks or mounting holes.",
+      "Without the trash can, occupants would no longer have a designated place to dispose of waste. ",
+      "This would impact the room’s temperature regulation, especially in colder weather.",
+      "The absence of the cart would reduce the mobile storage or transport function, possibly leaving more floor space.",
+      "This would alter the room's accessibility and flow, possibly leading to restricted movement or limited exit options. "
+    ],
+    "scene_id": "scene0289_00"
+  },
+  "CQA_B62SMWU97C": {
+    "changes": [
+      "The green trash can to the left of the door when exiting has been removed.",
+      "The poster cutter table that is between the table and the green trash can has been removed.",
+      "the picture leaning against the wall between the green trash can and the door has been removed",
+      "the poster printer in the room on the wall opposite the door has been removed.",
+      "The table between the poster cutter table and the poster printer has been removed"
+    ],
+    "scene_id": "scene0685_00"
+  },
+  "CQA_7ZYAADN0XJ": {
+    "changes": [
+      "the black backpack has been removed from near the couch and wall.",
+      "the curtain has been removed from the nearest wall and window.",
+      "the big blue bed has been removed from the right side.",
+      "the furthest left stool has been removed from the table.\n",
+      "the furthest right stool has been removed from the table."
+    ],
+    "scene_id": "scene0437_00"
+  },
+  "CQA_GC957508W6": {
+    "changes": [
+      "White bag that hangs from the knob of the cabinet drawer has been removed from the brown cabinet sits between two doors under a picture that hangs above.",
+      "The brown chair with clothing hanging on it that sits near the tall cabinet and bench has been removed.",
+      "The clothing has been removed from the brown chair near the cabinet and the bench.",
+      "The brown bench that sits in front of the tall cabinet between two doors and the brown chair with clothing on it has been removed.",
+      "The stand that sits under the decoration in between the two doors on the same wall with the cabinet with the bag hanging from the cabinet drawer has been removed. "
+    ],
+    "scene_id": "scene0451_00"
+  },
+  "CQA_AKAUSXXWIS": {
+    "changes": [
+      "The curtain on the window has been removed from the scene.",
+      "The trash can on the floor has been removed from the scene.",
+      "The telephone on the desk has been removed from the scene.",
+      "The whiteboard eraser on the whiteboard has been removed from the scene.",
+      "the chair by the desk has been removed from the scene."
+    ],
+    "scene_id": "scene0263_00"
+  },
+  "CQA_K4VF660OUD": {
+    "changes": [
+      "The teal chair has been removed from the scene.",
+      "Every other chair in the first row has been removed",
+      "Two chairs on each extreme of the second row have been removed",
+      "The fire extinguisher next to the sink has been removed",
+      " the door on the left has been removed"
+    ],
+    "scene_id": "scene0257_00"
+  },
+  "CQA_W576U3WAPA": {
+    "changes": [
+      "the black backpack has been removed from near the couch and wall.",
+      "the curtain has been removed from the nearest wall and window.",
+      "the big blue bed has been removed from the right side.",
+      "the furthest left stool has been removed from the table.\n",
+      "the furthest right stool has been removed from the table."
+    ],
+    "scene_id": "scene0437_00"
+  },
+  "CQA_N8LDVXIQRB": {
+    "changes": [
+      "shower curtain and the bathub has been removed from the bathroom.",
+      "doorframe and the door have been removed from bathroom.",
+      "window and toilet has been removed from bathroom.",
+      "toilet paper has been removed from toilet and bathroom.",
+      "sink yes has been removed from toilet and bathroom."
+    ],
+    "scene_id": "scene0346_00"
+  },
+  "CQA_NZEXAOGWWF": {
+    "changes": [
+      "The picture above the microwave has been taken off the wall.",
+      "The stack of boxes along the wall with the fire alarm and clock have been removed.",
+      "The dolly between the sink and the refrigerator has been removed.",
+      "The paper cutter sitting on the counter between the microwave and the sink has been removed.",
+      "The copier between the refrigerator and the door has been removed. "
+    ],
+    "scene_id": "scene0210_00"
+  },
+  "CQA_UQI8W8WYT1": {
+    "changes": [
+      "The wheel behind the lamp and below and to the left of the window has been removed.",
+      "The lamp next to the wheel has now been removed.",
+      "The bin that is on the box and also next to the table with the chair has now been removed.",
+      "The container by the rack with clothes and stool is now removed from the scene.",
+      "The clothes from within the rack have now been removed."
+    ],
+    "scene_id": "scene0057_00"
+  },
+  "CQA_MTCJ4PP7QO": {
+    "changes": [
+      "The stool next to the table can moved in front of the couch. ",
+      "Recycling bin in the kitchen can be moved next to trash can\n",
+      "The telephone on the ledge can be moved to the dining table. \n",
+      "The other stool near the dining table can be moved in front of the sink. ",
+      "The trash can against the wall can be moved to the doorframe. "
+    ],
+    "scene_id": "scene0201_00"
+  },
+  "CQA_KIJ6VZIRR5": {
+    "changes": [
+      "The shoes could be removed by placing them into the backpack. ",
+      "The suitcase could be removed from the scene by moving it under the desk. ",
+      "The picture could be removed by placing it underneath the bed",
+      "The telephone could be removed by placing it into the nightstand.",
+      "The armchair could be removed by placing it behind the curtain. "
+    ],
+    "scene_id": "scene0107_00"
+  },
+  "CQA_B2XV4G6IHC": {
+    "changes": [
+      "Clothing on the floor next  to suitcase removed from the scene.",
+      "Suitcase  near the power outlet is removed from the scene.",
+      "Shoes are the floor next to the picture removed from the scene.",
+      "Doorframe next to the picture removed from the scene.",
+      "The window next to the picture removed from the scene."
+    ],
+    "scene_id": "scene0397_00"
+  },
+  "CQA_LAN7M6P82C": {
+    "changes": [
+      "The TV on top of the TV stand by the wall has been removed",
+      "The lamp on the desk in the corner has been removed",
+      "The picture on the front wall has been removed",
+      "The curtain on the window next to the radiator has been removed ",
+      "The leftmost pillow on the couch has been removed"
+    ],
+    "scene_id": "scene0362_00"
+  },
+  "CQA_MZG9DCQ3BT": {
+    "changes": [
+      "The two toilet paper rolls have been removed next to the hand dryer",
+      "The one sign has been removed below the shelf",
+      "The one Jacket on top of the bathroom counter has been removed",
+      "The 3 brooms have been removed from the door and fire alarm.",
+      "The one bottle has been removed in the shower."
+    ],
+    "scene_id": "scene0510_00"
+  },
+  "CQA_9537LJ89W8": {
+    "changes": [
+      "The backpack has been removed from the room.",
+      "The compost bin has been removed from the room.",
+      "The telephone has been removed from the room.",
+      "The shelf on the table has been removed from the room.",
+      "The two beds have been removed from the room."
+    ],
+    "scene_id": "scene0556_00"
+  },
+  "CQA_JA1T4MEIPE": {
+    "changes": [
+      "One swivel chair has been removed from beside the desk.",
+      "One picture in a picture frame has been removed from the wall opposite the doorway. ",
+      "One trashcan has been removed from beside the cabinet. ",
+      "Two books have been removed from on top of the cabinet. ",
+      "One blue bear has been removed from on top of the cabinet. "
+    ],
+    "scene_id": "scene0369_00"
+  }
+}

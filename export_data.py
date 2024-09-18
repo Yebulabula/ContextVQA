@@ -49,8 +49,8 @@ if firebase_credentials:
 
 
     # Example: Export data from 'your-collection-name' to 'output.json'
-    collection_name = 'Addition_Changes'
-    output_file = 'add_users.json'
+    collection_name = 'Removal_Changes'
+    output_file = 'remove_users.json'
 
     export_firestore_collection_to_json(collection_name, output_file)
 
@@ -59,7 +59,7 @@ import json
 import numpy as np
 import os
 
-with open('add_users.json', 'r') as f:
+with open('remove_users.json', 'r') as f:
     data = json.load(f)
     
     
@@ -137,7 +137,7 @@ print(len(answers))  # Number of answers in the collection
 # # # print(len(long_changes))  # Number of documents with long context changes
 
 # # long_questions = list(set(long_questions))
-import json
+# import json
 
 # # # save long changes
 # # json.dump(long_questions, open('quetions_inspirations.json', 'w'), indent=2)

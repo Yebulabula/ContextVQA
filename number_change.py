@@ -13,7 +13,7 @@ import cv2
 # Initialize Firebase credentials (dummy credentials for example)
 firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
-# firebase_credentials="ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29udGV4dHZxYSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjNiMWVhOGQ5ZjBjMDJiYjEwZDQwNTI4YWFlNWFmODI0MDAzMzZlZDEiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1kvdkV3QkpkN2RUcW1cblZkeHFVcExFMFFldTRFbS96dVA3YlV5YmxzUUZrVzhoNjBUUGdORlp0UXo2Z012L1VpZFBIcGxaSjRHWDVLZFhcbldVd2wrZkpHM2phZFhPcEJsaFlXaTBiNGhkWEhOY3NWSjR1dlFab0xrM05IcUJCbGhzSTU5eS96VU9QTTExc2xcbkRIVXVTL3ZhaGg4VHBwWEVubnRGV2lxNkYrTitmQmxhL3BtQlA1RDNuNG5qMnhObzgwbWsva3V3UjY0akpSZC9cbkVXeTZUaGExOXhPc3hWUFhCRUxFRXlLTGY2RzYwbU9jbnZpQWRwcU5MU2J0MUlwZUMwaWw0RlFuQUcwUUR3c3FcbmE5ay90b2t0OWs2NUFzc085dFcvVjcrTzVodmlySXUwL1pneXV3bGowbmNGRHNYb211UTRndXQ0Q3g3UUp2bndcbnA5Q3BMNTJaQWdNQkFBRUNnZ0VBRUNIdHo3amtPajNwd2NsUzlSa2c1Y1QrME9kUWozdWkyWXUwWk1HWWlOZkZcbmhxZVd1V1NsYnBhak9EVGxqZFlkVS8vdmZwR21YaHhic3QrMUlsb0JQSXpJNkgzNEs1TkdYL2t1c2h6MnBrdGJcblR5ODgwTzJUYno0TWpWVkE2VnUwMWtUazF2ekVFSUR5Mk95LzNISmhxN0N4elRJbkg3VHdYYWM4MHlPYXR1YjRcblRWMGNFYXRnVUdHQlJudjRzbVVmVG1LeU9MeFkvdWxEbllPTWtmRXlEL2lzaVlhaTBCbEY4RC9CbGlCVmJEVERcbk0veEthM21yYkh0YU0zTVVLVVdWZ1JFTFlOU0IwbWcxRGVDdldSM2RwQ1JxSUg4dWJzMGlGc0JvVG4vb0NNbUpcbkdpaHA1OGtTSlV2d2c3YWJSKzRpd2liaktrdFhEYjRrejFiNlN2MElTd0tCZ1FESlBObE8vMk12ZmtwZ1h6SDhcbmlnNW1CbGI2VWRkR29QT1pBTDdmeHpDVTd1TmtTTHJXUEVkY2gzcDNKV05tNDR6SWp0czJqd0VaZHBWdXdxTS9cbnY1Q2lwZExHMCtEMUhIL1BJK2lhUUJLWWExbHZWMHI0S2kxVWJiVFYzOVBPbkJ1S2RIZ3BRNkRhUS9tQ2RTK2hcbnkwQllXd0NJdUIzRUg1Wk5pTDY4azJHMnV3S0JnUURDb1ZnVkUvTTgrWnVpZUlUanZDSk5hNUYrakVMaXlQVlVcbitXRlBXQkpmN2tmRktuZHRleXdiZUR0U2NJRWV5OXJyVWo0anRyMCs2NDM0UTVoS2pPM2Q3c1VGRTlxcms2K09cbngrOUhtYlB6OGg3N3d2TXc3dXFncFEvZzlwUkJOZGFHS2FCMGszUWh6OFY2QXQra01sZkN6NXl0RGk5SUZ3c0RcblM3VmdqQ2E1dXdLQmdBemMyOU1GMWZRcU1WelptTnRZZzdVWHdLVjlaN0kzQlhzSkppb3RsRGhnMEo0UFhBbm5cbmpuUW1vTGhPNW55a0hOS1E5d2dVdWZCRHVTZDhQMjBLdEpjQTNHa2pEK1Q2N2x4eUlpTUI1MjVncGpYTXNaa05cbk1ScU5iSnFqRk9uRzVxZkI3QkJQSjAvc09sMlJXZnNRZjh0bC9iRy9lditYT1VjNWIxK2tXQUdUQW9HQURyTk5cbkNkcUY1cmNic0R2V0hiVmFDZXIwQkZEbnhHVlZVbU83bTlpVkdyWE9xZSs1TVlXNklTRUZxZ1poV2tnZmN1SzFcbld0RTBuZ29Bb1IzSjVPZWNGOFV2RUdFZGhSUVVrSDQ5Ym5VSGlJZGpHN1R2MVdSV1NHZnZPUmltdmY0cEE5MGxcbkIya1R2bklKQWx3eE5CK3hUVCtOSCswUVdTdVVZMTFXaDhKT01uMENnWUVBaHlYUGkxaC9MMWZybW1lWFlKTWRcblpROEhrT3dTVGdrelF6eER4WWttQ1dJN1lIeThzbU9SUGRSRlBOVEpUMVVRU0Y1d2Mwd1pENlUvTnFKMGlqTEtcblFqYzBOVUlkNmhlVFQ3cXpwdnp4VFZCcFNtbFJCVm1MTGJ3Q0plditQajczaU0rZEtSemIxYmpBQ1lEamM5OWhcbjhVazFDZW1GWXhzS2s5Z1Y0bktaQ2M4PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImZpcmViYXNlLWFkbWluc2RrLXRxc2I3QGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA1OTg2MTIxMjI3NjY5MjQ1MDM1IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9maXJlYmFzZS1hZG1pbnNkay10cXNiNyU0MGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"
+firebase_credentials="ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29udGV4dHZxYSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjNiMWVhOGQ5ZjBjMDJiYjEwZDQwNTI4YWFlNWFmODI0MDAzMzZlZDEiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1kvdkV3QkpkN2RUcW1cblZkeHFVcExFMFFldTRFbS96dVA3YlV5YmxzUUZrVzhoNjBUUGdORlp0UXo2Z012L1VpZFBIcGxaSjRHWDVLZFhcbldVd2wrZkpHM2phZFhPcEJsaFlXaTBiNGhkWEhOY3NWSjR1dlFab0xrM05IcUJCbGhzSTU5eS96VU9QTTExc2xcbkRIVXVTL3ZhaGg4VHBwWEVubnRGV2lxNkYrTitmQmxhL3BtQlA1RDNuNG5qMnhObzgwbWsva3V3UjY0akpSZC9cbkVXeTZUaGExOXhPc3hWUFhCRUxFRXlLTGY2RzYwbU9jbnZpQWRwcU5MU2J0MUlwZUMwaWw0RlFuQUcwUUR3c3FcbmE5ay90b2t0OWs2NUFzc085dFcvVjcrTzVodmlySXUwL1pneXV3bGowbmNGRHNYb211UTRndXQ0Q3g3UUp2bndcbnA5Q3BMNTJaQWdNQkFBRUNnZ0VBRUNIdHo3amtPajNwd2NsUzlSa2c1Y1QrME9kUWozdWkyWXUwWk1HWWlOZkZcbmhxZVd1V1NsYnBhak9EVGxqZFlkVS8vdmZwR21YaHhic3QrMUlsb0JQSXpJNkgzNEs1TkdYL2t1c2h6MnBrdGJcblR5ODgwTzJUYno0TWpWVkE2VnUwMWtUazF2ekVFSUR5Mk95LzNISmhxN0N4elRJbkg3VHdYYWM4MHlPYXR1YjRcblRWMGNFYXRnVUdHQlJudjRzbVVmVG1LeU9MeFkvdWxEbllPTWtmRXlEL2lzaVlhaTBCbEY4RC9CbGlCVmJEVERcbk0veEthM21yYkh0YU0zTVVLVVdWZ1JFTFlOU0IwbWcxRGVDdldSM2RwQ1JxSUg4dWJzMGlGc0JvVG4vb0NNbUpcbkdpaHA1OGtTSlV2d2c3YWJSKzRpd2liaktrdFhEYjRrejFiNlN2MElTd0tCZ1FESlBObE8vMk12ZmtwZ1h6SDhcbmlnNW1CbGI2VWRkR29QT1pBTDdmeHpDVTd1TmtTTHJXUEVkY2gzcDNKV05tNDR6SWp0czJqd0VaZHBWdXdxTS9cbnY1Q2lwZExHMCtEMUhIL1BJK2lhUUJLWWExbHZWMHI0S2kxVWJiVFYzOVBPbkJ1S2RIZ3BRNkRhUS9tQ2RTK2hcbnkwQllXd0NJdUIzRUg1Wk5pTDY4azJHMnV3S0JnUURDb1ZnVkUvTTgrWnVpZUlUanZDSk5hNUYrakVMaXlQVlVcbitXRlBXQkpmN2tmRktuZHRleXdiZUR0U2NJRWV5OXJyVWo0anRyMCs2NDM0UTVoS2pPM2Q3c1VGRTlxcms2K09cbngrOUhtYlB6OGg3N3d2TXc3dXFncFEvZzlwUkJOZGFHS2FCMGszUWh6OFY2QXQra01sZkN6NXl0RGk5SUZ3c0RcblM3VmdqQ2E1dXdLQmdBemMyOU1GMWZRcU1WelptTnRZZzdVWHdLVjlaN0kzQlhzSkppb3RsRGhnMEo0UFhBbm5cbmpuUW1vTGhPNW55a0hOS1E5d2dVdWZCRHVTZDhQMjBLdEpjQTNHa2pEK1Q2N2x4eUlpTUI1MjVncGpYTXNaa05cbk1ScU5iSnFqRk9uRzVxZkI3QkJQSjAvc09sMlJXZnNRZjh0bC9iRy9lditYT1VjNWIxK2tXQUdUQW9HQURyTk5cbkNkcUY1cmNic0R2V0hiVmFDZXIwQkZEbnhHVlZVbU83bTlpVkdyWE9xZSs1TVlXNklTRUZxZ1poV2tnZmN1SzFcbld0RTBuZ29Bb1IzSjVPZWNGOFV2RUdFZGhSUVVrSDQ5Ym5VSGlJZGpHN1R2MVdSV1NHZnZPUmltdmY0cEE5MGxcbkIya1R2bklKQWx3eE5CK3hUVCtOSCswUVdTdVVZMTFXaDhKT01uMENnWUVBaHlYUGkxaC9MMWZybW1lWFlKTWRcblpROEhrT3dTVGdrelF6eER4WWttQ1dJN1lIeThzbU9SUGRSRlBOVEpUMVVRU0Y1d2Mwd1pENlUvTnFKMGlqTEtcblFqYzBOVUlkNmhlVFQ3cXpwdnp4VFZCcFNtbFJCVm1MTGJ3Q0plditQajczaU0rZEtSemIxYmpBQ1lEamM5OWhcbjhVazFDZW1GWXhzS2s5Z1Y0bktaQ2M4PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImZpcmViYXNlLWFkbWluc2RrLXRxc2I3QGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA1OTg2MTIxMjI3NjY5MjQ1MDM1IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9maXJlYmFzZS1hZG1pbnNkay10cXNiNyU0MGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"
 
 if firebase_credentials:
     if not firebase_admin._apps:
@@ -36,7 +36,7 @@ def load_scene_annotations():
     
 # Function to save context data to Firestore
 def save_context_data(data):
-    db.collection('Removal_Changes').add(data)
+    db.collection('replacement_Changes').add(data)
 
 # Function to generate and return a confirmation code
 def generate_survey_code():
@@ -128,30 +128,34 @@ def refresh_scene():
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-Explore the given 3D scene visualization and hypothetically describe **five** different ways to **remove existing objects** within it. 
+Explore the given 3D scene visualization and hypothetically describe **five** different ways to **replace existing objects** within it. 
 
-**Consider the example scene below, possible object removals can include:**
-- The larger trash can next to the refrigerator has been removed from the scene.
-- The bicycle leaning against the curtain has been removed from the studio.
+**Consider the example scene below, possible object replacements can include:** (*This is just an example; please not use it to write descriptions.*)
+
+- The white cabinet near to the clock and table has been replaced with a yellow bookshelf.
+- The coffee table in front of the couch has been replaced with two armchairs.
 
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
+
 <span style="color:brown;">**Instructions:** </span>
 
-<span style="color:brown;">- All object removals must occur within the same scene and be independent of one another. </span>
+<span style="color:brown;">- Object replacement havs to be spatially feasible within the scene's layout </span>
 
-<span style="color:brown;">- Each description must clearly and uniquely specify the number of objects removed and their exact locations. Ambiguous or wrong descriptions will be </span> <span style="color:red;"> **rejected**.</span> 
+<span style="color:brown;">- Each description must clearly and uniquely indicate the locations of the object(s) being replaced and what they are replaced with. Ambiguous or wrong descriptions will be </span> <span style="color:red;">**rejected**.</span> 
 
-<span style="color:red;"> Good Description: </span> Two red apples have been removed from the sink near the refrigerator.
-<span style="color:green;"> Bad Description: </span> Some apples have been removed from the sink. (How many apples? Which sink?)
+<span style="color:red;"> Good Description: </span> The red chair next to the desk have been replaced with a trash can.
+<span style="color:green;"> Bad Description: </span> A chair have been replaced with something. (which chair?, what is it replaced with?)
 
-<span style="color:brown;">- Each description should remove different objects from the scene. </span>
+<span style="color:brown;">- Each description should replace different objects from the scene. </span>
 
-<span style="color:brown;">- Each description should be more than 8 words long. </span>
+<span style="color:brown;">- Each description should be more than 10 words long. </span>
+
+<span style="color:brown;">- All object replacements must occur within the same scene and be independent of one another. </span>
 
 If you encounter any issues with the scene, please refresh the page to load a new one. Once you have finished the task, click the **Submit** button to receive your Completion Code.
 
-*Please use your imagination and creativity to come up with unique and interesting removals!*
+*Please use your imagination and creativity to come up with unique and interesting replacements!*
 """
 
 @st.cache_resource
@@ -177,20 +181,20 @@ left_col, right_col = st.columns([2, 1])
 with right_col:
     scene_id = st.session_state.scene_id
 
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Removal 1</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object Removal within the scene in details.", key="change1", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 1</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change1", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Removal 2</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object Removal within the scene in details.", key="change2", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 2</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change2", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Removal 3</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object Removal within the scene in details.", key="change3", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 3</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change3", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Removal 4</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object Removal within the scene in details.", key="change4", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 4</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change4", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Removal 5</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object Removal within the scene in details.", key="change5", placeholder="Type here...", height=10)
+    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 5</div>", unsafe_allow_html=True)
+    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change5", placeholder="Type here...", height=10)
 
     if st.button("Submit"):
         # Extract changes using list comprehension
@@ -201,8 +205,8 @@ with right_col:
             st.warning("Please ensure that all changes are unique.")
         elif not all(changes):
             st.warning("Please fill in all the changes.")
-        elif not all(len(change.split()) >= 8 for change in changes):  # Check if each change has at least 10 words
-            st.warning("Please ensure that all changes are at least 8 words long.")
+        elif not all(len(change.split()) >= 10 for change in changes):  # Check if each change has at least 10 words
+            st.warning("Please ensure that all changes are at least 10 words long.")
         else:
             # Proceed with success case
             st.session_state.survey_code = generate_survey_code()
