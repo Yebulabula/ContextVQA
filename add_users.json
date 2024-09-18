@@ -1,4 +1,44 @@
 {
+  "CQA_MNQG0EHXO4": {
+    "changes": [
+      "One motivational poster could be placed on the wall by the copier.",
+      "A cabinet with counter space on top could be placed beside the copier.",
+      "On top of the cabinet mentioned in Addition 2, a coffee machine could be placed. ",
+      "A fire extinguisher could be placed on the wall beside the window.",
+      "A telephone would be placed on the wall by the window."
+    ],
+    "scene_id": "scene0478_00"
+  },
+  "CQA_87VP5IXVIR": {
+    "changes": [
+      "A clock hung on the  same wall as the door and between the closet",
+      "A square welcome mat on the ground directly in front of the entrance door",
+      "A vase with a bunch of flowers to be set up on the top of the bookshelf",
+      "A square small dirty clothes basket to be added on the ground in the corner but against the wall that the door is on. ",
+      "A dry erase board to me added half way up the way that the door is on."
+    ],
+    "scene_id": "scene0589_00"
+  },
+  "CQA_ONY5S34MXC": {
+    "changes": [
+      "The shelf, located near the door, has been moved to the jacket",
+      "The chair on the far left of the table, has been moved to the closet doors.",
+      "The jacket, located near the coffee table, has been moved to the refrigerator",
+      "The shelf, located near the door, has been moved to the closet doors.",
+      "The recycling bin has been moved to the window on the far left."
+    ],
+    "scene_id": "scene0181_00"
+  },
+  "CQA_LRD4HCSAO5": {
+    "changes": [
+      "A low round white table is wedged in the corner where the couch with 2 pillows forms an L shape with the couch with no pillows.",
+      "A tall glass vase with a single long stemmed red rose is placed in the middle of the square table.\n",
+      "A blue crocheted blanket is thrown on the back of the couch that has no pillows and which faces opposite the round table with 2 chairs.",
+      "A fluffy golden retriever sleeps on the floor between the pillar and the large round table.",
+      "An open laptop is placed on top of the large round table in front of the blue chair."
+    ],
+    "scene_id": "scene0374_00"
+  },
   "CQA_JIOPAJJI0T": {
     "changes": [
       "A sticky note has been added onto the bulletin board.\n",
@@ -8,6 +48,36 @@
       "A stool has been added to the floor in front of the copier."
     ],
     "scene_id": "scene0109_00"
+  },
+  "CQA_ZVMB3UY8NQ": {
+    "changes": [
+      "One framed acrylic landscape painting is centered on the wall behind the door next to the cabinet.",
+      "One tube of toothpaste is sitting horizontally behind the sink's faucet.",
+      "One wet pink rag, folded into a square, is laying on the corner of the tub, to the right of the tub's faucet.",
+      "One unopened package of toilet paper sits flat against the end of the bathroom vanity next to the toilet.",
+      "One blue bathrobe hangs from a silver hook centered on the back of the door next to the cabinet."
+    ],
+    "scene_id": "scene0571_00"
+  },
+  "CQA_YAKLYJ4C9N": {
+    "changes": [
+      "A narrow planter stand with a small fern on top can be place between the two doorframes on the right of the room",
+      "A blue flannel throw blanket can be draped over the back of the armchair",
+      "A small footstool  can be added in front of the  chair, just to the right  to provide enough clearance with the laptop desk",
+      "A mini grandfather clock can be placed on top of the piano on the very right hand side",
+      "A small, white drink refrigerator can be placed directly to the right of the couch, flush with that side of the couch"
+    ],
+    "scene_id": "scene0050_00"
+  },
+  "CQA_2CDOCZAO03": {
+    "changes": [
+      "Draw a red smiley face on the whiteboard that is mounted above a rectangular table, and leave the marker on the table in front of it",
+      "Place a yellow plastic straw inside the starbucks cup",
+      "Put a pair of blue tall rubber boots under the chair that has a backpack sitting on it",
+      "Put a vase of tulips (red and yellow ones) on the table that also contains a water bottle, positioned next to the windowsill",
+      "Put a stuffed brown teddy bear on the only table that is bordered on two sides by a wall - also the only table that is not shaped like a long, thin rectangle.\n"
+    ],
+    "scene_id": "scene0015_00"
   },
   "CQA_IRX9QL1AUP": {
     "changes": [
@@ -29,6 +99,66 @@
     ],
     "scene_id": "scene0171_00"
   },
+  "CQA_M6S0J7SG35": {
+    "changes": [
+      "A black monitor is placed on the table next to the window on the same wall as the door.",
+      "A black rolling chair is placed at the table next to the window on the same wall as the door. ",
+      "A manila filing folder is placed on top of the file cabinet.",
+      "A yearly calendar is placed on the divider next to the door.",
+      "A magnetic blue dry-erase marker is placed on the whiteboard. "
+    ],
+    "scene_id": "scene0142_00"
+  },
+  "CQA_5CDFSXM9WB": {
+    "changes": [
+      "A third Painting, perhaps of a calm fall day on a French coast, on the right of the existing two, above the cabinet.",
+      "A mounted decorative moose head above the doorframe.",
+      "A small gold statue of a cat rests on the furniture beneath the curtain.",
+      "A feast of Turkey, green beans, and mashed potatoes lays atop the dining table",
+      "An ornate carved wooden door with large stain glass windows fills the open doorframe."
+    ],
+    "scene_id": "scene0102_00"
+  },
+  "CQA_C1KIP8TO06": {
+    "changes": [
+      "A potted plant has been added to the floor next to the small chest of drawers (?) to the right of the desk.",
+      "A framed black and white photo has been added on the wall to the right of the closet doors, above the bed.",
+      "A vase with pink flowers in it has been placed on the desk. ",
+      "An abstract painting has been added to the wall above the desk.",
+      "A geometric rug has been added to the floor next to the bed."
+    ],
+    "scene_id": "scene0426_00"
+  },
+  "CQA_QCOHTYWNPQ": {
+    "changes": [
+      "A calendar has been pinned to the left bulletin board below the current documents.",
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right.",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet."
+    ],
+    "scene_id": "scene0556_00"
+  },
+  "CQA_50TV6OQ064": {
+    "changes": [
+      "There is a projector screen on the back wall behind the red, yellow, blue and black chair",
+      "A white board rests on the east wall across from several office chairs and a long table that rests in the center of the room",
+      "There are 7 office chairs that sit at the table; 6 of them being red while one of them is a yellow chair",
+      "The back wall has 5 chairs sitting in front of it with the following colors; Yellow, Black, blue, red and grey",
+      "The floor has a muted blueish color to it and is indicative of office buildings and government facilities "
+    ],
+    "scene_id": "scene0655_00"
+  },
+  "CQA_DOV318HS7I": {
+    "changes": [
+      "Clothes should be places in the closet  that is next to the backpack.",
+      "Pillows should be added to the bed that is on the right side of the window.",
+      "The door in-between the two bedrooms should have a lock on it.",
+      "A tv could be added on the wall next to the bed on the right side of picture with the desk.",
+      "They should add a telephone in the bedroom next to the one that does."
+    ],
+    "scene_id": "scene0556_00"
+  },
   "CQA_FOFGMHVXNV": {
     "changes": [
       "A cup has been placed on top of the coffee table.",
@@ -38,6 +168,106 @@
       "A small pot has been placed on the shelf which is above the tv stand."
     ],
     "scene_id": "scene0467_00"
+  },
+  "CQA_6R81ZV1QBM": {
+    "changes": [
+      "A poster could be put on the walls above the brown pillow.",
+      "You could put a flower pot on the desk between the monitor and the organizer shelf.",
+      "You could put a book on the dresser, in front of the TV.",
+      "You could put a blanket on the bed, next to the white pillow.",
+      "You could put a pair of socks on the chair next to the tissue box."
+    ],
+    "scene_id": "scene0426_00"
+  },
+  "CQA_6NCYRC5NN4": {
+    "changes": [
+      "Two additional books are added to the bookshelf by the door.",
+      "An additional picture is hung on the wall to the left of the whiteboard.",
+      "A large rug is added to the floor of the room.",
+      "A small potted plant is placed on the ledge of the window.",
+      "An additional pile of clothes is laying on the floor under the doorframe."
+    ],
+    "scene_id": "scene0614_00"
+  },
+  "CQA_LOMSX75SI4": {
+    "changes": [
+      "A glass salt shaker is on the table",
+      "A wooden knife block with a knife set is to the left of the kitchen sink on the counter ",
+      "A black fatigue reduction mat is on the floor in front of the kitchen sink",
+      "A glass pepper shaker is on the table",
+      "A wood cutting board on the counter to the right of the sink under the cabinet "
+    ],
+    "scene_id": "scene0542_00"
+  },
+  "CQA_I1D1X3PHKI": {
+    "changes": [
+      "One floor lamp is placed to the right of the tv stand.\n",
+      "One large house plant is placed to the left of the tv stand.",
+      "Two books are placed on top of one another on top of the coffee table.",
+      "One square throw pillow is added to the couch.",
+      "One clock is placed on the wall behind the tv."
+    ],
+    "scene_id": "scene0151_00"
+  },
+  "CQA_TWZSMHBMHK": {
+    "changes": [
+      "7 plates are sat on the table in front of the 7 chairs around the table.",
+      "A set of house keys are sat on top of the drawer next to the door by the 3 boxes.",
+      "The cabinet to the left closest to the table has several papers taped to it with childrens drawings on it.",
+      "The chair closest to the box on the floor has a grey hoodie jacket hanging on the back rest of the chair.",
+      "2 dog bowls are sat on the floor in the opposite corner of the room from the door along the same wall as the door."
+    ],
+    "scene_id": "scene0691_00"
+  },
+  "CQA_DRYKZ21V6E": {
+    "changes": [
+      "a green apple has been placed near the chair closest to the door",
+      "a bunch of yellow bananas have been place near the cabinet",
+      "a large carrot has been placed on the stack of chairs",
+      "a pool ball has been placed near the cabinet",
+      "a bottle of water has been place by the door"
+    ],
+    "scene_id": "scene0584_00"
+  },
+  "CQA_HGKB7WHAL6": {
+    "changes": [
+      "One bulletin board can go to the left of the door frame ",
+      "a tall green plant can go to the right of the door frame and beside the cabinet",
+      "a blue desk chair can be placed in front of the cabinets.",
+      "a samsung frame tv can be added on top of the bulletin board",
+      "a brown basket can be added on the floor next to the books to hold the backpacks."
+    ],
+    "scene_id": "scene0534_00"
+  },
+  "CQA_KAFJABIQ8Y": {
+    "changes": [
+      "Place a plate in the  right side of the dish rack.",
+      "Place two magnets on the freezer in the top right corner.",
+      "Place a blanket on top of the couch",
+      "Place a rug in the middle of the room, in front of the kitchen cabinets.",
+      "Place a towel on the handle of the refrigerator."
+    ],
+    "scene_id": "scene0111_00"
+  },
+  "CQA_RL2NKXQ6U2": {
+    "changes": [
+      "A calendar has been pinned to the left bulletin board below the current documents.",
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right.",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet."
+    ],
+    "scene_id": "scene0435_00"
+  },
+  "CQA_U9E9STDOVP": {
+    "changes": [
+      "1 exercise machine has been placed next to the cabinet next to the wall.",
+      "1 lamp has been placed on the coffee table near the edge",
+      " 1 couch is placed in front of the bead near the feet placement.",
+      "1 laptop is placed on the coffee table next to the lamp.",
+      "1 exercise bike is placed next to the bicycle in a row"
+    ],
+    "scene_id": "scene0646_00"
   },
   "CQA_1B5YJHMAZ8": {
     "changes": [
@@ -59,6 +289,26 @@
     ],
     "scene_id": "scene0580_00"
   },
+  "CQA_7O7OVDT5ZW": {
+    "changes": [
+      "A baby high chair beside the chair and backpack",
+      "One bunch of bananas to the right of the microwave",
+      "Two magnets attached on the front of the refrigerator",
+      "A pair of rubber gloves hanging on the sink",
+      "Two place mats on the table under the tupperware"
+    ],
+    "scene_id": "scene0117_00"
+  },
+  "CQA_JEIAARG9JZ": {
+    "changes": [
+      "A black notebook is placed onto the coffee table that is in the middle of the room.",
+      "Another backpack, red in color, is placed next to the blue backpack in front of the sofa chair in the left corner.\n",
+      "A green rug is placed underneath the coffee table and not touching any of the bottoms of any chairs.\n",
+      "A small additional chair is added to the left of the coffee table.\n",
+      "The end table in the bottom right corner has a gold vase added onto the surface."
+    ],
+    "scene_id": "scene0450_00"
+  },
   "CQA_F258BHTYZC": {
     "changes": [
       "The couch has been placed near the end table in the corner of the living room",
@@ -69,6 +319,16 @@
     ],
     "scene_id": "scene0559_00"
   },
+  "CQA_NHQW3FXSMY": {
+    "changes": [
+      "1 potted plant next to the desk on the right of it",
+      "1 mini organizer on top of the mini fridge",
+      "1 foot rest under the desk pushed all the way back to the wall",
+      "1 alarm clock on the nightstand to the left of the bed",
+      "1 picture above the bed between the two nightstands"
+    ],
+    "scene_id": "scene0107_00"
+  },
   "CQA_46BBTYDDNQ": {
     "changes": [
       "The brown chair at the round table moves to the light brown table",
@@ -78,6 +338,46 @@
       "The desk in the bottom right corner moves next to the desk into the top left"
     ],
     "scene_id": "scene0665_00"
+  },
+  "CQA_FDWH5XA5IV": {
+    "changes": [
+      "A floating shelf has been added above the sink.",
+      "A hamper has been added next to the ironing board.",
+      "A small basket has been added on top of the vending machine.",
+      "LED strips have been added by the bag, clothing and bag.",
+      "A fan has been added on the roof of this room."
+    ],
+    "scene_id": "scene0522_00"
+  },
+  "CQA_EJZHSPMH24": {
+    "changes": [
+      "Lava lamp has been placed to the right side of the monitor",
+      "RGB light added around the ceiling of the roof and floor\n",
+      "Game-shelf is added is fit between bookshelf and toolbox desk",
+      "Painting added to the left of the window adjacent to the monitor",
+      "Colorful Carpet added to the floor surrounding the room"
+    ],
+    "scene_id": "scene0443_00"
+  },
+  "CQA_BR4ZIB09JP": {
+    "changes": [
+      "A towel rack has been mounted on the wall near the shower, made of stainless steel with a polished finish, featuring multiple bars to hang towels for easy access after bathing.",
+      "A bath mat has been placed on the floor in front of the bathtub. It has a non-slip backing and is made from absorbent materials like cotton or microfiber, in a color that complements the existing decor.",
+      "A toilet paper holder has been added near the toilet. It is a freestanding model with a brushed nickel finish, designed to hold one roll of toilet paper for convenience.",
+      "Wall art or decorative items such as framed pictures or paintings have been hung on the walls, adding aesthetic appeal and personalizing the space.",
+      "An overhead light fixture has been installed, providing bright and even lighting throughout the bathroom. It features LED bulbs for energy efficiency and longevity."
+    ],
+    "scene_id": "scene0570_00"
+  },
+  "CQA_RYEDBK25ME": {
+    "changes": [
+      "One black bamboo tree potted in a black ceramic base is sitting in the corner behind the backpack.",
+      "One blue fitted sheet is placed on the bed.",
+      "Two white hangers are hanging from the left side of the closet rack.",
+      "One pair of black leather loafers are sitting in the center of the closet floor.",
+      "One Chicago Bears poster is centered and taped to the back of the door."
+    ],
+    "scene_id": "scene0332_00"
   },
   "CQA_ZZF0L401QL": {
     "changes": [
@@ -119,6 +419,16 @@
     ],
     "scene_id": "scene0015_00"
   },
+  "CQA_INYJ21THBA": {
+    "changes": [
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "\nThree blue sticky notes have been added to the bulletin board on the right.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table.",
+      "A calendar has been pinned to the left bulletin board below the current documents."
+    ],
+    "scene_id": "scene0210_00"
+  },
   "CQA_70N55S3HUG": {
     "changes": [
       "A new chair can be added between the box leaning on the tripod and chair",
@@ -129,6 +439,66 @@
     ],
     "scene_id": "scene0206_00"
   },
+  "CQA_AG33XE313T": {
+    "changes": [
+      "A glass could be placed on the nightstand to the left of the alarm clock.",
+      "A long white comforter could be placed on top of the bed.",
+      "A pillow could be placed on the bed, on top of the white comforter, against the headboard.",
+      "A floral painting could be placed on the wall across from the bed and next to the shelf.",
+      "An open laptop computer could be placed on the desk, close to the lamp."
+    ],
+    "scene_id": "scene0039_00"
+  },
+  "CQA_VHBLT20T5P": {
+    "changes": [
+      "I would add two curtains over the window next to the bookshelf. ",
+      "I would put a blanket over the ottoman . ",
+      "I would add 20 different colored books on each bookshelf. ",
+      "I would add a rug in the center of the room, in between all the chairs. ",
+      "I would put a lamp next to the ottoman. "
+    ],
+    "scene_id": "scene0443_00"
+  },
+  "CQA_3ILCVMVRAK": {
+    "changes": [
+      "A rectangular bench is at the foot of the bed.",
+      "a knit shawl is laying on one of the pillows on the gray couch.",
+      "a small end table is beside the gray couch arm in the white space",
+      "a basket of knitting is resting at the front of the couch, in the center.",
+      "another potted plant is next to the lamp that's next to the window."
+    ],
+    "scene_id": "scene0326_00"
+  },
+  "CQA_P7FNY3L6IE": {
+    "changes": [
+      "A small red rug on the floor in front of the sink by the window.",
+      "A paper weight by the printer on the counter below the cabinet.",
+      "A house plant has been placed by the window beside the microwave on the counter.\n",
+      "A storage container on top of the refrigerator.",
+      "A roll of paper towels by the microwave on the counter by the window."
+    ],
+    "scene_id": "scene0210_00"
+  },
+  "CQA_1U6EMED72E": {
+    "changes": [
+      "One clock can be hung on the right of the window, next to the desk.",
+      "Ten books can be placed on the bookshelf above the desk.",
+      "Two pillows can be placed at the head of the bed, by the window.",
+      "One floor lamp can be placed between the two doors, next to the backpack.",
+      "One poster can be placed on the wall between the two doors, above the backpack."
+    ],
+    "scene_id": "scene0332_00"
+  },
+  "CQA_QLLDA3R1XU": {
+    "changes": [
+      "A snake plant in a blue plant pot has been added to the sill of the window.",
+      "A decorative rug with red and yellow zig-zags has been hung on the wall above the pillow.",
+      "A photo frame containing a photograph of a dog has been placed on the desk, such that it would be to the right of a person sitting in the chair.",
+      "A round, black wireless speaker has been placed on top of the mini fridge.",
+      "Two glass plates have been placed on the desk, such that they would be slightly to the left of a person sitting in the chair. One plate is in front of the other. The plate in the back has a slice of watermelon on it."
+    ],
+    "scene_id": "scene0554_00"
+  },
   "CQA_QXZB0M20C7": {
     "changes": [
       "A red soccer ball has been added near the trash can.",
@@ -138,6 +508,86 @@
       "A portrait has been added near the elevator"
     ],
     "scene_id": "scene0530_00"
+  },
+  "CQA_UVMGZQNHIX": {
+    "changes": [
+      "Blue pillow on the bed in the center of the room",
+      "Picture on the wall in the corner of the room",
+      "black chair in the corner near the curtain on the wall",
+      "white lamp neat black chair which is also near the curtain on the wall",
+      "shelf over the sink that is near the mirror and the table"
+    ],
+    "scene_id": "scene0246_00"
+  },
+  "CQA_U64E8B5UV6": {
+    "changes": [
+      "This looks like a small office. There seems to be two computer setups. I see a monitor and keyboards. This could also be a small meeting room or discussion room.",
+      "There is a shelf in the corner for miscillaneous items",
+      "There are two whiteboards hung on the wall so it makes me think this is a meeting or discussion room",
+      "There is a long table with another computer tower so it could also be a maintenance or repair room for maybe an IT worker",
+      "There are quite a few chairs around the table. It looks like the main person sits int he corner of the room near the radiator"
+    ],
+    "scene_id": "scene0379_00"
+  },
+  "CQA_N54EQRURVU": {
+    "changes": [
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table."
+    ],
+    "scene_id": "scene0703_00"
+  },
+  "CQA_DQXQSKR5ZL": {
+    "changes": [
+      "One electric pencil sharpener is added to the table in front of both chairs.",
+      "The back board is moved to the front next to the white board.",
+      "The table; chairs, telephone and pencil sharpener are then moved to the back in the middle where the back board use to be and turned at a 90 degree angle.",
+      "A case of markers are then place on the table for use.",
+      "A third chair is added to the table perpendicular to the other two chairs."
+    ],
+    "scene_id": "scene0227_00"
+  },
+  "CQA_MGXUGZ4EWZ": {
+    "changes": [
+      "One small table can be place in between the plant and sofa chair.",
+      "One computer monitor can be placed on top of the table and in front of the book.",
+      "One chair can be placed in front of the table, in between the two coffee tables.",
+      "One small picture can be place on the board next to the other picture on the wall.",
+      "One small lamp can be placed on the coffee table that's between the two sofa chairs."
+    ],
+    "scene_id": "scene0226_00"
+  },
+  "CQA_M0YXXBYSIZ": {
+    "changes": [
+      "Adding a tall lamp with a shade on it between the chair and the end table approximately mid wall",
+      "Placing a bowl with oranges on the table that has a curved upside down L object  on it.",
+      "Putting a parrot on the cross piece of the table that has the T looking perch object on it.",
+      "Adding a cat curled up on the chair that is angled against 2 walls is ",
+      "Placing a round green throw rug with a set of car keys on it in the middle of the floor."
+    ],
+    "scene_id": "scene0703_00"
+  },
+  "CQA_5YU26P8TPR": {
+    "changes": [
+      "There could be a sign next to the elevator.\n",
+      "There could be a calendar added on the doorframe",
+      "There could be a recycle trash can next to trash can.\n",
+      "There could be more poster on the two doors.",
+      "There could be rug next to the two door."
+    ],
+    "scene_id": "scene0530_00"
+  },
+  "CQA_0AESK984G6": {
+    "changes": [
+      "Place a lamp on the wood table next to the white table.",
+      "Place plates on the table with the two chairs",
+      "Place food on the small wood table next to the shelf",
+      "Place dishes on the green cart next to the white cart.",
+      "Place a vase with flowers on the table with the rainbow design"
+    ],
+    "scene_id": "scene0343_00"
   },
   "CQA_JGIF5S3M5F": {
     "changes": [
@@ -159,6 +609,16 @@
     ],
     "scene_id": "scene0230_00"
   },
+  "CQA_L8OMHA492K": {
+    "changes": [
+      "A small blue rectangular rug was placed on the floor in front of the toilet.",
+      "A smooth,  white,  round bar of soap was placed on the left side of  the sink,  next to the left faucet handle, nearest to the shower stall.",
+      "A large round glass candle holder with blue flower decorations, was set on the shelf, right in the middle.",
+      "A clear rubber shower mat was placed in the shower floor, in the middle of the shower.",
+      "A  brown scrub brush for bathing was hung on the door knob on the door inside the bathroom."
+    ],
+    "scene_id": "scene0429_00"
+  },
   "CQA_WRQ6DYJWDG": {
     "changes": [
       "A small stool is added in front of the cabinet that holds the two sinks.",
@@ -168,6 +628,16 @@
       "Add a foot mat in front of the toilet."
     ],
     "scene_id": "scene0429_00"
+  },
+  "CQA_BQKSTA1ZC2": {
+    "changes": [
+      "One small silver cat paperweight has been placed on the top shelf of the bookshelf in front of the table.",
+      "Two black dry erase markers have been placed on the whiteboard behind the table.",
+      "One key on a keyring was placed in the top pocket of the backpack.",
+      "A vase full of a dozen red roses has been placed on top of the table",
+      "Two brown shoes have been placed on the floor to the right of the door"
+    ],
+    "scene_id": "scene0403_00"
   },
   "CQA_D1S7OCQZND": {
     "changes": [
@@ -179,6 +649,36 @@
     ],
     "scene_id": "scene0563_00"
   },
+  "CQA_N52DEAR9EH": {
+    "changes": [
+      "A short curtain is hung on the window with a curtain rod covering the window",
+      "Two towels are hanging on top of the toilet on a rod",
+      "A toilet brush and holder is across the trash can next to the toilet",
+      "A white bath loofah is hung on the rail",
+      "A flower vase with yellow flower inside is sitting on top of the back of the toilet"
+    ],
+    "scene_id": "scene0105_00"
+  },
+  "CQA_9JT8F6FE3M": {
+    "changes": [
+      "A glass of wine and a wine bottle have been placed on the table by the round chair",
+      "A sleeping cat has been put on the empty side of the couch.",
+      "A large candy dish has been place on the coffee in front of the couch.",
+      "A set of Encyclopedias have been placed on the bookshelf.",
+      "A Blanket has been placed on the armchair."
+    ],
+    "scene_id": "scene0203_00"
+  },
+  "CQA_HLKDOH7AU9": {
+    "changes": [
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "\nThree blue sticky notes have been added to the bulletin board on the right.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table.",
+      "A calendar has been pinned to the left bulletin board below the current documents."
+    ],
+    "scene_id": "scene0210_00"
+  },
   "CQA_XN2FSSQ6P7": {
     "changes": [
       "A vase with flowers is added to the table with 4 chairs.",
@@ -188,6 +688,26 @@
       "A plant is added tot he table with the 4 chairs."
     ],
     "scene_id": "scene0244_00"
+  },
+  "CQA_PQHKJUTJE0": {
+    "changes": [
+      "A flatscreen tv on the wall to the right of the copier and on the left of the door.",
+      "A small water dispenser with jug next to the mail boxes and by the door.",
+      "A basket of potato chips and snacks on the top of the mini fridge. ",
+      "An event poster above the wall above the minifridge. ",
+      "Shelves above the trash cans to hold printing supplies."
+    ],
+    "scene_id": "scene0462_00"
+  },
+  "CQA_Y3NP4VTHFY": {
+    "changes": [
+      "A round grey rug has been placed on the floor underneath the coffee table next to the window.",
+      "A cup of coffee in a small white mug is on the table in front of the blue book.\n",
+      "A dark brown picture frame has been placed around the picture with the orange art on the wall.\n",
+      "A green striped throw blanket has been placed on the sofa chair to the right of the flowerpot in the corner.",
+      "There is a smartphone in a black case to the right of the lamp on the table.\n"
+    ],
+    "scene_id": "scene0226_00"
   },
   "CQA_UP14HQBWHI": {
     "changes": [
@@ -209,6 +729,16 @@
     ],
     "scene_id": "scene0072_00"
   },
+  "CQA_E7BVSJC9L9": {
+    "changes": [
+      "A black desk lamp placed to the right side of both desks above the drawers.",
+      "A small blanket and pillow placed on both of the beds, with the pillow on the side by the wardrobe closet.",
+      "A vertically long mirror placed on the wall between the desk and dresser, specifically on the left side of the room.",
+      "A runway rug placed in front of the door, running between the beds.",
+      "A potted plant placed across where the mirror is placed, between the desk and dresser on the right side of the room."
+    ],
+    "scene_id": "scene0127_00"
+  },
   "CQA_ZEM1I0149Q": {
     "changes": [
       "I see a table with at least four stools around the table to sit at.",
@@ -218,6 +748,36 @@
       "I no longer see two people on the beds like how I saw the other day."
     ],
     "scene_id": "scene0435_00"
+  },
+  "CQA_UY1IRAAW5R": {
+    "changes": [
+      "A cordless mouse sitting on a rigid mousepad",
+      "A green leafy potted plant in the windowsill",
+      "A clear plastic rolling pad for the chairs",
+      "A set of white organizational bins for the shelf unit",
+      "A three bulb light tower in the corner of the room"
+    ],
+    "scene_id": "scene0644_00"
+  },
+  "CQA_RYU2PAJT4K": {
+    "changes": [
+      "One blue coffee cup has been placed on the counter above the dishwasher near the coffee kettle",
+      "One pair of slippers have been placed by the backpack near the front door",
+      "One plate has been placed in open kitchen cabinet, left of the faucet, on the first shelf",
+      "One oven mitten has been placed on the towel rack on front of the oven",
+      "one bottle of dish soap has been placed on the kitchen counter to the right of the faucet, near the dish rack"
+    ],
+    "scene_id": "scene0164_00"
+  },
+  "CQA_Q246BVVTMC": {
+    "changes": [
+      "one book on the coffee table in front of the two couches",
+      "one umbrella between the wall lamp and the door",
+      "one hat on the coffee table next to the small couch",
+      "one wallet on the shelf in the middle above the large couch",
+      "one vase on the shelf next to the lamp"
+    ],
+    "scene_id": "scene0128_00"
   },
   "CQA_773PP2DJLT": {
     "changes": [
@@ -239,6 +799,46 @@
     ],
     "scene_id": "scene0567_00"
   },
+  "CQA_3V386OWDCL": {
+    "changes": [
+      "Add 2 red pillows to the couch with one near each armrest.",
+      "Add a carpet cushion to stand on in front of the sink.",
+      "Add a vase with flowers to the table top.",
+      "Add 2 more stools to the table that match the one already there.",
+      "Add 3 table settings on the table with a plate, fork and knive for each setting"
+    ],
+    "scene_id": "scene0111_00"
+  },
+  "CQA_3ZA24PUNSC": {
+    "changes": [
+      "A small coffee machine has been added on top of the left shelf next to the papers.\n",
+      "A small clock has been added to the left of the bulletin board.",
+      "Four blue books have been added to the cubes at the top of the shelves next to the recycling bin.",
+      "A colorful poster has been hung on the door",
+      "A small plant has been added to the windowsill."
+    ],
+    "scene_id": "scene0534_00"
+  },
+  "CQA_BP6RFHJET6": {
+    "changes": [
+      "A night stand table could be placed in between the closet wall and the bed",
+      "a rolling utility cart could be placed to the right of the desk, next to the door",
+      "a dresser could be placed underneath the backpack",
+      "a storage container could be placed under the bed, to the left of the dresser ",
+      "trinkets could be placed on the window sill, next to the bed "
+    ],
+    "scene_id": "scene0332_00"
+  },
+  "CQA_PK195S3LJO": {
+    "changes": [
+      "2 paper cutters are added to the table.",
+      "A vending machine has been placed in front of the bulletin board.",
+      "A laptop has been added next to the backpack.",
+      "2 Fans have been added on either side of the copier",
+      "A guitar has been set against the cabinet."
+    ],
+    "scene_id": "scene0593_00"
+  },
   "CQA_MZ8QXGDFS7": {
     "changes": [
       "The tan tray was taken off of the coffee table and a stack of books were added for anyones reading pleasure. ",
@@ -248,6 +848,46 @@
       "A backpack was leaning against the cabinet by the tv."
     ],
     "scene_id": "scene0617_00"
+  },
+  "CQA_3S6XE6L81H": {
+    "changes": [
+      "A square red pillow has been added to the gray couch.",
+      "A brown wooden pool stick has been placed on top of the pool table.",
+      "A small wooden stool has been added in front of the piano.",
+      "A green potted plant has been added to the top of the piano.",
+      "A square wooden end table has been added to the right side of the couch."
+    ],
+    "scene_id": "scene0533_00"
+  },
+  "CQA_2AR8T1GT2D": {
+    "changes": [
+      "A water bottle has been placed on the table where the office chairs are.",
+      "A small vase of mixed flowers has been added to the coffee table. ",
+      "A set of expo markers has been placed on the table near the whiteboards. ",
+      "An eraser for the expo markers has also been added to the table that is near the whiteboards. ",
+      "A box of a dozen doughnuts has been added to the table with the office chairs."
+    ],
+    "scene_id": "scene0317_00"
+  },
+  "CQA_C17DMBBWY9": {
+    "changes": [
+      "1 exercise machine has been placed next to the cabinet next to the wall.",
+      "1 lamp has been placed on the coffee table near the edge",
+      " 1 couch is placed in front of the bead near the feet placement.",
+      "1 laptop is placed on the coffee table next to the lamp.",
+      "1 exercise bike is placed next to the bicycle in a row"
+    ],
+    "scene_id": "scene0646_00"
+  },
+  "CQA_NEKMKHKWQO": {
+    "changes": [
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "\nThree blue sticky notes have been added to the bulletin board on the right.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table.",
+      "A calendar has been pinned to the left bulletin board below the current documents."
+    ],
+    "scene_id": "scene0210_00"
   },
   "CQA_Y2KPF4JNJU": {
     "changes": [
@@ -259,6 +899,16 @@
     ],
     "scene_id": "scene0256_00"
   },
+  "CQA_N8UXG2YWMK": {
+    "changes": [
+      "the picture on the top of the shelf is moved to next to the window which is closest to the mat",
+      "the box which is closest to the jacket is moved o the bookshelf which is closest to the window and mat ",
+      "the jacket on the chair which is the closest to the box is moved inside of the cabinet which is closest to the window",
+      "the desk which is closet to the power outlet is moved to the mat which is closest to the window",
+      "the box which is on the left of the shelf by the picture is moved to the desk which is closest to the power outlet."
+    ],
+    "scene_id": "scene0535_00"
+  },
   "CQA_FY2JD1JN27": {
     "changes": [
       "Another person is added in front of the easel ",
@@ -268,6 +918,66 @@
       "A tv is added on the wall next to the easels"
     ],
     "scene_id": "scene0129_00"
+  },
+  "CQA_8FOHZNE5JS": {
+    "changes": [
+      "a framed movie poster should be next to the door, right side",
+      "a framed concert poster should be next to the door, left side",
+      "a bookcase should be to the left of the door, under the picture, near the jacket",
+      "a coffee table should be in the center, near the backpack and suitcas",
+      "a small bookcase or shelf near the window, with a plant on it"
+    ],
+    "scene_id": "scene0271_00"
+  },
+  "CQA_1W0PE1RUYP": {
+    "changes": [
+      "A vase full of roses is placed on the nightstand ",
+      "A new pillow with a quote from a book is added to the pillows on the couch",
+      "A large brass urn is placed in front of the tv cabinet",
+      "A blanket with cats on it is placed on the back of the couch",
+      "A stack of three novels is placed on the table"
+    ],
+    "scene_id": "scene0385_00"
+  },
+  "CQA_TYONT9MYWI": {
+    "changes": [
+      "A glass could be placed on the nightstand to the left of the alarm clock.",
+      "A long white comforter could be placed on top of the bed.",
+      "A pillow could be placed on the bed, on top of the white comforter, against the headboard.",
+      "A floral painting could be placed on the wall across from the bed and next to the shelf.",
+      "An open laptop computer could be placed on the desk, close to the lamp."
+    ],
+    "scene_id": "scene0039_00"
+  },
+  "CQA_2ZEO78YNBR": {
+    "changes": [
+      "A round black trash can on the ground in front of the microwave",
+      "A to-do list hanging on the wall to the right of the picture and to the left of the window at eye sight height.",
+      "A black and chrome toaster under the cabinets on top of the counter",
+      "A pile of  6 apples in a basket on top of the counter by the boxes and the trash can.",
+      "Six bright yellow bananas hanging from a banana hanger on the counter to the left of the printer on top of the cabinets"
+    ],
+    "scene_id": "scene0210_00"
+  },
+  "CQA_K3JKUI8P03": {
+    "changes": [
+      "One box is placed in the middle of the table.",
+      "Two potted cacti are placed on either side of the blackboard on the floor.",
+      "One leather briefcase is placed on the chair next to the chair holding a box.",
+      "One floor lamp is placed to the left of the blackboard.",
+      "A coat rack is placed to the left of the door."
+    ],
+    "scene_id": "scene0291_00"
+  },
+  "CQA_BG7M0KSHXC": {
+    "changes": [
+      "A blue notebook has been placed on the table that is against the wall.",
+      "An open laptop has been placed on the table that is against the wall, left of the blue notebook. ",
+      "A black desk chair has been placed in front of the table that has the open laptop on it. ",
+      "A small round rug has been placed under the table and black desk chair.",
+      "A bottle of water has been placed on the table that is against the wall."
+    ],
+    "scene_id": "scene0267_00"
   },
   "CQA_3KWXR0JJ71": {
     "changes": [
@@ -289,6 +999,86 @@
     ],
     "scene_id": "scene0481_00"
   },
+  "CQA_2DXELEC6CC": {
+    "changes": [
+      "A fluffy white pillow has been placed on the bed against the wardrobe closet.",
+      "An open laptop computer with the screen facing the bed has been placed on the desk.",
+      "A green vining plant in a small red planter has been placed on top of the wardrobe closet.",
+      "A blue and white stiped wool rug has been placed in front of the bed and wardrobe closet. ",
+      "Blue curtains are hanging in the window in an open position to allow sunlight into the room. "
+    ],
+    "scene_id": "scene0675_00"
+  },
+  "CQA_22WL9SZ433": {
+    "changes": [
+      "A throw pillow has been placed on the couch near the coffee table.",
+      "A doormat has been placed on the floor below the door between the windowsills",
+      "Two shoes have been placed on the floor next to the ottoman",
+      "A toy car has been placed on the floor next to the coffee table",
+      "A stuffed animal has been placed on the couch below the tv"
+    ],
+    "scene_id": "scene0167_00"
+  },
+  "CQA_138AFJF6U5": {
+    "changes": [
+      "In each stall, there could be feminine hygiene trash bins. 2 in total.",
+      "on the white wall near the door frame can be a tampon/pads dispenser that women can purchase for $0.25 cents.",
+      "over the 2 sinks can be mirror. not 2 separate ones but a large mirror that covers the length of both sinks.",
+      "in the corner between the trash can and the mirror, they could put a potted plant on the floor.",
+      "In the largest stall there could be a baby changing table on the wall."
+    ],
+    "scene_id": "scene0086_00"
+  },
+  "CQA_7JOQRSBUML": {
+    "changes": [
+      "Another person is sitting on the couch next to the two pillows",
+      "A coffee mug has been placed on the coffee table",
+      "A picture has been added to the wall",
+      "Another soap bottle has been added to the sink next to the wardrobe chest",
+      "Another bag has been placed on the couch in-between the two persons"
+    ],
+    "scene_id": "scene0547_00"
+  },
+  "CQA_KJEKA79SM6": {
+    "changes": [
+      "The trash can has been placed near the white door",
+      "The office chair beside the window has been pushed to the round table",
+      "The trash can has been moved to the top of the office chair near the whiteboard",
+      "The office chair  beside the table has been moved to the white door",
+      "Two office chairs has been placed around the round table"
+    ],
+    "scene_id": "scene0373_00"
+  },
+  "CQA_G98HTHFOYH": {
+    "changes": [
+      "plants are added along the walls on either side of the monitors.",
+      "there is one more chair that is placed at the end of the table.",
+      "there are multiple paintings on the opposite wall of the monitor",
+      "there are stickers on the window frame of the door",
+      "there is a vase of flowers sitting in the middle of the table."
+    ],
+    "scene_id": "scene0130_00"
+  },
+  "CQA_IRV3PW6MDS": {
+    "changes": [
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table."
+    ],
+    "scene_id": "scene0703_00"
+  },
+  "CQA_E71IKE9AT8": {
+    "changes": [
+      "One  square trap door that opens into an underground hidden lair, has been added to the floor near the fireplace",
+      "One bright red metal fire extinguisher is hanging on the wall right next to the old wooden door that is ajar",
+      "One shiny chrome stripper pole has been placed in the dead center of the room.",
+      "In front of the couch there is now one glass coffee table with brass legs",
+      "There is an addition of one brand spanking new Nescafe expresso machine right next to the coffee maker"
+    ],
+    "scene_id": "scene0002_00"
+  },
   "CQA_LUJGJWT0RK": {
     "changes": [
       "Sheer white curtains have been hung on a black curtain rod over the window next to the shower and the toilet in the bathroom.",
@@ -298,6 +1088,96 @@
       "a clear glass bowl has been placed on the counter next to the refrigerator and it includes various fruit, including bananas and oranges"
     ],
     "scene_id": "scene0214_00"
+  },
+  "CQA_YTBH4EQX3O": {
+    "changes": [
+      "A folder full of papers has been placed in front of the chair closest to the whiteboard.",
+      "A box full of folders has been placed on the chair that is pulled out from the table, close to the telephone and window.",
+      "A cup full of chalk sticks has been placed on the windowsill next to the telephone.",
+      "A TV remove has been placed at the end of the table closest to the TV.",
+      "A second backpack has been added underneath the whiteboard on the floor."
+    ],
+    "scene_id": "scene0508_00"
+  },
+  "CQA_V2BD0B1NMA": {
+    "changes": [
+      "Hang one round clock on the wall that the back of the bed is touching( This is the bed that is adjacent to the 'wall hanging'). Place it to the right of the 3 pictures, to the left of the plant, and vertically aligned with the highest picture.\n",
+      "Place a shoe rack directly underneath the hanging clothes in front of the door. The rack will be the approximate length of the wall that the clothes are hanging off of.",
+      "Attach a suncatcher onto the window, on the left partition specifically. Vertically speaking, place it on the upper third of the window.\n",
+      "Drape a lime green hoodie along the back of the chair that is adjacent to the bed.",
+      "Attach a wall shelf above the shelf that is nearest the door. Vertically place the wall shelf above the ground shelf, but below the poster adjacent to the decoration."
+    ],
+    "scene_id": "scene0331_00"
+  },
+  "CQA_O8UQ08HV21": {
+    "changes": [
+      "A poster of an athlete or musician above the desk near the window.",
+      "A circular rug in the center of the room in between the two beds.",
+      "A long, thin, mirror hung on the door/",
+      "A pennant of a sports team hung over one of the beds. ",
+      "A small cabinet on wheels underneath the bed next to the dresser. "
+    ],
+    "scene_id": "scene0468_00"
+  },
+  "CQA_7ZHLKNA3RM": {
+    "changes": [
+      "There are two windows to the right side of the bed",
+      "There is an office chair opposite the bed",
+      "The lamp is in the power outlet  which is near the trash can.",
+      "The desk is next to the trash can",
+      "The office chair is near the desk where the lamp is located. "
+    ],
+    "scene_id": "scene0259_00"
+  },
+  "CQA_HJ0R71E6GG": {
+    "changes": [
+      "A floor lamp has been placed in the corner of the room between the couches in front of the picture.",
+      "A digital clock has been placed on the cabinet.",
+      "Another chair has been placed beside the  lone chair at the light brown table near the tv.",
+      "Another picture has been placed on the wall above the green table beside the tv.",
+      "Another cabinet has been placed on the floor under the whiteboard."
+    ],
+    "scene_id": "scene0297_00"
+  },
+  "CQA_64UOVDKPSF": {
+    "changes": [
+      "Table for the copier to make it easy to access.",
+      "Add trash can in corner of room and out of sight",
+      "Place buckets together and keep neat and tidy.",
+      "Attach bulletin board to wall and keep it nailed.",
+      "Stack boxes on top of each other to reduce clutter."
+    ],
+    "scene_id": "scene0109_00"
+  },
+  "CQA_GVFN49VI51": {
+    "changes": [
+      "Add an extra chair at the head of the table. ",
+      "Add two more monitors on the table next to the current ones.",
+      "Add wall decoration to the room, on the white wall and 1 frame. ",
+      "Add another trash can next to the cabinet. ",
+      "Add an extra telephone at the head of the table. "
+    ],
+    "scene_id": "scene0093_00"
+  },
+  "CQA_0HZ669NSHC": {
+    "changes": [
+      "Move the cart under the window by the recycling bin. ",
+      "Place the monitor on the cart next to the cart. ",
+      "Pick up the book and place it in the recycling bin. ",
+      "Grab the scanner and place it on the shelf by the monitor. ",
+      "Move the statue to the board by the tube and shelf. "
+    ],
+    "scene_id": "scene0565_00"
+  },
+  "CQA_ILP9WF8CJ5": {
+    "changes": [
+      "1 plant has been added beside the second table, at the top right corner of the wall.",
+      "A small potted flower plant is placed on the center of the first table, that is the table on the left.",
+      "A small potted flower plant is placed on the center of the second table, that is the table on the right.",
+      "A center rug is placed on the floor between the two sets of table and chairs .",
+      "A bookshelf is placed against the wall in-between the two sets of table and chairs."
+    ],
+    "scene_id": "scene0355_00"
   },
   "CQA_A2TJ1NT45E": {
     "changes": [
@@ -309,6 +1189,46 @@
     ],
     "scene_id": "scene0248_00"
   },
+  "CQA_D8I71X877F": {
+    "changes": [
+      "1 exercise machine has been placed next to the cabinet next to the wall.",
+      "1 lamp has been placed on the coffee table near the edge",
+      " 1 couch is placed in front of the bead near the feet placement.",
+      "1 laptop is placed on the coffee table next to the lamp.",
+      "1 exercise bike is placed next to the bicycle in a row"
+    ],
+    "scene_id": "scene0646_00"
+  },
+  "CQA_9M9C9LFLMH": {
+    "changes": [
+      "A monitor has been placed on the table ",
+      "A book is placed on the table with the plant",
+      "Two tables are added on each side of the room ",
+      "One lamp is placed on the empty table ",
+      "Two couches are places in the empty space to the top "
+    ],
+    "scene_id": "scene0234_00"
+  },
+  "CQA_1Z59QSRULV": {
+    "changes": [
+      "A stuffed animal on the sofa chair next to clothing, shoes and mini fridge ",
+      "A poster above the mini fridge next to the  TV",
+      "A vase in front of the picture between the TV and lamp",
+      "Three balls on the desk next to the laptop ",
+      "Two keys next to the telephone on the nightstand between the two beds"
+    ],
+    "scene_id": "scene0340_00"
+  },
+  "CQA_43BUAJW0A2": {
+    "changes": [
+      "A beautiful scenery wallmat can hang on the wall .",
+      "Some flower base to the corner of the room",
+      "Some security cameras top of the corners can setup.",
+      "A water filter near the table for drinking.",
+      "A landline phone  on the table can place."
+    ],
+    "scene_id": "scene0017_00"
+  },
   "CQA_ARZCQEZX34": {
     "changes": [
       "A red book is placed on the large tan desk at the front of the room.",
@@ -318,6 +1238,56 @@
       "A laptop is placed on the long white desk facing sideways at the front of the room."
     ],
     "scene_id": "scene0624_00"
+  },
+  "CQA_A6TOG4QBJ8": {
+    "changes": [
+      "A 21 year old Male student is sitting in the chair closest to the table.",
+      "One black laptop is placed on top of the table and closest to the adjacent chair.",
+      "A clear red water bottle is on top of the table and next to the backpack.",
+      "There is a poster of a rock climber on the black wall where the table and chair are located.",
+      "There is one blue notebook on the floor in front of the blackboard."
+    ],
+    "scene_id": "scene0657_00"
+  },
+  "CQA_5X7FCKJJL7": {
+    "changes": [
+      "One apple has been added in the sink next to the dish rack.",
+      "A large black trash bag has been added in front of the trash can.",
+      "A new scooter has been added, leaning against the trash can.",
+      "Three stools has been added around the refrigerator.",
+      "A knife has been added on the counter, next to the microwave."
+    ],
+    "scene_id": "scene0682_00"
+  },
+  "CQA_DKWKBH4V49": {
+    "changes": [
+      "place a gray 10 pound weight on the bench",
+      "Place a blue pillow on the blue couch on the right hand side\n",
+      "Place 2 red apples on the coffee table next to the blue couch",
+      "Place an orange flip flop on the footrest",
+      "Place a strand of popcorn on the light next to the blue couch. "
+    ],
+    "scene_id": "scene0213_00"
+  },
+  "CQA_ERWF6XMEZ1": {
+    "changes": [
+      "There are two windows to the right side of the bed",
+      "There is an office chair opposite the bed",
+      "The lamp is in the power outlet  which is near the trash can.",
+      "The desk is next to the trash can",
+      "The office chair is near the desk where the lamp is located. "
+    ],
+    "scene_id": "scene0259_00"
+  },
+  "CQA_61INF9SED3": {
+    "changes": [
+      "A towel rack has been added on the wall above the toilet, below where the picture is placed",
+      "A plunger has been placed to the right of the toilet, between the toilet and the bathtub",
+      "A shower caddy has been added in the shower, above the faucet of the bathtub",
+      "A window has been added on the wall of the bathroom where the telephone and toilet paper are, just above the telephone.",
+      "A bath mat has been added on the floor of the bathroom, next to the bathtub and in front of the toilet"
+    ],
+    "scene_id": "scene0702_00"
   },
   "CQA_6OON9OVSXX": {
     "changes": [
@@ -329,6 +1299,96 @@
     ],
     "scene_id": "scene0620_00"
   },
+  "CQA_LIBWZ35XJ6": {
+    "changes": [
+      "1 exercise machine has been placed next to the cabinet next to the wall.",
+      "1 lamp has been placed on the coffee table near the edge",
+      " 1 couch is placed in front of the bead near the feet placement.",
+      "1 laptop is placed on the coffee table next to the lamp.",
+      "1 exercise bike is placed next to the bicycle in a row"
+    ],
+    "scene_id": "scene0646_00"
+  },
+  "CQA_DC9TVC52HQ": {
+    "changes": [
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table."
+    ],
+    "scene_id": "scene0703_00"
+  },
+  "CQA_U01I47N7L7": {
+    "changes": [
+      "A comforter is added on top of the bed by the doors.",
+      "A wallet is placed on the nightstand between the beds.",
+      "A mirror is placed of the wall that is to the left of  the left hand bed.",
+      "A bag of candy is placed at the foot of the bed that is rightmost.",
+      "A remote control for the TV is placed on the nightstand."
+    ],
+    "scene_id": "scene0137_00"
+  },
+  "CQA_0ZOWE97F7V": {
+    "changes": [
+      "a wooden storage chest placed at the foot of the bed.",
+      "a bottle of hand sanitizer laced on the edge of the sing near the faucet",
+      "a tall reading lamp placed between the ottoman and couch by the wall with the picture",
+      "a string of xmas lights hung on the wall above the picture to illuminate it",
+      "a decorative rug added under the table between all the couches"
+    ],
+    "scene_id": "scene0031_00"
+  },
+  "CQA_HV6BS8KECJ": {
+    "changes": [
+      "Place a mouse trap on the table, directly above the office chair in-between the stool and the trash can, near the mouse.\n",
+      "Hang a poster above the trash can, which is inbetween the left edge of the table and the desk. Hang it at the same height as the monitor to the right of the trash can.\n",
+      "Place a rolling bookshelf ladder (ladder with wheels) on the leftmost bookshelf, which is near the right-most edge of the table on the opposite wall.\n",
+      "Place a green colored file folder on the desk, directly in the center.\n",
+      "Add a clear storage bin to an open space under the table. This space is between the stool and the trash can. This particular stool is directly underneath a window.\n"
+    ],
+    "scene_id": "scene0320_00"
+  },
+  "CQA_AYKCQZCJ2L": {
+    "changes": [
+      "There is a stick on the left side of the bed beside the nightstand.",
+      "There is one black lampshade in the corner of the room on the left- hand side near the dresser.",
+      "There is a grey telephone on the nightstand on the right-hand side of the bed. ",
+      "There is a melted white candle located on the dresser on the right-hand side near the mirror.",
+      "There is one calendar on the right-hand side of the bed above the nightstand that is on a sunset."
+    ],
+    "scene_id": "scene0576_00"
+  },
+  "CQA_FIGLLFY45H": {
+    "changes": [
+      "a second chair In front of the window next to the board",
+      "a sofa in front of the window closest to the shelf",
+      "a standing lamp in between the two windows",
+      "a stack of books on the corner of the table",
+      "a small welcome mat in front of the door"
+    ],
+    "scene_id": "scene0229_00"
+  },
+  "CQA_K34NF3V07I": {
+    "changes": [
+      "A third green plant in a blue pot on the corner of the bathtub.",
+      "Blue curtains hanging above the window above the bathtub.",
+      "A brown mirror hanging above the toilet on the wall.",
+      "A brown shelf hanging above the yellow towel on the left side of the sink. ",
+      "A metal wire shelf hanging in the shower to hold bottles of product."
+    ],
+    "scene_id": "scene0581_00"
+  },
+  "CQA_3YFVAMP440": {
+    "changes": [
+      "one box o detergent on top of the washer",
+      "a basket of laundry on top of the washing machine",
+      "a ham sandwidh in the middle of the table",
+      "a acan of diet coke on the counter",
+      "a sleeping man in the sofa chair closest to the door"
+    ],
+    "scene_id": "scene0601_00"
+  },
   "CQA_LVIFWUWLA5": {
     "changes": [
       "1 bouquet of a dozen white roses in a clear vase can be added onto the table to the right of the armchair",
@@ -338,6 +1398,16 @@
       "One narrow white bookshelf can be added to the up against the wall to the right of the last ottoman"
     ],
     "scene_id": "scene0316_00"
+  },
+  "CQA_4LLVTIJZIU": {
+    "changes": [
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "\nThree blue sticky notes have been added to the bulletin board on the right.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table.",
+      "A calendar has been pinned to the left bulletin board below the current documents."
+    ],
+    "scene_id": "scene0210_00"
   },
   "CQA_1NOHZCHXH8": {
     "changes": [
@@ -349,6 +1419,36 @@
     ],
     "scene_id": "scene0103_00"
   },
+  "CQA_PYSU1AUCIB": {
+    "changes": [
+      "a sleeping dog is added to the top of the ottoman ",
+      "a person is asleep on the bed wearing pajamas",
+      "a tree is outside of the middle window in front of the radiator ",
+      "a poster of the band queen is on the closet wall",
+      "a pair of nike shoes is in the storage bin"
+    ],
+    "scene_id": "scene0286_00"
+  },
+  "CQA_R0E31OTI2E": {
+    "changes": [
+      "Two cushions have been placed on the couch, one on each side.",
+      "One painting of a wolf howling at the moon has been placed on the wall above the couch.",
+      "One TV has been hung on the wall above the roomba.",
+      "Two water bottles have been placed in each of the backpacks.",
+      "A music sheet containing Mozart’s 3rd Movement Sonata: Piano Sonata No. 11 in A Major, K. 331 has been placed on the piano."
+    ],
+    "scene_id": "scene0050_00"
+  },
+  "CQA_DYUP15VTD5": {
+    "changes": [
+      "A blue vase has been placed on the coffee table next to the couch, positioned toward the right-hand side.",
+      "Three books have been stacked neatly on the small table near the window beside the chair.",
+      "A small green plant has been placed on the left corner of the table near the lamp, adding a fresh touch to the area.",
+      "A pair of brown shoes have been positioned neatly next to the chair by the coffee table, facing toward the couch.",
+      "A decorative golden clock has been set on the window ledge to the right of the table, just below the lamp."
+    ],
+    "scene_id": "scene0536_00"
+  },
   "CQA_5R43OEEK0M": {
     "changes": [
       "the backpack was moved to the bed near the pillow",
@@ -359,6 +1459,26 @@
     ],
     "scene_id": "scene0000_00"
   },
+  "CQA_4AV1PREZRN": {
+    "changes": [
+      "A potted plant has been added to the floor next to the small chest of drawers (?) to the right of the desk.",
+      "A framed black and white photo has been added on the wall to the right of the closet doors, above the bed.",
+      "A vase with pink flowers in it has been placed on the desk. ",
+      "An abstract painting has been added to the wall above the desk.",
+      "A geometric rug has been added to the floor next to the bed."
+    ],
+    "scene_id": "scene0426_00"
+  },
+  "CQA_7MGJKHZ2KU": {
+    "changes": [
+      "Add a throw blanket to the end of the left bed",
+      "Add a lamp to the end table between the couch and armchair",
+      "Add a pencil holder on the desk, next to the telephone",
+      "Add a plant on the middle of the coffee table",
+      "Add a plant on the nightstand next to the lamp"
+    ],
+    "scene_id": "scene0645_00"
+  },
   "CQA_VXF2PREVJH": {
     "changes": [
       "Another person is added in front of the easel ",
@@ -368,6 +1488,16 @@
       "A tv is added on the wall next to the easels"
     ],
     "scene_id": "scene0129_00"
+  },
+  "CQA_UW57WWSC1Y": {
+    "changes": [
+      "One potted plant is placed to the left of the sectional in front of the backpack.",
+      "One pair of white sneakers are laying on the floor to the right of the backpack on the left end of the sectional couch.",
+      "One gold framed landscape painting hangs centered above the couch.",
+      "Two red throw pillows lay on the floor in front of the couch between the backpack and the chair.",
+      "Five blue dinner plates are stacked on the bottom left side of the cabinet in the kitchen to the right of the sink."
+    ],
+    "scene_id": "scene0207_00"
   },
   "CQA_0EN8QQJFRV": {
     "changes": [
@@ -389,6 +1519,26 @@
     ],
     "scene_id": "scene0363_00"
   },
+  "CQA_QLG5UDEMM7": {
+    "changes": [
+      "a basketball hoop added next to the couch",
+      "a medium sized telescope next to the cabinet",
+      "a closet next to the doorframe on the south wall",
+      "a large ice cooler next to the couch",
+      "a fridge next to the doorframe on the left wall"
+    ],
+    "scene_id": "scene0588_00"
+  },
+  "CQA_RAZY14VQG0": {
+    "changes": [
+      "a backpack would fit sitting on a chair in the corner",
+      "a bike would fit sitting by the couch",
+      "sticky notes could go on the board next to the pillar",
+      "a laptop could sit on top of the round table",
+      "three bananas can sit on the table in the corner"
+    ],
+    "scene_id": "scene0374_00"
+  },
   "CQA_EFIEW8KD5R": {
     "changes": [
       "Add a second purple towel to the towel rack to the left of the purple towel and above the green towel",
@@ -398,6 +1548,16 @@
       "On the floor of the shower I would add a clear anti-slip shower mat "
     ],
     "scene_id": "scene0034_00"
+  },
+  "CQA_TDUY92TMQU": {
+    "changes": [
+      "A coffee table has been placed next to the couch",
+      "A thrash can next to the nightstand which is close to the bed",
+      "Two stools have been placed next to the couch",
+      "A laundry basket has been placed towards the left side of the bed",
+      "A stool has been placed in front of the dresser"
+    ],
+    "scene_id": "scene0652_00"
   },
   "CQA_0Q78H6K6NC": {
     "changes": [
@@ -419,6 +1579,76 @@
     ],
     "scene_id": "scene0514_00"
   },
+  "CQA_Y08NKZT3YA": {
+    "changes": [
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table."
+    ],
+    "scene_id": "scene0703_00"
+  },
+  "CQA_5LWIG41ZJR": {
+    "changes": [
+      "A picture frame can go on top of the TV stand on either side of the TV.",
+      "A candle can be places on the coffee table.0.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "A Playstation video game device can be put under the TV stand.",
+      "A leg rest with legs can be places in front of the curtain.",
+      "A clock can be hung on the wall about where the lamp is."
+    ],
+    "scene_id": "scene0480_00"
+  },
+  "CQA_C1ZGSMTZB4": {
+    "changes": [
+      "A vase has been placed on the dresser below the TV.",
+      "A cat has been placed on the bed leaning on the pillow. ",
+      "A pair of eyeglasses has been added on the desk near the monitor.",
+      "A tool box is added leaning against the box.",
+      "A red hat is placed on the coatrack above the jacket."
+    ],
+    "scene_id": "scene0426_00"
+  },
+  "CQA_ZTMWAD3B2X": {
+    "changes": [
+      "A small purple pillow has been added on the long  green couch.",
+      "A poster of a pink rose has been added to the wall next to the tv.",
+      "A white coffee mug has been placed on top the brown coffee table in the living room.",
+      "A blue cat tower has been added next to the long green couch.",
+      "A clear bottle of water has been placed on the TV stand which is below the television. "
+    ],
+    "scene_id": "scene0312_00"
+  },
+  "CQA_ZZXEM6XQJU": {
+    "changes": [
+      "Add a soap dispenser on the wall next to the bathroom mirror.",
+      "Add a throw blanket across the end of the bed.",
+      "Add 17 book to the shelf to the left of the TV cabinet.",
+      "Add three pink decorative pillows to the couch.",
+      "Add a vase of yellow daises to the coffee table."
+    ],
+    "scene_id": "scene0135_00"
+  },
+  "CQA_4VQ2BCZBBG": {
+    "changes": [
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table."
+    ],
+    "scene_id": "scene0703_00"
+  },
+  "CQA_2USOKJX5C1": {
+    "changes": [
+      "there is a window that is right on top of a trash can. it is also directly across from the whiteboard",
+      "there is a whiteboard that is on the wall. it also right on top of a 2 chairs, and a table.",
+      "there is a trashcan on the floor right by the window. ",
+      "there is a chair thats next to another chair, and a table. It also happens to be the closest chair to the door. ",
+      "there is a table on the floor right by the whiteboard. it is also surrounded by 4 chairs."
+    ],
+    "scene_id": "scene0494_00"
+  },
   "CQA_J1R7SUYIVX": {
     "changes": [
       "One large screen Tv placed on the wall opposite the window",
@@ -428,6 +1658,46 @@
       "one large pig on  the floor middle of the room"
     ],
     "scene_id": "scene0363_00"
+  },
+  "CQA_WUJZJ9VXUR": {
+    "changes": [
+      "An orange, framed painting has been placed on the wall between the two windows.",
+      "An orange, fluffy pillow was placed on the grey chair beside the white table. ",
+      "A flat jute doormat was placed in front of the brown door closest to the printer",
+      "A crystal sun catcher was hung on the white wall between the cupboard door and the corner. ",
+      "A vase filled with pink roses was placed on the white table beside the grey chair. "
+    ],
+    "scene_id": "scene0002_00"
+  },
+  "CQA_QYVT4632IP": {
+    "changes": [
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "\nThree blue sticky notes have been added to the bulletin board on the right.",
+      "Two yellow folders have been placed on top of the fourth file cabinet.",
+      "A pair of red scissors has been set beside the paper cutter on the table.",
+      "A calendar has been pinned to the left bulletin board below the current documents."
+    ],
+    "scene_id": "scene0210_00"
+  },
+  "CQA_T85GDGL4QQ": {
+    "changes": [
+      "A single stack of papers has been placed in the middle of the table",
+      "A Bottle of Water lays on the side of the table closest to the blackboard.",
+      "The door to this room is double wide and green in color. ",
+      "There are 4 windows on the wall to the left of the blackboard",
+      "There is a ceiling fan right above the table. "
+    ],
+    "scene_id": "scene0291_00"
+  },
+  "CQA_TBHUH1G6UH": {
+    "changes": [
+      "A red blanket has been added on at the foot of the ottoman.",
+      "A small fish bowl has been added on top of the table next to the laptop.",
+      "A humidifier has been added on top of the right nightstand, in front of the lamp.",
+      "A graphic runner (rug) the length of the bed has been added between the bed and the dresser.",
+      "A large plant has been added next to the table in front of the floor lamp."
+    ],
+    "scene_id": "scene0235_00"
   },
   "CQA_AHX4XEHW04": {
     "changes": [
@@ -439,6 +1709,26 @@
     ],
     "scene_id": "scene0363_00"
   },
+  "CQA_ZQV3AXB849": {
+    "changes": [
+      "A DIRTY KNIFE AND A SPOON HAS BEEN PLACED INSIDE OF THE SINK",
+      "A SALT SHAKER HAS BEEN PLACED ON THE FIRST RUN OF THE SHELF NEXT TO THE CLOCK",
+      "A UNCOOKED CHICKEN HAS BEEN PLACED ON THE RIGHT SIDE OF THE KITCHEN COUNTER ABOVE THE STOVE",
+      "A SINGLE ROSE HAS BEEN PLACED ON TOP OF THE TABLE NEAR THE CHAIR ON THE RIGHT",
+      "A PAPER TOWEL HOLDER HAS BEEN PLACED TO THE LEFT SIDE OF THE SINK"
+    ],
+    "scene_id": "scene0542_00"
+  },
+  "CQA_KDW9M6CY77": {
+    "changes": [
+      "A calendar has been pinned to the left bulletin board below the current documents.",
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right.",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet."
+    ],
+    "scene_id": "scene0556_00"
+  },
   "CQA_Q3CJOTWAOC": {
     "changes": [
       "One large screen Tv placed on the wall opposite the window",
@@ -449,6 +1739,46 @@
     ],
     "scene_id": "scene0363_00"
   },
+  "CQA_YEZ7OX3IJ6": {
+    "changes": [
+      "There is a child's brown teddy bear that is sitting in one of the armchairs.",
+      "There is a bouquet of flowers of different types laying on the coffee table",
+      "An old timey grandfather clock made of teak wood stands along the wall across from the coffee table",
+      "A golden lamp sits in the center of the rectangular table with it's light off.",
+      "There is a plastic bamboo tree in a plastic pot in the center of the room"
+    ],
+    "scene_id": "scene0572_00"
+  },
+  "CQA_36G3IGEWMH": {
+    "changes": [
+      "FOUR CERAMIC PLATES HAVE BEEN PLACED INSIDE THE KITCHEN CABINET ABOVE THE WATER PITCHER",
+      "A BIG SILVER POT HAS BEEN PLACED ON TOP THE STOVE IN THE KITCHEN",
+      "A HANDBAG HAS BEEN PLACED ON THE CHAIR BY THE DOOR",
+      "A BOX OF CEREAL HAS BEEN PLACED ON TOP OF THE REFRIGERATOR",
+      "A BAG OF PLANT FOOD HAS BEEN PLACED BESIDE THE PLANT "
+    ],
+    "scene_id": "scene0220_00"
+  },
+  "CQA_01BBWNIIYM": {
+    "changes": [
+      "1 exercise machine has been placed next to the cabinet next to the wall.",
+      "1 lamp has been placed on the coffee table near the edge",
+      " 1 couch is placed in front of the bead near the feet placement.",
+      "1 laptop is placed on the coffee table next to the lamp.",
+      "1 exercise bike is placed next to the bicycle in a row"
+    ],
+    "scene_id": "scene0646_00"
+  },
+  "CQA_DF33OXRS8F": {
+    "changes": [
+      "A box of cereal is added to the kitchen cabinet",
+      "Sheets of paper are added to the printer",
+      "A garbage bag is added to the trash can",
+      "A person is standing on the step stool",
+      "There is a swing on the door frame"
+    ],
+    "scene_id": "scene0104_00"
+  },
   "CQA_UXJNY2MA95": {
     "changes": [
       "An arc floor lamp can be place to the left of the couch (when looking at the couch)",
@@ -458,6 +1788,16 @@
       "A picture can be hung on the wall above the lamp to the right of the couch "
     ],
     "scene_id": "scene0467_00"
+  },
+  "CQA_9J79MSE2QB": {
+    "changes": [
+      "1 exercise machine has been placed next to the cabinet next to the wall.",
+      "1 lamp has been placed on the coffee table near the edge",
+      " 1 couch is placed in front of the bead near the feet placement.",
+      "1 laptop is placed on the coffee table next to the lamp.",
+      "1 exercise bike is placed next to the bicycle in a row"
+    ],
+    "scene_id": "scene0646_00"
   },
   "CQA_B16I7IA5KL": {
     "changes": [
@@ -489,6 +1829,16 @@
     ],
     "scene_id": "scene0511_00"
   },
+  "CQA_S20BYVGPQ3": {
+    "changes": [
+      "there is a pool rack for the balls on the pool table",
+      "a set (2) pool cues are now standing on the flo\nor, leaning  on the edge of the pool table",
+      "there is a vase of flowers sitting on the table that is nearest the radiator",
+      "there is a rug underneath the pool table that is approx 8 foot by 10 feet. it is solid red in color.",
+      "there is a standing fan that oscillates that is near the radiator"
+    ],
+    "scene_id": "scene0618_00"
+  },
   "CQA_H19VP3OPBA": {
     "changes": [
       "Adding another pillow at the head of the bed",
@@ -498,6 +1848,16 @@
       "Shoes can be placed on the floor, at the base of the wardrobe closet"
     ],
     "scene_id": "scene0224_00"
+  },
+  "CQA_VKAARO4BM4": {
+    "changes": [
+      "A window was added above the kitchen sink",
+      "A white door was installed in the frame.",
+      "Three blue floating shelves added to the wall.",
+      "Two side-by-side pictures were placed on the wall",
+      "Small decor items were placed on the floating shelves."
+    ],
+    "scene_id": "scene0366_00"
   },
   "CQA_0NQMRBU5HL": {
     "changes": [
@@ -509,6 +1869,126 @@
     ],
     "scene_id": "scene0015_00"
   },
+  "CQA_0QTNW9HY1H": {
+    "changes": [
+      "2 textbooks has been placed on the table beside the cabinet.",
+      "1 monitor is on top of the bottom left table",
+      "1 Nintendo Switch has been placed on the cabinet below the TV",
+      "1 seat cushion has been added to each of the chairs. ",
+      "4 movie posters has been added to the white wall beside the cart. "
+    ],
+    "scene_id": "scene0005_00"
+  },
+  "CQA_Q6V65FN1EH": {
+    "changes": [
+      "A foot stool can be added in front of the top couch",
+      "A floor lamp can be added in the corner between the two couches",
+      "An end table can be added next to the right of the top couch",
+      "Another chair can be added in front of the top couch",
+      "A decoration, like a book or vase, can be added on one of the coffee tables"
+    ],
+    "scene_id": "scene0313_00"
+  },
+  "CQA_4DKGV7OPZL": {
+    "changes": [
+      "A lamp can be placed near the armchair closest to the window.",
+      "A carpet can be added by the mirrors, specifically by the floor.",
+      "A desk by the changing station, between the armchair there.",
+      "A TV setup between the mirror and the door in front of the armchairs.",
+      "Another table can be placed in between the two mirrors."
+    ],
+    "scene_id": "scene0165_00"
+  },
+  "CQA_FT67MBFC5T": {
+    "changes": [
+      "A fluffy pillow has been placed at the head of the bed.",
+      "A colorful poster has been hung on the right closet door.",
+      "A lamp has been placed on top of the cabinet.",
+      "A jacket has been hung over the back of the chair.",
+      "A framed photograph has been placed in the left corner of the desk."
+    ],
+    "scene_id": "scene0200_00"
+  },
+  "CQA_YWTXUGKK63": {
+    "changes": [
+      "A shelf under the Television that holds the remote and any additional things that would be useful to the room ",
+      "A coat tree with hooks next to the door. ",
+      "A cabinet under the whiteboard for markers and sticky paper for drawing and for presentations. ",
+      "a mini fridge for waters for the attendees",
+      "The chairs should be around the table neatly to make space for the other items added to the room "
+    ],
+    "scene_id": "scene0680_00"
+  },
+  "CQA_0TXAHUWPQM": {
+    "changes": [
+      "A small blue rectangular rug was placed on the floor in front of the toilet.",
+      "A smooth,  white,  round bar of soap was placed on the left side of  the sink,  next to the left faucet handle, nearest to the shower stall.",
+      "A large round glass candle holder with blue flower decorations, was set on the shelf, right in the middle.",
+      "A clear rubber shower mat was placed in the shower floor, in the middle of the shower.",
+      "A  brown scrub brush for bathing was hung on the door knob on the door inside the bathroom."
+    ],
+    "scene_id": "scene0429_00"
+  },
+  "CQA_SLZVWV288I": {
+    "changes": [
+      "A flatscreen tv on the wall to the right of the copier and on the left of the door.",
+      "A small water dispenser with jug next to the mail boxes and by the door.",
+      "A basket of potato chips and snacks on the top of the mini fridge. ",
+      "An event poster above the wall above the minifridge. ",
+      "Shelves above the trash cans to hold printing supplies."
+    ],
+    "scene_id": "scene0462_00"
+  },
+  "CQA_RHLWLS00EZ": {
+    "changes": [
+      "Add a chair at the desk that is by the door.",
+      "Add an area floor rug by the right side of the bed in front of the night stand",
+      "Add an area floor rug at the foot of the bed in front of the trash can",
+      "Add a lamp on top of the desk toward the corner.",
+      "Add a mirror to the top of the dresser"
+    ],
+    "scene_id": "scene0560_00"
+  },
+  "CQA_OEXUCF897T": {
+    "changes": [
+      "one wallet on the chair in front of the tv",
+      "one baseball cap on the cart next to the projector",
+      "one purple umbrella on the floor next to the door",
+      "one book on the table in front of the chair closest to the radiator",
+      "one brown box in front of the window"
+    ],
+    "scene_id": "scene0285_00"
+  },
+  "CQA_BA4R54ZVWM": {
+    "changes": [
+      "One red apple has been placed on top of the refrigerator",
+      "One blue toothbrush has been placed in the bathroom sink",
+      "One roll of toilet paper has been place on top of the toilet",
+      "Two white plates have been placed on top of the counter above the dishwasher",
+      "One frying pan has been placed on top of the stove."
+    ],
+    "scene_id": "scene0214_00"
+  },
+  "CQA_KUC0O9YGJP": {
+    "changes": [
+      "a bowl of fruit could be added to the kitchen island",
+      "a plant could be added next to the kitchen island",
+      "photos could be added to the doors of the refrigerators",
+      "napkins could be added on top of the table",
+      "a third chair could be added to the kitchen table"
+    ],
+    "scene_id": "scene0063_00"
+  },
+  "CQA_CGKL1BNSWE": {
+    "changes": [
+      "Hang one round clock on the wall that the back of the bed is touching( This is the bed that is adjacent to the 'wall hanging'). Place it to the right of the 3 pictures, to the left of the plant, and vertically aligned with the highest picture.",
+      "Place a shoe rack directly underneath the hanging clothes in front of the door. The rack will be the approximate length of the wall that the clothes are hanging off of.",
+      "Attach a suncatcher onto the window, on the left partition specifically. Vertically speaking, place it on the upper third of the window.",
+      "Drape a lime green hoodie along the back of the chair that is adjacent to the bed.",
+      "Attach a wall shelf above the shelf that is nearest the door. Vertically place the wall shelf above the ground shelf, but below the poster adjacent to the decoration."
+    ],
+    "scene_id": "scene0331_00"
+  },
   "CQA_XE2236PYE4": {
     "changes": [
       "attach wal behind the cabinet for support for the mirror",
@@ -518,5 +1998,65 @@
       "move the toilet to the other side of cabinet"
     ],
     "scene_id": "scene0639_00"
+  },
+  "CQA_GF5TGK174P": {
+    "changes": [
+      "A calendar has been pinned to the left bulletin board below the current documents.",
+      "A black stapler has been placed on the second file cabinet from the left.",
+      "Three blue sticky notes have been added to the bulletin board on the right.",
+      "A small potted cactus has been positioned on the bench near the trash can.",
+      "Two yellow folders have been placed on top of the fourth file cabinet."
+    ],
+    "scene_id": null
+  },
+  "CQA_WFHZ17GU43": {
+    "changes": [
+      "a framed movie poster should be next to the door, right side",
+      "a framed concert poster should be next to the door, left side",
+      "a bookcase should be to the left of the door, under the picture, near the jacket",
+      "a coffee table should be in the center, near the backpack and suitcas",
+      "a small bookcase or shelf near the window, with a plant on it"
+    ],
+    "scene_id": "scene0271_00"
+  },
+  "CQA_XZZVMXMSMW": {
+    "changes": [
+      "add bar of soap to the left of the bathroom faucet",
+      "add hand towel to the left side of the towel bar next to bathtub",
+      "add loofa to the bottom bath faucet in the bathtub",
+      "add grip tape or grip bath mat to bottom of the bathtub",
+      "add small table next to trashcan by the faucet"
+    ],
+    "scene_id": "scene0250_00"
+  },
+  "CQA_TK8R8H41TK": {
+    "changes": [
+      "One chair by the short window left of the two tables",
+      "One chair to the left of the furthest right chair next to the whiteboard",
+      "One chair below the furthest chair on the right",
+      "2 chairs by the short window left of the 2 tables",
+      "One table to the right of the other 2 tables"
+    ],
+    "scene_id": "scene0150_00"
+  },
+  "CQA_NMOYXVRY9Q": {
+    "changes": [
+      "Two books have been placed on the ground between the nightstand and the armchair.",
+      "two pencils are placed on the dresser in front of the tv next to the hat",
+      "five socks are placed on the ground next to the bag in front of the dresser with the picture on it",
+      "a chair is wedged between the mattress and the blanket ",
+      "a handkerchief is placed on top of the clothes on the edge of the bed on the right hand side."
+    ],
+    "scene_id": "scene0147_00"
+  },
+  "CQA_TIMUUP8UBQ": {
+    "changes": [
+      "1 exercise machine has been placed next to the cabinet next to the wall.",
+      "1 lamp has been placed on the coffee table near the edge",
+      " 1 couch is placed in front of the bead near the feet placement.",
+      "1 laptop is placed on the coffee table next to the lamp.",
+      "1 exercise bike is placed next to the bicycle in a row"
+    ],
+    "scene_id": "scene0646_00"
   }
 }
