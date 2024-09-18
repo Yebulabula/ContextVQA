@@ -36,7 +36,7 @@ def load_scene_annotations():
     
 # Function to save context data to Firestore
 def save_context_data(data):
-    db.collection('replacement_Changes').add(data)
+    db.collection('Replacement_Changes').add(data)
 
 # Function to generate and return a confirmation code
 def generate_survey_code():
