@@ -130,7 +130,7 @@ guideline_text = """
 
 Explore the given 3D scene visualization and hypothetically describe **five** different ways to **replace existing objects** within it. 
 
-**Consider the example scene below, possible object replacements can include:** (*This is just an example; please not use it to write descriptions.*)
+**Consider the example scene below, possible object replacements can include:** (*This is just an example; please do not use it to write descriptions.*)
 
 - The white cabinet near to the clock and table has been replaced with a yellow bookshelf.
 - The coffee table in front of the couch has been replaced with two armchairs.
@@ -140,12 +140,12 @@ Explore the given 3D scene visualization and hypothetically describe **five** di
 
 <span style="color:brown;">**Instructions:** </span>
 
-<span style="color:brown;">- Object replacement havs to be spatially feasible within the scene's layout </span>
+<span style="color:brown;">- Object replacement has to be spatially feasible within the scene's layout </span>
 
 <span style="color:brown;">- Each description must clearly and uniquely indicate the locations of the object(s) being replaced and what they are replaced with. Ambiguous or wrong descriptions will be </span> <span style="color:red;">**rejected**.</span> 
 
-<span style="color:red;"> Good Description: </span> The red chair next to the desk have been replaced with a trash can.
-<span style="color:green;"> Bad Description: </span> A chair have been replaced with something. (which chair?, what is it replaced with?)
+<span style="color:red;"> Good Description: </span> The red chair next to the desk has been replaced with a trash can.
+<span style="color:green;"> Bad Description: </span> A chair has been replaced with something. (which chair?, what is it replaced with?)
 
 <span style="color:brown;">- Each description should replace different objects from the scene. </span>
 
