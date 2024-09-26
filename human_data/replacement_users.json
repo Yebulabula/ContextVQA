@@ -1,0 +1,1492 @@
+{
+  "CQA_C3VG7RDF5W": {
+    "changes": [
+      "The black chair at the head of the table has been replaced with the gray chair with wooden arms.",
+      "The trashcan by the door has been replaced with the backpack from the chair at the table.",
+      "The wall of bookshelves has been replaced with a whiteboard.",
+      "The whiteboard on the wall opposite the bookshelves has been replaced with a picture and a window.",
+      "The gray and brown chair on the wall with the window and picture has been replaced with the black chair from the table. "
+    ],
+    "scene_id": "scene0403_00"
+  },
+  "CQA_R6B6U0ZQ70": {
+    "changes": [
+      "Replace the books on the nightstand next to the lamp with a rubik's cube.",
+      "Replace the door to the closet with a curtain of pink and purple beads.",
+      "Replace the clothing on the corner of the bed with a black cat.",
+      "Replace the pillow next to the storage organizer with a stuffed animal.",
+      "Replace the leftmost window with a posterboard full of pictures of cats."
+    ],
+    "scene_id": "scene0286_00"
+  },
+  "CQA_71WSQN61U6": {
+    "changes": [
+      "The desk next to the shelf has been replaced by the wardrobe cabinet.",
+      "The window between the two shelves has been replaced by the door ",
+      "The bookshelf next to the desk has been replaced by the bed next to the wardrobe cabinet ",
+      "The office chair has been replaced by the trash can next to the recycling bin",
+      "The jacket on the bed has been replaced by the telephone next to the shelf. "
+    ],
+    "scene_id": "scene0468_00"
+  },
+  "CQA_BW8KCIZLVB": {
+    "changes": [
+      "The mirror on the wall next to the bookshelf is replaced with a poster. ",
+      "The picture in the middle of the two other pictures is replaced with a small plant.",
+      "The wardrobe closet to the right of the bed is replaced with drawers. ",
+      "The couch  under the bed is replaced with a desk.",
+      "The bookshelf under the bed is replaced by a wall-mounted lamp."
+    ],
+    "scene_id": "scene0224_00"
+  },
+  "CQA_4MC1M6NWS6": {
+    "changes": [
+      "The whiteboard along the wall has been replaced by a bookshelf.",
+      "The couch near the trash can has been replaced by a recliner.",
+      "The coffee table has been replaced by a padded ottoman.",
+      "The trash can has been replaced by a green potted plant.",
+      "The end table has been replaced by a tall metal lamp."
+    ],
+    "scene_id": "scene0036_00"
+  },
+  "CQA_R5YF29L00C": {
+    "changes": [
+      "The leftmost food container ontop of the kitchen cabinets has been replaced with a coffee maker.",
+      "The trashcan on the leftmost side of the kitchen next to the refigerator has been replaced with a kitchen stool.",
+      "The microwave on the leftside of the kitchen above the two trashcans has been replaced with a toaster.",
+      "The cup on the rightside of the kitchen above the kitchen cabinets has been replaced with a plate.",
+      "The cabinet of the rightside of the kitchen below the coffee maker has been replaced with drawers."
+    ],
+    "scene_id": "scene0486_00"
+  },
+  "CQA_7QCMKMLAGG": {
+    "changes": [
+      "The white curtain on the window has been replaced with green blinds.",
+      "The grey pillow on the armchair has been replaced with a brown fluffy teddy bear.",
+      "The white shelf on the floor next to the armchair has been replaced with a brown wooden chest.",
+      "The orange ball has been replaced with a small green toy box.",
+      "The picture on the wall with a black frame has been replaced with a kid's cartoon poster."
+    ],
+    "scene_id": "scene0633_00"
+  },
+  "CQA_TUAE352HT2": {
+    "changes": [
+      "Then lamp on the end table in between the sofa chairs can be replaced with a plant.",
+      "the coffee table next to the curtain and banner by the window can be replaces with the tv stand ",
+      "the clock  room can replace the picture next to the tv stand. The solo picture above the couch",
+      "the ottoman closes to the door can replace the table in the center of the room ",
+      "one of the two sofa chairs by the wall with a lot of pictures can be  replaced with the recliner chair"
+    ],
+    "scene_id": "scene0608_00"
+  },
+  "CQA_VPWJY9Y5RV": {
+    "changes": [
+      "the blue couch has been replaced with the short round ottoman",
+      "the tv has been replaced by the students backpack on the coffee table\n",
+      "The heavy blue reclining chair was replaced with the smaller blue rocking chair\n",
+      "The second reclining chair has been replaced with the kids gaming chair",
+      "The backpack has been replaced by a fluffy brown pillow"
+    ],
+    "scene_id": "scene0668_00"
+  },
+  "CQA_SCXEJPRTTV": {
+    "changes": [
+      "The white board to the right of the chairs could be replaced with a  window.",
+      "The whiteboard in the front could be replaced with a projector",
+      "The table up front could be replaced with a desk or podium",
+      "The chair up front could also be replaced with a podium ",
+      "The backpack could be replaced with a briefcase/something more professional looking"
+    ],
+    "scene_id": "scene0566_00"
+  },
+  "CQA_E7DKVQOT6D": {
+    "changes": [
+      "The picture on the wall with the clock has been replaced with three flat screen monitors. ",
+      "The cabinet the the right of the window has been replaced with floor to ceiling open shelving.",
+      "The four office chairs along the wall with the picture and the clock have been replaced with chairs that do not have wheels but have four legs.",
+      "The rectangular table in the center of the room has been replaced with a an oval table with similar dimensions.",
+      "Eight of the office chairs near the projector screen have been replaced with a tray for white board markers placed on the cabinet behind the chairs."
+    ],
+    "scene_id": "scene0140_00"
+  },
+  "CQA_MVE5EWPJ0C": {
+    "changes": [
+      "replace picture with decoration thats on the wall by the mirror",
+      "replace the book on the back of the toilet with towel",
+      "move the trash can to other side of toilet away from the sink",
+      "move the hamper to the left wall for more room",
+      "replace the light fixture by the mirror for better lighting"
+    ],
+    "scene_id": "scene0080_00"
+  },
+  "CQA_PW8M878VHQ": {
+    "changes": [
+      "Half of the desks could be moved to the other wall so that there is room for storage.",
+      "The books, tube, quadcopter and tube could be put on the bookshelf to make it neater.",
+      "The desk beneath the window could be replaced with the two chairs to create a seating area.",
+      "The monitors could be mounted on the walls to give more desk space requiring fewer desks.",
+      "The bookshelf could be exchanged with the whiteboard, which could be hung behind the computer monitors, allowing for storage of clothing and backpacks."
+    ],
+    "scene_id": "scene0630_00"
+  },
+  "CQA_WQPCY2Y03D": {
+    "changes": [
+      "Replace the kitchen cabinet in between the stove and refrigerator with a trash can.",
+      "Replace the top kitchen cabinet that is in between the stove and doorframe with a microwave. ",
+      "Replace the kitchen cabinets above the refrigerator with a television. ",
+      "Replace the kitchen cabinet below the sink with a dishwasher. ",
+      "replace the bottom kitchen cabinet that is between the stove and doorframe with a steel trash can. "
+    ],
+    "scene_id": "scene0573_00"
+  },
+  "CQA_8A9A9R84AD": {
+    "changes": [
+      "The dry erase whiteboard has been replaced with a print of modern artwork.",
+      "The black tv on the cabinet has been replaced with a fish tank.",
+      "The brown tv cabinet has been replaced with a record player cabinet.",
+      "The clock in the bedroom has been replaced with a wooden shelf.",
+      "The plants have all been replaced with red and purple lava lamps."
+    ],
+    "scene_id": "scene0345_00"
+  },
+  "CQA_8RIETRSHH4": {
+    "changes": [
+      "The blue armchair in the corner of the room has been replaced with a cozy rocking chair, adding a comfortable spot for relaxation.",
+      "The tall potted plant next to the window has been replaced with a decorative floor lamp, enhancing the lighting and ambiance of the space.\n\n\n",
+      "The glass coffee table in front of the couch has been replaced with a vintage trunk, providing additional storage and a unique aesthetic.",
+      "The cabinet against the wall has been replaced with a stylish bar cart, creating an inviting area for drinks and social gatherings.",
+      "The trash can located beside the door has been replaced with a sleek umbrella stand, offering a practical solution for wet umbrellas during rainy days."
+    ],
+    "scene_id": "scene0152_00"
+  },
+  "CQA_BGMJ92ICHJ": {
+    "changes": [
+      "The pink pillow on the bed can be replaced with a long body pillow to take up the bed.",
+      "The clothes on the floor can be replaced with the laundry basket.",
+      "The window above the bed can be replaced with a mirrow.",
+      "The bookshelf next to the dresser can be replaced with a chair.",
+      "The laptop on the desk can be replaced with a monitor."
+    ],
+    "scene_id": "scene0051_00"
+  },
+  "CQA_MN6C1FPBHP": {
+    "changes": [
+      "The nightstand between the beds can be replaced with the mini fridge",
+      "the nightstand lamp between the beds has been replaced with the desk lamp near the picture",
+      "the armchair near the mini fridge has been replaced with the office chair in front of the desk",
+      "the tv on the tv stand has been replaced with the picture above the desk",
+      "the towel at the end of the bed has been replaced with the purse"
+    ],
+    "scene_id": "scene0137_00"
+  },
+  "CQA_98Y7TJ8K3J": {
+    "changes": [
+      "The microwave on the table has been replaced by a lamp.",
+      "The armchair between the corner table and the refrigerator has been replaced with a trash can.",
+      "The box on top of the refrigerator is replaced with a coffee maker.",
+      "The two trash cans below the window have been replaced by an armchair.",
+      "The table between the armchairs and in front of the couch is replaced by a kitchen counter."
+    ],
+    "scene_id": "scene0487_00"
+  },
+  "CQA_HREBI9C2NA": {
+    "changes": [
+      "The vaccuum cleaner next to the fireplace has been replaced with a blue chair. ",
+      "The blue chair in front of the fireplace has been replaced with a cream-colored armchair.",
+      "The chair sitting at the table in the back corner has been replaced with a wooden chair. ",
+      "The trash can on the left-hand side has been replaced with a grey chair. ",
+      "The picture on the wall closes to both tables has been replaced with a smaller picture behind the armchairs. "
+    ],
+    "scene_id": "scene0616_00"
+  },
+  "CQA_BULHTIYK3W": {
+    "changes": [
+      "The shelf next to the door has been replaced with a potted red flower.",
+      "The jacket on the coffee table has been replaced with a magazine.",
+      "The couch by the window has been replaced with a brown leather massage chair.",
+      "The radiator next to the couch has been replaced by a large fish tank containing a variety of colorful fish.",
+      "The shelf by the radiator has been replaced by a flat screen TV."
+    ],
+    "scene_id": "scene0514_00"
+  },
+  "CQA_IKK52F1QPC": {
+    "changes": [
+      "the shelf in the corner can be replaced by a bean bag chair",
+      "the coffee table can be replaced by a tv set",
+      "the jacket on the table can be replaced by a flower pot",
+      "the closet doors can be replaced by a privacy curtain",
+      "the table in the corner can be replaced by a counter top"
+    ],
+    "scene_id": "scene0162_00"
+  },
+  "CQA_T07V3BJTM1": {
+    "changes": [
+      "The water bottle on the shelf was moved to the desk in front of it.",
+      "The bag was placed on the chair in front of the window.",
+      "The box on top of the other box on the desk was move onto the bookshelf.",
+      "The tube was placed on top of the desk in front of the window",
+      "The chair in front of the window was moved to the desk close to the door."
+    ],
+    "scene_id": "scene0098_00"
+  },
+  "CQA_FENWHDNKWL": {
+    "changes": [
+      "The window facing the door has been replaced with a mirror",
+      "The paper towel dispenser has been replaced with a hand air dryer",
+      "The shower curtain has been replaced with a swinging glass door",
+      "The trash can in front of the radiator is replaced with a small table ",
+      "The radiator in front of the window is replaced with a small cabinet"
+    ],
+    "scene_id": "scene0550_00"
+  },
+  "CQA_06XTV0ONRS": {
+    "changes": [
+      "You can replace a picture with another mirror for more viewing pleasure.",
+      "You can replace the couch with an armchair to create more space.",
+      "You can replace the wardrobe closet with a dresser to shrink the height of the clothes storage.",
+      "You can replace the bookshelf with a guitar to center a different hobby.",
+      "You can also replace the couch with a guitar to have more space for playing."
+    ],
+    "scene_id": "scene0224_00"
+  },
+  "CQA_6VYDI1BFKX": {
+    "changes": [
+      "The 3 different boxes on the desk have been replaced with a table lamp.",
+      "The coffee maker next to the sink has been replaced with a blender. ",
+      "The microwave between the two coffee makers have been replaced with a toaster. ",
+      "The trash can below the light switch has been replaced with a recycler bin. ",
+      "The 2 cups and 1 plate have been replaced with 3 bowls. "
+    ],
+    "scene_id": "scene0498_00"
+  },
+  "CQA_EBHDLR44C6": {
+    "changes": [
+      "I would put the printer onto  the mailbox that is next to the door frame.",
+      "The fan is in the way and  should be moved closer to the bulletin board in front of the stacked mailboxes.",
+      "The table in the corner can be moved onto the adjacent wall under the bulletin board.",
+      "The paper cutter can be placed onto one of the shelves in the cabinet.",
+      "The backpack on the couch can be moved onto the top of the mailbox."
+    ],
+    "scene_id": "scene0593_00"
+  },
+  "CQA_2GWWDC5WSM": {
+    "changes": [
+      "The ottoman on the right side of the bed has been replaced by the dresser",
+      "The nightstand on the right side of the bed has been replaced by the ottoman",
+      "The book on the left nightstand has been replaced by the pillow",
+      "The blanket on top of the couch has been replaced by the suitcase in the closet",
+      "The curtain has been replaced by the blanket on the couch"
+    ],
+    "scene_id": "scene0557_00"
+  },
+  "CQA_AV0XDMX5GD": {
+    "changes": [
+      "The backpack next to the trash can in the corner of the room has been replaced with a museum vitrine with a clear glass bell.",
+      "The chair farthest from the door, which is also farthest from the trash can in the opposite corner, has been replaced with a white water cooler with a blue bottle on top.",
+      "The blue door next to the trash can and near the two chairs on the corner of the table nearest to the backpack has been replaced with a beaded curtain made of brown beads. ",
+      "The trashcan in between the backpack and the door has been replaced with a black, three-drawer filing cabinet.",
+      "The square table in between the chairs has been replaced with a large square rug which has a print of a city layout on it, such as children might use to play with cars."
+    ],
+    "scene_id": "scene0156_00"
+  },
+  "CQA_SR5YR8FRRT": {
+    "changes": [
+      "The coffee table next to the couch has been replaced with a yellow chair.",
+      "The table with the person on it has been replaced with a coffee table.",
+      "The table with the whiteboard has been replaced with the couch.",
+      "The corner with the computer towers have been replaced with the two yellow chairs.",
+      "The couch has been replaced with the table and whiteboard."
+    ],
+    "scene_id": "scene0626_00"
+  },
+  "CQA_YC1XO8TWHZ": {
+    "changes": [
+      "The toilet paper next to the toilet has been replaced with one towel, which was on the left side of the shower.",
+      "The towel picture on the wall with nothing else on it has been replaced with curtain rod with the shower curtain on it.",
+      "The light switch near the door has been replaced by soap dish that was above the bathtub.",
+      "The white towel hanging directly above the toilet is replaced by the towel hanging over the bathtub.",
+      "The bar above the bathtub is replaced with the vent on the wall above the toilet."
+    ],
+    "scene_id": "scene0410_00"
+  },
+  "CQA_8JGQU57G1C": {
+    "changes": [
+      "Take the file cabinet by the white box on the ground between the two tables and place in front of the door",
+      "take the cabinet by the door and place it on the table with nothing on top of it by the divider near the windows",
+      "Take the two trash cans by the door and put one under each window on the wall that has the door on it",
+      "take all 5 monitors in the room and place them on top of the empty table by the divider",
+      "Take the office chair pointing towards the door and the chair beside it and put both in front of the door to block it from being opened"
+    ],
+    "scene_id": "scene0142_00"
+  },
+  "CQA_QJGHYQGUC4": {
+    "changes": [
+      "The microwave next to the file cabinet has been moved to the table next to the trash can",
+      "the recycle bin next to the trash can has been replaced by the file cabinet",
+      "the office chairs next to the cup has been moved next to the table by the other office chairs",
+      "the picture above the chair has been moved above the microwave",
+      "the cup by the stand has been moved to the table by the trash can"
+    ],
+    "scene_id": "scene0370_00"
+  },
+  "CQA_XYW2K0GYLA": {
+    "changes": [
+      "The file cabinet  under the desk was replaced with the small cabinet by the tall cabinet by the door.",
+      "The telephone on the desk was replaced with the cup on the window.",
+      "The brown chair by the window was replaced with the desk chair by the desk with the monitors.",
+      "the tall cabinet by the door was replaced with the cabinet that is behind a black desk chair.",
+      "The plant behind the desk was replaced with the trashcan under the desk."
+    ],
+    "scene_id": "scene0114_00"
+  },
+  "CQA_S9IX24ZL7P": {
+    "changes": [
+      "The white board to the right of the chairs could be replaced with a  window.",
+      "The whiteboard in the front could be replaced with a projector",
+      "The table up front could be replaced with a desk or podium",
+      "The chair up front could also be replaced with a podium ",
+      "The backpack could be replaced with a briefcase/something more professional looking"
+    ],
+    "scene_id": "scene0566_00"
+  },
+  "CQA_PANV8TKXM5": {
+    "changes": [
+      "The table has been replaced with a new light oak computer desk with drawers on the right, including a file drawer at the bottom.",
+      "The cabinet below the table has been replaced with a roomy light oak padded desk chair with comfortable armrests.\n",
+      "The leaf canopy has been replaced with a sleek standing lamp that sports a thin light oak base and a narrow upsidedown teardrop-shaped, cream colored shade.",
+      "The cabinet with the black sploch has been replaced with a new light oak closet cabinet with no stains and full length mirrors on the inside of the doors.",
+      "The wall mirror has been replaced with an inspirational calendar with stunning landscape photography."
+    ],
+    "scene_id": "scene0577_00"
+  },
+  "CQA_G4Z6W1SEW2": {
+    "changes": [
+      "The brown chair closest to the desk is replaced with a small three drawer  black file cabinet.",
+      "The brown chair furthest from the desk is replaced with a brown trash can. ",
+      "The black rug on the floor next to the black chair is replaced with a blue rug.",
+      "The one long desk is replaced with four individual desks. ",
+      "The monitor at the end of the desk closest to the wall is replaced with a tv."
+    ],
+    "scene_id": "scene0258_00"
+  },
+  "CQA_P5SFL88T7P": {
+    "changes": [
+      "The wooden table in the center of the room has been replaced with a whiteboard.",
+      "The whiteboard on the wall behind the office chairs has been replaced with the window.",
+      "The red office chair in the corner of the room next to the window has been replaced with a trash can.",
+      "The window between the red chair and black chair in the corners has been replaced with the door.",
+      "The black trash can has been replaced with the black corner office chair."
+    ],
+    "scene_id": "scene0402_00"
+  },
+  "CQA_I2KFM7TOZJ": {
+    "changes": [
+      "The dark curtains on the window behind the table and chair have been replaced by brown wooden blinds.",
+      "The white dresser by the window has been replaced by a five-shelf cherrywood bookcase.",
+      "The white plastic storage bin by the dresser has been replaced by a large green potted ficus plant.",
+      "The wooden tiered shelf by the bed has been replaced with a black iron filigreed plantstand.",
+      "The small table and brown wooden chair by the window have been replaced by a purple velvet chaise longue."
+    ],
+    "scene_id": "scene0282_00"
+  },
+  "CQA_N6VX4FJH9N": {
+    "changes": [
+      "The bicycle next to the TV cabinet has been replaced with a table for holding a flower pot.",
+      "The table next to the cabinet underneath the clock has been replaced with a brown dresser.",
+      "The trash can next to the entrance door frame has been replaced with a shoe rack.",
+      "The pillow on the bed has been replaced with a headboard.",
+      "The coffee table in front of the couch has been replaced with two ottomans."
+    ],
+    "scene_id": "scene0000_00"
+  },
+  "CQA_PNMSQYQ6F5": {
+    "changes": [
+      "The whiteboard on the wall has been replaced by a painting.",
+      "The trash can near the whiteboard has been replaced with a lamp.",
+      "The office chair in the top left corner has been replaced with a green plant.",
+      "The office chair near the bottom left corner has been replaced with a side table.",
+      "The window has been replaced with a big white projector screen"
+    ],
+    "scene_id": "scene0402_00"
+  },
+  "CQA_TZNM0DZRYQ": {
+    "changes": [
+      "The brown box under the white table has been replaced with a gray cat litter tray.",
+      "The gray trash can underneath the white sink has been replaced by a red wicker basket full of dirty gray dishrags. ",
+      "The orange box of dryer sheets on top of the washing machine has been replaced with a blue bottle of fabric softener.",
+      "The shelf above the washing machines has been replaced with a black pegboard. ",
+      "The clothes against the corner on top of the table has been replaced by a pile of green and white striped bedsheets. "
+    ],
+    "scene_id": "scene0139_00"
+  },
+  "CQA_IS6HRR74GO": {
+    "changes": [
+      "The grey printer on the counter will be replaced with a black coffee maker.\n",
+      "The tupperware with the red lid next to the water cooler is replaced with a blue coffee mug.",
+      "The bowl next to the tupperware will be replaced with a bottle of hand soap.",
+      "The trash can under the window will be replaced with a potted plant.",
+      "The folded table against the wall will be replaced with hanging artwork."
+    ],
+    "scene_id": "scene0197_00"
+  },
+  "CQA_J5OOQKZ52H": {
+    "changes": [
+      "The white shelf in the middle of the wall underneath the pictures and next to the arm chair has been replaced with an entertainment center.",
+      "The white crib has been replaced with a four-poster toddler bed.",
+      "The baby mobile has been replaced with the canopy of a four poster bed.",
+      "The diaper bin has been replaced with a garbage can.",
+      "The gray arm chair has been replaced with a recliner"
+    ],
+    "scene_id": "scene0633_00"
+  },
+  "CQA_U1RH5HACYJ": {
+    "changes": [
+      "The black backpack on the couch has been replaced with a black book.",
+      "The black and white picture on the wall to the right of the whiteboard  above the table has been replaced with a red picture.",
+      "The telephone on the cabinet has been replaced with a book with a white cover.",
+      "The red pillow on the couch has been replaced with a book with a black cover.",
+      "The black chair next to the white table has been replaced with a gray chair."
+    ],
+    "scene_id": "scene0352_00"
+  },
+  "CQA_IO9EL43ORK": {
+    "changes": [
+      "The cabinets above counter has been replaced with wooden dark stained shelves.",
+      "The bulletin board has been replaced with a floral hanging wall picture.",
+      "The water cooler has been replaced with a silver plated ice maker.",
+      "The card by the bulletin board has been replaced with a black  3 tier bookshelf.",
+      "The picture has been replaced with a hanging bulletin board."
+    ],
+    "scene_id": "scene0704_00"
+  },
+  "CQA_64YK8WTNOV": {
+    "changes": [
+      "Replace the chair in front of the whiteboard with the chair across from blackboard",
+      "Replace blackboard on the opposite wall from the door with projector screen",
+      "Replace the whiteboard behind the chairs with the projector screen on the opposite wall",
+      "Replace the whiteboard behind the chairs with blackboard on the wall opposite the door",
+      "Replace chair in front of window with chair in front of blackboard"
+    ],
+    "scene_id": "scene0188_00"
+  },
+  "CQA_WW4IKB70DW": {
+    "changes": [
+      "The white board to the right of the chairs could be replaced with a  window.",
+      "The whiteboard in the front could be replaced with a projector",
+      "The table up front could be replaced with a desk or podium",
+      "The chair up front could also be replaced with a podium ",
+      "The backpack could be replaced with a briefcase/something more professional looking"
+    ],
+    "scene_id": "scene0566_00"
+  },
+  "CQA_DFYQ2ASX3B": {
+    "changes": [
+      "The curtain in the window across from the bed has been replaced with a set of white miniblinds",
+      "The picture hanging above the bed has been replaced by a multicolored tapestry",
+      "The suitcase under the window has been replaced with a wooden dresser.",
+      "The lights on either side of the bed have been replaced with neon decorative lights",
+      "The radiator in the corner between the bed and the wall has been replaced by a portable air conditioner. "
+    ],
+    "scene_id": "scene0397_00"
+  },
+  "CQA_G0RJK24KQJ": {
+    "changes": [
+      "The shelf is replaced with a large metal ironing board",
+      "The paper towel dispenser is replaced with a hand towel",
+      "The dryer sheets are replaced with a box of stain remover",
+      "The door frame is replaced with a large blue window",
+      "The clothes are replaced with a box of green soap"
+    ],
+    "scene_id": "scene0139_00"
+  },
+  "CQA_D0VLVQPZ32": {
+    "changes": [
+      "In the standalone duo of table and shelf move the table to the other side of the shelf\n",
+      "Move the left chair to the table that is behind it",
+      "Move the right chair to the table that is behind it",
+      "Move the step stool in front of the middle cart",
+      "Move the sign so it is placed above the multi-colored table"
+    ],
+    "scene_id": "scene0343_00"
+  },
+  "CQA_X56WMSA056": {
+    "changes": [
+      "The white board to the right of the chairs could be replaced with a  window.",
+      "The whiteboard in the front could be replaced with a projector",
+      "The table up front could be replaced with a desk or podium",
+      "The chair up front could also be replaced with a podium ",
+      "The backpack could be replaced with a briefcase/something more professional looking"
+    ],
+    "scene_id": "scene0566_00"
+  },
+  "CQA_3IFB4UUV7K": {
+    "changes": [
+      "The beige refrigerator between the stove and the white refrigerator has been replaced with a stainless steel freezer.",
+      "The white microwave above the stove has been replaced with a yellow range hood.",
+      "The kitchen cabinet above the beige refrigerator has been replaced with blue shelves.",
+      "The steel sink in the white kitchen counter has been replaced with a white porcelain sink.",
+      "The white formica kitchen counter near the sink has been replaced with a gray marble countertop."
+    ],
+    "scene_id": "scene0488_00"
+  },
+  "CQA_8K1H2SGU43": {
+    "changes": [
+      "Replace the swivel chair near the table with a potted plant.",
+      "Replace the big window on the wall with a Rembrandt painting.",
+      "The radiator behind the mattress has been replaced with a mini fridge. ",
+      "The wooden desk has been replaced with a white baby's crib.",
+      "The mattress by the door has been replaced with a grey leather recliner. "
+    ],
+    "scene_id": "scene0382_00"
+  },
+  "CQA_WB0S8WI2PD": {
+    "changes": [
+      "The large, red pillow on the bed has been replaced with a blue body pillow.",
+      "The two, queen sized beds can be replaced by a California King water bed.",
+      "The white curtains on the window can be replaced with a set of wooden vertical blinds.",
+      "The wooden nightstand between the two beds can be replaced by a brand new Frigidaire mini-fridge.",
+      "The brown carpet on the floor can be replaced by bamboo wooden flooring from Lowes."
+    ],
+    "scene_id": "scene0085_00"
+  },
+  "CQA_9HUDKHBIZN": {
+    "changes": [
+      "The door could be closed to flush with the doorframe.",
+      "The trashcan could be moved under the desk with a file cabinet",
+      "The office chair and person can replace the chair at the other desk with the file cabinet",
+      "The whiteboard could be moved to the opposite wall over the two desks.",
+      "The shelf near the doorframe could be moved to the wall with two desks"
+    ],
+    "scene_id": "scene0238_00"
+  },
+  "CQA_OIGGLNTDOC": {
+    "changes": [
+      "The plant on the round white table has been replaced by a picture. ",
+      "The black backpack on the grey couch has been replaced by the white telephone. ",
+      "The wood-framed whiteboard next to the door has been replaced by a red, blue and beige striped picture. ",
+      "The box in the middle of the top shelf behind the couch has been replaced by the orange pillow from the couch. ",
+      "The grey cabinet next to the black and white table has been replaced by the blue trash can."
+    ],
+    "scene_id": "scene0352_00"
+  },
+  "CQA_KKFYDWBQRT": {
+    "changes": [
+      "The door to the office has been replaced with a large, double window.",
+      "The whiteboard has been replaced with a heavy wood door to the hallway.",
+      "The backpack has been replaced with a brown leather laptop messenger bag.",
+      "The white rectangle table has been replaced with two round, wood tables.",
+      "The purple office chair in front of the door has been replaced with a podium and computer."
+    ],
+    "scene_id": "scene0388_00"
+  },
+  "CQA_EL49NT7JHY": {
+    "changes": [
+      "The lamp on the end table has been replaced with a vase of colorful flowers.",
+      "The 4 tan armchairs have been replaced with cream barstools.",
+      "The table in the center of the armchairs has been replaced with a black barstool table.",
+      "The couch has been replaced with a cream leather sectional.",
+      "The table between the couch and end table has been replaced with a cow print ottoman. "
+    ],
+    "scene_id": "scene0344_00"
+  },
+  "CQA_2CGXR6EEZP": {
+    "changes": [
+      "The paper towel dispenser is replaced with a state of the art water cooler.",
+      "The white board is replaced by a framed picture with an inspiring quote.",
+      "The brown wooden chairs are replaced with black, swivel office chairs.",
+      "The television is replaced with a drawdown screen that can be used with a projector.",
+      "The brown wooden table is replaced with a fully glass table."
+    ],
+    "scene_id": "scene0599_00"
+  },
+  "CQA_4SAHL5KY6V": {
+    "changes": [
+      "replace picture with decoration thats on the wall by the mirror",
+      "replace the book on the back of the toilet with towel",
+      "move the trash can to other side of toilet away from the sink",
+      "move the hamper to the left wall for more room",
+      "replace the light fixture by the mirror for better lighting"
+    ],
+    "scene_id": "scene0080_00"
+  },
+  "CQA_MP1DQ1QE1T": {
+    "changes": [
+      "replace the metronome with a digital time device that can keep time over the long run.",
+      "replace the book on the couch with a pillow to make the couch more comfortable.",
+      "replace the ball with a rug to provide a softer feel for feet on the floor.",
+      "replace the hoverboard with a bicycle that is much safer for the user.",
+      "replace the book with a stack of cook books for the kitchen."
+    ],
+    "scene_id": "scene0024_00"
+  },
+  "CQA_P3PBPT06OJ": {
+    "changes": [
+      "The metal looking trash can next to the toilet has been replaced with a wicker basket.",
+      "The two towels left of the sink has been replaced with a pink skincare box.",
+      "The towel on the floor has been replaced with a plush area rug.",
+      "The picture on top of the toilet has been replaced with a Cinnamoroll painting.",
+      "The bar inside the shower has been replaced with a built-in shower shelves."
+    ],
+    "scene_id": "scene0676_00"
+  },
+  "CQA_EI65387O20": {
+    "changes": [
+      "The toilet can be replaced with a bidet that has heated seat and water.",
+      "The sunken bathtub can be replaced with a modern free standing bathtub.",
+      "The vanity and double sink can be replaced with a white cabinet bottom and one large channel sink.",
+      "The mirror on the wall should be replaced with a mirrored medicine chest for more space for storage.",
+      "Take the hanging towel rods and replace them with a 4 rung heated Towel station."
+    ],
+    "scene_id": "scene0034_00"
+  },
+  "CQA_3S7XPOYVRS": {
+    "changes": [
+      "The shower curtain has been replaced by the towel on the bathtub.",
+      "The towel on the wall has been replaced by the mirror.",
+      "The sink  by the bathroom vanity has been replaced by the bathtub.",
+      "The toilet has been replaced by the trash can underneath the sink. ",
+      "The soap dish on the sink has been replaced by the toilet paper."
+    ],
+    "scene_id": "scene0449_00"
+  },
+  "CQA_QUGMUTL212": {
+    "changes": [
+      "Replace the cup next to the dish rack with the paper towel roll.",
+      "Replace the backpack with a door mat on the floor",
+      "Replace the printer with a oven, stovetop, and range to cook",
+      "Should replace the recycling bin with a normal trash can",
+      "Replace the coffee maker on the counter with a toaster"
+    ],
+    "scene_id": "scene0198_00"
+  },
+  "CQA_95EE77G2YC": {
+    "changes": [
+      "The two red chairs and coffee table in the middle have been replaced by a yellow dining room table",
+      "The coffee table and two chairs by the window have been replaced with a white sofa.",
+      "The red chair by the coffee table has been replaced with a red bookshelf.",
+      "The red chair by the coffee table has been placed with a blue shoe",
+      "The window by the red chair has been replaced by a mirror."
+    ],
+    "scene_id": "scene0594_00"
+  },
+  "CQA_K10AE8LTHN": {
+    "changes": [
+      "black cart next to the windows replaced with a faux tropical plant",
+      "the white cart next to the black cart replaced with a small desk",
+      "The recycling bin next to the door replaced with a trash can.",
+      "the green chair next to the brown chair and box replaced with a fan",
+      "the cabinets across from the windows replaced with a bookshelf"
+    ],
+    "scene_id": "scene0565_00"
+  },
+  "CQA_2WQZJ627NR": {
+    "changes": [
+      "The projector cart has been moved between the two tables in front of the blackboard.",
+      "The chairs on the window  side have been replaced with short cabinets for storage.",
+      "The podium has replaced one of the chairs in front of the blackboard.",
+      "The two chairs in the center of the room have been replaced with a round table.",
+      "The tall cabinets on the left hand side have been replaced with lockers."
+    ],
+    "scene_id": "scene0185_00"
+  },
+  "CQA_36AS74J7BH": {
+    "changes": [
+      "Replace the large brown round table with a coffee table",
+      "Replace the low coffee table between the two red chairs  with a chair",
+      "Replace the blue trash can  that is next to the wall with a chair",
+      "Replace the chair near the coffee table closest to the wall with a trash can",
+      "Replace the chair near the small sound table in front of the window on the same wall as the trash can with a trash can"
+    ],
+    "scene_id": "scene0387_00"
+  },
+  "CQA_OVL8RR4N25": {
+    "changes": [
+      "The decoration on the wall next to the bed with white sheets has been replaced with a clown picutre.",
+      "The fan next to the bed  has been replaced with a dog statue.",
+      "The plants on top of the desk have been replaced with POP figurines.",
+      "The shelf next to the bed with the purple sheets has been replaced with a much needed trash can.",
+      "The chair in front of the desk has been replaced with a blue yoga ball."
+    ],
+    "scene_id": "scene0648_00"
+  },
+  "CQA_KN6PY2HTO7": {
+    "changes": [
+      "The black office chair next to the cabinet and books can be replaced by the blue office chair in front of the table.",
+      "The trash can next to the smaller table can be replaced by the black office chair next to the cabinet and books. ",
+      "The yellow cabinet under the picture can be replaced by the beige cabinet that is  next to the box and cabinet. ",
+      "The black office chair in between the yellow cabinet and case can be replaced by the black office chair next to the cabinet and books. ",
+      "The tray that is on the table can be replaced by the radiator that is on the same table. "
+    ],
+    "scene_id": "scene0525_00"
+  },
+  "CQA_96L5DU21UP": {
+    "changes": [
+      "The rectangular table against the wall has been replaced with a smaller square table.",
+      "One of the chairs against the wall has been replaced with a water cooler.",
+      "One of the chairs against the wall has been replaced with a filing cabinet.",
+      "The backpack has been replaced with a brown leather brief case.",
+      "The box has been replaced with a printer and a cabinet for printing supplies."
+    ],
+    "scene_id": "scene0455_00"
+  },
+  "CQA_KJ2FL4WBQY": {
+    "changes": [
+      "The picture above the bed has been replaced with a 12-month calendar.",
+      "The book on the left night stand has been replaced with a container of hand lotion.",
+      "The lamp on the right night stand has been replaced with a laptop.",
+      "The armchair in front of the window has been replaced with a floor lamp.",
+      "The storage organizer in the corner near the desk has been replaced with a mini-fridge."
+    ],
+    "scene_id": "scene0576_00"
+  },
+  "CQA_7F1H0FABN6": {
+    "changes": [
+      "The bathtub has been replaced with a walk-in shower that has a sliding glass door",
+      "the vent has been replaced with a piece of art.",
+      "The towel rack closest to the shower has been replaced with a shelf",
+      "The toilet paper has been replaced with a sink and vanity.",
+      "The doorframe has been replaced with a sink and vanity."
+    ],
+    "scene_id": "scene0410_00"
+  },
+  "CQA_55YVXU7I44": {
+    "changes": [
+      "The black chair next to the door has been replaced with a red beanbag.",
+      "The blackboard closest to the door has been replaced with a large flat-screen TV.",
+      "The table in the center of the room farthest from any walls has been replaced with a large trash can.",
+      "The door has been replaced with a curtain made out of opaque fabric.",
+      "The white chair sitting along the wall in line with the door not facing a table has been replaced with a stepstool."
+    ],
+    "scene_id": "scene0621_00"
+  },
+  "CQA_WNFL6UGMV4": {
+    "changes": [
+      "The Towels above the toilet could be replaced with plants and decorations.",
+      "The shower curtain should be replaced with sliding glass doors. ",
+      "The toilet Paper on top of the toilet will be replaced with a decorative basket to hold the etxra toilet paper in.",
+      "The towel on the door will be removed and placed on the towel bar that will be contained on the new sliding glass doors.",
+      "The shelf in the right corner of the tub will be removed and replaced with a recessed shelf inside of tub walls."
+    ],
+    "scene_id": "scene0029_00"
+  },
+  "CQA_LBU9XEO458": {
+    "changes": [
+      "The ironing board next to the hamper has been replaced with nothing.",
+      "The baskets all need to go and be in a more organized state.",
+      "The bag and shoes also need to be replaced or put together for more room.",
+      "The hampers can be replaced with nothing there for more room and space.",
+      "Cabinet can be replaced for storage underneath the kitchen for more head room and visual space."
+    ],
+    "scene_id": "scene0522_00"
+  },
+  "CQA_YX2SHDT5IC": {
+    "changes": [
+      "The radiator has been replaced by a big stuffed animal.",
+      "The picture on the wall next to the shelves has been replaced by a clock.",
+      "The bookshelf next to the blue chairs has been replaced by a cabinet.",
+      "The red couch has been replaced by a blue bed.",
+      "The green table has been replaced by a white fan."
+    ],
+    "scene_id": "scene0568_00"
+  },
+  "CQA_M2P0TOPYSB": {
+    "changes": [
+      "the toilet paper next to the toilet has been replaced with the soap dispenser next to the sink",
+      "the scale next to the door has been replaced with the plunger next to the toilet",
+      "the cabinet above the toilet has been replaced with the mirror above the sink",
+      "the shower curtain on the shower curtain rod has been replaced with the towel on the shower curtain rod",
+      "the door has been replaced with the sink on the bathroom cabinet"
+    ],
+    "scene_id": "scene0153_00"
+  },
+  "CQA_D6M5EVKTLA": {
+    "changes": [
+      "The blue backpack next to the chair has been replaced with a fire extinguisher.",
+      "The black chair next to the blue backpack has been replaced with a white chair.",
+      "The fire extinguisher next to the red chair has been replaced with a blue backpack.",
+      "The blue door next to the blue backpack has been replaced with a black door.",
+      "The white chair next to the red chair has been replaced with the black chair."
+    ],
+    "scene_id": "scene0242_00"
+  },
+  "CQA_I53KD4RH6G": {
+    "changes": [
+      "The picture on the wall has been replaced with a big mirror.",
+      "The armchair next to the curtains has been replaced by a big table. ",
+      "The telephone on the nightstand has been replaced by a clock with an alarm.",
+      "The lamp on top of the desk has been replaced by a telephone.",
+      "The TV stand next to the desk has been replaced by a cabinet."
+    ],
+    "scene_id": "scene0107_00"
+  },
+  "CQA_WRJHHSLJEJ": {
+    "changes": [
+      "The sheer, white curtains on the window have been replaced with solid, black curtains. ",
+      "The four white pillows  on the bed nearest the window have been replaced with two beige pillows. ",
+      "The black, canvas backpack next to the sofa chair has been replaced with a brown leather bag. ",
+      "The black mini fridge next to the cabinet with the tv on it  has been replaced with a stainless steel mini fridge. ",
+      "The brown, leather shoes that are on the floor between the beds has been replaced with black and white tennis shoes. "
+    ],
+    "scene_id": "scene0416_00"
+  },
+  "CQA_351EK7I824": {
+    "changes": [
+      "The trashcan beside the toilet has been replaced with the box near the towel",
+      "The picture near the cabinet has been replaced with the towel near the shelf.",
+      "The shelf has been replaced with the cabinet near the sink.",
+      "The toilet paper near the toilet has been replaced with the towel in the box",
+      "The box on the shelf has been replaced with trashcan near the shower walls"
+    ],
+    "scene_id": "scene0429_00"
+  },
+  "CQA_GDCSNPKLGQ": {
+    "changes": [
+      "The tv on the wall has been replaced with a landscape picture.",
+      "The paper towel dispenser on the wall has been replaced with a coat hanger.",
+      "The trash can in the corner of the room has been replaced with a fake plastic tree.",
+      "The backpack on the chair has been replaced with an orange cat.",
+      "The whiteboard on the wall has been replaced with a large mirror."
+    ],
+    "scene_id": "scene0358_00"
+  },
+  "CQA_FAYGGRSNZ5": {
+    "changes": [
+      "The window facing the door has been replaced with a mirror",
+      "The paper towel dispenser has been replaced with a hand air dryer",
+      "The shower curtain has been replaced with a swinging glass door",
+      "The trash can in front of the radiator is replaced with a small table ",
+      "The radiator in front of the window is replaced with a small cabinet"
+    ],
+    "scene_id": "scene0550_00"
+  },
+  "CQA_43UITXGC1T": {
+    "changes": [
+      "The pillow on the couch has been replaced by the pillow on the chair closest to the radiator.",
+      "The table near the chair closest to the fireplace has been replaced with the red cabinet.",
+      "The Tv stand in front of the window and behind the ottoman has been replaced by the couch.",
+      "The chair by the closet door has been replaced with the chair in front of the red cabinet. ",
+      "The table by the fireplace has been replaced with the fan. "
+    ],
+    "scene_id": "scene0002_00"
+  },
+  "CQA_X2CRUJTA6Q": {
+    "changes": [
+      "The trash can next to the paper towel dispenser has been replaced with a tall, white floor vase filled with decorative reeds, adding an elegant, natural element to the bathroom. The vase stands in the same corner, providing a stylish accent to the modern design while still maintaining the room's spacious layout.",
+      "The *bathroom vanity near the sinks* has been replaced with a *sleek black shelf* featuring multiple tiers for organization. This shelf holds neatly folded towels, decorative baskets for toiletries, and small potted plants to enhance the bathroom’s aesthetics. The open design of the shelf allows for easy access, while its black finish contrasts stylishly with the lighter tones of the bathroom, adding a modern and minimalist touch to the space. Positioned against the same wall as the vanity, it maintains functionality without overwhelming the room.",
+      "The *doorframe at the entrance* has been replaced with a *frosted glass sliding door*, adding a contemporary and space-saving element to the bathroom. The frosted glass provides privacy while allowing natural light to filter through, giving the room a brighter, more open feel. The sleek sliding mechanism ensures smooth operation and eliminates the need for a traditional swinging door, maximizing the available space. The subtle texture of the frosted glass blends well with the bathroom's modern design, adding both functionality and a sophisticated visual appeal.",
+      "One of the *bathroom mirrors above the sink* has been replaced with an *LED screen that displays real-time information* such as the weather, news headlines, and time. The screen is the same size and shape as the mirror, seamlessly fitting into the existing space, but now serves a dual purpose: it still functions as a mirror when turned off, with a sleek, reflective surface. When activated, the high-resolution display offers a modern, interactive experience, providing useful information to users without overwhelming the minimalist aesthetic of the bathroom. The slim black frame around the screen adds a touch of sophistication.",
+      "The *paper towel dispenser near the sinks* has been replaced with a *sleek, wall-mounted touchless hand dryer*. The new hand dryer is stainless steel with a streamlined, curved design that complements the modern aesthetic of the bathroom. It is motion-activated, ensuring a hygienic, hands-free experience for users. The dryer’s compact size takes up less space on the wall than the original paper towel dispenser, offering a more eco-friendly and efficient solution. Its quiet operation and fast drying technology enhance the bathroom’s functionality while maintaining a clean, uncluttered look."
+    ],
+    "scene_id": "scene0502_00"
+  },
+  "CQA_1UWKDUARUM": {
+    "changes": [
+      "replace the right trash can with a little black cabinet",
+      "replace the shower curtain below the sink with a door",
+      "replace the right paper towel dispenser with a  big mirror",
+      "replace the right soap dispenser with a bar and towel",
+      "replace the trash can between the showers with a towel"
+    ],
+    "scene_id": "scene0350_00"
+  },
+  "CQA_Y2HTNXMIZT": {
+    "changes": [
+      "The pink purse has been replaced by a desktop plant.",
+      "The towel on the floor has been replaced by a pile of dirty clothes.",
+      "The picture on the wall has been replaced by a mirror.",
+      "The trash can by the desk has been replaced by a tripod.",
+      "The suitcase by the desk has been replaced by a telescope."
+    ],
+    "scene_id": "scene0137_00"
+  },
+  "CQA_KUHPY1HGZW": {
+    "changes": [
+      "The chair right next to the desk has been replaced by the dresser.",
+      "The paper towel row has been moved to the shelf on the desk\n",
+      "The spray bottle has been moved on top of the bed",
+      "The desk has been replaced by the bed. They swap",
+      "The radiator and the door and doorframe switched place. The door is now right next to the window"
+    ],
+    "scene_id": "scene0359_00"
+  },
+  "CQA_8YRZF7R2MO": {
+    "changes": [
+      "The backpack in a corner of the room is replaced with a water cooler.",
+      "The trash can next to the door is replaced with a small table.",
+      "The large square table surrounded by chairs is replaced by a circular table.",
+      "The chairs with wheels in the room are replaced by chairs with legs.",
+      "The door is replaced with another section of the wall."
+    ],
+    "scene_id": "scene0156_00"
+  },
+  "CQA_DZKT3CZA1M": {
+    "changes": [
+      "Replace the laundry hamper with the plants on the east side.",
+      "Replace the towel with the mirror on the west side. ",
+      "Replace the plant with the swiffer on the north side.",
+      "Replace the bathroom vanity with  the door on the south side.",
+      "Replace the bucket with a plant on the south side."
+    ],
+    "scene_id": "scene0581_00"
+  },
+  "CQA_4YQNTFUJGE": {
+    "changes": [
+      "The jacket on the bathroom counter has been replaced with the spare toilet paper rolls next to the hand dryer.",
+      "The sign next to the box on the shelf next to the mirror has been replaced with the bucket in the closet.",
+      "The trash can beneath the sink near the hand dryer has been replaced with the sign.",
+      "The bottle in the shower has been replaced with the bucket.",
+      "The box on the shelf next to the mirror has been replaced with the toilet paper rolls in the closet."
+    ],
+    "scene_id": "scene0510_00"
+  },
+  "CQA_BLEBQ8EAX5": {
+    "changes": [
+      "Replace radiator with a baseboard heater room is too small for a radiator",
+      "Replace nightstand with nothing it doesn't fit in the room",
+      "Add a lamp to the dresser to make room brighter",
+      "Replace bed with a futon and move desk under the bed",
+      "Replace window with window with blinds so it's not so bright"
+    ],
+    "scene_id": "scene0157_00"
+  },
+  "CQA_H3UTTU8CVG": {
+    "changes": [
+      "The pillow on the coffee table has been replaced with a mug ",
+      "The jacket on the armchair next to the end table has been replaced with a fleece blanket",
+      "The backpack by the door near the TV has been replaced with a side table ",
+      "The soap dish on the bathroom vanity has been replaced with a toothbrush holder",
+      "The suitcase next to the TV cabinet has been replaced with a stool"
+    ],
+    "scene_id": "scene0645_00"
+  },
+  "CQA_LHCRN2L5FX": {
+    "changes": [
+      "The end table next to the chair on the right has been replaced with a small desk",
+      "The end table next to the chair on the left has been replaced with a tall clock",
+      "The chair next to the end table on the right has been replaced with a couch",
+      "The chair next to the end table on the left has been replaced with an ottoman",
+      "The table closest to the door has been replaced with a bookshelf"
+    ],
+    "scene_id": "scene0703_00"
+  },
+  "CQA_VT8WZ9JUTV": {
+    "changes": [
+      "The trash can next to the paper towel dispenser has been replaced with a tall, white floor vase filled with decorative reeds, adding an elegant, natural element to the bathroom. The vase stands in the same corner, providing a stylish accent to the modern design while still maintaining the room's spacious layout.",
+      "The *bathroom vanity near the sinks* has been replaced with a *sleek black shelf* featuring multiple tiers for organization. This shelf holds neatly folded towels, decorative baskets for toiletries, and small potted plants to enhance the bathroom’s aesthetics. The open design of the shelf allows for easy access, while its black finish contrasts stylishly with the lighter tones of the bathroom, adding a modern and minimalist touch to the space. Positioned against the same wall as the vanity, it maintains functionality without overwhelming the room.",
+      "The *doorframe at the entrance* has been replaced with a *frosted glass sliding door*, adding a contemporary and space-saving element to the bathroom. The frosted glass provides privacy while allowing natural light to filter through, giving the room a brighter, more open feel. The sleek sliding mechanism ensures smooth operation and eliminates the need for a traditional swinging door, maximizing the available space. The subtle texture of the frosted glass blends well with the bathroom's modern design, adding both functionality and a sophisticated visual appeal.",
+      "One of the *bathroom mirrors above the sink* has been replaced with an *LED screen that displays real-time information* such as the weather, news headlines, and time. The screen is the same size and shape as the mirror, seamlessly fitting into the existing space, but now serves a dual purpose: it still functions as a mirror when turned off, with a sleek, reflective surface. When activated, the high-resolution display offers a modern, interactive experience, providing useful information to users without overwhelming the minimalist aesthetic of the bathroom. The slim black frame around the screen adds a touch of sophistication.",
+      "The *paper towel dispenser near the sinks* has been replaced with a *sleek, wall-mounted touchless hand dryer*. The new hand dryer is stainless steel with a streamlined, curved design that complements the modern aesthetic of the bathroom. It is motion-activated, ensuring a hygienic, hands-free experience for users. The dryer’s compact size takes up less space on the wall than the original paper towel dispenser, offering a more eco-friendly and efficient solution. Its quiet operation and fast drying technology enhance the bathroom’s functionality while maintaining a clean, uncluttered look."
+    ],
+    "scene_id": "scene0502_00"
+  },
+  "CQA_HAWURUNUM7": {
+    "changes": [
+      "The Kitchen sink can be replaced with the refrigerator north of the room",
+      "The window can be replaced with the sign on the counter",
+      "The standing sign can be replaced with the shelf in the center",
+      "The stove on the right can be replaced with the sink",
+      "The cabinet can be replaced with the kitchen cabinet on the left."
+    ],
+    "scene_id": "scene0094_00"
+  },
+  "CQA_6GPC0IH3V7": {
+    "changes": [
+      "The rectangular table against the wall has been replaced with a smaller square table.",
+      "One of the chairs against the wall has been replaced with a water cooler.",
+      "One of the chairs against the wall has been replaced with a filing cabinet.",
+      "The backpack has been replaced with a brown leather brief case.",
+      "The box has been replaced with a printer and a cabinet for printing supplies."
+    ],
+    "scene_id": "scene0455_00"
+  },
+  "CQA_BCOS9C9AGX": {
+    "changes": [
+      "The toilet paper above the trash bin has been replaced with an electric hand drier. ",
+      "The backpack hanging on the door has been replaced with a colorful painting.",
+      "The bar next to the toilet and above the toilet paper dispenser has been replaced with a decorative shelf.",
+      "The rod between the sink and the toilet has been replaced with a small table.",
+      "The dispenser next to the toilet paper and trash bin has been replaced by a roll of paper towels."
+    ],
+    "scene_id": "scene0553_00"
+  },
+  "CQA_3LM7EWIX8E": {
+    "changes": [
+      "The white stove could be replaced with a black stove\n",
+      "The kitchen cabinets could be replaced with a pantry door",
+      "The kitchen cabinets could be replaced with a table and chairs\n",
+      "The refrigerator could be moved to the other side of the room",
+      "The kitchen counter could be replaced with a kitchen sink\n"
+    ],
+    "scene_id": "scene0488_00"
+  },
+  "CQA_4FZJUJE3B4": {
+    "changes": [
+      "The shelf above the toilet has been replaced by a framed painting.",
+      "The trash can next to the toilet has been replaced with a stuffed bear.",
+      "The bottle closest to the faucet in the bathtub has been replaced with a banana.",
+      "The blue and green towel on the wall in the bathtub has been replaced with a purple coat.",
+      "The bottle on the shelf in the middle of the bathtub wall has been replaced with a bar of soap."
+    ],
+    "scene_id": "scene0501_00"
+  },
+  "CQA_MET48CQK7G": {
+    "changes": [
+      "The picture above the bed has been replaced with a 12-month calendar.",
+      "The book on the left night stand has been replaced with a container of hand lotion.",
+      "The lamp on the right night stand has been replaced with a laptop.",
+      "The armchair in front of the window has been replaced with a floor lamp.",
+      "The storage organizer in the corner near the desk has been replaced with a mini-fridge."
+    ],
+    "scene_id": "scene0576_00"
+  },
+  "CQA_XSQ48CSTHH": {
+    "changes": [
+      "The backpack, which is in between the ledge and the chair can be replaced with a pot plant.",
+      "There are two monitors and one of the monitors could be replaced with a ledge.",
+      "The chair in the corner, next to the backpack could be replaced with 2 x stackable stools, which can take up less room if extra people are required for the room.",
+      "Two of the chairs around the table can be replaced with stackable stools, which take up less room and are easy to modify the space for the amount of people. ",
+      "The ledge in the corner can be replaced with a 3 x ledges, with items for water and snacks included (helps keep people in the meeting room for long meetings)."
+    ],
+    "scene_id": "scene0130_00"
+  },
+  "CQA_M3I7T0P1LC": {
+    "changes": [
+      " The closet next to the door has been replaced with an armoire.",
+      "The shelf at the foot of the bed  has been replaced with a fireplace.",
+      "The nightstand below the window has been replaced with a stool.",
+      "The chair next to the trash can has been replaced with an ottoman.",
+      "The lamp next to the trash can has been replaced with a chair."
+    ],
+    "scene_id": "scene0039_00"
+  },
+  "CQA_Q9X1KR8U00": {
+    "changes": [
+      "The trash can near the table has been replaced by the chair.",
+      "The whiteboard near the table has been replaced by the board  near the window.",
+      "The trash can near the table has been replace by the backpack on the table.",
+      "The chair near the table has been replaced by the trash can.",
+      "The shelf opposite the door has been replaced by the whiteboard in the corner of the room."
+    ],
+    "scene_id": "scene0191_00"
+  },
+  "CQA_JQ82CY0Q2C": {
+    "changes": [
+      "The large, red pillow on the bed has been replaced with a blue body pillow.",
+      "The two, queen sized beds can be replaced by a California King water bed.",
+      "The white curtains on the window can be replaced with a set of wooden vertical blinds.",
+      "The wooden nightstand between the two beds can be replaced by a brand new Frigidaire mini-fridge.",
+      "The brown carpet on the floor can be replaced by bamboo wooden flooring from Lowes."
+    ],
+    "scene_id": "scene0085_00"
+  },
+  "CQA_0O67KHAS7F": {
+    "changes": [
+      "The box on top of the box near the window has been replaced by the bucket under the table.",
+      "The coffee maker on the kitchen counter has been replaced by the paper cutter on the table.",
+      "The copier has been replaced by the refrigerator near the kitchen cabinets.",
+      "The chair by the window has been replaced by the microwave that is on the kitchen counter.",
+      "The box below the box near the window has been replaced by the paper towel dispenser."
+    ],
+    "scene_id": "scene0552_00"
+  },
+  "CQA_2A6FIKTVGR": {
+    "changes": [
+      "The toilet paper above the trash bin has been replaced with an electric hand drier. ",
+      "The backpack hanging on the door has been replaced with a colorful painting.",
+      "The bar next to the toilet and above the toilet paper dispenser has been replaced with a decorative shelf.",
+      "The rod between the sink and the toilet has been replaced with a small table.",
+      "The dispenser next to the toilet paper and trash bin has been replaced by a roll of paper towles."
+    ],
+    "scene_id": "scene0553_00"
+  },
+  "CQA_PUXNUQ7WFP": {
+    "changes": [
+      "Replace the large brown round table with a coffee table",
+      "Replace the low coffee table between the two red chairs  with a chair",
+      "Replace the blue trash can  that is next to the wall with a chair",
+      "Replace the chair near the coffee table closest to the wall with a trash can",
+      "Replace the chair near the small sound table in front of the window on the same wall as the trash can with a trash can"
+    ],
+    "scene_id": "scene0387_00"
+  },
+  "CQA_CE9RSVTQGI": {
+    "changes": [
+      "The paper towel dispenser is replaced with a state of the art water cooler.",
+      "The white board is replaced by a framed picture with an inspiring quote.",
+      "The brown wooden chairs are replaced with black, swivel office chairs.",
+      "The television is replaced with a drawdown screen that can be used with a projector.",
+      "The brown wooden table is replaced with a fully glass table."
+    ],
+    "scene_id": "scene0599_00"
+  },
+  "CQA_TAVV5TF05Q": {
+    "changes": [
+      "The three plants on the windowsill have been replaced with the shoes.",
+      "The messenger bag on the desk has been replaced with one of the three plants that were on the windowsill.",
+      "The keyboard on the desk, near the whiteboard, has been replaced with one of the plants that were on the windowsill.",
+      "The telephone o the desk has been replaced with one of the plants from the windowsill.",
+      "The cabinet near the door against the wall has been replaced with the chair from in front of the whiteboard."
+    ],
+    "scene_id": "scene0380_00"
+  },
+  "CQA_S9IBZGE5CW": {
+    "changes": [
+      "the trash can buy the door has been replaced by a chair",
+      "the backpack by the fire extinguisher has been replaced by a unicorn",
+      "the fire extinguisher has been replaced by a gun case",
+      "the stair rail has been replaced by a giant snake",
+      "the stairs by the stair rail have been replaced by a fine collection of stamps"
+    ],
+    "scene_id": "scene0530_00"
+  },
+  "CQA_LG3U0C1LNP": {
+    "changes": [
+      "The dryer sheets on top of the leftmost washing machine has been replaced with the laundry detergent from the right washing machine.",
+      "The paper towel dispenser above the sink has been replaced with the thick pipe that runs along the ceiling.",
+      "The grey trash can under the sink has been replaced with the cardboard box that is under the table. ",
+      "The topmost clothes dryer has been replaced with the leftmost washing machine.  ",
+      "The pile of clothes on top of the table has been replaced with the  laundry detergent. "
+    ],
+    "scene_id": "scene0139_00"
+  },
+  "CQA_TFQ44BX871": {
+    "changes": [
+      "The shelf has been replaced by a big screen television.",
+      "The cabinet has been replaced by a brown wood bookcase.",
+      "The paper cutter has been replaced by a black microwave that has a touchscreen control.\n\n",
+      "The trash can has been replaced by a black mini refrigerator\n",
+      "The picture had been replaced by a hands-free tablet that can also be a smart speaker."
+    ],
+    "scene_id": "scene0303_00"
+  },
+  "CQA_KX0E052P72": {
+    "changes": [
+      "The window facing the door has been replaced with a mirror",
+      "The paper towel dispenser has been replaced with a hand air dryer",
+      "The shower curtain has been replaced with a swinging glass door",
+      "The trash can in front of the radiator is replaced with a small table ",
+      "The radiator in front of the window is replaced with a small cabinet"
+    ],
+    "scene_id": "scene0550_00"
+  },
+  "CQA_L2LQHZRH0Q": {
+    "changes": [
+      "The cabinet underneath the whiteboard next to the shelf is replaced with a small garbage can.",
+      "The blue office chair beneath the whiteboard is replaced with a radiator.",
+      "The stool underneath the telephone is replaced with a trash can.",
+      "The shelf next to the whiteboard is replaced by the other whiteboard.",
+      "The computer tower underneath the desk is replaced by the stool."
+    ],
+    "scene_id": "scene0305_00"
+  },
+  "CQA_UVJIUE4LGZ": {
+    "changes": [
+      "The clothes on the chair have been placed in the suitcase in front of the power outlet.",
+      "The clothes in the floor have been placed in the suitcase by the door",
+      "The shoes have been placed under the chair next to the lamp.",
+      "The suitcase in front of the power outlet has been moved to the right side of the radiator.",
+      "The blue-pillow on the left side of the bed has been moved to the bottom right side corner of the bed."
+    ],
+    "scene_id": "scene0397_00"
+  },
+  "CQA_GZOS6VHTL7": {
+    "changes": [
+      "replace picture with decoration thats on the wall by the mirror",
+      "replace the book on the back of the toilet with towel",
+      "move the trash can to other side of toilet away from the sink",
+      "move the hamper to the left wall for more room",
+      "replace the light fixture by the mirror for better lighting"
+    ],
+    "scene_id": "scene0080_00"
+  },
+  "CQA_LAMWIONU3W": {
+    "changes": [
+      "the towels should be replaced with a holder for supplies",
+      "the vent should be replaced with a tile that covers the hole",
+      "The shower curtain should be replaced with a sliding door",
+      "toilet should be replaced with a seat to sit and wash your feet",
+      "light switch should be replaced with a waterproof radio for showering"
+    ],
+    "scene_id": "scene0410_00"
+  },
+  "CQA_V30HCY2ESE": {
+    "changes": [
+      "The window on the wall has been replaced with two large posters.",
+      "The fan on top of the desk has been replaced by another shelf.",
+      "The mini fridge on the floor next to the desk has been replaced with another trash can.",
+      "The laundry hamper next to the door was replaced by a mini fridge.",
+      "The blanket near the middle-back of the bed has been replaced by a large stuffed animal."
+    ],
+    "scene_id": "scene0554_00"
+  },
+  "CQA_7Q0C3PD71T": {
+    "changes": [
+      "The desk in the middle of the room has been replaced with a cardboard box.",
+      "The chair next to the desk has been replaced a stepladder.",
+      "The radiator by the wood has been replaced with a large accordion.",
+      "The window next to the shelf has been replaced with a neon Christmas tree.",
+      "The mattress by the wood beam has been replaced with a pool table."
+    ],
+    "scene_id": "scene0382_00"
+  },
+  "CQA_IN9KANFQN1": {
+    "changes": [
+      "Change orientation of long table, move it to the middle of the room",
+      "Place chairs 2 on each long side of the table in the middle of the room",
+      "place chairs at each end of long table that is in the middle of the room",
+      " move 2 chair set that is in the back of the room so they are facing each other",
+      "put small table in between 2 chairs and potted plant next to one of the chairs"
+    ],
+    "scene_id": "scene0622_00"
+  },
+  "CQA_XJFKJMMQRH": {
+    "changes": [
+      "replace the pillar with another red chair at the top of the scene",
+      "replace the top table by the pillar with another pillar\n",
+      "replace the bottom table with two more red chairs at the bottom of the scene",
+      "replace the table at the top right of the scene with a pillar",
+      "replace the table in the middle of the scene with two chairs"
+    ],
+    "scene_id": "scene0082_00"
+  },
+  "CQA_O5GALTZP4H": {
+    "changes": [
+      "the chair by the desk can be placed on the bed ",
+      "the night stand can be shifted to the side of the shelf ",
+      "the chair by the desk can be moved to the side of the shelf ",
+      "the lamp on the desk can be placed by the bottom side of the bed ",
+      "the lamp on the desk can be placed on the top of the shelf "
+    ],
+    "scene_id": "scene0039_00"
+  },
+  "CQA_56Z8ERFSJ1": {
+    "changes": [
+      "The suitcase beside the desk has been replaced with a trash can.",
+      "The purse in the brown chair has been replaced with a suitcase.",
+      "The 2 pillows on the left bed has been replaced with an extra set of covers.",
+      "The desk beside the TV has been replaced with a brown chair.",
+      "The door on the entry left has been replaced with a picture."
+    ],
+    "scene_id": "scene0137_00"
+  },
+  "CQA_88F5GWLIYX": {
+    "changes": [
+      "The black office chair can be replaced with the technicolor chair.",
+      "The technicolor chair can be replaced by the black office chair.",
+      "The left display case can be replaced with the right display case.",
+      "The technicolor chair can be replaced by the potted plant.",
+      "The left table can be replaced by the right table."
+    ],
+    "scene_id": "scene0355_00"
+  },
+  "CQA_ITPODS5TNC": {
+    "changes": [
+      "The window on the left has been replaced with a new whiteboard.",
+      "the chair in the corner has been replaced with a chair from the table.",
+      "The table a the end has been replaced with a table in the middle.",
+      "The whiteboard on the wall has been replaced with a chalkboard.",
+      "the TV at the front has been replaced with a computer monitor. "
+    ],
+    "scene_id": "scene0401_00"
+  },
+  "CQA_MB4N3TTQ1B": {
+    "changes": [
+      "The table has been replaced with a new light oak computer desk with drawers on the right, including a file drawer at the bottom.",
+      "The cabinet below the table has been replaced with a roomy light oak padded desk chair with comfortable armrests.\n",
+      "The leaf canopy has been replaced with a sleek standing lamp that sports a thin light oak base and a narrow upsidedown teardrop-shaped, cream colored shade.",
+      "The cabinet with the black sploch has been replaced with a new light oak closet cabinet with no stains and full length mirrors on the inside of the doors.",
+      "The wall mirror has been replaced with an inspirational calendar with stunning landscape photography."
+    ],
+    "scene_id": "scene0577_00"
+  },
+  "CQA_T5S73DR1TJ": {
+    "changes": [
+      "The mirror on the wall next to the bookshelf is replaced with a poster. ",
+      "The picture in the middle of the two other pictures is replaced with a small plant.",
+      "The wardrobe closet to the right of the bed is replaced with drawers. ",
+      "The couch  under the bed is replaced with a desk.",
+      "The bookshelf under the bed is replaced by a wall-mounted lamp."
+    ],
+    "scene_id": "scene0224_00"
+  },
+  "CQA_P8YPX0QJDH": {
+    "changes": [
+      "Replace the chair next to the backpack with a small console table. ",
+      "Replace the red backpack next to the chair with a briefcase. ",
+      "Replace the window with a wall with a picture frame on it. ",
+      "Replace the red fire extinguisher with a green potted plant. ",
+      "Replace the white chair next to the red chair with a small water cooler/dispenser. "
+    ],
+    "scene_id": "scene0242_00"
+  },
+  "CQA_E4CXNUFOY1": {
+    "changes": [
+      "The vase next to the TV has been replaced with a plant.",
+      "The chair behind the couch has been replaced with a telescope.  ",
+      "The picture above the fireplace has been replaced with a TV. ",
+      "The plant near the couch has been replaced with a piano. ",
+      "The end table close to the bookshelf has been replaced with a plant. "
+    ],
+    "scene_id": "scene0672_00"
+  },
+  "CQA_F6SA8TVW5D": {
+    "changes": [
+      "the brown trash can is replaced with the bathroom radiator.",
+      "the brown toilet paper dispenser is replaced with the paper towel dispenser",
+      "the white toilet is replaced with the grey looking sink",
+      "the bathroom brown vanity is replaced with the white toilet",
+      "the bathroom stall can be replaced with the shower curtain"
+    ],
+    "scene_id": "scene0564_00"
+  },
+  "CQA_1CLHQ3X504": {
+    "changes": [
+      "the trash can near the paper towel dispenser has been replaced with a red step stool. ",
+      "The sink below the mirror that is furthest away from the trash can has been replaced with a counter for storage.",
+      "the mirror above the sink beside the trash can has been replaced with a painting.",
+      "The soap dispenser that is closest to the trash can has been replaced with a lotion dispenser. ",
+      "The upper paper towel dispenser has been replaced with a hand towel rack."
+    ],
+    "scene_id": "scene0579_00"
+  },
+  "CQA_PY8MEJ1996": {
+    "changes": [
+      "I will replace the books on the white shelf with white videogame cases.",
+      "replace the picture on the wall above the mirror with an empty white bookshelf",
+      "replace the yellow cabinet under the white table with red high heels",
+      "replace the green canopy above the bed with neon pink lamps hanging from the ceiling",
+      "replace the pillow on the bed with a pink pokemon plushie"
+    ],
+    "scene_id": "scene0577_00"
+  },
+  "CQA_S4975AWBQ4": {
+    "changes": [
+      "The couch can be replaced with an armchair and pillow.",
+      "The stool can be replaced with the chair and pillow.",
+      "The cabinet can be replaced with the couch and pillows.",
+      "The nightstand can be replaced with the table and trash can.",
+      "The radiator can be replaced with the armchair and table."
+    ],
+    "scene_id": "scene0385_00"
+  },
+  "CQA_5OO34PSH9E": {
+    "changes": [
+      "Replace the bulletin board near the trash can with a white board.",
+      "Replace the bench in the middle of the room with a twin-sized bed.",
+      "Replace the file cabinet next to a light with a small desk and chair.",
+      "Replace the plant by the singular file cabinet with a shelf for smaller plants.",
+      "Replace the file cabinet next to the singular file cabinet with a table."
+    ],
+    "scene_id": "scene0431_00"
+  },
+  "CQA_HTVZBZ297K": {
+    "changes": [
+      "large desk for teacher with chair and several drawers for storage",
+      "bulletin board with lots of papers for current and past activities",
+      "large round table several children to sit at at one time",
+      "desk with bins for sensory play and lots of different toys",
+      "large carpet for gathering and sitting and listening to the teacher"
+    ],
+    "scene_id": "scene0257_00"
+  },
+  "CQA_451ILFKJU9": {
+    "changes": [
+      "The dishwasher beside the refrigerator has been replaced by a cabinet identical to the one already next to this dishwasher. ",
+      "The white rangehood has been replaced by a silver one, the same color as the stove below it. ",
+      "The traditional door leading to the bathroom has been replaced by a pocket door that can open by sliding sideways and thus be hidden inside a space in the wall. ",
+      "The shelf placed on top of the toilet has been replaced by a cabinet with a door that can accommodate more storage. ",
+      "The window in the bathroom has been replaced by frosted glass bricks and the installation of a bathroom fan in the ceiling, leaving space for a bigger shower. "
+    ],
+    "scene_id": "scene0214_00"
+  },
+  "CQA_244428IABZ": {
+    "changes": [
+      "white board is replaced with the window and black frame in the middle",
+      "the trash can replaced with bag that looks like a backpack that is black\n",
+      "chair replaced the chair computer and wooden chair can and black",
+      "Cup replaced with the keyboard in front of the computer room",
+      "monitor replaced with the tv on the side of the room on the right"
+    ],
+    "scene_id": "scene0230_00"
+  },
+  "CQA_K8IFVZC0KA": {
+    "changes": [
+      "The backpack on the ground has been replaced with the guitar case",
+      "The shoes by the curtain have been replaced with the bicycle",
+      "The scale in the bathroom has been replaced with the guitar",
+      "The trash can by the desk has been replaced with the night stand",
+      "The pillow on the bed has been replaced with the laundry basket"
+    ],
+    "scene_id": "scene0355_00"
+  },
+  "CQA_0XORV19LL1": {
+    "changes": [
+      "The boxes can be stacked on top of each other on the floor next to the desk.",
+      "The trash can be moved in front of the radiator and window.",
+      "The 2 cups on the kitchen counter have been replaced with a box.",
+      "The coffee maker has been moved to the table and the boxes moved to the counter.",
+      "The table has been moved closer to the door and the trash can closer to the window."
+    ],
+    "scene_id": "scene0498_00"
+  },
+  "CQA_K1JSKRBWB9": {
+    "changes": [
+      "The table in the middle of the room closest to the front window has been replaced with a desk.\n",
+      "The whiteboard on the side of the room directly acorss from the three windows should be replaced with a mounted tv.",
+      "The board at the front of the room next to the window should be replaces with a 5 shelf wooden bookshelf.",
+      "The four chairs at the back of the room under the whiteboard should be replaces wiht a low shelf to hold supplies.",
+      "The table in the middle of the room near the whiteboard where the tv should be hung should be replaced with a rug and two floor cushions."
+    ],
+    "scene_id": "scene0275_00"
+  },
+  "CQA_QHNR51IWR5": {
+    "changes": [
+      "The two tan wardrobe closets should be replaced by the desk that is closest to the door",
+      "The desk that is closest to the door should be replaced by the two tan wardrobe closets.",
+      "The trash bin should be placed under the desk near the door",
+      "the trash bin should be placed under the desk that is between the two beds",
+      "the 2 recycling bins should be placed by the door\n"
+    ],
+    "scene_id": "scene0440_00"
+  },
+  "CQA_YDOOO2JVK2": {
+    "changes": [
+      "The black paper towel dispenser on the wall next to the trash bin has been replaced by a stainless steel hand dryer. ",
+      "The brown soap dispenser on the wall to the left of the sink has been replaced with a white soap dispenser. ",
+      "The rectangular mirror above the sink has been replaced by a smaller, circular mirror. ",
+      "The white toilet in the stall closest to the sink has been replaced by a beige toilet. ",
+      "The clear trash bag in the trash bin near the paper towel dispenser has been replaced with a white trash bag. "
+    ],
+    "scene_id": "scene0042_00"
+  },
+  "CQA_0T10PDWLOV": {
+    "changes": [
+      "The decoration on the wall next to the door has been replaced with a picture.",
+      "The cabinet along the wall has been replaced with a chair.",
+      "The bag on the chair has been replaced with a picture.",
+      "The furniture against the wall has been replaced with a chair.",
+      "The door in between two decorations has been replaced with a window."
+    ],
+    "scene_id": "scene0102_00"
+  },
+  "CQA_JUNKA2CXB0": {
+    "changes": [
+      "Remove microwave on counter and replace it with a toaster",
+      "Replace the black trash can and put in a blue trash can",
+      "Replace paper towel dispenser with a black bat towel dispenser",
+      "Replace tupperware on the counter and replace it with clear glass container",
+      "Replace recycling bin in the kitchen and replace it with blue recycle bin"
+    ],
+    "scene_id": "scene0117_00"
+  },
+  "CQA_IJNGMTBUBJ": {
+    "changes": [
+      "The curtain hanging up  has been replaced with mini blinds",
+      "the nightstand on the right side of the bed has been replaced with a chair",
+      "the cabinet  has been replaced with a dresser and the tv sits on top of it",
+      "the backpack has been moved to the bed and replaced with a table",
+      "the picture hanging on the wall has been replaced with a full length mirror"
+    ],
+    "scene_id": "scene0389_00"
+  }
+}

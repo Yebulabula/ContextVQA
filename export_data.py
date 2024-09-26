@@ -49,8 +49,8 @@ if firebase_credentials:
 
 
     # Example: Export data from 'your-collection-name' to 'output.json'
-    collection_name = 'Removal_Changes'
-    output_file = 'remove_users.json'
+    collection_name = 'Replacement_Changes'
+    output_file = 'replacement_users.json'
 
     export_firestore_collection_to_json(collection_name, output_file)
 
@@ -59,7 +59,7 @@ import json
 import numpy as np
 import os
 
-with open('remove_users.json', 'r') as f:
+with open('replacement_users.json', 'r') as f:
     data = json.load(f)
     
     
