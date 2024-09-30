@@ -37,7 +37,6 @@ def save_context_data(data):
     db.collection('Question_Answer').add(data)
 
 # Function to generate and return a confirmation code
-@st.cache_resource
 def generate_survey_code():
     return 'CQA_' + ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=10))
 
