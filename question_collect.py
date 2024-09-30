@@ -117,68 +117,56 @@ def read_instance_labels(scene_id):
     return load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
 
 def refresh_scene():
-    st.session_state.scene_id = random.choice(list(SCENE_ID_TO_FILE.keys()))
-    scene_id = st.session_state.scene_id
-    st.session_state.change_description = random.sample(st.session_state.changes[scene_id], 4)
-    ply_file = SCENE_ID_TO_FILE[scene_id]
-    mesh_data = load_mesh(ply_file)
-    vertices, triangles, vertex_colors = mesh_data.values()
-    annotations = st.session_state.annotations[scene_id]
-    return initialize_plot(vertices, triangles, vertex_colors, annotations)
+    if st.session_state.scene_id is None:
+        st.session_state.scene_id = random.choice(list(SCENE_ID_TO_FILE.keys()))
+        scene_id = st.session_state.scene_id
+        st.session_state.change_description = random.sample(st.session_state.changes[scene_id], 4)
+        ply_file = SCENE_ID_TO_FILE[scene_id]
+        mesh_data = load_mesh(ply_file)
+        vertices, triangles, vertex_colors = mesh_data.values()
+        annotations = st.session_state.annotations[scene_id]
+        st.session_state.fig = initialize_plot(vertices, triangles, vertex_colors, annotations)
 
-if st.session_state.scene_id is None:
-    st.session_state.fig = refresh_scene()
+if 'fig' not in st.session_state:
+    refresh_scene()
 
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-Begin with a past 3D scene visualization and a description of a hypothetical change. First, imagine how the scene appears after the change. Then, come up with four unique questions about the altered scene in your mind and provide answers for each one.
+**Begin with a past 3D scene visualization and a description of a hypothetical change. First, imagine how the scene appears after the change. Then, come up with four unique questions about the altered scene in your mind and provide answers for each one.**
 
-<span style="color:brown;">**Instructions:**</span>
+#### <span style="color:brown;">**Instructions:**</span>
 
-<span style="color:brown;">- The answer to each question must rely on both the knowledge of the original 3D scene visualization and the description of the change. Answers based solely on one will be rejected.</span>
+<span style="color:brown;">- A valid question needs to be answered using both the 3D scene and the change description. If the question can be answered just by looking at the scene or only the change description, it will be rejected.</span>
 
-<span style="color:brown;">- All questions should be realistic and must have a unique answer.</span>
+<span style="color:brown;">- Do not ask why changes were made.</span>
 
-<span style="color:brown;">- Each question must be at least 8 words long.</span>
+<span style="color:brown;">- All questions must be realistic, unique, and at least 8 words long.</span>
 
-<span style="color:brown;">- The answer should be a single word or a short phrase.</span>
+<span style="color:brown;">- Answers should be a single word or short phrase, clear and exact, without uncertain terms like "maybe" or "probably."
+</span>
 
-**Consider the example scene below. Possible movements can include: (*This is just an example; please do not use it to write questions.*)**
+#### **Consider the example scene below. Possible question & answers can include: (*Examples only; do not use them to create questions.*)**
 
-<span style="color:brown;">**Scene Change:** The brown pillow, originally on the bed, has been moved to the gray couch.</span>
+<span style="color:brown;">**Scene Change: The brown pillow, originally on the bed, has been moved to the gray couch.**</span>  
+- **Good Question:** What object is in front of the pillow now? **Answer:** Coffee table.  
+- <span style="color:green;">**Bad Question:** Which item has just been placed on the couch? **Answer:** Pillow. (*Can be answered by the change description alone.*)</span>
 
-- **Good Question:** What object is in front of the pillow now?  
-  **Answer:** Coffee table.
-  
-- <span style="color:green;">**Bad Question:** Is there a pillow on the couch now?  
-  **Answer:** Yes.  
-  (*This question can be answered by the change description alone.*)</span>
+<span style="color:brown;">**Scene Change: The shoes next to the white table have been removed.**</span>  
+- **Good Question:** What is the only remaining object leaning against the curtain after the shoes have been removed? **Answer:** Bicycle.  
+- <span style="color:green;">**Bad Question:** What is the color of the curtain? **Answer:** Green. (*Can be answered by the 3D scene alone.*)</span>
 
-<span style="color:brown;">**Scene Change:** The shoes next to the white table have been removed.</span>
+<span style="color:brown;">**Scene Change: A standing lamp has been added next to the couch near the backpack.**</span>  
+- **Good Question:** Which object is farther from the lamp, the coffee table or the bed? **Answer:** Bed.
 
-- **Good Question:** What is the only remaining object leaning against the curtain after the shoes have been removed?  
-  **Answer:** Bicycle.
-
-- <span style="color:green;">**Bad Question:** What is the color of the curtain?  
-  **Answer:** Green.  
-  (*This question can be answered by the 3D scene visualization alone.*)</span>
-
-<span style="color:brown;">**Scene Change:** A standing lamp has been added next to the couch near the backpack for more lighting.</span>
-
-- **Good Question:** Which object is farther from the standing lamp, the coffee table or the bed?  
-  **Answer:** Bed.
-
-<span style="color:brown;">**Scene Change:** The refrigerator door is open, with food items visible inside.</span>
-
-- **Good Question:** How many trash cans are near the opened refrigerator door after the change?  
-  **Answer:** Two.
+<span style="color:brown;">**Scene Change: The refrigerator door is open, with food items visible inside.**</span>  
+- **Good Question:** How many trash cans are near the refrigerator door after the change? **Answer:** Two.
 
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
-If you encounter any issues with the scene, please refresh the page to load a new one. Once you have finished the task, click the **Submit** button to receive your Completion Code.
+If there are any issues with the scene, refresh the page to load a new one. After completing the task, click **Submit** to receive your Completion Code for CloudResearch Platform.
 
-*Please use your imagination and creativity to come up with unique and interesting movements!*
+*Use your imagination and creativity to come up with unique questions and answers!*
 """
 
 
@@ -211,7 +199,7 @@ with left_col:
         objects_by_category.setdefault(category, []).append(label)
 
     summary_text = "This scene contains " + ", ".join(
-        f"{len(labels)} {category + ('s' if len(labels) > 1 else '')}"
+        f"{len(labels)} {category if category.endswith('s') else category + ('s' if len(labels) > 1 else '')}"
         for category, labels in objects_by_category.items() if category not in excluded_categories
     ) + "."
 
@@ -225,7 +213,7 @@ with right_col:
     change_description = st.session_state.change_description
 
     for i in range(1, num_pairs + 1):
-        st.markdown(f"<span style='color:red; font-weight:bold;'>Context Change:</span> {change_description[i-1]}", unsafe_allow_html=True)
+        st.markdown(f"<span style='color:red; font-weight:bold;'>Scene Change:</span> {change_description[i-1]}", unsafe_allow_html=True)
         st.text_input(f"**Question {i}**", key=f"question{i}", placeholder="Type your question here...")
         st.text_input(f"**Answer {i}**", key=f"answer{i}", placeholder="Type your answer here...")
         st.markdown("<hr style='margin: 5px 0; height: 1px; border: none; background-color: #e0e0e0;'>", unsafe_allow_html=True)
@@ -241,6 +229,7 @@ with right_col:
         elif not all(len(q.split()) >= 8 for q in questions):
             st.warning("Please ensure that all questions are at least 8 words long.")
         else:
+            st.session_state.survey_code = generate_survey_code()
             st.success(f"Your Completion Code is: {st.session_state.survey_code}.")
             entry = {
                 'scene_id': scene_id,
