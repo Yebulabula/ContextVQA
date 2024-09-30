@@ -71,8 +71,8 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations):
             yaxis=dict(visible=False),
             zaxis=dict(visible=False)
         ),
-        width=800,
-        height=900,
+        width=700,
+        height=1100,
         margin=dict(l=0, r=10, b=0, t=20),
         updatemenus=[
             dict(
@@ -135,7 +135,7 @@ if 'fig' not in st.session_state:
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-**Begin with a past 3D scene visualization and a description of a hypothetical change. First, imagine how the scene appears after the change. Then, come up with four unique questions about the altered scene in your mind and provide answers for each one.**
+**Given a 3D scene from the past and a description of a hypothetical change, first, imagine how the scene would look after the change. Then, think of three different questions about the new scene in your mind and answer each one.**
 
 #### <span style="color:brown;">**Instructions:**</span>
 
@@ -222,18 +222,21 @@ with right_col:
         answers = []
         
         for i in range(1, num_pairs + 1):
-            st.markdown(f"<span style='color:red; font-weight:bold;'>Scene Change:</span> {change_description[i-1]}", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:red; font-size:20px; font-weight:bold;'>Scene Change:</span> <span style='font-size:18px;'>{change_description[i-1]}</span>", unsafe_allow_html=True)
+    
+            # Plain text labels without HTML for text_area
             question_input = st.text_area(f"**Question {i}**", key=f"question{i}", placeholder="Type your question here...")
             answer_input = st.text_area(f"**Answer {i}**", key=f"answer{i}", placeholder="Type your answer here...")
+            
             questions.append(question_input)
             answers.append(answer_input)
             
             # Divider between questions and answers
             st.markdown("<hr style='margin: 5px 0; height: 1px; border: none; background-color: #e0e0e0;'>", unsafe_allow_html=True)
         
-        submit_button = st.form_submit_button(label="Submit")
+        submitted = st.form_submit_button("Submit")
 
-    if submit_button:
+    if submitted:
         # Validate inputs only when the form is submitted
         if len(set(questions)) < len(questions):
             st.warning("Please ensure that all changes are unique.")
