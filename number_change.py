@@ -61,7 +61,7 @@ SCENE_IDs = ['09582225-e2c2-2de1-9564-f6681ef5e511', '0cac753c-8d6f-2d13-8e27-e0
 SCENE_ID_TO_FILE = {
     scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_filtered_vh_clean_2.npz') 
     if scene_id.startswith('scene') 
-    else os.path.join(ROOT_1, scene_id, f'{scene_id}._vh_clean_2.npz') 
+    else os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') 
     for scene_id in SCENE_IDs
 }
 
