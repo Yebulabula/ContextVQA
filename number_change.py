@@ -185,46 +185,41 @@ with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, 
 left_col, right_col = st.columns([2, 1])
 
 with right_col:
-    scene_id = st.session_state.scene_id
-
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 1</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change1", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 2</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change2", placeholder="Type here...", height=10)
     
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 3</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change3", placeholder="Type here...", height=10)
-    
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 4</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change4", placeholder="Type here...", height=10)
-    
-    st.markdown("<div style='font-weight: bold; font-size: 20px;'>Replacement 5</div>", unsafe_allow_html=True)
-    context_change = st.text_area("Describe a possible object replacement within the scene in details.", key="change5", placeholder="Type here...", height=10)
-
-    if st.button("Submit"):
-        # Extract changes using list comprehension
-        changes = [st.session_state.get(f'change{i}') for i in range(1, 6)]
+    with st.form(key="question_answer_form"):
+        scene_id = st.session_state.scene_id
+        changes = []
         
-        # Check if all changes are unique and non-empty
-        if len(set(changes)) < len(changes):
-            st.warning("Please ensure that all changes are unique.")
-        elif not all(changes):
-            st.warning("Please fill in all the changes.")
-        elif not all(len(change.split()) >= 10 for change in changes):  # Check if each change has at least 10 words
-            st.warning("Please ensure that all changes are at least 10 words long.")
-        else:
-            # Proceed with success case
-            st.session_state.survey_code = generate_survey_code()
-            st.success(f"Congratulations! Your Completion Code is: {st.session_state.survey_code}. Please submit this code to CloudResearch.")
+        for i in range(1,  6):
+            # Plain text labels without HTML for text_area
+            st.markdown(f"<div style='font-weight: bold; font-size: 20px;'>Replacement Change{i}</div>", unsafe_allow_html=True)
+            context_change = st.text_area(f"Describe a possible object replacement within the scene in details.", key=f"change{i}", placeholder="Type here...", height=10)
+
+        submitted = st.form_submit_button("Submit")
+        if submitted:
+            # Extract changes using list comprehension
+            changes = [st.session_state.get(f'change{i}') for i in range(1, 6)]
             
-            # Prepare entry for saving
-            entry = {
-                'scene_id': scene_id,
-                'changes': changes,
-                'survey_code': st.session_state.survey_code
-            }
-            save_context_data(entry)
+            # Check if all changes are unique and non-empty
+            if len(set(changes)) < len(changes):
+                st.warning("Please ensure that all changes are unique.")
+            elif not all(changes):
+                st.warning("Please fill in all the changes.")
+            elif not all(len(change.split()) >= 10 for change in changes):  # Check if each change has at least 10 words
+                st.warning("Please ensure that all changes are at least 10 words long.")
+            else:
+                # Proceed with success case
+                st.session_state.survey_code = generate_survey_code()
+                st.success(f"Congratulations! Your Completion Code is: {st.session_state.survey_code}. Please submit this code to CloudResearch.")
+                
+                # Prepare entry for saving
+                entry = {
+                    'scene_id': scene_id,
+                    'changes': changes,
+                    'survey_code': st.session_state.survey_code
+                }
+                save_context_data(entry)
 
 with left_col:
     if 'fig' not in st.session_state:
