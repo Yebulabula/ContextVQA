@@ -69,7 +69,7 @@ SCENE_ID_TO_FILE = {
 def read_instance_labels(scene_id):
     return load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
 
-# @st.cache_resource
+@st.cache_resource
 def load_mesh(ply_file):
     return np.load(ply_file, allow_pickle=True, mmap_mode='r')
 
