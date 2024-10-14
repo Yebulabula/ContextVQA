@@ -152,7 +152,7 @@ if 'fig' not in st.session_state:
 @st.cache_resource
 def image_to_base64(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
-    target_size = (700, 700)
+    target_size = (900, 900)
     resized_image = cv2.resize(image, target_size, interpolation=cv2.INTER_AREA)
     _, encoded_image = cv2.imencode(".png", resized_image)
     base64_image = base64.b64encode(encoded_image.tobytes()).decode("utf-8")
@@ -244,9 +244,9 @@ with right_col:
             st.warning("Please answer at least one question before submitting. If you're struggling, click the button below for new scene changes and questions.")
         else:
             st.session_state.submissions.append(submission)
+            save_context_data(submission)
             if len(st.session_state.submissions) % 5 != 0:
                 st.success(f"You have processed {len(st.session_state.submissions)} scene changes! Click the button below for the next scene change.")
-                save_context_data(submission)
             else:
                 st.success(f"Thanks for your contribution! Here is your survey code: {st.session_state.survey_code}")
                 
