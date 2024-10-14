@@ -100,7 +100,7 @@ def shuffle_page():
     """Function to shuffle and get a new change_description and questions"""
     scene_id = st.session_state.scene_id
     st.session_state.change_description = random.choice(list(st.session_state.changes[scene_id].keys()))
-    st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(3, len(st.session_state.changes[scene_id][st.session_state.change_description])))
+    st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(5, len(st.session_state.changes[scene_id][st.session_state.change_description])))
     
 def initialize_state():
     if 'annotations' not in st.session_state:
@@ -116,7 +116,7 @@ def initialize_state():
         st.session_state.change_description = random.choice(list(st.session_state.changes[st.session_state.scene_id].keys()))
         
     if 'questions' not in st.session_state:
-        st.session_state.questions = random.sample(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], min(3, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description])))
+        st.session_state.questions = random.sample(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], min(5, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description])))
         
     if 'survey_code' not in st.session_state:
         st.session_state.survey_code = generate_survey_code()
@@ -128,8 +128,6 @@ def initialize_state():
         st.session_state.answers = {} 
         
 initialize_state()
-
-
 
 ROOT_1 = "3D_scans"
 SCENE_IDs = sorted([scene for scene in st.session_state.changes.keys()])
@@ -163,7 +161,7 @@ def image_to_base64(image_path):
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-**Imagine how the 3D scene will look after a given scene change occurs. Then, answer the questions based on your imagination of the updated scene. Repeat this process for <span style="color:brown;">**three**</span> different scene changes.**
+**Given a past 3D scene, and a hypothetical change made to the scene, you need to firstly imagine how the new scene will look like after the change happens. Then, answer a question based on the new scene. Do this for **5** different changes, and for each scene change, you just need to answer one question.**
 
 The following information will be provided to help you answer the questions:
 - **3D Scene Visualization**: A **past** 3D scene before the change.  <span style="color:red;">**You can rotate the scene by clicking and dragging the mouse.**</span>
@@ -173,7 +171,7 @@ The following information will be provided to help you answer the questions:
 
 #### <span style="color:brown;">**(MUST READ) Instructions:**</span>
 - Your answer should be a <span style="color:red;"> **single word or phrase**</span>, such as "cube", "on the table", "Bottom right", etc.
-- Not all questions are clear and make sense because they are raw data. <span style="color:red;">**Please only answer the questions you understand and feel confident answering.**</span>
+- Some questions may be confusing and vague because they are raw data. <span style="color:red;">**Please pick one that you feel confident answering.**</span>
 - If you find the scene change or all its questions are not making sense, <span style="color:red;"> **click the button to get a new one.** </span>
 - Tip: You can quickly locate the object by using <span style="color:red;"> **Ctrl + F** </span> and typing the object's name. 
 
@@ -184,11 +182,11 @@ The following information will be provided to help you answer the questions:
 - **Question:** What item is directly in front of the guitar now?
 - **Answer:** coffee table.
 
-<span style="color:brown;">**You will be given a completion code after all three scene changes processed. Use this code to claim your reward on the CloudResearch platform.**</span> 
+<span style="color:brown;">**You will be given a completion code after all 5 scene changes processed. Use this code to claim your reward on the CloudResearch platform.**</span> 
 """
 
 with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, icon="📝"):
-    image_path = "example.png"
+    image_path = "example1.png"
     st.markdown(guideline_text.format(image_to_base64(image_path)), unsafe_allow_html=True)
 
 left_col, right_col = st.columns([2, 1])
@@ -246,7 +244,7 @@ with right_col:
             st.warning("Please answer at least one question before submitting. If you're struggling, click the button below for new scene changes and questions.")
         else:
             st.session_state.submissions.append(submission)
-            if len(st.session_state.submissions) % 3 != 0:
+            if len(st.session_state.submissions) % 5 != 0:
                 st.success(f"You have processed {len(st.session_state.submissions)} scene changes! Click the button below for the next scene change.")
                 save_context_data(submission)
             else:
