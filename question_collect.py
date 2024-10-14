@@ -244,11 +244,10 @@ with right_col:
             st.warning("Please answer at least one question before submitting. If you're struggling, click the button for new scene changes and questions.")
         else:
             st.session_state.submissions.append(submission)
-            
             if len(st.session_state.submissions) % 3 != 0:
                 st.success(f"You have processed {len(st.session_state.submissions)} scene changes! Click the button for the next scene change.")
+                save_context_data(submission)
             else:
                 st.success(f"Thanks for your contribution! Here is your survey code: {st.session_state.survey_code}")
-                save_context_data(st.session_state.submissions)
-
+                
     st.button('Click here to get new scene changes and questions!', on_click=shuffle_page)
