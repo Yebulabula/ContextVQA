@@ -32,7 +32,7 @@ import random
 
 
 data = json.load(open('filtered_v6.json', 'r'))
-
+backup = json.load(open('total_merged_data.json', 'r'))
 
 total_change = 0
 total_quetsions = 0
@@ -41,8 +41,17 @@ filtered_data = {}
 for scene in data:
     filtered_data[scene] = {}
     for change_type in data[scene]:
-        if len(data[scene][change_type]) < 4:
-            breakpoint()
+        filtered_questions = []
+        if len(data[scene][change_type]) == 0 or len(backup[scene][change_type]) == 0:
+            continue
+        else:
+            for question in data[scene][change_type]:
+                if 'notable' in question or 'significant' in question or 'what objects' in question or 'which objects' in question:
+                    continue
+                else:
+                    filtered_questions.append(question)
+                    total_quetsions += 1
+            filtered_data[scene][change_type] = filtered_questions
         
 print(f"Total number of changes: {total_change}")
 print(f"Total number of questions: {total_quetsions}")

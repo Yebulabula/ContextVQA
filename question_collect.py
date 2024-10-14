@@ -96,22 +96,28 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations):
     )
     return fig
 
+def shuffle_page():
+    """Function to shuffle and get a new change_description and questions"""
+    scene_id = st.session_state.scene_id
+    st.session_state.change_description = random.choice(list(st.session_state.changes[scene_id].keys()))
+    st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(4, len(st.session_state.changes[scene_id][st.session_state.change_description])))
+    
 def initialize_state():
-    if 'change_description' not in st.session_state:
-        st.session_state.change_description = None
-        
-    if 'questions' not in st.session_state:
-        st.session_state.questions = None
-
     if 'annotations' not in st.session_state:
         st.session_state.annotations = load_scene_annotations()
 
     if 'changes' not in st.session_state:
-        st.session_state.changes = load_json('questions/filtered_v7.json')
+        st.session_state.changes = load_json('questions/filtered_v8.json')
 
     if 'scene_id' not in st.session_state:
-        st.session_state.scene_id = None
+        st.session_state.scene_id = random.choice(list(st.session_state.changes.keys()))
     
+    if 'change_description' not in st.session_state:
+        st.session_state.change_description = random.choice(list(st.session_state.changes[st.session_state.scene_id].keys()))
+        
+    if 'questions' not in st.session_state:
+        st.session_state.questions = random.sample(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], min(4, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description])))
+        
     if 'survey_code' not in st.session_state:
         st.session_state.survey_code = generate_survey_code()
         
@@ -123,11 +129,7 @@ def initialize_state():
         
 initialize_state()
 
-def shuffle_page():
-    """Function to shuffle and get a new change_description and questions"""
-    scene_id = st.session_state.scene_id
-    st.session_state.change_description = random.choice(list(st.session_state.changes[scene_id].keys()))
-    st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(4, len(st.session_state.changes[scene_id][st.session_state.change_description])))
+
 
 ROOT_1 = "3D_scans"
 SCENE_IDs = sorted([scene for scene in st.session_state.changes.keys()])
@@ -138,18 +140,13 @@ def read_instance_labels(scene_id):
     return load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
 
 def refresh_scene():
-    if st.session_state.scene_id is None:
-        st.session_state.scene_id = random.choice(list(SCENE_ID_TO_FILE.keys()))
-        scene_id = st.session_state.scene_id
-        if not st.session_state.change_description:
-            st.session_state.change_description = random.choice(list(st.session_state.changes[scene_id].keys()))
-            st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(4, len(st.session_state.changes[scene_id][st.session_state.change_description])))
+    scene_id = st.session_state.scene_id    
             
-        ply_file = SCENE_ID_TO_FILE[scene_id]
-        mesh_data = load_mesh(ply_file)
-        vertices, triangles, vertex_colors = mesh_data.values()
-        annotations = st.session_state.annotations[scene_id]
-        st.session_state.fig = initialize_plot(vertices, triangles, vertex_colors, annotations)
+    ply_file = SCENE_ID_TO_FILE[scene_id]
+    mesh_data = load_mesh(ply_file)
+    vertices, triangles, vertex_colors = mesh_data.values()
+    annotations = st.session_state.annotations[scene_id]
+    st.session_state.fig = initialize_plot(vertices, triangles, vertex_colors, annotations)
 
 if 'fig' not in st.session_state:
     refresh_scene()
@@ -166,7 +163,7 @@ def image_to_base64(image_path):
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-**Imagine how the 3D scene will look after a given scene change occurs. Then, answer the questions based on your imagination of the updated scene. Repeat this process for three different scene changes.**
+**Imagine how the 3D scene will look after a given scene change occurs. Then, answer the questions based on your imagination of the updated scene. Repeat this process for <span style="color:brown;">**three**</span> different scene changes.**
 
 The following information will be provided to help you answer the questions:
 - **3D Scene Visualization**: A **past** 3D scene before the change is displayed below. You can rotate the scene by clicking and dragging the mouse.
@@ -215,11 +212,17 @@ with right_col:
     submission = {
         'scene_id': st.session_state.scene_id,
         'change_description': st.session_state.change_description,
-        'questions_and_answers': {}
+        'questions_and_answers': {},
+        'survey_code': st.session_state.survey_code
     }
-    
-    if st.button("Click here to get new scene changes and questions!"):
-        shuffle_page()
+
+    st.markdown("""
+        <style>
+        div.stButton > button {
+            color: red;
+        }
+        </style>
+        """, unsafe_allow_html=True)
 
     # Use a form to gather inputs without page refreshes
     with st.form(key='answer_form'):
@@ -234,17 +237,18 @@ with right_col:
         # Submit button inside the form
         submit_button = st.form_submit_button(label='Submit')
 
-    # Handle form submission
+           
     if submit_button:
-        change_description = [st.session_state.change_description]
         submission['questions_and_answers'] = {question: st.session_state.answers[question] for question in st.session_state.questions if st.session_state.answers[question] != ''}
-        
-        st.session_state.submissions.append(submission)
-        
-        if len(st.session_state.submissions) % 3 != 0:
-            st.success(f"You have processed {len(st.session_state.submissions)} scene changes!")
-            shuffle_page()
+        if len(submission['questions_and_answers']) == 0:
+            st.warning("Please answer at least one question before submitting. If you're struggling, click the button for new scene changes and questions.")
         else:
-            st.success(f"Thanks for your contribution! Here is your survey code: {st.session_state.survey_code}")
-            save_context_data(submission)
+            st.session_state.submissions.append(submission)
+            
+            if len(st.session_state.submissions) % 3 != 0:
+                st.success(f"You have processed {len(st.session_state.submissions)} scene changes! Click the button for the next scene change.")
+            else:
+                st.success(f"Thanks for your contribution! Here is your survey code: {st.session_state.survey_code}")
+                save_context_data(st.session_state.submissions)
 
+    st.button('Click here to get new scene changes and questions!', on_click=shuffle_page)
