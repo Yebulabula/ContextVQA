@@ -81,7 +81,6 @@ for key in data.keys():
 length = sum([len(data[key]) for key in data.keys()])
 print(f'Total changes: {length}')
 
-
 # filter_data = {}
 # failed = []
 # failed_ids = []
