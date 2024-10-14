@@ -100,7 +100,7 @@ def shuffle_page():
     """Function to shuffle and get a new change_description and questions"""
     scene_id = st.session_state.scene_id
     st.session_state.change_description = random.choice(list(st.session_state.changes[scene_id].keys()))
-    st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(4, len(st.session_state.changes[scene_id][st.session_state.change_description])))
+    st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(3, len(st.session_state.changes[scene_id][st.session_state.change_description])))
     
 def initialize_state():
     if 'annotations' not in st.session_state:
@@ -116,7 +116,7 @@ def initialize_state():
         st.session_state.change_description = random.choice(list(st.session_state.changes[st.session_state.scene_id].keys()))
         
     if 'questions' not in st.session_state:
-        st.session_state.questions = random.sample(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], min(4, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description])))
+        st.session_state.questions = random.sample(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], min(3, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description])))
         
     if 'survey_code' not in st.session_state:
         st.session_state.survey_code = generate_survey_code()
@@ -166,22 +166,23 @@ guideline_text = """
 **Imagine how the 3D scene will look after a given scene change occurs. Then, answer the questions based on your imagination of the updated scene. Repeat this process for <span style="color:brown;">**three**</span> different scene changes.**
 
 The following information will be provided to help you answer the questions:
-- **3D Scene Visualization**: A **past** 3D scene before the change is displayed below. You can rotate the scene by clicking and dragging the mouse.
-- **Scene Description**: A brief description of the objects in the **past** scene.
-- **Scene Change**: A description of the modification made to the **past** scene.
-- **Questions**: Questions about the updated scene after the change. You will answer these questions based on your imagined version of the new scene, **rather than the past scene!!**
+- **3D Scene Visualization**: A **past** 3D scene before the change.  <span style="color:red;">**You can rotate the scene by clicking and dragging the mouse.**</span>
+- **Scene Description**: Summary of objects in the **past** scene.
+- **Scene Change**: A hypothetical change made to the **past** scene.
+- **Questions**: Questions about the **updated scene** in your mind after the change happens.
 
-#### <span style="color:brown;">**Instructions:**</span>
-- **Your answer should be a single word or phrase, such as "red", "cube", "on the table", "Two", "Yes", "No", "Top left", "Bottom right", etc.**
-- **We acknowledge that not all questions are clear and make sense due to raw data. Please only answer the questions you understand and feel confident answering. Leave any answers blank if you're unsure.**
-- **If you find the scene change or all its questions are not making sense, click the button to get a new scene change and questions.**
+#### <span style="color:brown;">**(MUST READ) Instructions:**</span>
+- Your answer should be a <span style="color:red;"> **single word or phrase**</span>, such as "cube", "on the table", "Bottom right", etc.
+- Not all questions are clear and make sense because they are raw data. <span style="color:red;">**Please only answer the questions you understand and feel confident answering.**</span>
+- If you find the scene change or all its questions are not making sense, <span style="color:red;"> **click the button to get a new one.** </span>
+- Tip: You can quickly locate the object by using <span style="color:red;"> **Ctrl + F** </span> and typing the object's name. 
 
 #### <span style="color:brown;">**Example Scene:**</span>
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
 
 - **Scene Change:** The guitar has been moved from the floor to the couch.
-- **Question:** What item is directly in fornt of the guitar now?
-- **Answer:** Pillow
+- **Question:** What item is directly in front of the guitar now?
+- **Answer:** coffee table.
 
 <span style="color:brown;">**You will be given a completion code after all three scene changes processed. Use this code to claim your reward on the CloudResearch platform.**</span> 
 """
@@ -200,7 +201,7 @@ with left_col:
         category = label.split('_')[0]
         objects_by_category.setdefault(category, []).append(label)
 
-    summary_text = "This scene contains " + ", ".join(
+    summary_text = "Scene Description: This scene contains " + ", ".join(
         f"{len(labels)} {category if category.endswith('s') else category + ('s' if len(labels) > 1 else '')}"
         for category, labels in objects_by_category.items() if category not in excluded_categories
     ) + "."
@@ -226,12 +227,13 @@ with right_col:
 
     # Use a form to gather inputs without page refreshes
     with st.form(key='answer_form'):
-        st.markdown(f"<span style='color:red; font-size:20px; font-weight:bold;'>Scene Change: {st.session_state.change_description}</span>", unsafe_allow_html=True)
+        st.markdown(f"<span style='color:red; font-size:20px;'>Scene Change: {st.session_state.change_description}</span>", unsafe_allow_html=True)
 
         answers = []
         # Loop through questions and use text input
         for question in st.session_state.questions:
-            st.markdown(f"<span style='color:blue; font-size:18px;'>Question: {question}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px;'>{question}</span>", unsafe_allow_html=True)
+
             st.session_state.answers[question] = st.text_area(f"Answer for {question}", key=f"{question}_input", placeholder="Type your answer here", label_visibility="collapsed")
 
         # Submit button inside the form
@@ -241,11 +243,11 @@ with right_col:
     if submit_button:
         submission['questions_and_answers'] = {question: st.session_state.answers[question] for question in st.session_state.questions if st.session_state.answers[question] != ''}
         if len(submission['questions_and_answers']) == 0:
-            st.warning("Please answer at least one question before submitting. If you're struggling, click the button for new scene changes and questions.")
+            st.warning("Please answer at least one question before submitting. If you're struggling, click the button below for new scene changes and questions.")
         else:
             st.session_state.submissions.append(submission)
             if len(st.session_state.submissions) % 3 != 0:
-                st.success(f"You have processed {len(st.session_state.submissions)} scene changes! Click the button for the next scene change.")
+                st.success(f"You have processed {len(st.session_state.submissions)} scene changes! Click the button below for the next scene change.")
                 save_context_data(submission)
             else:
                 st.success(f"Thanks for your contribution! Here is your survey code: {st.session_state.survey_code}")
