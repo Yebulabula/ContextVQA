@@ -290,4 +290,7 @@ with right_col:
             else:
                 st.success(f"Thanks for your contribution! Here is your survey code: {st.session_state.survey_code}")
                 
+                
+                
+                
     st.button('Click here to get new scene changes and questions!', on_click=shuffle_page)
