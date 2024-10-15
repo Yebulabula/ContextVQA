@@ -36,45 +36,25 @@ if firebase_credentials:
         # Iterate over documents and collect data
         for doc in docs:
             dict_data = {k:v for k, v in doc.to_dict().items() if k != 'survey_code'}
-            # if dict_data not in data.values() and len(dict_data['context_change']) > 20 and len(dict_data['question']) > 20:
-            data[doc.to_dict()['survey_code']] = dict_data
-            # else:
-            #     print(dict_data)
+            
+            # change the order of the keys
+            dict_data = {'scene_id': doc.to_dict()['scene_id'], 'context_change': doc.to_dict()['change_description'], 'question': list(doc.to_dict()['questions_and_answers'].keys()), 'answer': list(doc.to_dict()['questions_and_answers'].values())}
 
+            if doc.to_dict()['survey_code'] not in data:
+                data[doc.to_dict()['survey_code']] = [dict_data]
+            else:  
+                data[doc.to_dict()['survey_code']].append(dict_data)
+            
         # Write data to a JSON file
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False,indent=2)
 
 
     # Example: Export data from 'your-collection-name' to 'output.json'
-    collection_name = 'Second_Round_Replacement_Changes'
-    output_file = 'second_replacement_users.json'
+    collection_name = 'Answer'
+    output_file = 'ContextQA_data.json'
 
     export_firestore_collection_to_json(collection_name, output_file)
-
-
-import json
-import numpy as np
-import os
-
-with open('second_replacement_users.json', 'r') as f:
-    data = json.load(f)
-    
-    
-print(len(data))  # Number of documents in the collection
-
-scene_occurence = {}
-answers = []
-for d in data.values():
-    # print(d)
-    scene_id = d['scene_id']
-    if scene_id in scene_occurence:
-        scene_occurence[scene_id] += 1
-    else:
-        scene_occurence[scene_id] = 1
-    answers += d['changes']
-
-print(len(answers))  # Number of answers in the collection
 
 # print(answers)
 # for a in answers:
