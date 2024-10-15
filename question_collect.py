@@ -107,7 +107,10 @@ def initialize_state():
         st.session_state.annotations = load_scene_annotations()
 
     if 'changes' not in st.session_state:
-        st.session_state.changes = load_json('questions/filtered_v8.json')
+        st.session_state.changes = load_json('questions/filtered_v4.json')
+        
+    if 'answer_types' not in st.session_state:
+        st.session_state.answer_types = load_json('questions/0_100.json')
 
     if 'scene_id' not in st.session_state:
         st.session_state.scene_id = random.choice(list(st.session_state.changes.keys()))
@@ -161,7 +164,7 @@ def image_to_base64(image_path):
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-**Given a past 3D scene, and a hypothetical change made to the scene, you need to firstly imagine how the new scene will look like after the change happens. Then, answer a question based on the new scene. Do this for **5** different changes, and for each scene change, you just need to answer one question.**
+**Given a past 3D scene, and a hypothetical change made to the scene, you need to firstly imagine how the new scene will look like after the change happens. Then, answer a question based on the new scene. <span style="color:red;"> Do this for **5** different changes, answer at least one question for each of them. </span>**
 
 The following information will be provided to help you answer the questions:
 - **3D Scene Visualization**: A **past** 3D scene before the change.  <span style="color:red;">**You can rotate the scene by clicking and dragging the mouse.**</span>
@@ -170,10 +173,11 @@ The following information will be provided to help you answer the questions:
 - **Questions**: Questions about the **updated scene** in your mind after the change happens.
 
 #### <span style="color:brown;">**(MUST READ) Instructions:**</span>
-- Your answer should be a <span style="color:red;"> **single word or phrase**</span>, such as "cube", "on the table", "Bottom right", etc.
-- Some questions may be confusing and vague because they are raw data. <span style="color:red;">**Please pick one that you feel confident answering.**</span>
-- If you find the scene change or all its questions are not making sense, <span style="color:red;"> **click the button to get a new one.** </span>
-- Tip: You can quickly locate the object by using <span style="color:red;"> **Ctrl + F** </span> and typing the object's name. 
+- A valid answer should be a <span style="color:red;"> **single word or phrase**</span>.
+- Some questions may be confusing because they are raw data. <span style="color:red;">**You only need to choose one that you feel confident answering.**</span>
+- If you find the scene change or all its questions are confusing, <span style="color:red;"> **click the button to get a new one.** </span>
+- Tip 1: You can quickly locate the object by using <span style="color:red;"> **Ctrl + F** </span> and typing the object's name. 
+- Tip 2: We include the answer type along with one possible answer for each question as a hint. (<span style="color:red;">**BUT DO NOT COPY THE EXAMPLE ANSWER**</span>)
 
 #### <span style="color:brown;">**Example Scene:**</span>
 <img style='display: block; margin: auto; max-width: 30%; max-height: 30%;' src='data:image/png;base64,{}'/>
@@ -225,16 +229,52 @@ with right_col:
 
     # Use a form to gather inputs without page refreshes
     with st.form(key='answer_form'):
-        st.markdown(f"<span style='color:red; font-size:20px;'>Scene Change: {st.session_state.change_description}</span>", unsafe_allow_html=True)
-
+        # Display Scene Change Description
+        st.markdown(
+            f"<div style='background-color:#f8d7da; padding:10px; border-radius:5px; margin-bottom:15px;'>"
+            f"<span style='color:red; font-size:22px; font-weight:bold;'>Scene Change:</span> "
+            f"<span style='font-size:20px;'>{st.session_state.change_description}</span>"
+            f"</div>", 
+            unsafe_allow_html=True
+        )
+        
+        # Instructions for user
+        st.markdown(
+            "<div style='background-color:#d4edda; padding:10px; border-radius:5px;'>"
+            "<span style='color:black; font-size:20px;'>Choose at least one question below to answer:</span>"
+            "</div>", 
+            unsafe_allow_html=True
+        )
+        
         answers = []
-        # Loop through questions and use text input
+        # Loop through questions and format each question block
         for question in st.session_state.questions:
-            st.markdown(f"<span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px;'>{question}</span>", unsafe_allow_html=True)
+            # Question text
+            st.markdown(
+                f"<div style='margin-bottom:10px;'>"
+                f"<span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> "
+                f"<span style='font-size:18px; font-weight:bold;'>{question}</span>"
+                f"</div>", 
+                unsafe_allow_html=True
+            )
+            
+            # Hint text
+            st.markdown(
+                f"<div style='margin-bottom:15px;'>"
+                f"<span style='color:green; font-size:18px;'>Hint: Answer should be {st.session_state.answer_types[question].lower()}</span>"
+                f"</div>", 
+                unsafe_allow_html=True
+            )
 
-            st.session_state.answers[question] = st.text_area(f"Answer for {question}", key=f"{question}_input", placeholder="Type your answer here", label_visibility="collapsed")
-
-        # Submit button inside the form
+            # Answer input box
+            st.session_state.answers[question] = st.text_area(
+                label=f"Answer for {question}", 
+                key=f"{question}_input", 
+                placeholder="Type your answer here", 
+                label_visibility="collapsed"
+            )
+        
+        # Submit button
         submit_button = st.form_submit_button(label='Submit')
 
            

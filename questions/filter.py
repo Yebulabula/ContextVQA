@@ -1,97 +1,58 @@
 import json
 import random
 
-# filtered_data = json.load(open('filtered_v4.json', 'r'))
+def save_filtered_data(filtered_data, file_name):
+    with open(file_name, 'w') as f:
+        json.dump(filtered_data, f, indent=4)
 
-# final_data ={}
-# for scene in filtered_data:
-#     final_data[scene] = {}
-#     for change_type in filtered_data[scene]:
-#         filtered_questions = []
-#         questions = list(set(filtered_data[scene][change_type]))
-        
-#         for q in questions:
-#             if 'color' in q:
-#                 remove_prob = random.random()        
-#                 if remove_prob > 0.7:
-#                     filtered_questions.append(q)
-                    
-#             elif 'shape' in q:
-#                 remove_prob = random.random()
-#                 if remove_prob > 0.5:
-#                     filtered_questions.append(q)
-#             else:
-#                 filtered_questions.append(q)
-                
-#         final_data[scene][change_type] = filtered_questions
-        
-    
-# save the filtered data    
-# with open('filtered_v5.json', 'w') as f:
-#     json.dump(final_data, f, indent=4)
-
-
-data = json.load(open('filtered_v6.json', 'r'))
-backup = json.load(open('total_merged_data.json', 'r'))
+data_with_answers = json.load(open('filtered_v3.json', 'r'))
 
 total_change = 0
 total_quetsions = 0
 
 filtered_data = {}
-for scene in data:
+
+for scene in data_with_answers:
     filtered_data[scene] = {}
-    for change_type in data[scene]:
-        filtered_questions = []
-        if len(data[scene][change_type]) == 0 or len(backup[scene][change_type]) == 0:
-            continue
-        else:
-            for question in data[scene][change_type]:
-                if 'notable' in question or 'significant' in question or 'what objects' in question or 'which objects' in question:
-                    continue
+    for change_type in data_with_answers[scene]:
+        qa_list = data_with_answers[scene][change_type]
+        questions = []
+        for d in qa_list:
+            q, a = d.split('Answer:')[0].strip(), d.split('Answer:')[1].strip()
+            
+            add = True
+            for c_word in change_type.split(' '):
+                if a.split(" ")[0].lower() == c_word.lower() and a.split(" ")[0] not in ['Near', 'Next', 'To', 'The', 'Against', 'On', 'Top', 'Of', 'In', 'Front', 'Behind', 'Beside', 'Between', 'Under', 'Below', 'Above', 'Nearby', 'Close', 'By', 'At', 'In', 'The', 'Middle', 'Center', 'Around', 'Another', 'Closer', 'Farther', 'Further', 'Towards', 'Away', 'From', 'Left', 'Right', 'Side', 'Back']:
+                    
+                    print('Context Change:', change_type)
+                    print('Question:', q)
+                    print('Answer:', a)
+                    add = False
+                    break
+            
+            if add and 'None' not in a and 'No' not in a and 'None.' not in a and 'No.' not in a and 'Zero' not in a and 'Zero.' not in a and '0' not in a and '0.' not in a and 'Nothing' not in a and 'Nothing.' and 'N/A' not in a and 'Not applicable' not in a and 'notable' not in q and 'significant' not in q and 'which objects' not in q and 'what objects' not in q:
+                if 'color' in q:
+                    prob = random.random()
+                    if prob > 0.7:
+                        questions.append(q)
+                elif 'shape' in q:
+                    prob = random.random()
+                    if prob > 0.5:
+                        questions.append(q)
                 else:
-                    filtered_questions.append(question)
-                    total_quetsions += 1
-            filtered_data[scene][change_type] = filtered_questions
+                    questions.append(q)
+                    
         
+        if len(questions) > 0:
+            filtered_data[scene][change_type] = questions
+            total_change += 1
+            total_quetsions += len(questions)
+
+print(len(questions))
 print(f"Total number of changes: {total_change}")
 print(f"Total number of questions: {total_quetsions}")
 
-with open('filtered_v8.json', 'w') as f:
-    json.dump(filtered_data, f, indent=4)
-
-# backup = json.load(open('total_merged_data.json', 'r'))
-
-# need_add = 0
-# filtered_data = {}
-# total_change = 0
-
-# for scene in data:
-#     filtered_data[scene] = {}
-#     for change_type in data[scene]:
-#         print(f"Scene: {scene}, Change type: {change_type}, Number of questions: {len(data[scene][change_type])}")
-#         questions = list(set(data[scene][change_type]))
-#         remain = 5 - len(questions)
-            
-#         if len(backup[scene][change_type]) >= 5:
-#             total_change +=1
-#             while remain > 0:
-#                 question = random.choice(backup[scene][change_type])
-#                 if question not in questions:
-#                     questions.append(question)
-#                     remain -= 1
-                    
-#             filtered_data[scene][change_type] = questions
-                    
-# with open('filtered_v7.json', 'w') as f:
-#     json.dump(filtered_data, f, indent=4)
-
-        
-            
-            
-            
-                
-                
-    
+save_filtered_data(filtered_data, 'filtered_v4.json')
     
         
         
