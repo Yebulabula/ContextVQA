@@ -101,34 +101,41 @@ def shuffle_page():
     scene_id = st.session_state.scene_id
     st.session_state.change_description = random.choice(list(st.session_state.changes[scene_id].keys()))
     st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(5, len(st.session_state.changes[scene_id][st.session_state.change_description])))
-    
+
+@st.cache_resource
+def load_data():
+    annotations = load_scene_annotations()
+    changes = load_json('questions/filtered_v4.json')
+    answer_types = load_json('questions/0_100.json')
+    return annotations, changes, answer_types
+
 def initialize_state():
+    # Initialize all data at once if not already loaded
     if 'annotations' not in st.session_state:
-        st.session_state.annotations = load_scene_annotations()
+        st.session_state.annotations, st.session_state.changes, st.session_state.answer_types = load_data()
 
-    if 'changes' not in st.session_state:
-        st.session_state.changes = load_json('questions/filtered_v4.json')
-        
-    if 'answer_types' not in st.session_state:
-        st.session_state.answer_types = load_json('questions/0_100.json')
-
+    # Initialize scene_id first, since it's used later
     if 'scene_id' not in st.session_state:
         st.session_state.scene_id = random.choice(list(st.session_state.changes.keys()))
     
-    if 'change_description' not in st.session_state:
-        st.session_state.change_description = random.choice(list(st.session_state.changes[st.session_state.scene_id].keys()))
-        
-    if 'questions' not in st.session_state:
-        st.session_state.questions = random.sample(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], min(5, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description])))
-        
-    if 'survey_code' not in st.session_state:
-        st.session_state.survey_code = generate_survey_code()
-        
-    if 'submissions' not in st.session_state:
-        st.session_state.submissions = []
-        
-    if 'answers' not in st.session_state:
-        st.session_state.answers = {} 
+    # Now that scene_id is initialized, initialize the other fields
+    st.session_state.change_description = st.session_state.get(
+        'change_description', 
+        random.choice(list(st.session_state.changes[st.session_state.scene_id].keys()))
+    )
+
+    st.session_state.questions = st.session_state.get(
+        'questions', 
+        random.sample(
+            st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], 
+            min(5, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description]))
+        )
+    )
+
+    # Initialize the other fields that don't depend on scene_id or change_description
+    st.session_state.survey_code = st.session_state.get('survey_code', generate_survey_code())
+    st.session_state.submissions = st.session_state.get('submissions', 0)
+    st.session_state.answers = st.session_state.get('answers', {})
         
 initialize_state()
 
@@ -142,7 +149,6 @@ def read_instance_labels(scene_id):
 
 def refresh_scene():
     scene_id = st.session_state.scene_id    
-            
     ply_file = SCENE_ID_TO_FILE[scene_id]
     mesh_data = load_mesh(ply_file)
     vertices, triangles, vertex_colors = mesh_data.values()
@@ -158,8 +164,18 @@ def image_to_base64(image_path):
     target_size = (900, 900)
     resized_image = cv2.resize(image, target_size, interpolation=cv2.INTER_AREA)
     _, encoded_image = cv2.imencode(".png", resized_image)
-    base64_image = base64.b64encode(encoded_image.tobytes()).decode("utf-8")
-    return base64_image
+    return base64.b64encode(encoded_image.tobytes()).decode("utf-8")
+
+@st.cache_resource
+def precompute_scene_description(scene_id):
+    id2labels = read_instance_labels(scene_id)
+    excluded_categories = {'wall', 'object', 'floor', 'ceiling'}
+    objects_by_category = {}
+    for label in id2labels.values():
+        category = label.split('_')[0]
+        if category not in excluded_categories:
+            objects_by_category.setdefault(category, []).append(label)
+    return objects_by_category
 
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
@@ -196,13 +212,8 @@ with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, 
 left_col, right_col = st.columns([2, 1])
 
 with left_col:
-    id2labels = read_instance_labels(st.session_state.scene_id)
     excluded_categories = {'wall', 'object', 'floor', 'ceiling'}
-    objects_by_category = {}
-    for label in id2labels.values():
-        category = label.split('_')[0]
-        objects_by_category.setdefault(category, []).append(label)
-
+    objects_by_category = precompute_scene_description(st.session_state.scene_id)
     summary_text = "Scene Description: This scene contains " + ", ".join(
         f"{len(labels)} {category if category.endswith('s') else category + ('s' if len(labels) > 1 else '')}"
         for category, labels in objects_by_category.items() if category not in excluded_categories
@@ -212,11 +223,19 @@ with left_col:
     st.plotly_chart(st.session_state.fig, use_container_width=True)
     
 with right_col:
+    # Load scene data from session state only once at the beginning
+    scene_id = st.session_state.get('scene_id', None)
+    change_description = st.session_state.get('change_description', None)
+    questions = st.session_state.get('questions', [])
+    answer_types = st.session_state.get('answer_types', {})
+    survey_code = st.session_state.get('survey_code', generate_survey_code())
+    submissions = st.session_state.get('submissions', 0)
+
     submission = {
-        'scene_id': st.session_state.scene_id,
-        'change_description': st.session_state.change_description,
+        'scene_id': scene_id,
+        'change_description': change_description,
         'questions_and_answers': {},
-        'survey_code': st.session_state.survey_code
+        'survey_code': survey_code
     }
 
     st.markdown("""
@@ -233,7 +252,7 @@ with right_col:
         st.markdown(
             f"<div style='background-color:#f8d7da; padding:10px; border-radius:5px; margin-bottom:15px;'>"
             f"<span style='color:red; font-size:22px; font-weight:bold;'>Scene Change:</span> "
-            f"<span style='font-size:20px;'>{st.session_state.change_description}</span>"
+            f"<span style='font-size:20px;'>{change_description}</span>"
             f"</div>", 
             unsafe_allow_html=True
         )
@@ -246,10 +265,11 @@ with right_col:
             unsafe_allow_html=True
         )
         
-        answers = []
         # Loop through questions and format each question block
-        for question in st.session_state.questions:
-            # Question text
+        for question in questions:
+            # Render question and hints without recalculating `st.session_state` values
+            question_hint = answer_types.get(question, 'text').lower()
+            
             st.markdown(
                 f"<div style='margin-bottom:10px;'>"
                 f"<span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> "
@@ -261,36 +281,40 @@ with right_col:
             # Hint text
             st.markdown(
                 f"<div style='margin-bottom:15px;'>"
-                f"<span style='color:green; font-size:18px;'>Hint: Answer should be {st.session_state.answer_types[question].lower()}</span>"
+                f"<span style='color:green; font-size:18px;'>Hint: Answer should be {question_hint}</span>"
                 f"</div>", 
                 unsafe_allow_html=True
             )
 
             # Answer input box
-            st.session_state.answers[question] = st.text_area(
+            answer = st.text_area(
                 label=f"Answer for {question}", 
                 key=f"{question}_input", 
                 placeholder="Type your answer here", 
                 label_visibility="collapsed"
             )
+            
+            # Store the answer in the submission dictionary directly
+            if answer:
+                submission['questions_and_answers'][question] = answer
         
-        # Submit button
+        # Submit button inside the form block
         submit_button = st.form_submit_button(label='Submit')
 
-           
+    # Handle submission outside the form
     if submit_button:
-        submission['questions_and_answers'] = {question: st.session_state.answers[question] for question in st.session_state.questions if st.session_state.answers[question] != ''}
         if len(submission['questions_and_answers']) == 0:
             st.warning("Please answer at least one question before submitting. If you're struggling, click the button below for new scene changes and questions.")
         else:
-            st.session_state.submissions.append(submission)
+            # Update session state only once after processing the form
+            st.session_state.submissions = submissions + 1
             save_context_data(submission)
-            if len(st.session_state.submissions) % 5 != 0:
-                st.success(f"You have processed {len(st.session_state.submissions)} scene changes! Click the button below for the next scene change.")
+            
+            if st.session_state.submissions % 5 != 0:
+                st.success(f"You have processed {st.session_state.submissions} scene changes! Click the button below for the next scene change.")
             else:
-                st.success(f"Thanks for your contribution! Here is your survey code: {st.session_state.survey_code}")
-                
-                
-                
-                
+                st.success(f"Thanks for your contribution! Here is your survey code: {survey_code}")
+    
+    # Separate button for getting new scene changes
     st.button('Click here to get new scene changes and questions!', on_click=shuffle_page)
+
