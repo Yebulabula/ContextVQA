@@ -15,34 +15,17 @@ firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
 
 firebase_credentials = "ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29udGV4dHZxYSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjNiMWVhOGQ5ZjBjMDJiYjEwZDQwNTI4YWFlNWFmODI0MDAzMzZlZDEiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1kvdkV3QkpkN2RUcW1cblZkeHFVcExFMFFldTRFbS96dVA3YlV5YmxzUUZrVzhoNjBUUGdORlp0UXo2Z012L1VpZFBIcGxaSjRHWDVLZFhcbldVd2wrZkpHM2phZFhPcEJsaFlXaTBiNGhkWEhOY3NWSjR1dlFab0xrM05IcUJCbGhzSTU5eS96VU9QTTExc2xcbkRIVXVTL3ZhaGg4VHBwWEVubnRGV2lxNkYrTitmQmxhL3BtQlA1RDNuNG5qMnhObzgwbWsva3V3UjY0akpSZC9cbkVXeTZUaGExOXhPc3hWUFhCRUxFRXlLTGY2RzYwbU9jbnZpQWRwcU5MU2J0MUlwZUMwaWw0RlFuQUcwUUR3c3FcbmE5ay90b2t0OWs2NUFzc085dFcvVjcrTzVodmlySXUwL1pneXV3bGowbmNGRHNYb211UTRndXQ0Q3g3UUp2bndcbnA5Q3BMNTJaQWdNQkFBRUNnZ0VBRUNIdHo3amtPajNwd2NsUzlSa2c1Y1QrME9kUWozdWkyWXUwWk1HWWlOZkZcbmhxZVd1V1NsYnBhak9EVGxqZFlkVS8vdmZwR21YaHhic3QrMUlsb0JQSXpJNkgzNEs1TkdYL2t1c2h6MnBrdGJcblR5ODgwTzJUYno0TWpWVkE2VnUwMWtUazF2ekVFSUR5Mk95LzNISmhxN0N4elRJbkg3VHdYYWM4MHlPYXR1YjRcblRWMGNFYXRnVUdHQlJudjRzbVVmVG1LeU9MeFkvdWxEbllPTWtmRXlEL2lzaVlhaTBCbEY4RC9CbGlCVmJEVERcbk0veEthM21yYkh0YU0zTVVLVVdWZ1JFTFlOU0IwbWcxRGVDdldSM2RwQ1JxSUg4dWJzMGlGc0JvVG4vb0NNbUpcbkdpaHA1OGtTSlV2d2c3YWJSKzRpd2liaktrdFhEYjRrejFiNlN2MElTd0tCZ1FESlBObE8vMk12ZmtwZ1h6SDhcbmlnNW1CbGI2VWRkR29QT1pBTDdmeHpDVTd1TmtTTHJXUEVkY2gzcDNKV05tNDR6SWp0czJqd0VaZHBWdXdxTS9cbnY1Q2lwZExHMCtEMUhIL1BJK2lhUUJLWWExbHZWMHI0S2kxVWJiVFYzOVBPbkJ1S2RIZ3BRNkRhUS9tQ2RTK2hcbnkwQllXd0NJdUIzRUg1Wk5pTDY4azJHMnV3S0JnUURDb1ZnVkUvTTgrWnVpZUlUanZDSk5hNUYrakVMaXlQVlVcbitXRlBXQkpmN2tmRktuZHRleXdiZUR0U2NJRWV5OXJyVWo0anRyMCs2NDM0UTVoS2pPM2Q3c1VGRTlxcms2K09cbngrOUhtYlB6OGg3N3d2TXc3dXFncFEvZzlwUkJOZGFHS2FCMGszUWh6OFY2QXQra01sZkN6NXl0RGk5SUZ3c0RcblM3VmdqQ2E1dXdLQmdBemMyOU1GMWZRcU1WelptTnRZZzdVWHdLVjlaN0kzQlhzSkppb3RsRGhnMEo0UFhBbm5cbmpuUW1vTGhPNW55a0hOS1E5d2dVdWZCRHVTZDhQMjBLdEpjQTNHa2pEK1Q2N2x4eUlpTUI1MjVncGpYTXNaa05cbk1ScU5iSnFqRk9uRzVxZkI3QkJQSjAvc09sMlJXZnNRZjh0bC9iRy9lditYT1VjNWIxK2tXQUdUQW9HQURyTk5cbkNkcUY1cmNic0R2V0hiVmFDZXIwQkZEbnhHVlZVbU83bTlpVkdyWE9xZSs1TVlXNklTRUZxZ1poV2tnZmN1SzFcbld0RTBuZ29Bb1IzSjVPZWNGOFV2RUdFZGhSUVVrSDQ5Ym5VSGlJZGpHN1R2MVdSV1NHZnZPUmltdmY0cEE5MGxcbkIya1R2bklKQWx3eE5CK3hUVCtOSCswUVdTdVVZMTFXaDhKT01uMENnWUVBaHlYUGkxaC9MMWZybW1lWFlKTWRcblpROEhrT3dTVGdrelF6eER4WWttQ1dJN1lIeThzbU9SUGRSRlBOVEpUMVVRU0Y1d2Mwd1pENlUvTnFKMGlqTEtcblFqYzBOVUlkNmhlVFQ3cXpwdnp4VFZCcFNtbFJCVm1MTGJ3Q0plditQajczaU0rZEtSemIxYmpBQ1lEamM5OWhcbjhVazFDZW1GWXhzS2s5Z1Y0bktaQ2M4PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImZpcmViYXNlLWFkbWluc2RrLXRxc2I3QGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA1OTg2MTIxMjI3NjY5MjQ1MDM1IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9maXJlYmFzZS1hZG1pbnNkay10cXNiNyU0MGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"
 
-if firebase_credentials and not firebase_admin._apps:
-    cred = credentials.Certificate(json.loads(base64.b64decode(firebase_credentials).decode('utf-8')))
-    firebase_admin.initialize_app(cred)
-
-# Connect to Firestore
-db = firestore.client()
-
-@st.cache_resource
-def load_json(file_path):
-    # Use mmap mode to optimize memory usage for large JSON files
-    with open(file_path, 'r') as file:
-        return json.load(file)
-
-@st.cache_resource
-def load_scene_annotations():
-    with open('scene_annotations.msgpack', 'rb') as file:
-        return msgpack.unpack(file, raw=False)
-
-# Function to save context data to Firestore (batch operation for performance)
-def save_context_data(data):
-    batch = db.batch()
-    doc_ref = db.collection('New Answer').document()
-    batch.set(doc_ref, data)
-    batch.commit()
-
-# Function to generate a confirmation code
-def generate_survey_code():
-    return 'CQA_' + ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=10))
+import streamlit as st
+import plotly.graph_objects as go
+import os
+import numpy as np
+import json
+import firebase_admin
+from firebase_admin import credentials, firestore
+import base64
+import random
+import msgpack
+import cv2
 
 # Streamlit app configuration
 st.set_page_config(
@@ -54,11 +37,48 @@ st.set_page_config(
 
 st.title("ContextQA")
 
+
+
+# Initialize Firebase only once and cache the Firestore connection
 @st.cache_resource
+def initialize_firebase():
+    firebase_credentials = os.getenv('FIREBASE_CREDENTIALS')
+    firebase_credentials = "ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29udGV4dHZxYSIsCiAgInByaXZhdGVfa2V5X2lkIjogIjNiMWVhOGQ5ZjBjMDJiYjEwZDQwNTI4YWFlNWFmODI0MDAzMzZlZDEiLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2UUlCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktjd2dnU2pBZ0VBQW9JQkFRQ1kvdkV3QkpkN2RUcW1cblZkeHFVcExFMFFldTRFbS96dVA3YlV5YmxzUUZrVzhoNjBUUGdORlp0UXo2Z012L1VpZFBIcGxaSjRHWDVLZFhcbldVd2wrZkpHM2phZFhPcEJsaFlXaTBiNGhkWEhOY3NWSjR1dlFab0xrM05IcUJCbGhzSTU5eS96VU9QTTExc2xcbkRIVXVTL3ZhaGg4VHBwWEVubnRGV2lxNkYrTitmQmxhL3BtQlA1RDNuNG5qMnhObzgwbWsva3V3UjY0akpSZC9cbkVXeTZUaGExOXhPc3hWUFhCRUxFRXlLTGY2RzYwbU9jbnZpQWRwcU5MU2J0MUlwZUMwaWw0RlFuQUcwUUR3c3FcbmE5ay90b2t0OWs2NUFzc085dFcvVjcrTzVodmlySXUwL1pneXV3bGowbmNGRHNYb211UTRndXQ0Q3g3UUp2bndcbnA5Q3BMNTJaQWdNQkFBRUNnZ0VBRUNIdHo3amtPajNwd2NsUzlSa2c1Y1QrME9kUWozdWkyWXUwWk1HWWlOZkZcbmhxZVd1V1NsYnBhak9EVGxqZFlkVS8vdmZwR21YaHhic3QrMUlsb0JQSXpJNkgzNEs1TkdYL2t1c2h6MnBrdGJcblR5ODgwTzJUYno0TWpWVkE2VnUwMWtUazF2ekVFSUR5Mk95LzNISmhxN0N4elRJbkg3VHdYYWM4MHlPYXR1YjRcblRWMGNFYXRnVUdHQlJudjRzbVVmVG1LeU9MeFkvdWxEbllPTWtmRXlEL2lzaVlhaTBCbEY4RC9CbGlCVmJEVERcbk0veEthM21yYkh0YU0zTVVLVVdWZ1JFTFlOU0IwbWcxRGVDdldSM2RwQ1JxSUg4dWJzMGlGc0JvVG4vb0NNbUpcbkdpaHA1OGtTSlV2d2c3YWJSKzRpd2liaktrdFhEYjRrejFiNlN2MElTd0tCZ1FESlBObE8vMk12ZmtwZ1h6SDhcbmlnNW1CbGI2VWRkR29QT1pBTDdmeHpDVTd1TmtTTHJXUEVkY2gzcDNKV05tNDR6SWp0czJqd0VaZHBWdXdxTS9cbnY1Q2lwZExHMCtEMUhIL1BJK2lhUUJLWWExbHZWMHI0S2kxVWJiVFYzOVBPbkJ1S2RIZ3BRNkRhUS9tQ2RTK2hcbnkwQllXd0NJdUIzRUg1Wk5pTDY4azJHMnV3S0JnUURDb1ZnVkUvTTgrWnVpZUlUanZDSk5hNUYrakVMaXlQVlVcbitXRlBXQkpmN2tmRktuZHRleXdiZUR0U2NJRWV5OXJyVWo0anRyMCs2NDM0UTVoS2pPM2Q3c1VGRTlxcms2K09cbngrOUhtYlB6OGg3N3d2TXc3dXFncFEvZzlwUkJOZGFHS2FCMGszUWh6OFY2QXQra01sZkN6NXl0RGk5SUZ3c0RcblM3VmdqQ2E1dXdLQmdBemMyOU1GMWZRcU1WelptTnRZZzdVWHdLVjlaN0kzQlhzSkppb3RsRGhnMEo0UFhBbm5cbmpuUW1vTGhPNW55a0hOS1E5d2dVdWZCRHVTZDhQMjBLdEpjQTNHa2pEK1Q2N2x4eUlpTUI1MjVncGpYTXNaa05cbk1ScU5iSnFqRk9uRzVxZkI3QkJQSjAvc09sMlJXZnNRZjh0bC9iRy9lditYT1VjNWIxK2tXQUdUQW9HQURyTk5cbkNkcUY1cmNic0R2V0hiVmFDZXIwQkZEbnhHVlZVbU83bTlpVkdyWE9xZSs1TVlXNklTRUZxZ1poV2tnZmN1SzFcbld0RTBuZ29Bb1IzSjVPZWNGOFV2RUdFZGhSUVVrSDQ5Ym5VSGlJZGpHN1R2MVdSV1NHZnZPUmltdmY0cEE5MGxcbkIya1R2bklKQWx3eE5CK3hUVCtOSCswUVdTdVVZMTFXaDhKT01uMENnWUVBaHlYUGkxaC9MMWZybW1lWFlKTWRcblpROEhrT3dTVGdrelF6eER4WWttQ1dJN1lIeThzbU9SUGRSRlBOVEpUMVVRU0Y1d2Mwd1pENlUvTnFKMGlqTEtcblFqYzBOVUlkNmhlVFQ3cXpwdnp4VFZCcFNtbFJCVm1MTGJ3Q0plditQajczaU0rZEtSemIxYmpBQ1lEamM5OWhcbjhVazFDZW1GWXhzS2s5Z1Y0bktaQ2M4PVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImZpcmViYXNlLWFkbWluc2RrLXRxc2I3QGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTA1OTg2MTIxMjI3NjY5MjQ1MDM1IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9maXJlYmFzZS1hZG1pbnNkay10cXNiNyU0MGNvbnRleHR2cWEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K"
+    cred_data = base64.b64decode(firebase_credentials).decode('utf-8')
+    cred = credentials.Certificate(json.loads(cred_data))
+    firebase_admin.initialize_app(cred)
+    return firestore.client()
+
+db = initialize_firebase()
+
+
+
+@st.cache_data(ttl=3600)  # Cache for 1 hour to avoid excessive resource use
+def load_json(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
+
+@st.cache_data(ttl=3600)
+def load_scene_annotations():
+    with open('scene_annotations.msgpack', 'rb') as file:
+        return msgpack.unpack(file, raw=False)
+
+# Function to save context data to Firestore (batch operation for performance)
+def save_context_data(data):
+    batch = db.batch()
+    doc_ref = db.collection('Test Answer').document()
+    batch.set(doc_ref, data)
+    batch.commit()
+
+# Function to generate a confirmation code
+def generate_survey_code():
+    return 'CQA_' + ''.join(random.choices('ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', k=10))
+
+@st.cache_resource(ttl=3600)  # Cached to reduce reloading for large files
 def load_mesh(ply_file):
     return np.load(ply_file, allow_pickle=True, mmap_mode='r')
 
-@st.cache_resource
+@st.cache_data(ttl=3600)
 def initialize_plot(vertices, triangles, vertex_colors, annotations):
     trace1 = go.Mesh3d(x=vertices[:, 0], y=vertices[:, 1], z=vertices[:, 2],
                        i=triangles[:, 0], j=triangles[:, 1], k=triangles[:, 2],
@@ -97,12 +117,17 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations):
     return fig
 
 def shuffle_page():
-    """Function to shuffle and get a new change_description and questions"""
-    scene_id = st.session_state.scene_id
-    st.session_state.change_description = random.choice(list(st.session_state.changes[scene_id].keys()))
-    st.session_state.questions = random.sample(st.session_state.changes[scene_id][st.session_state.change_description], min(5, len(st.session_state.changes[scene_id][st.session_state.change_description])))
+    """Shuffle and get a new change_description and set of questions."""
+    scene_id = st.session_state.get('scene_id')
+    changes = st.session_state.get('changes', {}).get(scene_id, None)
 
-@st.cache_resource
+    # Use random.choice directly on keys iterator to avoid conversion to list
+    change, questions = random.choice(list(changes.items()))
+    
+    # Update change description and questions efficiently
+    st.session_state.change_questions = {change: random.sample(questions, min(4, len(questions)))}
+
+@st.cache_data(ttl=3600)  # Reduce resource use for frequent calls
 def load_data():
     annotations = load_scene_annotations()
     changes = load_json('questions/filtered_v4.json')
@@ -114,36 +139,24 @@ def initialize_state():
     if 'annotations' not in st.session_state:
         st.session_state.annotations, st.session_state.changes, st.session_state.answer_types = load_data()
 
-    # Initialize scene_id first, since it's used later
     if 'scene_id' not in st.session_state:
         st.session_state.scene_id = random.choice(list(st.session_state.changes.keys()))
-    
-    # Now that scene_id is initialized, initialize the other fields
-    st.session_state.change_description = st.session_state.get(
-        'change_description', 
-        random.choice(list(st.session_state.changes[st.session_state.scene_id].keys()))
-    )
 
-    st.session_state.questions = st.session_state.get(
-        'questions', 
-        random.sample(
-            st.session_state.changes[st.session_state.scene_id][st.session_state.change_description], 
-            min(5, len(st.session_state.changes[st.session_state.scene_id][st.session_state.change_description]))
-        )
-    )
+    if 'change_questions' not in st.session_state:
+        shuffle_page()
 
-    # Initialize the other fields that don't depend on scene_id or change_description
     st.session_state.survey_code = st.session_state.get('survey_code', generate_survey_code())
     st.session_state.submissions = st.session_state.get('submissions', 0)
     st.session_state.answers = st.session_state.get('answers', {})
-        
+    st.session_state.last_answer = st.session_state.get('last_answer', None)
+
 initialize_state()
 
 ROOT_1 = "3D_scans"
 SCENE_IDs = sorted([scene for scene in st.session_state.changes.keys()])
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_filtered_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
-@st.cache_resource
+@st.cache_data(ttl=3600)  # Cache with expiration to avoid excessive memory use
 def read_instance_labels(scene_id):
     return load_json(f'{ROOT_1}/{scene_id}/{scene_id}_id2labels.json')
 
@@ -158,7 +171,7 @@ def refresh_scene():
 if 'fig' not in st.session_state:
     refresh_scene()
 
-@st.cache_resource
+@st.cache_data(ttl=3600)  # Cached to avoid loading the image multiple times
 def image_to_base64(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
     target_size = (900, 900)
@@ -166,7 +179,7 @@ def image_to_base64(image_path):
     _, encoded_image = cv2.imencode(".png", resized_image)
     return base64.b64encode(encoded_image.tobytes()).decode("utf-8")
 
-@st.cache_resource
+@st.cache_data(ttl=3600)
 def precompute_scene_description(scene_id):
     id2labels = read_instance_labels(scene_id)
     excluded_categories = {'wall', 'object', 'floor', 'ceiling'}
@@ -177,10 +190,65 @@ def precompute_scene_description(scene_id):
             objects_by_category.setdefault(category, []).append(label)
     return objects_by_category
 
+def render_markdown_block(content, bg_color, font_color="black", font_size="20px", is_bold=False):
+    """Helper function to render markdown block with custom styles."""
+    style = f"background-color:{bg_color}; padding:10px; border-radius:5px; margin-bottom:15px; color:{font_color}; font-size:{font_size};"
+    if is_bold:
+        content = f"<strong>{content}</strong>"
+    return f"<div style='{style}'>{content}</div>"
+
+def submit_response(submission):
+    # Check if any answers have been provided
+    if not submission['questions_and_answers']:
+        st.warning("Please answer at least one question before submitting. If you're struggling, click the button below for new scene changes and questions.")
+        return  # Early return to avoid further processing
+
+    # Avoid reprocessing the same answers
+    if submission['questions_and_answers'] == st.session_state.last_answer:
+        st.warning("You have already answered these questions. Click the button below for a new one.")
+        return  # Early return to avoid redundant state update
+
+    # If new answers were provided, update the session state and save data
+    st.session_state.submissions += 1
+    st.session_state.last_answer = submission['questions_and_answers']
+    save_context_data(submission)
+
+    # Provide feedback based on the number of submissions
+    if st.session_state.submissions % 4 != 0:
+        st.success(f"You have processed {st.session_state.submissions} scene changes! Click the button below for the next scene change.")
+        shuffle_page()
+    else:
+        st.success(f"Thanks for your contribution! Here is your completion code to CONNECT: {submission['survey_code']}")
+
+@st.cache_data(ttl=3600)  # Cache for 1 hour or adjust as needed
+def render_scene_change_description(change_description):
+    return f"<div style='background-color:#f8d7da; padding:10px; border-radius:5px; margin-bottom:15px;'>\
+            <span style='color:red; font-size:22px; font-weight:bold;'>Scene Change:</span>\
+            <span style='font-size:20px;'>{change_description}</span>\
+            </div>"
+
+# Cache question rendering if the questions are static
+@st.cache_data(ttl=3600)
+def render_questions(questions, answer_types):
+    question_blocks = []
+    for question in questions:
+        question_hint = answer_types.get(question, 'text').lower()
+        question_block = (
+            f"<div style='margin-bottom:10px;'>"
+            f"<span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> "
+            f"<span style='font-size:18px; font-weight:bold;'>{question}</span>"
+            f"</div>"
+            f"<div style='margin-bottom:15px;'>"
+            f"<span style='color:green; font-size:18px;'>Hint: Answer should be {question_hint}</span>"
+            f"</div>"
+        )
+        question_blocks.append(question_block)
+    return question_blocks
+
 guideline_text = """
 <span style="color:brown;">**Welcome!**</span>
 
-**Given a past 3D scene, and a hypothetical change made to the scene, you need to firstly imagine how the new scene will look like after the change happens. Then, answer a question based on the new scene. <span style="color:red;"> Do this for **5** different changes, answer at least one question for each of them. </span>**
+**Given a past 3D scene, and a hypothetical change made to the scene, you need to firstly imagine how the new scene will look like after the change happens. Then, answer a question based on the new scene. <span style="color:red;"> Do this for **4** different changes, answer one question for each of them. </span>**
 
 The following information will be provided to help you answer the questions:
 - **3D Scene Visualization**: A **past** 3D scene before the change.  <span style="color:red;">**You can rotate the scene by clicking and dragging the mouse.**</span>
@@ -202,7 +270,7 @@ The following information will be provided to help you answer the questions:
 - **Question:** What item is directly in front of the guitar now?
 - **Answer:** coffee table.
 
-<span style="color:brown;">**You will be given a completion code after all 5 scene changes processed. Use this code to claim your reward on the CloudResearch platform.**</span> 
+<span style="color:brown;">**You will be given a completion code after all 4 scene changes processed. Use this code to claim your reward on the Connect platform.**</span> 
 """
 
 with st.expander("**Data Collection Guidelines --Please Read**", expanded=True, icon="📝"):
@@ -225,8 +293,7 @@ with left_col:
 with right_col:
     # Load scene data from session state only once at the beginning
     scene_id = st.session_state.get('scene_id', None)
-    change_description = st.session_state.get('change_description', None)
-    questions = st.session_state.get('questions', [])
+    change_description, questions = next(iter(st.session_state.get('change_questions', {}).items()), (None, []))
     answer_types = st.session_state.get('answer_types', {})
     survey_code = st.session_state.get('survey_code', generate_survey_code())
     submissions = st.session_state.get('submissions', 0)
@@ -248,73 +315,37 @@ with right_col:
 
     # Use a form to gather inputs without page refreshes
     with st.form(key='answer_form'):
-        # Display Scene Change Description
-        st.markdown(
-            f"<div style='background-color:#f8d7da; padding:10px; border-radius:5px; margin-bottom:15px;'>"
-            f"<span style='color:red; font-size:22px; font-weight:bold;'>Scene Change:</span> "
-            f"<span style='font-size:20px;'>{change_description}</span>"
-            f"</div>", 
-            unsafe_allow_html=True
-        )
-        
+        st.markdown(render_scene_change_description(change_description), unsafe_allow_html=True)
+    
         # Instructions for user
-        st.markdown(
-            "<div style='background-color:#d4edda; padding:10px; border-radius:5px;'>"
-            "<span style='color:black; font-size:20px;'>Choose at least one question below to answer:</span>"
-            "</div>", 
-            unsafe_allow_html=True
-        )
+        st.markdown("<div style='background-color:#d4edda; padding:10px; border-radius:5px;'>\
+                    <span style='color:black; font-size:18px;'>Choose one question you're confident answering; no need to answer all.</span>\
+                    </div>", unsafe_allow_html=True)
         
-        # Loop through questions and format each question block
-        for question in questions:
-            # Render question and hints without recalculating `st.session_state` values
-            question_hint = answer_types.get(question, 'text').lower()
+        # Cached question rendering
+        question_blocks = render_questions(questions, answer_types)
+        
+        for question_block in question_blocks:
+            st.markdown(question_block, unsafe_allow_html=True)
             
-            st.markdown(
-                f"<div style='margin-bottom:10px;'>"
-                f"<span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> "
-                f"<span style='font-size:18px; font-weight:bold;'>{question}</span>"
-                f"</div>", 
-                unsafe_allow_html=True
-            )
-            
-            # Hint text
-            st.markdown(
-                f"<div style='margin-bottom:15px;'>"
-                f"<span style='color:green; font-size:18px;'>Hint: Answer should be {question_hint}</span>"
-                f"</div>", 
-                unsafe_allow_html=True
-            )
-
             # Answer input box
             answer = st.text_area(
-                label=f"Answer for {question}", 
-                key=f"{question}_input", 
+                label="Answer", 
+                key=f"{question_block}_input", 
                 placeholder="Type your answer here", 
                 label_visibility="collapsed"
             )
             
-            # Store the answer in the submission dictionary directly
+            # Store the answer in the submission dictionary
             if answer:
-                submission['questions_and_answers'][question] = answer
-        
+                submission['questions_and_answers'][question_block] = answer
+
         # Submit button inside the form block
         submit_button = st.form_submit_button(label='Submit')
 
     # Handle submission outside the form
     if submit_button:
-        if len(submission['questions_and_answers']) == 0:
-            st.warning("Please answer at least one question before submitting. If you're struggling, click the button below for new scene changes and questions.")
-        else:
-            # Update session state only once after processing the form
-            st.session_state.submissions = submissions + 1
-            save_context_data(submission)
-            
-            if st.session_state.submissions % 5 != 0:
-                st.success(f"You have processed {st.session_state.submissions} scene changes! Click the button below for the next scene change.")
-            else:
-                st.success(f"Thanks for your contribution! Here is your survey code: {survey_code}")
-    
+        submit_response(submission)
+        
     # Separate button for getting new scene changes
     st.button('Click here to get new scene changes and questions!', on_click=shuffle_page)
-

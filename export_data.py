@@ -51,102 +51,41 @@ if firebase_credentials:
 
 
     # Example: Export data from 'your-collection-name' to 'output.json'
-    collection_name = 'Answer'
+    collection_name = 'New Answer'
     output_file = 'ContextQA_data.json'
 
     export_firestore_collection_to_json(collection_name, output_file)
+    
+    # count the number of questions
+    data = json.load(open('ContextQA_data.json', 'r'))
+    questions = []
+    context_changes = []
+    scenes = []
+    for survey_code in data:
+        for item in data[survey_code]:
+            questions.extend(item['question'])
+            context_changes.append(item['context_change'])
+            scenes.append(item['scene_id'])
+    
+    print(f'There are {len(set(context_changes))} context changes and {len(set(questions))} questions in the collection of {len(set(scenes))}')  # Number of questions
 
-# print(answers)
-# for a in answers:
-#     print(a)    
-# yes_no_answers = [a for a in answers if 'yes' in a or 'no' in a or 'Yes' in a or 'No' in a]
+import pandas as pd
 
-# scene_occurence = {k: v for k, v in sorted(scene_occurence.items(), key=lambda item: item[1], reverse=True)}
-# print(scene_occurence)  # Number of occurences of each scene_id
-# print(f'There are {len(yes_no_answers)} yes/no answers in the collection of {len(answers)}')  # Number of yes/no answers
+participants = os.listdir('crowd')
 
+Total_Data = pd.DataFrame()
+for p in participants:
+    # read csv
+    data = pd.read_csv(f'crowd/{p}')
+    # get 'CompleteionCode' and CompletionTime columns
 
-# # long_changes =[]
-# # with open('new_user.json', 'r') as f:
-# #     data = json.load(f)
-# #     for d in data.values():
-# #         if len(d['context_change']) > 70:
-# #             long_changes.append(d['context_change'])
-
-# # with open('outputs.json', 'r') as f:
-# #     data = json.load(f)
-# #     for d in data.values():
-# #         if len(d['context_change']) > 70:
-# #             long_changes.append(d['context_change'])
-            
-            
-# # with open('context_data.json', 'r') as f:
-# #     data = json.load(f)
-# #     for d in data:
-# #         if len(d['context_change']) > 70:
-# #             long_changes.append(d['context_change'])
-            
-# # with open('/mnt/new_drive/Documents/3D-VLM/SQA3D/gpt4o_contexts.json', 'r') as f:
-# #     data = json.load(f)
-# #     for d in data:
-# #         for item in d['generated_context']["Geometric Changes"]:
-# #             if len(item) > 70:
-# #                 long_changes.append(item)
-                
-# #         for item in d['generated_context']["Addition and Removal Changes"]:
-# #             if len(item) > 70:
-# #                 long_changes.append(item)
-
-# # long_questions = []
-
-# # valid_start_words = ['Do', 'Does', 'What', 'Which', 'How', 'Where', 'When', 'Who', 'Why', 'Are', 'Is', 'Can', 'Could', 'Should', 'Would', 'Will', 'Have', 'Has', 'Had', 'May', 'Might', 'Must', 'Shall', 'Were', 'Am']
-
-# # with open('/mnt/new_drive/Documents/3D-VLM/Chat-3D-v2/annotations/scanqa/ScanQA_v1.0_test_w_obj.json', 'r') as f:
-# #     data = json.load(f)
-# #     for d in data:
-# #         if len(d['question']) > 30 and d['question'].split()[0] in valid_start_words:
-# #             long_questions.append(d['question'])
-            
-# # # with open('/mnt/new_drive/Documents/3D-VLM/Chat-3D-v2/annotations/scanqa/ScanQA_v1.0_val.json', 'r') as f:
-# # #     data = json.load(f)
-# # #     for d in data:
-# # #         if len(d['question']) > 30 and d['question'].split()[0] in valid_start_words:
-# # #             long_questions.append(d['question'])
-# # # print(len(long_changes))  # Number of documents with long context changes
-
-# # long_questions = list(set(long_questions))
-# import json
-
-# # # save long changes
-# # json.dump(long_questions, open('quetions_inspirations.json', 'w'), indent=2)
-
-
-# movement_descriptions = json.load(open('movement_changes.json', 'r'))
-
-# movement_descriptions_0 = {k: v for k, v in sorted(movement_descriptions.items(), key=lambda item: item[0]) if k.startswith('scene')}
-
-# movement_descriptions_1 = {k: v for k, v in sorted(movement_descriptions.items(), key=lambda item: item[0]) if not k.startswith('scene')}
-
-# total_movement_descriptions = {**movement_descriptions_0, **movement_descriptions_1}
-
-# print(movement_descriptions)
-
-# json.dump(total_movement_descriptions, open('movement_changes.json', 'w'), indent=2)
-
-# addition_descriptions = json.load(open('addition_changes.json', 'r'))
-
-# add_changes = []
-# for scene in addition_descriptions:
-#     changes = addition_descriptions[scene]
-
-#     print(scene)
-#     for change in changes:
-#         if 'add' in change and 'remove' not in change and 'replace' not in change:
-#            add_changes.append(change)
-
-# # save them it text file
-# with open('addition.txt', 'w') as f:
-#     for change in add_changes:
-#         f.write(change + '\n')
-
-# json.dump(total_addition_descriptions, open('attribute_changes.json', 'w'), indent=2)
+    for i in range(data.shape[0]):
+        completion_code = str(data['CompletionCode'][i])
+        
+        completion_time = str(data['Education'][i])
+        if completion_code.startswith('CQA_'):
+            print(completion_code)
+            print(completion_time)
+    
+    
+print(Total_Data.head())
