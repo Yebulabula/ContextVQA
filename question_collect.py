@@ -231,13 +231,13 @@ guideline_text = """
 The following information will be provided to help you answer the questions:
 - **3D Scene Visualization**: A **past** 3D scene before the change.  <span style="color:red;">**You can rotate the scene by clicking and dragging the mouse.**</span>
 - **Scene Description**: Summary of objects in the **past** scene.
-- **Scene Change**: A hypothetical change made to the **past** scene.
-- **Questions**: Questions about the **updated scene** in your mind after the change happens.
+- **Scene Change**: A hypothetical change made to the **past** scene. Note: this change is not reflected in the visualization.
+- **Questions**: Questions about the **new scene** after the change. 
 
 #### <span style="color:brown;">**(MUST READ) Instructions:**</span>
 - A valid answer should be a <span style="color:red;"> **single word or phrase**</span>.
-- Some questions may be confusing because they are raw data. <span style="color:red;">**You only need to choose one that you feel confident answering.**</span>
-- If you find the scene change or all its questions are confusing, <span style="color:red;"> **click the button to get a new one.** </span>
+- You should answer the question based on the **new scene** after change, rather than the given scene visualization.
+- If you find questions have non-unique or ambiguous answers, do not answer them. <span style="color:red;">**Only select the one question you feel most confident answering.**</span> Please only answer the question if you are absolutely sure.
 - Tip 1: You can quickly locate the object by using <span style="color:red;"> **Ctrl + F** </span> and typing the object's name. 
 - Tip 2: We include the answer type along with one possible answer for each question as a hint. (<span style="color:red;">**BUT DO NOT COPY THE EXAMPLE ANSWER**</span>)
 
@@ -297,7 +297,7 @@ with right_col:
     
         # Instructions for user
         st.markdown("<div style='background-color:#d4edda; padding:10px; border-radius:5px;'>\
-                    <span style='color:black; font-size:18px;'>Choose one question you're confident answering; no need to answer all.</span>\
+                    <span style='color:black; font-size:18px;'>Only select the one question you feel most confident answering.</span>\
                     </div>", unsafe_allow_html=True)
         
         # Cached question rendering

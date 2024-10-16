@@ -9596,8 +9596,8 @@
     "scene0311_00": {
         "Object Movement Change": [
             "The bulletin board, originally hung above the counter, has been shifted to the wall above the table by the printer, making it more accessible for notices.",
-            "The clock, previously mounted above the countertop, has been relocated to the wall space just above the window.",
-            "The paper cutter, once nestled on the countertop, now occupies the space adjacent to the printer on the table opposite the doorframe."
+            "The clock, previously mounted on the wall, has been relocated to the wall space just above copier.",
+            "The paper cutter, once nestled on the countertop, now occupies the space adjacent to the printer on the table."
         ],
         "Object Addition Change": [
             "A framed picture is added on the wall behind the copier to enhance the aesthetic of the space."
@@ -9615,35 +9615,34 @@
     },
     "scene0312_00": {
         "Object Movement Change": [
-            "Moved the rightmost brown pillow from the large couch to the couch on the right.",
-            "Moved the plant from the table at the upper left to the floor.",
+            "Moved the rightmost brown pillow from the large couch to tv stand.",
+            "Moved the plant from the corner to the right of coffee table.",
             "Placed the jacket from the floor onto the coffee table.",
             "Placed the backpack from the floor onto the large couch."
         ],
         "Object Addition Change": [
-            "A blue cat tower has been placed next to the long green couch.",
+            "A blue cat tower has been placed on the long green couch.",
             "A poster of a pink rose has been hung on the wall next to the TV.",
             "A purple pillow has been placed on the long green couch.",
-            "A white coffee mug has been placed on the brown coffee table in the living room.",
-            "A clear bottle of water has been placed on the TV stand below the television."
+            "A white coffee mug has been placed on the coffee table in the living room.",
+            "A bottle of water has been placed on the TV stand below the television."
         ],
         "Object Removal Change": [
-            "The middle pillow is removed from the longer green couch near the table and lamp.",
-            "The lamp on the table near the plant is removed to create a cleaner look.",
+            "The middle pillow is removed from the longer green couch.",
+            "The lamp on the table is removed to create a cleaner look.",
             "The purple jacket on the floor next to the backpack is removed."
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
-            "The floor near the entrance, behind the couch, has muddy footprints leading towards the coffee table.",
             "The coffee table has a magazine lying open, revealing a colorful, glossy page with a torn corner.",
             "The TV stand has a remote control precariously balanced on the edge, about to fall off."
         ]
     },
     "scene0313_00": {
         "Object Movement Change": [
-            "The chair, which was initially in the corner near the rightmost couch, has been moved to the center, facing the coffee table, creating a visually balanced setup.",
-            "The footstool that was near the bench has found a new position next to the leftmost couch, offering a convenient spot to rest one's feet.",
-            "In a new arrangement, the end table that used to hold the lamp is now placed between the rightmost couch and the chair, providing a surface for drinks and decor."
+            "The chair, next to the couch, has been moved to the front of the end table.",
+            "The footstool has swapped positions with the chair.",
+            "The end table that used to hold the lamp is now placed between the long couch and the chair."
         ],
         "Object Addition Change": [
             "Position a floor lamp in the corner between the two couches.",
@@ -9661,70 +9660,68 @@
     },
     "scene0314_00": {
         "Object Movement Change": [
-            "You hear the clicking of the keys as the keyboard is being used for typing.",
-            "The rug that used to cover the center area of the room has been repositioned to the left corner beneath the furniture.",
-            "You can hear the sound of the wheels as the office chair slides on the floor."
+            "Two monitors on the table have been placed on the floor next to the furniture.",
+            "The lamp on the table has moved on the office chair closest to the furniture."
         ],
         "Object Addition Change": [
             "A trash bin is added near the furniture for convenient disposal of waste."
         ],
-        "Object Removal Change": [],
+        "Object Removal Change": [
+            "Two of the office chairs around the table have been removed to create more space.",
+            "One of the keyboard on the table has been removed.",
+            "A pair of monitor and keyboard has been cleared from the table."
+        ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
-            "The office chair closest to the lamp has its cushion deeply indented and the fabric worn thin from frequent use.",
-            "The furniture provides a place for someone to sit.",
-            "You can see the glow of the screen as the monitor is turned on."
+            "The office chair closest to the furniture has its cushion deeply indented and the fabric worn thin from frequent use."
         ]
     },
     "scene0315_00": {
         "Object Movement Change": [
-            "The large bowl that was on the coffee table has been moved to the dining room table.",
-            "The box that was on the left side of the sectional has been moved to the right side of the sectional against the wall.",
-            "The box that was next to the couch is now under the coffee table, where the bowl that was there has been removed.",
-            "The ottoman, previously centered between the sofa chairs, now resides next to the couch, where the box has been removed.",
-            "The lamp on the table emits a soft, warm light, illuminating a book left open to the middle of a chapter.",
-            "The picture that was behind the dining table on the right has been moved to the wall behind the sectional."
+            "The larger bowl that was on the coffee table has been moved to the dining room table.",
+            "The box that was next to the couch has been placed at the behind of sofa chair.",
+            "The box has swapped position with the ottoman.",
+            "The ottoman, in front of the sofa chair, now resides next to the breakfast bar.",
+            "The box that was next to the couch is now under the coffee table."
         ],
         "Object Addition Change": [
             "The breakfast bar is cluttered with a few used mugs and plates, remnants of a hurried breakfast."
         ],
         "Object Removal Change": [
-            "The box that was next to the couch is now under the coffee table, where the bowl that was there has been removed.",
-            "The ottoman, previously centered between the sofa chairs, now resides next to the couch, where the box has been removed."
+            "Two of the pillows on the gray couch have been removed.",
+            "Two pictures between two cabinets are removed to create a cleaner look."
         ],
         "Object Replacement Change": [
-            "The box that was next to the couch is now under the coffee table, where the bowl that was there has been removed.",
-            "The ottoman, previously centered between the sofa chairs, now resides next to the couch, where the box has been removed."
+            "Two plants on the cabinet have been replaced with two vases of flowers."
         ],
         "Object Attribute Change": [
-            "The lamp on the table emits a soft, warm light, illuminating a book left open to the middle of a chapter.",
-            "The cabinet near the plant has one drawer fully open, revealing neatly stacked magazines and a pair of reading glasses.",
-            "The bowl on the coffee table is filled with a variety of colorful fruits, with a few grapes scattered on the table surface next to it.",
-            "The curtains behind the shelf are fully closed, allowing streaks of sunlight to filter into the room and create patterns on the floor."
+            "The cabinet with the plants has one drawer fully open, revealing neatly stacked magazines and a pair of reading glasses.",
+            "The bowls on the coffee table are filled with a variety of colorful fruits, with a few grapes scattered on the table surface next to it.",
+            "The curtains are fully closed, allowing streaks of sunlight to filter into the room and create patterns on the floor.",
+            "One of the lamp on the table emits a soft, warm light, illuminating a book left open to the middle of a chapter."
         ]
     },
     "scene0316_00": {
         "Object Movement Change": [
-            "The armchair has been positioned next to the ottoman farthest from the door.",
-            "Move the water fountain without a bottle filler to the left corner by the armchair.",
-            "Move the chair by the water fountains to the right corner by the door.",
-            "Slide the water fountain with the bottle filler to the left where the other water fountain was.",
-            "The table has been moved to the location where the chair was, near the water fountain.",
-            "The water fountain closest to the door has been relocated to the corner where the table used to be.",
-            "The water fountain farthest from the door has been moved to the wall beside the chair.",
-            "Move both ottomans to the corner where the water fountains and the chair were.",
-            "The chair has been placed between the two ottomans, by the table.",
-            "Slide the table next to the armchair over to the right side of the brown armchair."
+            "The armchair has been positioned at the left hand side to the ottoman.",
+            "Move the water fountain closest to the chair next to wall with two ottomans.",
+            "The chair by the water fountains has swapped position with the white table in the corner.",
+            "The table has been moved to the front of the chair, near the water fountains.",
+            "The water fountain closest to the door has been placed above the armchair.",
+            "The water fountain farthest from the door has been moved to the wall beside the ottomans.",
+            "Move both ottomans to the corner next to the water fountains.",
+            "The chair has been placed at the front of armchair.",
+            "The armchair has exchanged its position with the white table in the corner."
         ],
         "Object Addition Change": [
             "Lay a white doormat directly on the ground in front of the door.",
-            "Position a narrow white bookshelf against the wall to the right of the ottoman.",
+            "Position a narrow white bookshelf against the wall next to ottomans.",
             "Add a white throw pillow to the armchair to the right of the door.",
             "Place a bouquet of a dozen white roses in a clear vase on the table to the right of the armchair."
         ],
         "Object Removal Change": [
-            "The water fountain next to the doorframe is removed to reduce clutter.",
-            "The water fountain near the chair is removed to make space for additional seating."
+            "The water fountain closest to the door is removed to create more space.",
+            "The ottoman closest to the round table is removed to declutter the area."
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
@@ -9734,64 +9731,73 @@
     },
     "scene0317_00": {
         "Object Movement Change": [
-            "The plastic bin, previously by the table and office chair, is now placed by the red set on the left.",
-            "The curtain, previously by the trash can and plastic bin, is now placed behind the two whiteboards and the table facing the red couch on the right.",
-            "The seat, previously positioned near the curtain, now resides next to the coffee table in the corner.",
-            "The long brown office table, previously surrounded by four office chairs, is now where the curtain used to be."
+            "The plastic bin is now placed next to the seat with pillow.",
+            "The seat, previously positioned near the curtain, now resides next to the whiteboard and table.",
+            "The trash can has been moved from the curtain to the coffee table."
         ],
         "Object Addition Change": [
             "A water bottle has been placed on the table with the office chairs.",
-            "An eraser for the expo markers has also been placed on the table near the whiteboards.",
-            "A box of a dozen doughnuts has been added to the table with the office chairs."
+            "An eraser for the expo markers has been placed on the table near the whiteboards.",
+            "A box of a dozen doughnuts has been placed on the coffee table."
         ],
         "Object Removal Change": [
-            "The cabinet on the right side of the room is removed to make space for a larger storage unit."
+            "The cabinet next to couch and seat has been removed to make space for a larger storage unit."
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
-            "The plastic bin near the cabinets is overturned, with plastic containers scattered around it.",
-            "The cabinet door above the trash can is open, with stacks of papers falling out."
+            "The plastic bin against the wall is overturned, with plastic containers scattered around it.",
+            "The door of the largest cabinet is open, with stacks of papers falling out."
         ]
     },
     "scene0319_00": {
         "Object Movement Change": [
-            "The pillow, previously resting on the couch, now finds a new home on the center coffee table."
+            "The pillow, previously resting on the couch, now finds a new home at the opposite sofa chair."
         ],
-        "Object Addition Change": [],
-        "Object Removal Change": [],
-        "Object Replacement Change": [],
+        "Object Addition Change": [
+            "A new coffee table is added between two sofa chairs."
+        ],
+        "Object Removal Change": [
+            "The pillow on the couch has been removed to create a cleaner look.",
+            "Two coffee tables at the center of the room are removed to open up the space.",
+            "One of the picture above the couch is removed from the wall."
+        ],
+        "Object Replacement Change": [
+            "Two coffee tables at the center of the room are replaced with two stools."
+        ],
         "Object Attribute Change": [
             "The pillow on the left side of the couch has an indentation in the middle, indicating recent use.",
-            "The cushion on the couch is askew, revealing a tear along its seam."
+            "The lamp between two couches has a flickering light, suggesting a loose bulb or faulty wiring."
         ]
     },
     "scene0320_00": {
         "Object Movement Change": [
-            "The backpack, originally resting on the desk by the second window, has found a new place on the stool near the trash can under the table."
+            "The backpack, originally resting on the desk, has found a new place on the stool near the bookshelves."
         ],
         "Object Addition Change": [
-            "Place a mouse trap on the table, directly above the office chair, between the stool and the trash can, near the mouse.",
-            "Place a green file folder in the center of the desk.",
-            "Hang a poster above the trash can, which is between the left edge of the table and the desk, aligned with the height of the monitor to the right of the trash can.",
-            "Add a clear storage bin to the open space under the table, between the stool and the trash can. The stool is directly beneath a window."
+            "Place a mouse trap on the yellow desk.",
+            "Place a green file folder at the part of the table closest to the middle window.",
+            "A new trash can is added next to the backpack.",
+            "Add a storage bin to directly front of the main bookshelf in the middle of the room."
         ],
-        "Object Removal Change": [],
+        "Object Removal Change": [
+            "Two of the monitors on the table has been removed."
+        ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
             "The table in front of the window has a scattered pile of unorganized papers and a few pens lying around, suggesting a hurried departure.",
-            "The monitor on the table is displaying a blue error screen, indicating a system crash.",
+            "The middle monitor on the table is displaying a blue error screen, indicating a system crash.",
             "The desk near the backpack has a cup of coffee on it, with steam rising, indicating a recently made hot beverage."
         ]
     },
     "scene0321_00": {
         "Object Movement Change": [
-            "Previously beside the bed, the nightstand has been repositioned to the corner near the window, making it a perfect spot for morning light.",
-            "The lamp, which previously resided on top of the shelf, now illuminates the space from the nightstand, offering a cozier ambiance for bedtime reading.",
-            "The recycling bins, originally placed close to the office chair, have been shifted to the corner next to the door, making them more accessible for disposal."
+            "Previously beside the bed, the shelf has been repositioned to the corner near the window, making it a perfect spot for morning light.",
+            "The lamp, which previously resided on top of the shelf, now places the space from the nightstand, offering a cozier ambiance for bedtime reading.",
+            "The recycling bin, originally placed close to the office chair, have been shifted to the corner next to the door, making them more accessible for disposal."
         ],
         "Object Addition Change": [],
         "Object Removal Change": [
-            "The lamp on the shelf near the closet wall is removed to clear up space for more storage."
+            "The lamp on the shelf is removed to clear up the surface."
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
@@ -9800,30 +9806,31 @@
     },
     "scene0324_00": {
         "Object Movement Change": [
-            "The picture that was next to the lower right table has been moved to hang above the newly positioned table in the upper right corner."
+            "The picture closest to the window has been taken off and place on the table at the centre of the room."
         ],
-        "Object Addition Change": [],
+        "Object Addition Change": [
+            "Another stool is added between two tables against the wall."
+        ],
         "Object Removal Change": [
-            "The stool in front of the picture in the lower right corner is removed to simplify the area."
+            "The table cloest to the window is removed to create more space.",
+            "The stool farthest to the window is removed to declutter the area."
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": []
     },
     "scene0325_00": {
         "Object Movement Change": [
-            "The blue recycling bin, previously by the door, has been moved to the right of the printer.",
-            "The office chair is now at the farthest end of the table near the carts.",
+            "The blue recycling bin, previously by the door, has been moved to the front of the cabinet.",
+            "The office chair closest to the recyling bin is moved to the corner with box and file cabinet.",
             "The brown box, initially next to the brown board, has been moved to the door to hold it open.",
-            "The chair near the central table has been moved to occupy the space previously held by the box next to the file cabinet.",
             "The black and white box, originally on the floor next to the shelf, has been moved to the top of the large brown table in the middle of the room.",
             "The office chairs are placed on top of the table to allow the carpet to be vacuumed.",
             "The gray office chair, formerly next to the brown box, has been moved under the table with the computer tower.",
-            "The monitor previously on the table on the right side of the room is now placed on the cabinet at the far end."
+            "The monitor previously on the table is now placed next to the cabinet at the far end."
         ],
         "Object Addition Change": [
-            "The box is now stacked on top of the large box between the table and the cabinet.",
-            "Items are moved from the shelf to the table and spread out.",
-            "The top drawer of the file cabinet is opened, and papers from the box are placed inside."
+            "A coffee mug is placed on the cart near the window."
+            
         ],
         "Object Removal Change": [
             "The cart near the window is removed to open up the area and provide a cleaner look.",
@@ -9831,7 +9838,8 @@
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
-            "The shelf above the file cabinet has a fallen book, its pages splayed open.",
+            "The top drawer of the file cabinet is opened, and papers from the box are placed inside.",
+            "The shelf next to the file cabinet has a fallen book, its pages splayed open.",
             "The cart near the door has a missing wheel, causing it to lean to one side.",
             "The open window causes papers in the recycle bin to fly out.",
             "The file cabinet next to the box is fully open, with papers and folders spilling out.",
@@ -9840,15 +9848,17 @@
     },
     "scene0326_00": {
         "Object Movement Change": [
-            "The lamp from the window area has been shifted onto the shelf, replacing the space where items were previously placed, and these items have been removed.",
-            "The shelf located near the doorframe is now pushed closer to the window, creating more open space by the doorframe."
+            "The lamp from the window area has been shifted onto the shelf.",
+            "The shelf located near the doorframe is now pushed attach to the window, creating more open space by the doorframe."
         ],
-        "Object Addition Change": [],
+        "Object Addition Change": [
+            "One more pillow is added to the couch.",
+            "A new chair is added next to the lamp by the window."
+        ],
         "Object Removal Change": [
-            "The lamp from the window area has been shifted onto the shelf, replacing the space where items were previously placed, and these items have been removed."
         ],
         "Object Replacement Change": [
-            "The lamp from the window area has been shifted onto the shelf, replacing the space where items were previously placed, and these items have been removed."
+            "The lamp by the window has been replaced with a small plant."
         ],
         "Object Attribute Change": [
             "The area rug in front of the couch is wrinkled, likely from being stepped on repeatedly.",
@@ -9859,10 +9869,10 @@
     },
     "scene0329_00": {
         "Object Movement Change": [
-            "I moved the red rolling chair, which was next to the table, to the empty table in the corner.",
-            "The whiteboard that used to be mounted on the wall at the top right corner, now sits propped against the wall between the doorframes at the top.",
+            "I moved the red rolling chair, which was next to the table, to the coffee table between two couches.",
+            "The whiteboard that used to be mounted on the wall, now sits propped against the opposite wall.",
             "I moved the shelf between the two tables to the wall space between the corner table and the left door frame to the left of the two trash cans.",
-            "I moved the table below the pictures to the right, close to the door frame."
+            "I moved the table below the pictures to the beneath the whiteboard."
         ],
         "Object Addition Change": [],
         "Object Removal Change": [],
@@ -9871,48 +9881,50 @@
     },
     "scene0330_00": {
         "Object Movement Change": [
-            "A potted plant on the coffee table near the stools is overturned, with soil scattered on the table and floor"
+            "The potted plants on the coffee table are overturned, with soil scattered on the table and floor"
         ],
-        "Object Addition Change": [],
-        "Object Removal Change": [],
+        "Object Addition Change": [
+            "A new pillow has been placed on the only couch with no items on it."
+        ],
+        "Object Removal Change": [
+            "Two yellow coffee tables are removed to create more space.",
+            "The pillows on the white couch have been removed."
+        ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
-            "One of the chairs has a sweater draped over its back, indicating someone left it there"
         ]
     },
     "scene0331_00": {
         "Object Movement Change": [
-            "The pillow, once comfortably resting on the bed near the blue decoration, is now placed on the chair by the desk.",
-            "Hang a round clock on the wall behind the bed. Position it to the right of the three pictures and to the left of the plant, vertically aligned with the highest picture."
+            "The pillow, once comfortably resting on the bed, is now placed on the chair by the desk.",
+            "The trash can next to the recylin bin has been moved to the radiator.",
+            "The fan on the desk has been placed on the floor next to the landury hamper."
         ],
         "Object Addition Change": [
             "Place a shoe rack directly underneath the hanging clothes in front of the door. The rack should be approximately the same length as the wall where the clothes are hanging.",
-            "Attach a wall shelf above the shelf nearest to the door, positioning it vertically above the ground shelf but below the poster next to the decoration.",
-            "A mirror is added above the dresser for added functionality.",
-            "Attach a suncatcher to the left partition of the window. Place it in the upper third of the window.",
-            "Drape a lime green hoodie over the back of the chair next to the bed."
+            "A mirror is added above the shelf next to bed for added functionality.",
+            "Add a plant on the windowsill",
+            "Drape a lime green hoodie over the back of the chair.",
+            "Hang a round clock on the wall behind the bed."
         ],
         "Object Removal Change": [
-            "The storage bin next to the bed is removed for a more spacious look.",
-            "The block on the dresser near the bed is removed to clear the surface."
+            "The storage bins below the bed are removed for a more spacious look."
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": []
     },
     "scene0332_00": {
         "Object Movement Change": [
-            "A storage container could be placed under the bed, to the left of the dresser.",
-            "The dresser can be moved to the corner between the two doors.",
-            "The backpack can be placed on the bed.",
-            "Previously against the wall, the bookshelf has now been relocated to the foot of the bed.",
-            "The trashcan can be moved next to the front door.",
-            "A clock can be hung to the right of the window, near the desk.",
-            "A dresser could be placed underneath the backpack."
+            "The dresser can be moved at the left side of the desk.",
+            "The backpack has been moved to the foot of the bed.",
+            "The office chair has been moved next to the backpack.",
+            "The blue recycling bin has been moved from the desk to the closet wall."
         ],
         "Object Addition Change": [
-            "One blue fitted sheet is on the bed.",
+            "A storage container could be placed under the bed, to the left of the dresser.",
+            "One blue fitted sheet is added on the bed.",
             "A floor lamp can be placed between the two doors, next to the backpack.",
-            "One Chicago Bears poster is centered and taped to the back of the door.",
+            "One Chicago Bears poster is centered and taped to the back of the white door.",
             "Trinkets could be placed on the windowsill, next to the bed.",
             "Ten books can be placed on the bookshelf above the desk.",
             "A poster can be placed on the wall between the two doors, above the backpack.",
@@ -9926,7 +9938,6 @@
         ],
         "Object Replacement Change": [],
         "Object Attribute Change": [
-            "One black bamboo tree in a black ceramic pot is in the corner behind the backpack.",
             "The dresser has its top drawer pulled out, revealing a mess of clothes and a tangled pair of headphones."
         ]
     },

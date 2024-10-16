@@ -47,13 +47,16 @@ st.title("ContextQA")
 
 ROOT_1 = "3D_scans"
 
-SCENE_IDs = sorted(os.listdir(ROOT_1), key=lambda x: (not x.startswith('scene'), x))
+files = [id for id in os.listdir(ROOT_1) if id > 'scene0300_00']
+SCENE_IDs = sorted(files, key=lambda x: (not x.startswith('scene'), x))
 
 SCENE_ID_TO_FILE = {scene_id: os.path.join(ROOT_1, scene_id, f'{scene_id}_vh_clean_2.npz') for scene_id in SCENE_IDs}
 
 @st.cache_data
 def get_scene_ids_and_files(root_dir):
-    scene_ids = sorted(os.listdir(root_dir), key=lambda x: (not x.startswith('scene'), x))
+    ROOT_1 = "3D_scans"
+    files = [id for id in os.listdir(ROOT_1) if id > 'scene0300_00']
+    scene_ids = sorted(files, key=lambda x: (not x.startswith('scene'), x))
     return {scene_id: os.path.join(root_dir, scene_id, f'{scene_id}_filtered_vh_clean_2.npz') for scene_id in scene_ids}
 
 SCENE_ID_TO_FILE = get_scene_ids_and_files(ROOT_1)
