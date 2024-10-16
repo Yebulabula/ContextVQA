@@ -189,7 +189,6 @@ def submit_response(submission):
     st.session_state.submissions += 1
     st.session_state.last_answer = submission['questions_and_answers']
     save_context_data(submission)
-    shuffle_page()
     
     # Provide feedback based on the number of submissions
     if st.session_state.submissions % 4 != 0:
