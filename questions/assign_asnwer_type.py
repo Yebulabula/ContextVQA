@@ -14,6 +14,7 @@ def load_data(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
+
 def extract_changes_to_list(text):
     """Extract the first sentence from each change."""
     return [change.split('.')[1].strip() for change in text.strip().split("\n\n")]
