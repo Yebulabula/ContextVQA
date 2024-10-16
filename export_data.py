@@ -42,16 +42,15 @@ if firebase_credentials:
 
             if doc.to_dict()['survey_code'] not in data:
                 data[doc.to_dict()['survey_code']] = [dict_data]
-            else:  
+            else:          
                 data[doc.to_dict()['survey_code']].append(dict_data)
-            
+        
         # Write data to a JSON file
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False,indent=2)
 
-
     # Example: Export data from 'your-collection-name' to 'output.json'
-    collection_name = 'Rest Answer'
+    collection_name = 'New Answer'
     output_file = 'ContextQA_data.json'
 
     export_firestore_collection_to_json(collection_name, output_file)
@@ -61,13 +60,22 @@ if firebase_credentials:
     questions = []
     context_changes = []
     scenes = []
+    
+    bad_data = []
     for survey_code in data:
+        if len(data[survey_code]) < 4:
+            bad_data.append(survey_code)
+        
         for item in data[survey_code]:
             questions.extend(item['question'])
             context_changes.append(item['context_change'])
             scenes.append(item['scene_id'])
     
+    print(f'Number of bad data: {len(bad_data)}')
+    print(f'Number of good data: {len(data) - len(bad_data)}')
     print(f'There are {len(set(context_changes))} context changes and {len(set(questions))} questions in the collection of {len(set(scenes))}')  # Number of questions
+    
+
 import pandas as pd
 
 def load_json(file_path):
@@ -77,35 +85,41 @@ def load_json(file_path):
 def save_json(data, file_path):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
-
-data_1 = load_json('questions/filtered_v5.json')
-
-unfinished_data = {}
-for scene in data_1:
-    unfinished_data[scene] = {}
-    for change in data_1[scene]:
-        if change not in context_changes:
-            for question in data_1[scene][change]:
-                if question not in questions:
-                    if change not in unfinished_data[scene]:
-                        unfinished_data[scene][change] = [question]
-                    else:
-                        unfinished_data[scene][change].append(question)
-                    
-save_json(unfinished_data, 'questions/filtered_v5.json')
-
-data = load_json('questions/filtered_v5.json')
-questions = []
-context_changes = []
-scenes = []
+        
+data = load_json('questions/filtered_v4.json')
+ 
 for scene in data:
-    for change in data[scene]:
-        questions.extend(data[scene][change])
-        context_changes.append(change)
-        scenes.append(scene)
-print(f'There are {len(set(context_changes))} context changes and {len(set(questions))} questions in the new collection of {len(set(scenes))}')  # Number of questions
-            
+    if len(data[scene]) < 4:
+        print(scene)   
+    else:
+        print(f'The number of context changes in {scene} is {len(data[scene])}')
 
+# data_1 = load_json('questions/filtered_v5.json')
+
+# unfinished_data = {}
+# for scene in data_1:
+#     unfinished_data[scene] = {}
+#     for change in data_1[scene]:
+#         if change not in context_changes:
+#             for question in data_1[scene][change]:
+#                 if question not in questions:
+#                     if change not in unfinished_data[scene]:
+#                         unfinished_data[scene][change] = [question]
+#                     else:
+#                         unfinished_data[scene][change].append(question)
+                    
+# save_json(unfinished_data, 'questions/filtered_v5.json')
+
+# data = load_json('questions/filtered_v5.json')
+# questions = []
+# context_changes = []
+# scenes = []
+# for scene in data:
+#     for change in data[scene]:
+#         questions.extend(data[scene][change])
+#         context_changes.append(change)
+#         scenes.append(scene)
+# print(f'There are {len(set(context_changes))} context changes and {len(set(questions))} questions in the new collection of {len(set(scenes))}')  # Number of questions
 
 # participants = os.listdir('crowd')
 

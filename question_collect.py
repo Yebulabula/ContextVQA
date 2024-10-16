@@ -97,19 +97,13 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations):
 
 def shuffle_page():
     """Shuffle and get a new change_description and set of questions."""
-    scene_id = st.session_state.get('scene_id')
-    changes = st.session_state.get('changes', {}).get(scene_id, None)
-
-    # Use random.choice directly on keys iterator to avoid conversion to list
-    change, questions = random.choice(list(changes.items()))
-    
-    # Update change description and questions efficiently
+    change, questions = next(st.session_state.change4scene, (None, None))
     st.session_state.change_questions = {change: random.sample(questions, min(4, len(questions)))}
 
 @st.cache_data(ttl=3600)  # Reduce resource use for frequent calls
 def load_data():
     annotations = load_scene_annotations()
-    changes = load_json('questions/filtered_v4.json')
+    changes =load_json('questions/filtered_v5.json')
     answer_types = load_json('questions/0_100.json')
     return annotations, changes, answer_types
 
@@ -121,13 +115,16 @@ def initialize_state():
     if 'scene_id' not in st.session_state:
         st.session_state.scene_id = random.choice(list(st.session_state.changes.keys()))
 
+    if 'change4scene' not in st.session_state:
+        st.session_state.change4scene = iter(random.sample(list(st.session_state.changes[st.session_state.scene_id].items()), 4))
+        
     if 'change_questions' not in st.session_state:
         shuffle_page()
 
     st.session_state.survey_code = st.session_state.get('survey_code', generate_survey_code())
     st.session_state.submissions = st.session_state.get('submissions', 0)
     st.session_state.answers = st.session_state.get('answers', {})
-    st.session_state.last_answer = st.session_state.get('last_answer', None)
+    st.session_state.last_change = st.session_state.get('last_change', None)
 
 initialize_state()
 
@@ -183,13 +180,13 @@ def submit_response(submission):
         return  # Early return to avoid further processing
 
     # Avoid reprocessing the same answers
-    if submission['questions_and_answers'] == st.session_state.last_answer:
+    if submission['change_description'] == st.session_state.last_change:
         st.warning("You have already answered these questions. Click the button below for a new one.")
         return  # Early return to avoid redundant state update
 
     # If new answers were provided, update the session state and save data
     st.session_state.submissions += 1
-    st.session_state.last_answer = submission['questions_and_answers']
+    st.session_state.last_change = submission['change_description']
     save_context_data(submission)
     
     # Provide feedback based on the number of submissions

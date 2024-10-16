@@ -10,7 +10,7 @@
       ],
       "answer": [
         "cabinet",
-        "yes.",
+        "no",
         "cabinet"
       ]
     },
@@ -349,6 +349,50 @@
       ]
     }
   ],
+  "CQA_W9KVQ3AQ3J": [
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The water cooler near the doorframe has been removed to create more walking space.",
+      "question": [
+        "After placing the refrigerator where the water cooler used to be, is it now closer to the door than it was previously?"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The water cooler next to the cabinet is empty with a crumpled water bottle on top.",
+      "question": [
+        "Assume someone stands by the cabinets and faces the refrigerator, is the crumpled water bottle on top of the empty water cooler visible to them?",
+        "Which item is nearest to the water cooler with the crumpled bottle on top, other than the cabinet?"
+      ],
+      "answer": [
+        "no",
+        "doorframe"
+      ]
+    },
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The water cooler next to the cabinet is empty with a crumpled water bottle on top.",
+      "question": [
+        "Assume someone stands by the cabinets and faces the refrigerator, is the crumpled water bottle on top of the empty water cooler visible to them?"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The water cooler, which was near the doorframe, has been moved in front of the refrigerator.",
+      "question": [
+        "Does the shortest path from the water cooler in front of the refrigerator to the paper towel dispenser now pass by the kitchen counter?"
+      ],
+      "answer": [
+        "yes"
+      ]
+    }
+  ],
   "CQA_RQ5MQUWEDZ": [
     {
       "scene_id": "scene0115_00",
@@ -467,7 +511,7 @@
         "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume someone stands by the refrigerator facing the soap dispenser, is the soapy water-filled sink visible to them without obstructions?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
       ],
       "answer": [
-        "Yes."
+        "no"
       ]
     },
     {
@@ -958,6 +1002,48 @@
       ],
       "answer": [
         "trash can"
+      ]
+    }
+  ],
+  "CQA_5PV0ETDI1P": [
+    {
+      "scene_id": "scene0114_00",
+      "context_change": "A rug has been added in front of the door to provide a welcoming entryway.",
+      "question": [
+        "When the new rug is oriented towards the cup, where can the telephone be found with respect to the rug?"
+      ],
+      "answer": [
+        "in front of the rug"
+      ]
+    },
+    {
+      "scene_id": "scene0114_00",
+      "context_change": "The tall cabinet in the corner next to the whiteboard has a drawer pulled out.",
+      "question": [
+        "Which object, other than the drawer itself, is most likely to cause someone to trip due to the open drawer of the tall cabinet?"
+      ],
+      "answer": [
+        "chair"
+      ]
+    },
+    {
+      "scene_id": "scene0114_00",
+      "context_change": "The plant, originally on the desk, has been moved to the window ledge, offering a touch of green beside the radiator.",
+      "question": [
+        "After the plant was moved, how many objects are still on the desk?"
+      ],
+      "answer": [
+        "4"
+      ]
+    },
+    {
+      "scene_id": "scene0114_00",
+      "context_change": "A bookshelf has been added near the cabinet close to the window to organize books.",
+      "question": [
+        "Considering the radiator, door, and the newly added bookshelf, which is most centrally located in the room?"
+      ],
+      "answer": [
+        "the bookshelf"
       ]
     }
   ],
@@ -1848,10 +1934,10 @@
         "Where is the nearest radiator to the door that has been closed?"
       ],
       "answer": [
-        "blanket.",
-        "Yes.",
+        "coffee table ",
+        "no",
         "couch",
-        "next to table"
+        "next to window "
       ]
     },
     {
@@ -2242,6 +2328,56 @@
       ],
       "answer": [
         "Rail"
+      ]
+    }
+  ],
+  "CQA_WZ9BL55AM3": [
+    {
+      "scene_id": "scene0054_00",
+      "context_change": "The lamp near the window has been removed to allow more space and better natural light.",
+      "question": [
+        "Assume the cat litter box is placed where the removed lamp used to be, is it now closer to the bathtub than it was before?",
+        "Which other objects in the room can be used for lighting purposes?",
+        "Assume the printer is now placed where the removed lamp was, which item, the desk or the couch, is closer to the printer?",
+        "Is there another item in the room that can provide illumination similar to the removed lamp?"
+      ],
+      "answer": [
+        "yes",
+        "window",
+        "desk",
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0054_00",
+      "context_change": "The desk, formerly by the window, has been replaced by a new bookshelf.",
+      "question": [
+        "Assume someone wanted to use a surface for writing or computing, is there anything in the scene that can still be used for such purposes?",
+        "Which object category has more instances, the desk or the ball?"
+      ],
+      "answer": [
+        "table",
+        "ball"
+      ]
+    },
+    {
+      "scene_id": "scene0054_00",
+      "context_change": "The desk, formerly by the window, has been replaced by a new bookshelf.",
+      "question": [
+        "Which object category has more instances, the desk or the ball?"
+      ],
+      "answer": [
+        "ball"
+      ]
+    },
+    {
+      "scene_id": "scene0054_00",
+      "context_change": "One purse next to the drawer has been removed to declutter and organize the area.",
+      "question": [
+        "What is the shape of the largest object next to the drawer after the purse has been removed?"
+      ],
+      "answer": [
+        "dresser"
       ]
     }
   ],
@@ -3111,6 +3247,18 @@
       ]
     }
   ],
+  "CQA_VVT7FHPUOA": [
+    {
+      "scene_id": "scene0036_00",
+      "context_change": "The coffee table, which once sat in the center of the room, has been moved near the window where the cushion used to be.",
+      "question": [
+        "What is the total number of tables in the scene including the coffee table?"
+      ],
+      "answer": [
+        "3"
+      ]
+    }
+  ],
   "CQA_WTC2L1S2EU": [
     {
       "scene_id": "scene0004_00",
@@ -3440,6 +3588,48 @@
         "decoration",
         "2",
         "Brown"
+      ]
+    }
+  ],
+  "CQA_D851978JJP": [
+    {
+      "scene_id": "scene0149_00",
+      "context_change": "The kitchen cabinet closest to the refrigerator has one door open, revealing a stack of mismatched bowls inside.",
+      "question": [
+        "Which position, the table or the sink, is more suitable for reaching the kitchen cabinet with the door ajar?"
+      ],
+      "answer": [
+        "table"
+      ]
+    },
+    {
+      "scene_id": "scene0149_00",
+      "context_change": "The bag near the trash can has been removed to declutter the workspace.",
+      "question": [
+        "With the chair now in the location of the removed bag, which item, the kitchen counter or the water pitcher, is positioned closer to the chair?"
+      ],
+      "answer": [
+        "kitchen counter"
+      ]
+    },
+    {
+      "scene_id": "scene0149_00",
+      "context_change": "The trash can has been moved to the corner beside the refrigerator.",
+      "question": [
+        "What object is nearest to the trash can now that it's been moved?"
+      ],
+      "answer": [
+        "refrigerator"
+      ]
+    },
+    {
+      "scene_id": "scene0149_00",
+      "context_change": "The bag near the trash can is open, with a loaf of bread peeking out and a few crumbs scattered on the floor.",
+      "question": [
+        "Which object, the refrigerator or the table, is more convenient to approach the bag and manage the scattered crumbs?"
+      ],
+      "answer": [
+        "table"
       ]
     }
   ],
@@ -5035,6 +5225,80 @@
       ]
     }
   ],
+  "CQA_ORFKORGYB7": [
+    {
+      "scene_id": "scene0028_00",
+      "context_change": "Two chairs near the table have been removed to streamline the dining area.",
+      "question": [
+        "Are the footstools now closer to the table than the remaining chairs?"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0028_00",
+      "context_change": "Two chairs near the table have been removed to streamline the dining area.",
+      "question": [
+        "Is there another chair present anywhere in the scene apart from the ones that were removed?",
+        "Are the footstools now closer to the table than the remaining chairs?"
+      ],
+      "answer": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0028_00",
+      "context_change": "The couch has been moved from the center of the room to against the wall by the bookshelves, opening up the floor plan.",
+      "question": [
+        "What is the count of distinct furniture items currently against the walls in the room?"
+      ],
+      "answer": [
+        "5"
+      ]
+    },
+    {
+      "scene_id": "scene0028_00",
+      "context_change": "The two armchairs closest to the bookshelf have been removed to create more space for additional seating.",
+      "question": [
+        "With a chair now placed where one of the removed armchairs was, which is closer to the new chair, the couch or the table?",
+        "Is there another armchair present anywhere in the scene except the ones that were removed?",
+        "Is there another seating option available in the room after the removal of the armchairs?",
+        "Which object is the smallest near the bookshelf after the armchairs have been removed?"
+      ],
+      "answer": [
+        "couch",
+        "yes",
+        "yes",
+        "footstool"
+      ]
+    },
+    {
+      "scene_id": "scene0028_00",
+      "context_change": "The two armchairs closest to the bookshelf have been removed to create more space for additional seating.",
+      "question": [
+        "With a chair now placed where one of the removed armchairs was, which is closer to the new chair, the couch or the table?",
+        "Is there another seating option available in the room after the removal of the armchairs?"
+      ],
+      "answer": [
+        "couch",
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0028_00",
+      "context_change": "The couch has been moved from the center of the room to against the wall by the bookshelves, opening up the floor plan.",
+      "question": [
+        "When walking the shortest path from the couch by the bookshelves to the trash can, do you pass by the table?",
+        "What is the count of distinct furniture items currently against the walls in the room?"
+      ],
+      "answer": [
+        "yes",
+        "5"
+      ]
+    }
+  ],
   "CQA_NLGZHP3IJ6": [
     {
       "scene_id": "scene0141_00",
@@ -5521,6 +5785,48 @@
       ]
     }
   ],
+  "CQA_IZA0PI589R": [
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "The copier has been rotated 90 degrees clockwise from its central position.",
+      "question": [
+        "Assume you are next to the table, can you see the copier more easily than the paper cutter after it has been rotated?"
+      ],
+      "answer": [
+        "Yes"
+      ]
+    },
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "The power strip on the table has been removed to reduce cable clutter.",
+      "question": [
+        "After relocating the copier to the spot where the removed power strip was, which item, the door or the cabinets, is closest to the copier?"
+      ],
+      "answer": [
+        "Door"
+      ]
+    },
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "A TV monitor could be hung between the printer and the door.",
+      "question": [
+        "Which object is closest to the newly added TV monitor, the copier, cabinets, or table?"
+      ],
+      "answer": [
+        "table"
+      ]
+    },
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "The box on the top shelf has been removed to declutter the shelving area.",
+      "question": [
+        "With the battery disposal jar now in the location of the removed box, which item is nearest to the battery disposal jar?"
+      ],
+      "answer": [
+        "mailboxes"
+      ]
+    }
+  ],
   "CQA_1IC96PWEQ4": [
     {
       "scene_id": "scene0097_00",
@@ -5792,6 +6098,68 @@
       ],
       "answer": [
         "directly across from the light switch by the desk and window"
+      ]
+    }
+  ],
+  "CQA_W16IC1U7Y0": [
+    {
+      "scene_id": "scene0035_00",
+      "context_change": "The chair next to the desk has a jacket draped over the backrest, with one sleeve hanging down.",
+      "question": [
+        "Assume you are sitting at the desk facing the bed, can you see the jacket draped over the chair clearly?",
+        "Between the radiator and the nightstand, which one is better to reach the chair and straighten the jacket?",
+        "Which item, the bed or the shelf, can easily reach the chair to adjust the jacket?"
+      ],
+      "answer": [
+        "yes",
+        "nightstand",
+        "bed"
+      ]
+    },
+    {
+      "scene_id": "scene0035_00",
+      "context_change": "The desk is cluttered with papers, a coffee mug with a lipstick stain, and an open laptop showing a paused video.",
+      "question": [
+        "Where is the nearest window to the desk cluttered with papers and a coffee mug?",
+        "What item is most likely to fall off the desk onto the floor, excluding the open laptop?",
+        "Which piece of furniture is most likely to get stained further by coffee spills from the mug on the desk, apart from the desk itself?"
+      ],
+      "answer": [
+        "near the left wall",
+        "pen",
+        "chair"
+      ]
+    },
+    {
+      "scene_id": "scene0035_00",
+      "context_change": "The door beside the dresser has a poster taped to it, peeling off at the corners.",
+      "question": [
+        "Which position, the bed or the desk, is easier to reach the door to fix the peeling poster?",
+        "Which object is nearest to the door with the peeling poster, excluding the dresser?",
+        "Where is it simpler to reach the door and adjust the poster, from the radiator or the nightstand?",
+        "Where is the closest shelf located to the door with the poster taped to it?"
+      ],
+      "answer": [
+        "desk",
+        "dresser",
+        "nightstand",
+        "window left side"
+      ]
+    },
+    {
+      "scene_id": "scene0035_00",
+      "context_change": "The nightstand drawer is open, revealing a pair of glasses and a stack of old letters.",
+      "question": [
+        "What is the material of the closest door to the nightstand with the open drawer?",
+        "Which position, the bed or the chair, is easier to reach the nightstand drawer to close it?",
+        "Which object is closest to the nightstand drawer that is open, excluding the letters?",
+        "Where is the nearest window to the nightstand with the open drawer and the pair of glasses?"
+      ],
+      "answer": [
+        "wood",
+        "bed",
+        "lamp",
+        "east wall"
       ]
     }
   ],
@@ -6180,6 +6548,20 @@
       ],
       "answer": [
         "chair"
+      ]
+    }
+  ],
+  "CQA_K8ZFVLCXNP": [
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The doorframe near the light switch has a noticeable scratch, as assume something heavy has brushed against it.",
+      "question": [
+        "From which position, the window or the bed, is it more accessible to reach the doorframe and inspect the scratch?",
+        "When you're next to the bed facing the door, is the noticeable scratch on the doorframe near the light switch visible to you?"
+      ],
+      "answer": [
+        "bed.",
+        "yes."
       ]
     }
   ],
@@ -8081,6 +8463,50 @@
       ]
     }
   ],
+  "CQA_Q7LHN78KRG": [
+    {
+      "scene_id": "scene0093_00",
+      "context_change": "One of the cabinets in the top left corner has been removed to create more open space.",
+      "question": [
+        "Where is the remaining storage item located in the room?"
+      ],
+      "answer": [
+        "cabinet at the end of the room"
+      ]
+    },
+    {
+      "scene_id": "scene0093_00",
+      "context_change": "The two monitors closest to the window have cracked screens, making them hard to see.",
+      "question": [
+        "Assume you stand by the whiteboard and face towards the window, can you see the cracked screens on the two monitors?"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0093_00",
+      "context_change": "The keyboards on the table have been missing several keys, making typing difficult.",
+      "question": [
+        "Assume you are near the whiteboard and facing the table, can you see the keyboards missing several keys?"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0093_00",
+      "context_change": "The chair closest to the whiteboard has been tipped over on its side.",
+      "question": [
+        "How many chairs are still upright in the scene, excluding the one tipped over?",
+        "From which position, near the window or the mouse, can someone reach the chair to set it upright with less effort?"
+      ],
+      "answer": [
+        "four",
+        "the window"
+      ]
+    }
+  ],
   "CQA_DMLRSSBK1O": [
     {
       "scene_id": "scene0130_00",
@@ -8236,6 +8662,60 @@
         "radiator",
         "shelf",
         "no"
+      ]
+    }
+  ],
+  "CQA_408BF17HJN": [
+    {
+      "scene_id": "scene0103_00",
+      "context_change": "A bookshelf has been positioned to the left of the whiteboard.",
+      "question": [
+        "Which path is shorter: from the bookshelf to the whiteboard eraser on the black chair or to the folded chair blocking the doorway?",
+        "When following the shortest path from the bookshelf to the chair in the upper left corner, what do you encounter first?",
+        "Is the bookshelf placed to the left of the whiteboard closer to the table or the door?"
+      ],
+      "answer": [
+        "eraser",
+        "chair",
+        "table"
+      ]
+    },
+    {
+      "scene_id": "scene0103_00",
+      "context_change": "The whiteboard eraser is now on the table.",
+      "question": [
+        "How many objects are currently on the table?"
+      ],
+      "answer": [
+        "1"
+      ]
+    },
+    {
+      "scene_id": "scene0103_00",
+      "context_change": "A water bottle has been placed on the yellow, round table.",
+      "question": [
+        "Which is the largest object surrounding the added water bottle?",
+        "What is the position of the whiteboard eraser in relation to the new water bottle when the bottle is facing the whiteboard?",
+        "How many items are currently placed on the round table?"
+      ],
+      "answer": [
+        "chair",
+        "right",
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0103_00",
+      "context_change": "The chair nearest to the door has a broken leg and leans awkwardly.",
+      "question": [
+        "Assume you stand by the table facing the door, can you notice the chair with a broken leg without any interference?",
+        "Assume you are standing next to the whiteboard eraser and you face the door, can you see the damaged chair clearly?",
+        "When someone stands by the whiteboard, looking towards the door, is the awkwardly leaning chair visible without obstruction?"
+      ],
+      "answer": [
+        "no",
+        "no",
+        "yes"
       ]
     }
   ],
@@ -8636,6 +9116,78 @@
         "no",
         "near the bedroom entry",
         "ottoman"
+      ]
+    }
+  ],
+  "CQA_JIZTB56KY3": [
+    {
+      "scene_id": "scene0006_00",
+      "context_change": "The black backpack has been moved from the suitcase to the chair by the desk.",
+      "question": [
+        "What item is closest to the black backpack now that it is on the chair by the desk?"
+      ],
+      "answer": [
+        "tv"
+      ]
+    },
+    {
+      "scene_id": "scene0006_00",
+      "context_change": "The desk lamp next to the mirror is turned off, casting a shadow over the desk.",
+      "question": [
+        "How many lamps are there aside from the one turned off next to the mirror?"
+      ],
+      "answer": [
+        "1"
+      ]
+    },
+    {
+      "scene_id": "scene0006_00",
+      "context_change": "The shoes near the bag and suitcase have been placed between the two beds.",
+      "question": [
+        "Did moving the shoes make them closer to the jacket or the nightstand?"
+      ],
+      "answer": [
+        "nightstand"
+      ]
+    },
+    {
+      "scene_id": "scene0006_00",
+      "context_change": "The desk has been moved from in front of the mirror to the corner near the curtain.",
+      "question": [
+        "Has the desk become nearer to the shoes or the can after being moved?"
+      ],
+      "answer": [
+        "can"
+      ]
+    },
+    {
+      "scene_id": "scene0006_00",
+      "context_change": "The large bed near the wall with four pictures has been removed.",
+      "question": [
+        "Is the telephone now nearer to the wall with four pictures or the door?"
+      ],
+      "answer": [
+        "Wall with four pictures"
+      ]
+    },
+    {
+      "scene_id": "scene0006_00",
+      "context_change": "The desk has been moved from in front of the mirror to the corner near the curtain.",
+      "question": [
+        "Has the desk become nearer to the shoes or the can after being moved?"
+      ],
+      "answer": [
+        "shoes"
+      ]
+    },
+    {
+      "scene_id": "scene0006_00",
+      "context_change": "The desk lamp next to the mirror is turned off, casting a shadow over the desk.",
+      "question": [
+        "How many lamps are there aside from the one turned off next to the mirror?"
+      ],
+      "answer": [
+        "1"
       ]
     }
   ],
@@ -9181,6 +9733,54 @@
       ]
     }
   ],
+  "CQA_CSQHQDXZ7X": [
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "The box from the top of the cabinets has been moved to the floor next to the battery disposal area.",
+      "question": [
+        "When you are standing near the recycling bin, is the box now closer or farther away than the paper cutter?",
+        "Assume you are next to the paper tray, which is nearer to you now: the box on the floor or the power strip?"
+      ],
+      "answer": [
+        "Same distance",
+        "power strip"
+      ]
+    },
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "The recycling bin near the trash can has been removed to clear space for movement.",
+      "question": [
+        "What is the primary function of the area where the recycling bin was removed, excluding recycling?"
+      ],
+      "answer": [
+        "trash disposal"
+      ]
+    },
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "The table with the printers and paper tray has been replaced with a new copier.",
+      "question": [
+        "What object is located behind the new copier?",
+        "Assume the new copier is facing the cabinets, what is the position of the power strip concerning the copier?"
+      ],
+      "answer": [
+        "box",
+        "to the right"
+      ]
+    },
+    {
+      "scene_id": "scene0018_00",
+      "context_change": "The trash can can be moved to the middle of the room between the wooden table and the copier.",
+      "question": [
+        "Comparing the heights, is the trash can at the same or different level as the table?",
+        "Is the journey from the centrally placed trash can to the battery disposal jar longer or shorter than the journey from the box to the copier?"
+      ],
+      "answer": [
+        "Different ",
+        "same"
+      ]
+    }
+  ],
   "CQA_FZ0RVY2VI4": [
     {
       "scene_id": "scene0150_00",
@@ -9661,6 +10261,54 @@
       ]
     }
   ],
+  "CQA_HCNEFV37ZH": [
+    {
+      "scene_id": "scene0076_00",
+      "context_change": "A plant has been added on the kitchen cabinet near the refrigerator to add greenery.",
+      "question": [
+        "Does the added plant rest at a higher level compared to the paper towel dispenser?"
+      ],
+      "answer": [
+        "No"
+      ]
+    },
+    {
+      "scene_id": "scene0076_00",
+      "context_change": "The TV has been mounted on the wall near the board.",
+      "question": [
+        "Assume the mounted TV is facing the refrigerator, what is the relative position of the kitchen counter to the TV?"
+      ],
+      "answer": [
+        "left"
+      ]
+    },
+    {
+      "scene_id": "scene0076_00",
+      "context_change": "A plant has been added on the kitchen cabinet near the refrigerator to add greenery.",
+      "question": [
+        "Does the added plant rest at a higher level compared to the paper towel dispenser?",
+        "Which direction is the kitchen counter located relative to the new plant that's facing the board?",
+        "Assume the new plant is facing the table, where is the microwave in relation to the plant?",
+        "Considering the soap dispenser, table, and newly added plant, which one is positioned closest to the board?"
+      ],
+      "answer": [
+        "No",
+        "to the left",
+        "to the left",
+        "table"
+      ]
+    },
+    {
+      "scene_id": "scene0076_00",
+      "context_change": "The microwave has been relocated from the counter to the top of the refrigerator.",
+      "question": [
+        "How many objects are on top of the refrigerator?"
+      ],
+      "answer": [
+        "1"
+      ]
+    }
+  ],
   "CQA_3RZJU3RS7J": [
     {
       "scene_id": "scene0150_00",
@@ -9822,6 +10470,22 @@
       ],
       "answer": [
         "leather"
+      ]
+    }
+  ],
+  "CQA_T4UNWUY8OR": [
+    {
+      "scene_id": "scene0103_00",
+      "context_change": "The chair nearest to the door has a broken leg and leans awkwardly.",
+      "question": [
+        "Assume you stand by the table facing the door, can you notice the chair with a broken leg without any interference?",
+        "Assume you are standing next to the whiteboard eraser and you face the door, can you see the damaged chair clearly?",
+        "When someone stands by the whiteboard, looking towards the door, is the awkwardly leaning chair visible without obstruction?"
+      ],
+      "answer": [
+        "yes",
+        "yes",
+        "yes"
       ]
     }
   ],

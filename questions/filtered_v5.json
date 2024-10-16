@@ -293,19 +293,6 @@
             "Is the added small table positioned higher or lower than the microwave?",
             "Which is placed at a higher level, the added small table or the cabinets?"
         ],
-        "The water cooler next to the cabinet is empty with a crumpled water bottle on top.": [
-            "Assume someone stands by the cabinets and faces the refrigerator, is the crumpled water bottle on top of the empty water cooler visible to them?",
-            "Which item is nearest to the water cooler with the crumpled bottle on top, other than the cabinet?",
-            "Which one, the sink or the kitchen counter, is closer to assist in replacing the empty water cooler bottle?",
-            "From which place, the trash can or the refrigerator, is it easier to handle the empty water cooler situation?"
-        ],
-        "The water cooler, which was near the doorframe, has been moved in front of the refrigerator.": [
-            "Does the shortest path from the water cooler in front of the refrigerator to the paper towel dispenser now pass by the kitchen counter?",
-            "Which route is longer: the one from the water cooler in front of the refrigerator to the trash can, or to the soap dispenser?",
-            "After moving the water cooler, is it nearer to the trash can or the microwave?",
-            "Is the water cooler closer to the sink or the door after being moved?",
-            "While near the soap dispenser, is the water cooler or the doorframe easier to reach?"
-        ],
         "The paper towel dispenser, originally above the sink, has been moved under the microwave.": [
             "When walking from the paper towel dispenser under the microwave to the soap dispenser, which object is found nearby?",
             "After the change, is the paper towel dispenser closer to the cabinets or the sink?"
@@ -325,10 +312,6 @@
         "The paper towel dispenser above the counter has been removed to create a cleaner area.": [
             "Which object is the smallest next to the counter after the paper towel dispenser was removed?",
             "Is there any other dispenser present in the scene besides the removed paper towel dispenser?"
-        ],
-        "The water cooler near the doorframe has been removed to create more walking space.": [
-            "With the trash can now occupying the spot of the removed water cooler, which item, the soap dispenser or the refrigerator, is nearest to the trash can?",
-            "After placing the refrigerator where the water cooler used to be, is it now closer to the door than it was previously?"
         ]
     },
     "scene0004_00": {
@@ -412,12 +395,6 @@
         "A pair of shoes near the suitcase is scuffed, showing signs of frequent use.": [
             "When standing by the table and looking towards the bag, can you see the scuffed shoes?"
         ],
-        "The desk lamp next to the mirror is turned off, casting a shadow over the desk.": [
-            "What is the material of the closest chair to the desk with the turned off lamp?",
-            "Between the backpack and the table, which is nearer to the desk with the turned off lamp by the mirror?",
-            "Which object would most likely cause someone to trip assume they were near the unzipped suitcase, and why?",
-            "How many lamps are there aside from the one turned off next to the mirror?"
-        ],
         "The TV screen has a thin layer of dust, dulling its reflective surface.": [
             "What is the condition of the TV screen?",
             "How does the dust affect the TV screen's reflective surface?"
@@ -460,15 +437,6 @@
             "Where does the jacket stand relative to the pillows on the chairs when they are directed towards the door?",
             "Are the pillows now positioned higher or lower compared to the purse on the chair?",
             "How does the height of the pillows on the chairs compare to the table's surface; is it higher or lower?"
-        ],
-        "The desk has been moved from in front of the mirror to the corner near the curtain.": [
-            "What objects would you pass by when taking the direct path from the desk in the corner near the curtain to the shoes?",
-            "Is the route from the desk in the corner near the curtain to the nightstand shorter or longer than the path to the jacket?",
-            "After moving the desk, is it now closer to the trash can or the bed?",
-            "Has the desk become nearer to the shoes or the can after being moved?",
-            "From the table, is the desk now nearer to you or is it still closer from the mirror's side?",
-            "When the desk in the corner is pointed towards the doorframe, where is the bag situated in relation to it?",
-            "Are the highest point of the desk and the highest point of the door positioned differently in terms of height; which one is higher?"
         ],
         "The nightstand has been moved to the corner by the curtain, with the lamp now on top.": [
             "Is the path from the nightstand with the lamp in the corner by the curtain to the purse longer than the one to the desk?",
@@ -1117,13 +1085,6 @@
         ]
     },
     "scene0028_00": {
-        "The two armchairs closest to the bookshelf have been removed to create more space for additional seating.": [
-            "Which object is the smallest near the bookshelf after the armchairs have been removed?",
-            "With a chair now placed where one of the removed armchairs was, which is closer to the new chair, the couch or the table?",
-            "Assume a footstool is now placed where one of the removed armchairs was, is it closer to the bookshelf than it was previously?",
-            "Is there another armchair present anywhere in the scene except the ones that were removed?",
-            "Is there another seating option available in the room after the removal of the armchairs?"
-        ],
         "The trash can near the bookshelf has been removed to clear the floor and create a cleaner look.": [
             "Assume a footstool is now placed where the removed trash can was, is it closer to the couch or the table?"
         ]
@@ -1370,17 +1331,6 @@
             "While sitting at the desk facing the bed, can you see the stack of yellowed papers on the radiator?",
             "Which item, the desk or the nightstand, can easily reach the papers on the radiator?"
         ],
-        "The desk is cluttered with papers, a coffee mug with a lipstick stain, and an open laptop showing a paused video.": [
-            "Where is the nearest window to the desk cluttered with papers and a coffee mug?",
-            "What item is most likely to fall off the desk onto the floor, excluding the open laptop?",
-            "Which piece of furniture is most likely to get stained further by coffee spills from the mug on the desk, apart from the desk itself?"
-        ],
-        "The door beside the dresser has a poster taped to it, peeling off at the corners.": [
-            "Where is the closest shelf located to the door with the poster taped to it?",
-            "Which object is nearest to the door with the peeling poster, excluding the dresser?",
-            "Which position, the bed or the desk, is easier to reach the door to fix the peeling poster?",
-            "Where is it simpler to reach the door and adjust the poster, from the radiator or the nightstand?"
-        ],
         "The shelf has been placed on top of the dresser.": [
             "While walking the shortest path from the shelf on top of the dresser to the bed, do you pass by the radiator?",
             "Which is closer in terms of direct walking distance: from the shelf on top of the dresser to the chair or to the desk?",
@@ -1404,9 +1354,6 @@
         "The trash can, previously positioned near the window, has been relocated to the corner beside the end table.": [
             "When walking the shortest distance from the trash can beside the end table to the whiteboard, which item do you pass first?",
             "Assume you are standing by the whiteboard, is the trash can closer to you or the cushion?"
-        ],
-        "The coffee table, which once sat in the center of the room, has been moved near the window where the cushion used to be.": [
-            "What is the total number of tables in the scene including the coffee table?"
         ],
         "The cushion on the couch near the window has been removed to create a simpler look.": [
             "Which object is the smallest near the window after the cushion is removed?",
@@ -2888,16 +2835,6 @@
         ]
     },
     "scene0076_00": {
-        "A plant has been added on the kitchen cabinet near the refrigerator to add greenery.": [
-            "Assume the new plant is facing the table, where is the microwave in relation to the plant?",
-            "When the added plant is oriented towards the tv, where is the paper towel dispenser located in reference to the plant?",
-            "Which direction is the kitchen counter located relative to the new plant that's facing the board?",
-            "Which item is closest to the newly added plant, the microwave, sink, or paper towel dispenser?",
-            "Considering the soap dispenser, table, and newly added plant, which one is positioned closest to the board?",
-            "How many items are there on the kitchen cabinet near the refrigerator now?",
-            "What item is directly to the right of the added plant?",
-            "Does the added plant rest at a higher level compared to the paper towel dispenser?"
-        ],
         "A towel rack has been added above the sink for easy towel access while cooking.": [
             "When the extra towel rack is facing the table, where can you find the soap dispenser in relation to it?",
             "How many items above the sink can be used while cooking?",
@@ -4773,29 +4710,12 @@
         ]
     },
     "scene0114_00": {
-        "A bookshelf has been added near the cabinet close to the window to organize books.": [
-            "When the new bookshelf is oriented towards the cup, where is the plant located with respect to the bookshelf?",
-            "Assume the added bookshelf is facing the table, what is the position of the telephone relative to the bookshelf?",
-            "How is the trash can positioned concerning the new bookshelf when it is oriented towards the radiator?",
-            "Considering the radiator, door, and the newly added bookshelf, which is most centrally located in the room?"
-        ],
-        "A rug has been added in front of the door to provide a welcoming entryway.": [
-            "Where is the table positioned relative to the added rug when the rug is laid out towards the window?",
-            "Assume the extra rug is facing the radiator, where does the plant stand in relation to the rug?",
-            "When the new rug is oriented towards the cup, where can the telephone be found with respect to the rug?"
-        ],
         "The telephone on top of the file cabinet has been left off the hook, with the receiver dangling over the edge.": [
             "Assume someone is standing by the radiator facing the table, can they see the telephone off the hook?",
             "Where is the closest monitor to the file cabinet with the dangling receiver?",
             "Which item, the table or the window, would be easier to reach the telephone and place it back on the hook?",
             "What is closer to put the telephone receiver back, the radiator or the cup?",
             "From where, the trash can or the ledge, would it be easier to pick up the telephone receiver and hang it back up?"
-        ],
-        "The tall cabinet in the corner next to the whiteboard has a drawer pulled out.": [
-            "Where is the nearest chair to the tall cabinet with the open drawer?",
-            "Which item, the plant or the door, is easier to reach the tall cabinet and close its drawer?",
-            "From which position, the table or the cup, would be more convenient to close the open drawer of the tall cabinet?",
-            "Which object, other than the drawer itself, is most likely to cause someone to trip due to the open drawer of the tall cabinet?"
         ],
         "The trash can beside the desk is full, with crumpled papers poking out from the top.": [
             "Which item, the radiator or the telephone, is easier to reach the trash can to empty it?",
@@ -4816,10 +4736,6 @@
             "What is the texture of the doorframe of the initial location after the door was opened?",
             "What material is the floor made of at the spot where the door was initially closed?",
             "Is the top of the briefcase now higher or lower compared to the top of the radiator?"
-        ],
-        "The plant, originally on the desk, has been moved to the window ledge, offering a touch of green beside the radiator.": [
-            "Do you pass the radiator when walking from the plant on the window ledge to the trash can?",
-            "After the plant was moved, how many objects are still on the desk?"
         ],
         "The telephone on the desk has swapped positions with a cup on the windowsill.": [
             "Which object is beside the telephone now, after it has swapped with the cup?",
@@ -7020,21 +6936,12 @@
             "Which nearby object is most likely to get batter remnants on it, excluding the utensils?",
             "What item is most probably hard to use due to the cluttered kitchen counter, other than the utensils?"
         ],
-        "The kitchen cabinet closest to the refrigerator has one door open, revealing a stack of mismatched bowls inside.": [
-            "Assume you are sitting on the chair and face the stove, is it possible to see the open door of the kitchen cabinet near the refrigerator?",
-            "Which position, the table or the sink, is more suitable for reaching the kitchen cabinet with the door ajar?"
-        ],
         "The microwave above the kitchen counter has its door halfway open, with a faint smell of burnt popcorn lingering.": [
             "When standing near the refrigerator and facing the sink, can you see the microwave with its door halfway open?",
             "What is the texture of the closest kitchen counter to the microwave with its door halfway open?",
             "Where is the nearest kitchen cabinet to the microwave that smells of burnt popcorn?",
             "Which item is closest to the microwave with its door ajar, besides the microwave?",
             "Which position, the refrigerator or the trash can, is better suited to approach the microwave and shut its door?"
-        ],
-        "The trash can has been moved to the corner beside the refrigerator.": [
-            "Assume heading from the trash can near the refrigerator to the window, which route will be shorter: the one passing the stove or the one passing the sink?",
-            "What object is nearest to the trash can now that it's been moved?",
-            "Is the trash can's new position higher or lower than the seat of the chair?"
         ],
         "The paper towel roll next to the water pitcher has been removed for a cleaner appearance.": [
             "Which object is the smallest next to the water pitcher after the paper towel roll is removed?",
@@ -7051,10 +6958,6 @@
             "Which object is the largest next to the refrigerator after the kitchen cabinet is removed?",
             "Assume the trash can is now placed where the removed kitchen cabinet was, is it now closer to the stove than it was previously?",
             "Are there any other storage options available in the room?"
-        ],
-        "The bag near the trash can has been removed to declutter the workspace.": [
-            "Assume the table is now placed where the removed bag was, is it now closer to the trash can than it was previously?",
-            "With the chair now in the location of the removed bag, which item, the kitchen counter or the water pitcher, is positioned closer to the chair?"
         ]
     },
     "scene0150_00": {
