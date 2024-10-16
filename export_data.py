@@ -51,7 +51,7 @@ if firebase_credentials:
 
 
     # Example: Export data from 'your-collection-name' to 'output.json'
-    collection_name = 'New Answer'
+    collection_name = 'Rest Answer'
     output_file = 'ContextQA_data.json'
 
     export_firestore_collection_to_json(collection_name, output_file)
