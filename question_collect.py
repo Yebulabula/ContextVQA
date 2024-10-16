@@ -97,14 +97,14 @@ def initialize_plot(vertices, triangles, vertex_colors, annotations):
 
 def shuffle_page():
     """Shuffle and get a new change_description and set of questions."""
-    change, questions = next(st.session_state.change4scene, (None, None))
+    change, questions = next(st.session_state.change4scene)
     st.session_state.change_questions = {change: random.sample(questions, min(4, len(questions)))}
 
 @st.cache_data(ttl=3600)  # Reduce resource use for frequent calls
 def load_data():
     annotations = load_scene_annotations()
-    changes =load_json('questions/filtered_v5.json')
-    answer_types = load_json('questions/0_100.json')
+    changes =load_json('questions/concise_filtered_v5.json')
+    answer_types = load_json('questions/0_109.json')
     return annotations, changes, answer_types
 
 def initialize_state():
@@ -116,7 +116,7 @@ def initialize_state():
         st.session_state.scene_id = random.choice(list(st.session_state.changes.keys()))
 
     if 'change4scene' not in st.session_state:
-        st.session_state.change4scene = iter(random.sample(list(st.session_state.changes[st.session_state.scene_id].items()), 4))
+        st.session_state.change4scene = iter(list(st.session_state.changes[st.session_state.scene_id].items()))
         
     if 'change_questions' not in st.session_state:
         shuffle_page()

@@ -50,9 +50,9 @@ def collect_requests(preprocess_data, system_content, prompt, split_ratio):
             questions = v[change]
             
             questions = '\n'.join(questions)
-            text = prompt.format(questions=questions)
+            text = prompt.format(change = change, questions=questions)
             request = {
-                "custom_id": f"{i}_{j}",
+                "custom_id": f"{k}_{j}",
                 "method": "POST",
                 "url": "/v1/chat/completions",
                 "body": {
@@ -92,26 +92,40 @@ def upload_tasks(request_files):
         
 prompt_template = '''
 ### Task Description
-Identify the most suitable answer type for each of the following questions. The type of answer can be object name, color, number, etc. When you assign an answer type, also give an example of a possible answer for that question.
+We have a context change and a corresponding list of questions.
 
-Based on these examples, provide the most accurate answer types for the following new questions:
+The context change refers to a modification made to the original scene. The questions are focused on the state of the scene after this change has occurred.
+
+Your task is to simplify the list of questions, making them more concise and easier to understand. However, ensure that each question clearly emphasizes that it is referring to the scene after the context change.
+
+### Context Change
+{change}
+
+### Questions
 {questions}
 
 The format of your response should be in JSON format as follows:
 {{
-    "text of question 1": "Answer Type for question 1 (e.g., example answer)",
-    "text of question 2": "Answer Type for question 2 (e.g., example answer)",
-    "text of question 3": "Answer Type for question 3 (e.g., example answer)",
-    ...
+    "text of context change": [
+        "concised question 1",
+        "concised question 2",
+        "concised question 3",
+        ...
+    ]
 }}
 '''
 
-def split_text(json_string):
+def split_text(json_string, scene_id):
     # Use regex to find the JSON portion (anything within curly braces)
     json_data = re.search(r'{.*}', json_string, re.DOTALL)
     
     json_clean_string = json_data.group(0)
-    return json.loads(json_clean_string)
+    data = json.loads(json_clean_string)
+    
+    # Update dictionary structure with scene_id
+    # data_with_scene_id = {f"{scene_id}": data}
+    
+    return data
     
 def fetch_file_content(file_id):
     """Fetches file content from OpenAI."""
@@ -186,7 +200,7 @@ def extract_data(total_number_of_files):
         description = entry['completion_content']
         
         # Split the description into questions
-        questions = split_text(description)
+        questions = split_text(description, scene_id)
 
         # Initialize the scene_id dictionary if it doesn't exist
         scene_descriptions.update(questions)
@@ -209,17 +223,12 @@ if __name__ == '__main__':
     
     data = load_json('filtered_v4.json')
 
-    system_content = "You are an AI language assistant tasked with determining the appropriate type of answer for a list of question."
+    system_content = "You are an AI language assistant tasked to help make the texts concise."
 
-    # collect_requests(data, system_content, prompt_template, 5)
-
-    # start = 20
-    
-    # if start + 11 > 100:
-    #     breakpoint()
+    collect_requests(data, system_content, prompt_template, 5)
         
     # requqest_files = os.listdir('requests')[100:]
     # upload_tasks(requqest_files)
     # show_status(9)
     
-    extract_data(9)
+    # extract_data(9)
