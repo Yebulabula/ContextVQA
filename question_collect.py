@@ -189,11 +189,11 @@ def submit_response(submission):
     st.session_state.submissions += 1
     st.session_state.last_answer = submission['questions_and_answers']
     save_context_data(submission)
-
+    shuffle_page()
+    
     # Provide feedback based on the number of submissions
     if st.session_state.submissions % 4 != 0:
         st.success(f"You have processed {st.session_state.submissions} scene changes! Click the button below for the next scene change.")
-        shuffle_page()
     else:
         st.success(f"Thanks for your contribution! Here is your completion code to CONNECT: {submission['survey_code']}")
 
