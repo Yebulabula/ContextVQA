@@ -66,7 +66,7 @@ def load_scene_annotations():
 # Function to save context data to Firestore (batch operation for performance)
 def save_context_data(data):
     batch = db.batch()
-    doc_ref = db.collection('Test Answer').document()
+    doc_ref = db.collection('New Answer').document()
     batch.set(doc_ref, data)
     batch.commit()
 
