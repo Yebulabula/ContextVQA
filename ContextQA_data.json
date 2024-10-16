@@ -167,6 +167,52 @@
       ]
     }
   ],
+  "CQA_J30MSA6G7D": [
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The microwave on the cabinet has been removed to simplify the kitchen.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest next to the cabinet after the microwave has been removed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., toaster)</span></div>"
+      ],
+      "answer": [
+        "trash can"
+      ]
+    },
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The sink is filled with soapy water, with bubbles slowly disappearing and a sponge floating.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume someone stands by the refrigerator facing the soap dispenser, is the soapy water-filled sink visible to them without obstructions?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The sink is filled with soapy water, with bubbles slowly disappearing and a sponge floating.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume someone stands by the refrigerator facing the soap dispenser, is the soapy water-filled sink visible to them without obstructions?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which spot, the trash can area or the area near the kitchen counter, is more suitable to clean the soapy water in the sink?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location/area (e.g., the area near the kitchen counter)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When you are standing at the door looking towards the kitchen counter, can you see the bubbles in the filled sink?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., no)</span></div>"
+      ],
+      "answer": [
+        "no",
+        "near kitchen counter",
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0003_00",
+      "context_change": "The trash can in front of the cabinet has been overturned with trash scattered on the floor.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object, the microwave or the water cooler, is closer to assist in picking up the scattered trash?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (microwave)</span></div>"
+      ],
+      "answer": [
+        "microwave"
+      ]
+    }
+  ],
   "CQA_XG1YET2ZN1": [
     {
       "scene_id": "scene0024_00",
@@ -867,6 +913,50 @@
       ]
     }
   ],
+  "CQA_MRD3O1V3QN": [
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The soap dispenser has been moved from above the sink into the bathroom cabinet below the sinks.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many sinks are there in the room, excluding any items placed on or below them?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 2)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>While looking out of the window, which item is closer to you now: the soap dispenser in the bathroom cabinet or the fire alarm?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name/comparison (e.g., soap dispenser)</span></div>"
+      ],
+      "answer": [
+        "2",
+        "soap dispenser"
+      ]
+    },
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The soap dispenser has been moved from above the sink into the bathroom cabinet below the sinks.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>While looking out of the window, which item is closer to you now: the soap dispenser in the bathroom cabinet or the fire alarm?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name/comparison (e.g., soap dispenser)</span></div>"
+      ],
+      "answer": [
+        "soap dispenser"
+      ]
+    },
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The trash can under the fire alarm has been removed to clear the corner.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Are there any other items in the room that can be used for waste disposal?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The trash can next to the toilet has been moved to the corner near the doorframe.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many trash cans are in the entire room?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., two)</span></div>"
+      ],
+      "answer": [
+        "two"
+      ]
+    }
+  ],
   "CQA_PGHS6FFPYS": [
     {
       "scene_id": "scene0080_00",
@@ -970,6 +1060,48 @@
       ],
       "answer": [
         "windowsill"
+      ]
+    }
+  ],
+  "CQA_EBHBYW5AJS": [
+    {
+      "scene_id": "scene0129_00",
+      "context_change": "The round table near the chairs has moved next to the easel.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the person nearer to the round table or the red rectangle table after the change?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., round table)</span></div>"
+      ],
+      "answer": [
+        "round table"
+      ]
+    },
+    {
+      "scene_id": "scene0129_00",
+      "context_change": "A person who was standing by the door is now in front of the easel.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is closest to the person now that they are in front of the easel?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., round table, chair, statue)</span></div>"
+      ],
+      "answer": [
+        "easel"
+      ]
+    },
+    {
+      "scene_id": "scene0129_00",
+      "context_change": "The person by the window has moved to the chair closest to it.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the person is looking at the red rectangle table, where is the easel in relation to them?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the left, behind, in front of, to the right)</span></div>"
+      ],
+      "answer": [
+        "to the right"
+      ]
+    },
+    {
+      "scene_id": "scene0129_00",
+      "context_change": "The statue near the window has been removed to declutter the area.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>After placing a chair where the removed statue was, is it now closer to the door than it was before?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "no"
       ]
     }
   ],
@@ -1517,6 +1649,58 @@
       ]
     }
   ],
+  "CQA_K4YUILEFPZ": [
+    {
+      "scene_id": "scene0029_00",
+      "context_change": "The trash can next to the shower curtain has been removed to create more floor space.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest near the shower curtain after the trash can has been removed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., toothbrush)</span></div>"
+      ],
+      "answer": [
+        "towel\n"
+      ]
+    },
+    {
+      "scene_id": "scene0029_00",
+      "context_change": "The trash can next to the shower curtain has been removed to create more floor space.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest near the shower curtain after the trash can has been removed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., toothbrush)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the toilet paper is now placed where the removed trash can was, is it closer to the door than before?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "shower curtain",
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0029_00",
+      "context_change": "The trash can next to the shower curtain has been removed to create more floor space.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest near the shower curtain after the trash can has been removed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., toothbrush)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the toilet paper is now placed where the removed trash can was, is it closer to the door than before?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "towel\n",
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0029_00",
+      "context_change": "The towel has been removed from the door and placed on the shower curtain rod.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>As you walk from the towel on the shower curtain rod to the trash can, do you go past the bathtub?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many towels are currently hanging on the shower curtain rod?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., two)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>While taking the shortest path from the towel on the shower curtain rod to the shelf, what object do you encounter halfway?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., sink)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which route is longer, from the towel on the shower curtain rod to the toilet or to the ledge?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location name (e.g., to the toilet)</span></div>"
+      ],
+      "answer": [
+        "yes",
+        "5",
+        "shelf",
+        "shelf"
+      ]
+    }
+  ],
   "CQA_Y4CZLXTGC9": [
     {
       "scene_id": "scene0050_00",
@@ -1879,6 +2063,50 @@
       ]
     }
   ],
+  "CQA_1Z9XNUF3HH": [
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The trash can next to the toilet has been moved to the corner near the doorframe.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>After moving the trash can, is it closer to the doorframe or the paper towel dispenser?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., doorframe)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many trash cans are in the entire room?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., two)</span></div>"
+      ],
+      "answer": [
+        "doorframe",
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The trash can under the fire alarm has been removed to clear the corner.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many items in the room can still be used to dispose of trash?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 2)</span></div>"
+      ],
+      "answer": [
+        "1"
+      ]
+    },
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The soap dispenser has been moved from above the sink into the bathroom cabinet below the sinks.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many sinks are there in the room, excluding any items placed on or below them?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 2)</span></div>"
+      ],
+      "answer": [
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0014_00",
+      "context_change": "The fire alarm has been moved from the wall to between the door and the shower curtain.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the fire alarm now occupy a higher position than the paper towel dispenser?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    }
+  ],
   "CQA_C9W3LPRFH4": [
     {
       "scene_id": "scene0137_00",
@@ -2027,6 +2255,30 @@
       ]
     }
   ],
+  "CQA_45KXIK6J43": [
+    {
+      "scene_id": "scene0073_00",
+      "context_change": "The dumbbell on the bed has been moved to the floor, next to the other dumbbells by the closet.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the largest item remaining on the bed after the dumbbell was moved?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., the pillow)</span></div>"
+      ],
+      "answer": [
+        "clothes"
+      ]
+    },
+    {
+      "scene_id": "scene0073_00",
+      "context_change": "The dumbbell on the bed has been moved to the floor, next to the other dumbbells by the closet.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which is nearer to the dumbbells, the chair or the trash can?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., the chair)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the largest item remaining on the bed after the dumbbell was moved?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., the pillow)</span></div>"
+      ],
+      "answer": [
+        "chair",
+        "clothes"
+      ]
+    }
+  ],
   "CQA_WTC2L1S2EU": [
     {
       "scene_id": "scene0004_00",
@@ -2125,6 +2377,52 @@
       ]
     }
   ],
+  "CQA_0UE0FC8ZZ1": [
+    {
+      "scene_id": "scene0081_00",
+      "context_change": "The red ottoman near the middle table has been removed to create more walking space.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume a couch is moved to the location of the removed red ottoman, does it become closer to another couch or an ottoman?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., couch or ottoman)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the removal of the red ottoman make the area around the middle table more open than around the other tables?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many items in the room can serve the same function as the removed ottoman?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 3)</span></div>"
+      ],
+      "answer": [
+        "ottoman",
+        "yes",
+        "4"
+      ]
+    },
+    {
+      "scene_id": "scene0081_00",
+      "context_change": "The far left section of the couch has been moved to the far right end, still behind all tables and ottomans.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>While positioned by the coffee table, is the far left section of the couch now closer than the laundry basket?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., no)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0081_00",
+      "context_change": "A monitor with a keyboard has been placed on the middle table.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is positioned at a higher level, the added monitor or the clock?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., the clock)</span></div>"
+      ],
+      "answer": [
+        "clock"
+      ]
+    },
+    {
+      "scene_id": "scene0081_00",
+      "context_change": "The middle table has a laptop with a notebook and pen, suggesting work has been done there.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which item is placed at a higher level, the added laptop on the middle table or the microwave?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., the microwave.)</span></div>"
+      ],
+      "answer": [
+        "The microwave"
+      ]
+    }
+  ],
   "CQA_TUY946Q36G": [
     {
       "scene_id": "scene0037_00",
@@ -2174,6 +2472,50 @@
       ],
       "answer": [
         "8"
+      ]
+    }
+  ],
+  "CQA_6T95JHIVKQ": [
+    {
+      "scene_id": "scene0009_00",
+      "context_change": "The trash can with the paper towel dispenser has been removed for more space.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there another item in the room that can be used for waste disposal?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., trash can)</span></div>"
+      ],
+      "answer": [
+        "Trash can on the other side"
+      ]
+    },
+    {
+      "scene_id": "scene0009_00",
+      "context_change": "Water is pooling around the base of the rightmost sink, suggesting a leak.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Standing near which object, besides the rightmost sink, might someone most likely encounter a slip hazard from the leaked water?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., near the dishwasher)</span></div>"
+      ],
+      "answer": [
+        "trash can"
+      ]
+    },
+    {
+      "scene_id": "scene0009_00",
+      "context_change": "Wet footprints near the leftmost stall suggest someone walked through water.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which is a more direct path to the wet footprints near the leftmost stall, from the mirror or the trash can?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., mirror)</span></div>"
+      ],
+      "answer": [
+        "trash can"
+      ]
+    },
+    {
+      "scene_id": "scene0009_00",
+      "context_change": "Water is pooling around the base of the rightmost sink, suggesting a leak.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Standing near which object, besides the rightmost sink, might someone most likely encounter a slip hazard from the leaked water?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., near the dishwasher)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which area, other than right by the rightmost sink, is most likely to be slippery due to the pooling water?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be specific location (e.g., near the refrigerator)</span></div>"
+      ],
+      "answer": [
+        "trash can",
+        "Near bathroom stall door"
       ]
     }
   ],
@@ -2482,6 +2824,58 @@
       ],
       "answer": [
         "4"
+      ]
+    }
+  ],
+  "CQA_DIO03ROIEX": [
+    {
+      "scene_id": "scene0033_00",
+      "context_change": "The window on the far right has been opened, letting in a cool breeze.",
+      "question": [
+        "What is the color of the armchair nearest to the opened window?"
+      ],
+      "answer": [
+        "Orange."
+      ]
+    },
+    {
+      "scene_id": "scene0033_00",
+      "context_change": "The window on the far right has been opened, letting in a cool breeze.",
+      "question": [
+        "What is the color of the armchair nearest to the opened window?"
+      ],
+      "answer": [
+        "Orange."
+      ]
+    },
+    {
+      "scene_id": "scene0033_00",
+      "context_change": "The coffee table and chairs near the far right window have been removed to reduce clutter.",
+      "question": [
+        "Is there another coffee table present anywhere in the scene?"
+      ],
+      "answer": [
+        "Yes."
+      ]
+    },
+    {
+      "scene_id": "scene0033_00",
+      "context_change": "The window on the far right has been opened, letting in a cool breeze.",
+      "question": [
+        "What is the color of the armchair nearest to the opened window?"
+      ],
+      "answer": [
+        "Orange."
+      ]
+    },
+    {
+      "scene_id": "scene0033_00",
+      "context_change": "A standing lamp has been added next to the plant by the column for better lighting.",
+      "question": [
+        "Which object next to the added standing lamp has a noticeable color?"
+      ],
+      "answer": [
+        "Red armchair."
       ]
     }
   ],
@@ -3407,6 +3801,32 @@
       ]
     }
   ],
+  "CQA_O6V1J6SKNS": [
+    {
+      "scene_id": "scene0123_00",
+      "context_change": "The table with clothes on it has been removed to create more space.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the largest next to the area where the table with clothes was removed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., sofa)</span></div>"
+      ],
+      "answer": [
+        "table"
+      ]
+    },
+    {
+      "scene_id": "scene0123_00",
+      "context_change": "A small trash can has been added under each table.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How does the height of the added trash cans under each table compare to the clothes on the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be comparison (e.g., shorter than, taller than)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How is the small trash can positioned with respect to the wall when viewed from the center of the room?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., next to the wall, far from the wall)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many total trash cans are in the scene now?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 3)</span></div>"
+      ],
+      "answer": [
+        "short",
+        "far",
+        "1"
+      ]
+    }
+  ],
   "CQA_Q942RTBJIG": [
     {
       "scene_id": "scene0147_00",
@@ -3590,6 +4010,48 @@
         "no",
         "to the left of the alarm clock",
         "1"
+      ]
+    }
+  ],
+  "CQA_NLGZHP3IJ6": [
+    {
+      "scene_id": "scene0141_00",
+      "context_change": "A potted plant has been added on the shelf near the doorframe for greenery.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Out of the mouse, window, and water bottle, which one is closest to the newly added potted plant?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., mouse)</span></div>"
+      ],
+      "answer": [
+        "water bottle"
+      ]
+    },
+    {
+      "scene_id": "scene0141_00",
+      "context_change": "The ball from the middle of the room has been placed next to the clothes by the door.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Did the ball end up closer to the radiator or the couch after its relocation?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., couch)</span></div>"
+      ],
+      "answer": [
+        "radiator"
+      ]
+    },
+    {
+      "scene_id": "scene0141_00",
+      "context_change": "The computer tower on the floor has its side panel removed, showing the internal parts.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the closest file cabinet to the computer tower with its internal parts exposed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., near the window)</span></div>"
+      ],
+      "answer": [
+        "near the water bottle"
+      ]
+    },
+    {
+      "scene_id": "scene0141_00",
+      "context_change": "The guitar has been placed in the guitar case.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume you are by the ball, is the guitar in the case now closer to you than the backpack?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "no"
       ]
     }
   ],
@@ -3807,6 +4269,54 @@
       ]
     }
   ],
+  "CQA_2FJNDV0UYJ": [
+    {
+      "scene_id": "scene0107_00",
+      "context_change": "The TV stand next to the desk has been replaced by a cabinet.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How does the mini fridge stand relative to the new cabinet when it faces the picture?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the left of the new cabinet)</span></div>"
+      ],
+      "answer": [
+        "the right of the new cabinet"
+      ]
+    },
+    {
+      "scene_id": "scene0107_00",
+      "context_change": "The desk chair, no longer under the desk, is now beside the armchair.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the path from the desk chair by the armchair shorter to the shoes or to the suitcase?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., shoes)</span></div>"
+      ],
+      "answer": [
+        "shooes"
+      ]
+    },
+    {
+      "scene_id": "scene0107_00",
+      "context_change": "The curtain near the armchair is fully open, letting sunlight cast a warm glow on the armchair.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>From where, the tv stand or the chair, is it easier to reach the curtain near the armchair?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., chair)</span></div>"
+      ],
+      "answer": [
+        "chair"
+      ]
+    },
+    {
+      "scene_id": "scene0107_00",
+      "context_change": "The picture on the wall has been replaced with a large mirror.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where does the armchair stand with respect to the new large mirror now facing the bed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the left)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is located below the new mirror?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., table)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which item is closer to the chair, the large mirror or the tv?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., tv)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the large mirror nearer to the bed or the mini fridge?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., bed)</span></div>"
+      ],
+      "answer": [
+        "diagonally across the room",
+        "desk",
+        "large mirror",
+        "bed"
+      ]
+    }
+  ],
   "CQA_Y1EG6K9SR3": [
     {
       "scene_id": "scene0011_00",
@@ -4019,6 +4529,104 @@
       ]
     }
   ],
+  "CQA_WWASYPHMQ9": [
+    {
+      "scene_id": "scene0011_00",
+      "context_change": "The table beneath the TV has been rotated and now leans against the kitchen cabinet.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the rotated table's highest point compared to the sink's faucet?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location or direction (e.g., above the sink's faucet)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many items now occupy the space around the kitchen cabinet after the table beneath the TV was moved?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 4 items)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Are you more likely to encounter the door on the shortest path from the table beneath the TV leaning against the kitchen cabinet or from the kitchen counter?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., from the kitchen counter)</span></div>"
+      ],
+      "answer": [
+        "above the sink's faucet",
+        "4 items",
+        "the kitchen counter"
+      ]
+    },
+    {
+      "scene_id": "scene0011_00",
+      "context_change": "The refrigerator door has been left wide open, causing cold air to condense on the kitchen floor.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many other refrigerators are in the scene apart from the one with the door open?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 2)</span></div>"
+      ],
+      "answer": [
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0011_00",
+      "context_change": "The refrigerator door has been left wide open, causing cold air to condense on the kitchen floor.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many other refrigerators are in the scene apart from the one with the door open?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 2)</span></div>"
+      ],
+      "answer": [
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0011_00",
+      "context_change": "The kitchen counter has been cluttered with spices, a cutting board with vegetable scraps, and a knife.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which location, the tv or the sink, is closer to reach the kitchen counter to tidy it?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., the sink)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which window is closest to the cluttered kitchen countertop?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object identifier (e.g., the one above the sink)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the nearest trash can to the kitchen counter full of spices and vegetable scraps?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., under the sink)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Between the doorframe and the armchair, which one is nearer to organize the kitchen counter?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., the doorframe)</span></div>"
+      ],
+      "answer": [
+        "the sink",
+        "the one above the sink",
+        "under the sink ",
+        "doorframe"
+      ]
+    }
+  ],
+  "CQA_NY97V5NL43": [
+    {
+      "scene_id": "scene0077_00",
+      "context_change": "A potted plant has been added on the counter near the shelves to add some greenery.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where does the cabinet stand relative to the added potted plant when it is facing the window?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the left of the potted plant)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How is the table positioned in relation to the new potted plant when it is oriented towards the counter?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., behind the potted plant)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Are there any other items in the room that contribute to the decor, similar to the added potted plant?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object names (e.g., framed paintings, decorative vase)</span></div>"
+      ],
+      "answer": [
+        "below the potted plant",
+        "in front  of the potted plant",
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0077_00",
+      "context_change": "The copier near the trash can has been removed.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many copiers are in the scene now?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 1)</span></div>"
+      ],
+      "answer": [
+        "1"
+      ]
+    },
+    {
+      "scene_id": "scene0077_00",
+      "context_change": "The counter next to the cabinet has had two lab books and a pen on it.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume you are at the table facing the cabinet, can you see the two lab books and pen on the counter clearly?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0077_00",
+      "context_change": "The window behind the printer has been fully open, letting in a soft breeze that rustles the papers on the counter.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is closest to the window that lets in a soft breeze, excluding the printer?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., lamp)</span></div>"
+      ],
+      "answer": [
+        "shelf"
+      ]
+    }
+  ],
   "CQA_TUXL8MMY1S": [
     {
       "scene_id": "scene0081_00",
@@ -4133,6 +4741,54 @@
       ]
     }
   ],
+  "CQA_0JBIQ4VMWJ": [
+    {
+      "scene_id": "scene0004_00",
+      "context_change": "There are a few scattered crumbs and a slight coffee stain on the floor under the right table, indicating a recent spill.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which item is furthest from the newly added coffee stain under the right table: blinds, window, or blue chair?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., blue chair)</span></div>"
+      ],
+      "answer": [
+        "window"
+      ]
+    },
+    {
+      "scene_id": "scene0004_00",
+      "context_change": "The rightmost black chair in the room has a small tear on the seat cushion, showing some stuffing inside.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume you stand directly in front of the window and look towards the middle of the room, can you spot the tear on the rightmost black chair without anything blocking your view?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the total count of chairs in the scene assume we do not include the one with the stuffing showing?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 5)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many chairs are there in the room, excluding the black chair with the tear?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 4)</span></div>"
+      ],
+      "answer": [
+        "no",
+        "7",
+        "6"
+      ]
+    },
+    {
+      "scene_id": "scene0004_00",
+      "context_change": "Two black chairs around the rectangle table have been moved to the round, black table.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many chairs are placed around the rectangle table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 4)</span></div>"
+      ],
+      "answer": [
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0004_00",
+      "context_change": "All chairs are now placed around the yellow rectangle table.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which is the shorter distance: from one chair around the yellow rectangle table to the blinds or to the window?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be string indicating comparison (e.g., 'to the blinds')</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Are the blinds visible as you move from any of the chairs now arranged around the yellow rectangle table to the window?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (yes or no)</span></div>"
+      ],
+      "answer": [
+        "to the window",
+        "yes"
+      ]
+    }
+  ],
   "CQA_FC9EFIT4K6": [
     {
       "scene_id": "scene0075_00",
@@ -4182,6 +4838,90 @@
       ],
       "answer": [
         "It is situated between two objects (Window and Radiator) "
+      ]
+    }
+  ],
+  "CQA_X1XTL1G2BL": [
+    {
+      "scene_id": "scene0098_00",
+      "context_change": "The tube that was leaning against the shelf has been placed next to the computer towers.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which path is shorter: from the tube next to the computer towers to the door or the blue trash can?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., the door)</span></div>"
+      ],
+      "answer": [
+        "trash can"
+      ]
+    },
+    {
+      "scene_id": "scene0098_00",
+      "context_change": "The bag from the bottom shelf has been moved next to the water bottle on top of the shelf.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the condition of the bottom shelf after the bag was moved?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be condition (e.g., empty, disorganized)</span></div>"
+      ],
+      "answer": [
+        "cleared"
+      ]
+    },
+    {
+      "scene_id": "scene0098_00",
+      "context_change": "The chair near the window and mouse is tilted back, balancing on its two rear legs.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What object do you pass while walking from the tilted chair near the window to the tube?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., desk)</span></div>"
+      ],
+      "answer": [
+        "trash can"
+      ]
+    },
+    {
+      "scene_id": "scene0098_00",
+      "context_change": "The whiteboard above the bookshelf has scribbles, doodles, and some smeared, barely readable notes.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>From the door or the bag, which spot is more convenient for reaching the whiteboard to clean it?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., from the door)</span></div>"
+      ],
+      "answer": [
+        "from the bag"
+      ]
+    }
+  ],
+  "CQA_1S0RAIJQRL": [
+    {
+      "scene_id": "scene0038_00",
+      "context_change": "The jacket has been thrown into the trash can.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When you are standing next to the table and look towards the trash can, can you see the jacket in the trash?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "No"
+      ]
+    },
+    {
+      "scene_id": "scene0038_00",
+      "context_change": "The four chairs behind the far table have been stacked on one another.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When you stand by the trash can facing the far table, can you see the stacked chairs clearly?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "No"
+      ]
+    },
+    {
+      "scene_id": "scene0038_00",
+      "context_change": "The jacket on the chair near the coffee table has been neatly folded and placed on the nearby coffee table.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume you're standing by the trash can and facing the coffee table, can you see the jacket without any obstructions?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "No"
+      ]
+    },
+    {
+      "scene_id": "scene0038_00",
+      "context_change": "The jacket on the chair near the coffee table has been removed to declutter the area.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest near the coffee table after the jacket has been taken away?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., pen)</span></div>"
+      ],
+      "answer": [
+        "chair"
       ]
     }
   ],
@@ -4243,6 +4983,66 @@
       ]
     }
   ],
+  "CQA_CZARN68J7P": [
+    {
+      "scene_id": "scene0138_00",
+      "context_change": "The book next to the monitor has been moved to the cabinet by the shelf.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume you are near the keyboard, is the book now easier to reach than the ladder?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0138_00",
+      "context_change": "The keyboard on the desk near the computer tower has been removed to clear the area.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the laptop is placed where the removed keyboard was, is it now closer to the window than it was before?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0138_00",
+      "context_change": "The cup on the cabinet has been moved to the ladder.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many cups are in the scene?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 3)</span></div>"
+      ],
+      "answer": [
+        "1"
+      ]
+    },
+    {
+      "scene_id": "scene0138_00",
+      "context_change": "The ladder by the door has been repositioned to lean against the radiator on the adjacent wall.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>With the ladder's new position, is it nearer to the window or the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., window)</span></div>"
+      ],
+      "answer": [
+        "window"
+      ]
+    }
+  ],
+  "CQA_3IQTH9WTWB": [
+    {
+      "scene_id": "scene0105_00",
+      "context_change": "A potted plant has been added on the windowsill for a touch of greenery.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the soap dish located in relation to the newly added potted plant when it is facing the towel?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be spatial relation (e.g., to the left of the potted plant)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the newly added potted plant is oriented towards the bathtub, how is the shampoo positioned relative to it?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be spatial relation (e.g., next to the potted plant)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Among the bathtub, rail, and picture, which is situated closest to the newly added potted plant?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., bathtub)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the location of the trash can in relation to the added plant on the windowsill when it is facing the shower walls?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be spatial relation (e.g., below the windowsill)</span></div>"
+      ],
+      "answer": [
+        "To the right and below the potted plant",
+        "To the right and below the potted plant",
+        "rail",
+        "Below the windowsill and across the room "
+      ]
+    }
+  ],
   "CQA_8JBN14HRLK": [
     {
       "scene_id": "scene0028_00",
@@ -4292,6 +5092,48 @@
       ],
       "answer": [
         "yes"
+      ]
+    }
+  ],
+  "CQA_GPSDI427U0": [
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The container on the table is missing its lid, with various office supplies spilling out.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the nearest bag in relation to the table with the missing lid?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., next to the table)</span></div>"
+      ],
+      "answer": [
+        "on the cabinet"
+      ]
+    },
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The doorframe near the light switch has a noticeable scratch, as assume something heavy has brushed against it.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When you're next to the bed facing the door, is the noticeable scratch on the doorframe near the light switch visible to you?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes or no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The light above the bed has flickered intermittently, casting dancing shadows across the room.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object, the box or the radiator, is closer to approaching the light and addressing its flickering issue?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., box)</span></div>"
+      ],
+      "answer": [
+        "n/a"
+      ]
+    },
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The light fixture in the center of the room has been moved to the corner above the white table, illuminating that area more directly.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which path is longer: from the light fixture now by the white table to the window or from the light switch to the stool?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be path (e.g., from the light fixture to the window)</span></div>"
+      ],
+      "answer": [
+        "from the light fixture by the white table to the window."
       ]
     }
   ],
@@ -4490,6 +5332,40 @@
         "nightstand",
         "bed",
         "on the right of it"
+      ]
+    }
+  ],
+  "CQA_AIX9HGCKF8": [
+    {
+      "scene_id": "scene0093_00",
+      "context_change": "A standing lamp has been added near the trash cans for better lighting during late hours.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How does the placement height of the added standing lamp compare to that of the window?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be comparative height (e.g., higher than the window, at the same height as the window)</span></div>"
+      ],
+      "answer": [
+        "Lower than the window."
+      ]
+    },
+    {
+      "scene_id": "scene0093_00",
+      "context_change": "A potted plant has been placed next to the window to add greenery to the room.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which contains more objects in the scene, the area around the window or on the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be area (the area around the window)</span></div>"
+      ],
+      "answer": [
+        "Table."
+      ]
+    },
+    {
+      "scene_id": "scene0093_00",
+      "context_change": "An extra telephone has been installed at the head of the table.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest next to the newly added telephone at the head of the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., pen)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there more than one communication device at the head of the table now?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "mouse.",
+        "yes."
       ]
     }
   ],
@@ -5231,6 +6107,48 @@
       ]
     }
   ],
+  "CQA_VJNT2R7HJD": [
+    {
+      "scene_id": "scene0040_00",
+      "context_change": "The clock above the desk has shown an incorrect time, suggesting the batteries might be low or dead.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which is nearer to the clock to change the batteries, the bottle or the cabinet?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., bottle)</span></div>"
+      ],
+      "answer": [
+        "cabinet"
+      ]
+    },
+    {
+      "scene_id": "scene0040_00",
+      "context_change": "The pillow, previously on the orange couch, has been relocated to the office chair by the window.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object would you encounter first assume you walk the shortest path from the pillow on the office chair by the window to the cabinet?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., desk)</span></div>"
+      ],
+      "answer": [
+        "file cabinet"
+      ]
+    },
+    {
+      "scene_id": "scene0040_00",
+      "context_change": "A standing lamp has been added next to the office chair to provide additional lighting for the workspace.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many items in the room provide lighting besides the added standing lamp?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 3)</span></div>"
+      ],
+      "answer": [
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0040_00",
+      "context_change": "The clock, originally on the shelf, has been moved atop the file cabinet beside the blue trash can.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the clock now positioned closer to the door or the shelf?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be position (e.g., shelf)</span></div>"
+      ],
+      "answer": [
+        "shelf"
+      ]
+    }
+  ],
   "CQA_ACSCPM430Q": [
     {
       "scene_id": "scene0003_00",
@@ -5403,6 +6321,72 @@
       ]
     }
   ],
+  "CQA_ZS91E5RJ26": [
+    {
+      "scene_id": "scene0083_00",
+      "context_change": "A hand dryer has been added on the wall near the door for convenience.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When the added hand dryer is facing the shower curtain, where can you find the soap dish relative to it?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative location (e.g., to the left of)</span></div>"
+      ],
+      "answer": [
+        "left"
+      ]
+    },
+    {
+      "scene_id": "scene0083_00",
+      "context_change": "The mirror above the sink has been moved to the head of the bathtub.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the mirror now closer to the light or the toilet paper?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., light)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>While on the shortest path from the mirror at the head of the bathtub to the light, what object do you pass first?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., towel rack)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>After moving the mirror, what's the nearest object to it now?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., sink)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the route from the mirror now at the head of the bathtub to the toilet longer than the route from the mirror to the shower curtain?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "Led",
+        "Rack",
+        "Tap",
+        "No"
+      ]
+    },
+    {
+      "scene_id": "scene0083_00",
+      "context_change": "The mirror above the sink has been moved to the head of the bathtub.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>While on the shortest path from the mirror at the head of the bathtub to the light, what object do you pass first?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., towel rack)</span></div>"
+      ],
+      "answer": [
+        "Rack"
+      ]
+    },
+    {
+      "scene_id": "scene0083_00",
+      "context_change": "The toilet paper roll has been moved from the wall to the top of the toilet tank.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the primary material of the item that remains attached to the wall after the toilet paper roll has been moved?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be material (e.g., metal)</span></div>"
+      ],
+      "answer": [
+        "Plastic"
+      ]
+    }
+  ],
+  "CQA_7WOCQBIVI9": [
+    {
+      "scene_id": "scene0153_00",
+      "context_change": "The mirror above the sink has streaks from a hasty cleaning.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When you stand by the sink and face the bathtub, can you see the streaks on the mirror from a hasty cleaning?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where can you find the nearest towel to the mirror with streaks from hasty cleaning?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., on the towel rack next to the bathtub)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which position, the toilet or the shower curtain, is closer for someone to clean the streaked mirror above the sink?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be position (e.g., the shower curtain)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>While standing by the door and facing the toilet, can you see the hastily cleaned mirror?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., no)</span></div>"
+      ],
+      "answer": [
+        "no",
+        "towel over by the bathtub",
+        "the toilet",
+        "yes"
+      ]
+    }
+  ],
   "CQA_QEVU9XPGSU": [
     {
       "scene_id": "scene0011_00",
@@ -5478,6 +6462,44 @@
         "dining table",
         "armchair",
         "kitchen cabinets"
+      ]
+    }
+  ],
+  "CQA_98UOTDKLK0": [
+    {
+      "scene_id": "scene0147_00",
+      "context_change": "The hat on the dresser has been removed to create a cleaner look.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the picture is now placed where the removed hat was, is it now closer to the armchair than it was before?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0147_00",
+      "context_change": "The mattress is now propped against the dresser next to the pillows.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How has the lighting condition changed in the spot where the mattress was originally located?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be qualitative change (e.g., brighter)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>After relocating the mattress, is it closer to the trash can or the bed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., bed)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the mattress is pointed toward the bed, where is the armchair positioned with respect to the mattress?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the right of the mattress)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the top of the mattress prop reach above the top edge of the tv?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., no)</span></div>"
+      ],
+      "answer": [
+        "brighter",
+        "Trash can",
+        "to the left",
+        "Yes"
+      ]
+    },
+    {
+      "scene_id": "scene0147_00",
+      "context_change": "A handkerchief has been placed on top of the clothes on the right edge of the bed.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How does the height of the added handkerchief on the bed compare to the height of the TV?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative comparison (e.g., the handkerchief is shorter than the tv)</span></div>"
+      ],
+      "answer": [
+        "The tv is taller "
       ]
     }
   ],
@@ -5907,6 +6929,20 @@
       ]
     }
   ],
+  "CQA_JUBYY4LOXB": [
+    {
+      "scene_id": "scene0002_00",
+      "context_change": "The cabinet near the doorframe has been removed, decluttering the entryway.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there any other item in the room that can store things like the removed cabinet?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., dresser)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there another cabinet present anywhere else in the scene?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "dresser",
+        "yes"
+      ]
+    }
+  ],
   "CQA_CDZL9SGIET": [
     {
       "scene_id": "scene0151_00",
@@ -5970,6 +7006,124 @@
       ],
       "answer": [
         "yes"
+      ]
+    }
+  ],
+  "CQA_W0K3ROL6ZT": [
+    {
+      "scene_id": "scene0147_00",
+      "context_change": "The hat on the dresser has been removed to create a cleaner look.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the picture is now placed where the removed hat was, is it now closer to the armchair than it was before?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "No"
+      ]
+    },
+    {
+      "scene_id": "scene0147_00",
+      "context_change": "Two pillows from the furniture have been placed on the bed.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Are the added pillows placed at a higher level than the hat?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., no)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When the new pillows are facing the TV, where is the mattress located in relation to the pillows?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., at the foot of the bed)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Considering the furniture, TV, and newly added pillows, which item is farthest from the bed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., tv)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How does the placement of the pillows on the bed affect the position of the blanket when the pillows are facing the trash can?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be description/explanation (e.g., the blanket is bunched up at the foot of the bed)</span></div>"
+      ],
+      "answer": [
+        "no",
+        "in front of it.",
+        "picture",
+        "They do not make much difference as they are already facing the trash can."
+      ]
+    },
+    {
+      "scene_id": "scene0147_00",
+      "context_change": "The trash can has been moved near the bed and nightstand.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the shortest route between the trash can by the bed and the armchair pass by the blanket?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What objects do you encounter along the shortest path from the trash can near the bed to the hat?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be list of object names (e.g., chair, table, lamp)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the trash can is pointed toward the hat, where is the picture relative to the trash can?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the left, above)</span></div>"
+      ],
+      "answer": [
+        "Yes",
+        "dresser, tv, furniture.",
+        "above"
+      ]
+    },
+    {
+      "scene_id": "scene0147_00",
+      "context_change": "The TV on the dresser has a thin layer of dust on the screen, making it look hazy.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>From the bed while facing the dresser, can you see the thin layer of dust on the tv screen?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is nearest to the dresser with the dusty TV on it?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., a chair)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many dressers are in the room, not considering the one with the dusty TV on it?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 2)</span></div>"
+      ],
+      "answer": [
+        "yes",
+        "hat",
+        "1"
+      ]
+    }
+  ],
+  "CQA_EVI7U4PVQS": [
+    {
+      "scene_id": "scene0101_00",
+      "context_change": "The guitar, previously propped against the wall near the dresser, now rests in the corner between the desk and bed.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the direct path from the guitar between the desk and bed to the trash can shorter than the path to the poster tube?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which objects do you encounter on the shortest route from the guitar now between the desk and bed to the bathroom vanity?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be list of object names (e.g., chair, rug, cabinet)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the guitar in the corner now stand taller than the microwave on the counter?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many guitars can be found in the scene?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., two)</span></div>"
+      ],
+      "answer": [
+        "yes",
+        "Backpack, stool, doorframe, jacket, breakfast bar, door, towel",
+        "no",
+        "one"
+      ]
+    },
+    {
+      "scene_id": "scene0101_00",
+      "context_change": "The bicycle, previously leaning against the wall opposite the refrigerator, now stands next to the bed.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the bicycle now closer to the dresser or the bathtub?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g.,dresser)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the stove positioned relative to the bicycle when it is oriented towards the closet?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be spatial relation (e.g., to the left of the closet)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the closest item to the bicycle now that it's been placed beside the bed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., nightstand)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the shortest walking path from the bicycle next to the bed to the microwave shorter than the path to the shower curtain?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "dresser",
+        "to the right of the closet",
+        "bed",
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0101_00",
+      "context_change": "The bicycle, previously leaning against the wall opposite the refrigerator, now stands next to the bed.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the bicycle now closer to the dresser or the bathtub?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g.,dresser)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the stove positioned relative to the bicycle when it is oriented towards the closet?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be spatial relation (e.g., to the left of the closet)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What item remains closest to the wall opposite the refrigerator now that the bicycle has been moved?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., table)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the closest item to the bicycle now that it's been placed beside the bed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., nightstand)</span></div>"
+      ],
+      "answer": [
+        "dresser",
+        "to the right of the closet",
+        "doorframe",
+        "bed"
+      ]
+    },
+    {
+      "scene_id": "scene0101_00",
+      "context_change": "The guitar near the door is now on the bed.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the shortest path from the guitar on the bed to the doorframe cross near the refrigerator?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which path is longer: from the guitar now on the bed to the bathroom vanity or the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be comparison (e.g., from the guitar to the bathroom vanity)</span></div>"
+      ],
+      "answer": [
+        "No",
+        "bathroom vanity"
       ]
     }
   ],
@@ -6285,6 +7439,154 @@
       ]
     }
   ],
+  "CQA_6W4X7AF7KJ": [
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The table has a coffee cup stain next to an open laptop showing a paused video.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Standing next to the backpack on the table and facing the laptop, can you see the coffee cup stain on the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The backpack on the table is open, with notebooks and pens spilling onto the carpet.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When standing by the sink and facing the table, can you see the open backpack and the spilling notebooks?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The black chair has been removed from the kitchen.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there another chair remaining in the kitchen?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest in the kitchen after the black chair has been removed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., salt shaker)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>With the microwave now placed where the removed black chair was, which item, the sink or the dishwasher, is closer to the microwave?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., sink)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>After moving one of the tables to the location of the removed black chair, which item is now closest to this table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., refrigerator)</span></div>"
+      ],
+      "answer": [
+        "yes",
+        "salt shaker",
+        "sink",
+        "refigator"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The cabinet near the sink has been moved beside the black chair at the end of the room.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many items are currently beside the black chair at the end of the room?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 3)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the moved cabinet now sit nearer to the microwave or the dishwasher?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., dishwasher)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What objects will you pass by assume you take the shortest route from the cabinet near the black chair to the dishwasher?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be list of objects (e.g., table, lamp, counter)</span></div>"
+      ],
+      "answer": [
+        "3",
+        "dishwasher",
+        "table"
+      ]
+    }
+  ],
+  "CQA_3CLSVG4WAC": [
+    {
+      "scene_id": "scene0031_00",
+      "context_change": "The jacket on the ottoman near the top right corner has a sleeve dangling off the edge, almost touching the floor.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Between the couch and the picture, which is easier to reach the jacket to adjust its sleeve?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., couch)</span></div>"
+      ],
+      "answer": [
+        "couch"
+      ]
+    },
+    {
+      "scene_id": "scene0031_00",
+      "context_change": "The jacket on the ottoman near the top right corner has a sleeve dangling off the edge, almost touching the floor.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When standing next to the couch and facing the ottoman, can you see the sleeve of the jacket dangling off the edge?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    },
+    {
+      "scene_id": "scene0031_00",
+      "context_change": "A string of Christmas lights has been hung on the wall above the picture for illumination.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When the new string of Christmas lights is turned on and oriented towards the jacket, where is the picture positioned relative to the lights?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., above, below, to the left, to the right)</span></div>"
+      ],
+      "answer": [
+        "Below"
+      ]
+    },
+    {
+      "scene_id": "scene0031_00",
+      "context_change": "The jacket on the ottoman to the armchair's left has been moved to the ottoman on its right.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the direct distance from the jacket on the ottoman to the armchair shorter than the distance to the plant?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    }
+  ],
+  "CQA_M0WDPQZG08": [
+    {
+      "scene_id": "scene0036_00",
+      "context_change": "The couch nearest to the coffee table has had a throw blanket draped messily over the back, with one corner trailing on the floor.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object, other than the coffee table, is most likely to trip someone given the throw blanket trailing on the floor?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., armchair)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many couches are in the scene, excluding the one with the throw blanket?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 2)</span></div>"
+      ],
+      "answer": [
+        "seat",
+        "2"
+      ]
+    },
+    {
+      "scene_id": "scene0036_00",
+      "context_change": "The trash can has been replaced by a green potted plant.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the distance between the new green potted plant and the table compared to the distance between the new green potted plant and the padding ottoman?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be comparative distance (e.g., the distance to the table is shorter)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the new green potted plant nearer to the cushion or to the recliner?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be comparison (e.g., cushion)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What object is nearest to the right side of the new green potted plant?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., coffee table)</span></div>"
+      ],
+      "answer": [
+        "the distance to the table is farther",
+        "cushion",
+        "cushion"
+      ]
+    },
+    {
+      "scene_id": "scene0036_00",
+      "context_change": "A monitor and a keyboard have been added on the white table in the middle of the room for work.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Can you sit on anything else in the room while using the added monitor and keyboard?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., chair)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Does the added keyboard have a higher placement than the cushion?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How does the placement height of the added monitor compare to that of the end table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be comparison (e.g., higher, lower, same height)</span></div>"
+      ],
+      "answer": [
+        "seat",
+        "no",
+        "higher"
+      ]
+    },
+    {
+      "scene_id": "scene0036_00",
+      "context_change": "The table near the seats has a vase with wilted flowers, with a few petals scattered around its base.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the closest object directly to the left of the table with the vase of wilted flowers?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., chair)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is most likely to be affected by the scattered petals, excluding the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., rug)</span></div>"
+      ],
+      "answer": [
+        "couch",
+        "couch"
+      ]
+    }
+  ],
   "CQA_12UNJQFKY1": [
     {
       "scene_id": "scene0014_00",
@@ -6415,6 +7717,56 @@
       ]
     }
   ],
+  "CQA_2ZS5QI0QLY": [
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The backpack on the table has been removed to declutter the area.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>With a chair now occupying the space where the removed backpack used to be, is the chair closer to the column than it is to the sink?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>After moving the dishwasher to the spot where the backpack was, which is the nearest item to the dishwasher now?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be item name (e.g., cabinet)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the microwave is placed where the removed backpack was, which item, the sink or the cabinet, is now closer to the microwave?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be item name (e.g., sink)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is the smallest in the vicinity of the table after the backpack was removed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., pen)</span></div>"
+      ],
+      "answer": [
+        "yes",
+        "table",
+        "cabinet",
+        "chair"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "A potted plant has been added near the column for a touch of greenery.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the microwave in relation to the new potted plant when the plant is placed facing the cabinets?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the left of the potted plant)</span></div>"
+      ],
+      "answer": [
+        "To the right of the potted plant."
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The chair behind the left table has been removed to make the space more open.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there another chair still present behind any table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be binary answer (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The dishwasher door is open, with clean dishes inside, ready to be put away.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What type of chair is placed closest to the dishwasher with the open door?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object type (e.g., bar stool)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which item, the column or the microwave, is closer to the dishwasher to close its door?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., microwave)</span></div>"
+      ],
+      "answer": [
+        "rolling chair",
+        "microwave"
+      ]
+    }
+  ],
   "CQA_IBX82BX5S6": [
     {
       "scene_id": "scene0038_00",
@@ -6439,6 +7791,116 @@
       ]
     }
   ],
+  "CQA_REQSHN5SBM": [
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The clothes near the door have been placed on the green bed next to the window.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume you're near the shelf, do you notice the clothes on the bed near the window?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The clothes hanging on the cabinet have been removed to reduce visual clutter.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there another set of clothes present anywhere in the scene, apart from the ones that were hanging on the cabinet?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., no)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the basket is now positioned where the removed clothes used to be, is it nearer to the light than before?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the bed or the table positioned closer to the spot where the removed clothes used to be?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., bed)</span></div>"
+      ],
+      "answer": [
+        "yes",
+        "yes",
+        "table"
+      ]
+    },
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The container on the table is missing its lid, with various office supplies spilling out.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the nearest bag in relation to the table with the missing lid?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be location (e.g., next to the table)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>From which position, the shelf or the bed, is it more efficient to reach the container and place its lid back on?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., the shelf)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Between the stool and the radiator, which location is easier to reach the container to stop office supplies from spilling out?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., the stool)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object, the wardrobe closet or the door, is better positioned to approach the container and secure its lid?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., the wardrobe closet)</span></div>"
+      ],
+      "answer": [
+        "under the table",
+        "bed",
+        "radiator",
+        "wardrobe closet"
+      ]
+    },
+    {
+      "scene_id": "scene0072_00",
+      "context_change": "The container on the table is missing its lid, with various office supplies spilling out.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>From which position, the shelf or the bed, is it more efficient to reach the container and place its lid back on?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object (e.g., the shelf)</span></div>"
+      ],
+      "answer": [
+        "bed"
+      ]
+    }
+  ],
+  "CQA_OIT0UOTJ1S": [
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "A fruit bowl has been added to each round table to make the dining setup more inviting.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How does the height of the added fruit bowl on the round table compare to the backpack?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be comparison (e.g., the fruit bowl is taller than the backpack)</span></div>"
+      ],
+      "answer": [
+        "No fruit bowl was added"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "The backpack on the table is open, with notebooks and pens spilling onto the carpet.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>When standing by the sink and facing the table, can you see the open backpack and the spilling notebooks?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be yes/no (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "yes"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "A potted plant has been added near the column for a touch of greenery.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>What is the color of the smallest object near the added object?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be color (e.g., red)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume the new potted plant beside the column is facing the backpack, where would the sink be in respect to the plant?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., behind the plant)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is at a higher level, the added potted plant or the backpack?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., backpack)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Where is the microwave in relation to the new potted plant when the plant is placed facing the cabinets?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be relative position (e.g., to the left of the potted plant)</span></div>"
+      ],
+      "answer": [
+        "gray",
+        "In front and to the left a bit",
+        "potted plant",
+        "to the right of the plant"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "One leg of the chair next to the table is broken, making it tilt precariously.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many chairs, other than the one with the broken leg, are there in the scene?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 4)</span></div>"
+      ],
+      "answer": [
+        "3"
+      ]
+    },
+    {
+      "scene_id": "scene0048_00",
+      "context_change": "One leg of the chair next to the table is broken, making it tilt precariously.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many chairs, other than the one with the broken leg, are there in the scene?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 4)</span></div>"
+      ],
+      "answer": [
+        "4"
+      ]
+    }
+  ],
   "CQA_0PD16W7VLI": [
     {
       "scene_id": "scene0153_00",
@@ -6448,6 +7910,36 @@
       ],
       "answer": [
         "soap dispenser"
+      ]
+    }
+  ],
+  "CQA_GE3V3O29KV": [
+    {
+      "scene_id": "scene0149_00",
+      "context_change": "The water pitcher, which was on the kitchen counter, now sits on the table.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>How many other items do you encounter when walking from the water pitcher on the table to the trash can?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be number (e.g., 5)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is the water pitcher now placed closer to the microwave or the bag?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., microwave)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which object is closest to the water pitcher now that it's on the table?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., book)</span></div>",
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Which path is likely shorter: from the water pitcher on the table to the chair or to the refrigerator?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be object name (e.g., chair)</span></div>"
+      ],
+      "answer": [
+        "7",
+        "no, it closer to the chair",
+        "chair",
+        "to the chair"
+      ]
+    }
+  ],
+  "CQA_LH7QGVY0NB": [
+    {
+      "scene_id": "scene0110_00",
+      "context_change": "The trash cans and recycling bins in front of the radiators have been moved to the sides.",
+      "question": [
+        "When you are beside the backpack, is it now easier to navigate around the radiators after moving the trash and recycling bins?"
+      ],
+      "answer": [
+        "yes."
       ]
     }
   ],
@@ -6582,6 +8074,30 @@
       "answer": [
         "no",
         "1"
+      ]
+    }
+  ],
+  "CQA_KBGVBGCN25": [
+    {
+      "scene_id": "scene0118_00",
+      "context_change": "The coffee table with the jacket has an empty coffee cup with a ring around its base.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Assume someone is standing by the doorframe facing the sign, is the empty coffee cup on the coffee table with the jacket visible?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes or no)</span></div>"
+      ],
+      "answer": [
+        "no"
+      ]
+    }
+  ],
+  "CQA_32J3BNTO3R": [
+    {
+      "scene_id": "scene0038_00",
+      "context_change": "The coffee table near the red table has been removed from the room.",
+      "question": [
+        "<div style='margin-bottom:10px;'><span style='color:blue; font-size:18px;'>(AFTER THE CHANGE)</span> <span style='font-size:18px; font-weight:bold;'>Is there another table in the room where items can be placed?</span></div><div style='margin-bottom:15px;'><span style='color:green; font-size:18px;'>Hint: Answer should be boolean (e.g., yes)</span></div>"
+      ],
+      "answer": [
+        "yes"
       ]
     }
   ],

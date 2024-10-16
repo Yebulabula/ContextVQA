@@ -71,21 +71,21 @@ if firebase_credentials:
 
 import pandas as pd
 
-participants = os.listdir('crowd')
+# participants = os.listdir('crowd')
 
-Total_Data = pd.DataFrame()
-for p in participants:
-    # read csv
-    data = pd.read_csv(f'crowd/{p}')
-    # get 'CompleteionCode' and CompletionTime columns
+# Total_Data = pd.DataFrame()
+# for p in participants:
+#     # read csv
+#     data = pd.read_csv(f'crowd/{p}')
+#     # get 'CompleteionCode' and CompletionTime columns
 
-    for i in range(data.shape[0]):
-        completion_code = str(data['CompletionCode'][i])
+#     for i in range(data.shape[0]):
+#         completion_code = str(data['CompletionCode'][i])
         
-        completion_time = str(data['Education'][i])
-        if completion_code.startswith('CQA_'):
-            print(completion_code)
-            print(completion_time)
+#         completion_time = str(data['Education'][i])
+#         if completion_code.startswith('CQA_'):
+#             print(completion_code)
+#             print(completion_time)
     
     
-print(Total_Data.head())
+# print(Total_Data.head())
