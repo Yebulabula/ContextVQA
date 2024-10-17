@@ -103,7 +103,7 @@ def shuffle_page():
 @st.cache_data(ttl=3600)  # Reduce resource use for frequent calls
 def load_data():
     annotations = load_scene_annotations()
-    changes =load_json('questions/concise_filtered_v5.json')
+    changes =load_json('questions/concise_filtered_v6.json')
     answer_types = load_json('questions/0_109.json')
     return annotations, changes, answer_types
 
