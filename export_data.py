@@ -86,40 +86,40 @@ def save_json(data, file_path):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent=4)
         
-data = load_json('questions/filtered_v4.json')
+# data = load_json('questions/filtered_v4.json')
  
-for scene in data:
-    if len(data[scene]) < 4:
-        print(scene)   
-    else:
-        print(f'The number of context changes in {scene} is {len(data[scene])}')
-
-# data_1 = load_json('questions/filtered_v5.json')
-
-# unfinished_data = {}
-# for scene in data_1:
-#     unfinished_data[scene] = {}
-#     for change in data_1[scene]:
-#         if change not in context_changes:
-#             for question in data_1[scene][change]:
-#                 if question not in questions:
-#                     if change not in unfinished_data[scene]:
-#                         unfinished_data[scene][change] = [question]
-#                     else:
-#                         unfinished_data[scene][change].append(question)
-                    
-# save_json(unfinished_data, 'questions/filtered_v5.json')
-
-# data = load_json('questions/filtered_v5.json')
-# questions = []
-# context_changes = []
-# scenes = []
 # for scene in data:
-#     for change in data[scene]:
-#         questions.extend(data[scene][change])
-#         context_changes.append(change)
-#         scenes.append(scene)
-# print(f'There are {len(set(context_changes))} context changes and {len(set(questions))} questions in the new collection of {len(set(scenes))}')  # Number of questions
+#     if len(data[scene]) < 4:
+#         print(scene)   
+#     else:
+#         print(f'The number of context changes in {scene} is {len(data[scene])}')
+
+data_1 = load_json('questions/concise_filtered_v5.json')
+
+unfinished_data = {}
+for scene in data_1:
+    unfinished_data[scene] = {}
+    for change in data_1[scene]:
+        if change not in context_changes:
+            for question in data_1[scene][change]:
+                if question not in questions:
+                    if change not in unfinished_data[scene]:
+                        unfinished_data[scene][change] = [question]
+                    else:
+                        unfinished_data[scene][change].append(question)
+                    
+save_json(unfinished_data, 'questions/concise_filtered_v6.json')
+
+data = load_json('questions/concise_filtered_v6.json')
+questions = []
+context_changes = []
+scenes = []
+for scene in data:
+    for change in data[scene]:
+        questions.extend(data[scene][change])
+        context_changes.append(change)
+        scenes.append(scene)
+print(f'There are {len(set(context_changes))} context changes and {len(set(questions))} questions in the new collection of {len(set(scenes))}')  # Number of questions
 
 # participants = os.listdir('crowd')
 

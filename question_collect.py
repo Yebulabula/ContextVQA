@@ -116,7 +116,9 @@ def initialize_state():
         st.session_state.scene_id = random.choice(list(st.session_state.changes.keys()))
 
     if 'change4scene' not in st.session_state:
-        st.session_state.change4scene = iter(list(st.session_state.changes[st.session_state.scene_id].items()))
+        descriptions = list(st.session_state.changes[st.session_state.scene_id].items())
+        random.shuffle(descriptions)
+        st.session_state.change4scene = iter(descriptions)
         
     if 'change_questions' not in st.session_state:
         shuffle_page()
