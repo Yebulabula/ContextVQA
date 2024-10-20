@@ -88,7 +88,7 @@ def load_mesh(ply_file):
 # Function to initialize the plot and create annotations
 def initialize_plot(vertices, triangles, vertex_colors, annotations, id2labels):
     # vertex_colors_rgb = [f'rgb({r}, {g}, {b})' for r, g, b in vertex_colors]
-
+    print(vertex_colors.shape)
     excluded_categories = {'wall', 'object', 'floor', 'ceiling'}
 
     objects_by_category = {}
@@ -192,7 +192,11 @@ with left_col:
     ply_file = SCENE_ID_TO_FILE[scene_id]
     mesh_data = load_mesh(ply_file)
     vertices, triangles, vertex_colors = mesh_data.values()
-    vertex_colors = vertex_colors[:, :3]
+    
+    if scene_id.startswith('scene'):
+        vertex_colors = vertex_colors[:, :3]
+    else:
+        vertex_colors = vertex_colors[:, :3] / 255.0
 
     id2labels = read_instance_labels(scene_id)
 
